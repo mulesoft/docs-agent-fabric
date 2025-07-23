@@ -1,0 +1,5 @@
+name: agent-orchestration-fabric
+title: Agent Orchestration Fabric
+version: latest
+nav:
+- modules/ROOT/nav.adoc
