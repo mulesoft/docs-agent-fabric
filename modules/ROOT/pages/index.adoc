@@ -1,14 +1,14 @@
-= Agent Orchestration Fabric Overview
+= Agent Fabric Overview
 
-Agent Orchestration Fabric aims to solve "agent sprawl" by providing a single, governed platform for the discovery, curation, execution, and lifecycle management of heterogeneous agents. Agent Orchestration Fabric is a foundational framework built on the pillars of agent discoverability, orchestration, governance, and observability. 
+Agent Fabric aims to solve "agent sprawl" by providing a single, governed platform for the discovery, curation, execution, and lifecycle management of heterogeneous agents. Agent Fabric is a foundational framework built on the pillars of agent discoverability, orchestration, governance, and observability. 
 
 As you grow your agentic strategy, you are moving into a multi-agent world where agents need to work together effectively. Agents are more effective when given specific, granular tasks, necessitating reusable, task-specific agent architectures that can communicate and collaborate across a network. 
 
-Agent Orchestration Fabric provides an intelligent conductor (also known as an orchestrator or router) that's responsible for activating the appropriate agents at the right time for specific sub-tasks. A key differentiator is its ability to coordinate with any type of agent, ensuring heterogeneity and avoiding the need to be locked in to proprietary systems.
+Agent Fabric provides an intelligent conductor (also known as an orchestrator or router) that's responsible for activating the appropriate agents at the right time for specific sub-tasks. A key differentiator is its ability to coordinate with any type of agent, ensuring heterogeneity and avoiding the need to be locked in to proprietary systems.
 
 The conductor's logic is defined using a declarative YAML specification, which simplifies the definition of agent networks and aligns with the demand for flexible, non-proprietary models. This approach allows you to define the agent network at a high level of abstraction. The fabric manages a disparate agentic network, dynamically created and managed by the agent orchestrator to achieve a stated goal.
 
-Agent Orchestration Fabric:
+Agent Fabric:
 
 * Provides flexibility by enabling agents of any type to work together. Regardless of their origin, agents can talk to each other and work together seamlessly to accomplish specified business goals.
 * Offers capabilities for the discovery and design-time governance of agents, the actual orchestration itself (from simple sequential loops to sophisticated parallel, "farmer", observational, and human-in-the-loop patterns), and monitoring, observability, and runtime governance.
@@ -17,4 +17,3 @@ Agent Orchestration Fabric:
 • Ensures secure and governed deployments. Security is built into every stage, with policies applied via Flex Gateway to enforce granular permissions and governance. 
 
 == See Also
-
