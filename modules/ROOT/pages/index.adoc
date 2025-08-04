@@ -1,3 +1,3 @@
-= Agent Orchestration Fabric Overview
+= Agent Fabric Overview
 
 Placeholder description.
