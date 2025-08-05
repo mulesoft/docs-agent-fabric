@@ -1,19 +1,32 @@
-= Agent Fabric Overview
+= Agent Conductor Overview
 
-Agent Fabric aims to solve "agent sprawl" by providing a single, governed platform for the discovery, curation, execution, and lifecycle management of heterogeneous agents. Agent Fabric is a foundational framework built on the pillars of agent discoverability, orchestration, governance, and observability. 
+Agent Conductor helps you with your multi-agent strategy as you move into a multi-agent world. Its main function is to act as an intelligent orchestrator, or router, that ensures the correct agents are activated at the appropriate time to handle specific sub-tasks. This allows a network of different agents to work together to accomplish your business goals. 
 
-As you grow your agentic strategy, you are moving into a multi-agent world where agents need to work together effectively. Agents are more effective when given specific, granular tasks, necessitating reusable, task-specific agent architectures that can communicate and collaborate across a network. 
+Agent Conductor:
 
-Agent Fabric provides an intelligent conductor (also known as an orchestrator or router) that's responsible for activating the appropriate agents at the right time for specific sub-tasks. A key differentiator is its ability to coordinate with any type of agent, ensuring heterogeneity and avoiding the need to be locked in to proprietary systems.
+* Can coordinate with any type of agent, not just proprietary ones, which allows you to build a diverse network of agents.
 
-The conductor's logic is defined using a declarative YAML specification, which simplifies the definition of agent networks and aligns with the demand for flexible, non-proprietary models. This approach allows you to define the agent network at a high level of abstraction. The fabric manages a disparate agentic network, dynamically created and managed by the agent orchestrator to achieve a stated goal.
+* Leverages Einstein LLM by default for its reasoning and planning capabilities.
 
-Agent Fabric:
+* Integrates with MCP (MuleSoft Common Protocol) and A2A (Agent-to-Agent) connectors to automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers the Conductor can invoke by using an "allow-list" in the declarative specification file.
 
-* Provides flexibility by enabling agents of any type to work together. Regardless of their origin, agents can talk to each other and work together seamlessly to accomplish specified business goals.
-* Offers capabilities for the discovery and design-time governance of agents, the actual orchestration itself (from simple sequential loops to sophisticated parallel, "farmer", observational, and human-in-the-loop patterns), and monitoring, observability, and runtime governance.
-* Simplifies development and operations by providing a developer-centric experience with a frictionless, automated way to build, test, and deploy your agents to various environments,
-* Provides an agent registry (a central catalog) that allows you to easily find and reuse existing agents, accelerating development and minimizing conductor sprawl. It serves as a single source of truth for all vetted agents, establishing trust through rich metadata like ownership, versioning, and security posture.
-• Ensures secure and governed deployments. Security is built into every stage, with policies applied via Flex Gateway to enforce granular permissions and governance. 
+* Uses the A2A protocol's state management layer to track the progress of a workflow and maintain context in ongoing orchestrations.
+
+* Includes a max loop parameter to prevent runaway processes.
+
+* Provides basic observability and traceability. You will be able to view logs and traces after a workflow has been executed, which will help you debug and understand the decision paths taken.
+
+== Before You Begin
+
+You must:
+
+* Install Anypoint Code Builder.
+* Have an Anypoint Platform account.
+
+
 
 == See Also
+
+* xref:code-builder::index.adoc[]
+* xref:gateway::index.adoc[]
+* xref:exchange::index.adoc[]
