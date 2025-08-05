@@ -27,6 +27,5 @@ You must:
 
 == See Also
 
-* xref:code-builder::index.adoc[]
-* xref:gateway::index.adoc[]
+* xref:anypoint-code-builder::index.adoc[]
 * xref:exchange::index.adoc[]
