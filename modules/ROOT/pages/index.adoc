@@ -49,6 +49,12 @@ You must also have this software installed for your operating system:
 * Git
 * PowerShell for Windows
 
+== Getting Started with Agent Conductor (beta) Coming Soon!
+
+We are working on getting this documentation ready for you. In the meantime, you can watch this video to get started with Agent Conductor (beta).
+
+
+
 ////
 == Creating an Agent Domain
 
