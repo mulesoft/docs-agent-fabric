@@ -96,6 +96,16 @@ A description of what the tool takes as input (e.g., a JSON schema or natural la
 +
 A description of the tool's output
 
+== Publishing to Exchange
+
+After your agent domain project is configured, you can publish it to Anypoint Exchange as discoverable assets.
+
+. Open the Command Palette in Anypoint Code Builder.
+. Type and select `MuleSoft: Publish Agent Domain Project to Exchange (Beta)`.
+. Provide the asset version for the project when prompted.
++
+After the agent domain assets are published to Exchange, the conductors defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `conductors`, making them discoverable and reusable across your organization
+
 
 
 
