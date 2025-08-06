@@ -40,6 +40,15 @@ To use Agent Conductor (beta), you must have:
 * An Einstein instance with Einstein credits purchased for the beta 
 * Managed Flex Gateways
 
+You must also have this software installed for your operating system:
+
+* Visual Studio Code
+* Anypoint Code Builder
+* Node 20
+* Anypoint CLI
+* Git
+* PowerShell for Windows
+
 ////
 == Creating an Agent Domain
 
