@@ -1,5 +1,12 @@
 = Agent Conductor (Beta) Overview
 
+[NOTE]
+====
+NOT FOR PRODUCTION USE
+
+Agent Conductor is a beta service that is subject to the https://www.salesforce.com/company/legal/agreements/[Beta Services Terms at Agreements - Salesforce.com] or a written Unified Pilot Agreement, if executed by Customer, and the Non-GA Gen AI terms in the https://ptd.salesforce.com/[Product Terms Directory].
+====
+
 Use Agent Conductor (beta) to manage and coordinate the execution of multiple agents. Agent Conductor (beta) solves the problem of integrating and automating complex workflows that involve various agents and tools. 
 
 Complex tasks often require a series of steps, with each step potentially handled by a different agent or tool. Manually managing this process is difficult and prone to errors. Agent Conductor acts as the central hub for defining, validating, and executing these multi-step workflows.
