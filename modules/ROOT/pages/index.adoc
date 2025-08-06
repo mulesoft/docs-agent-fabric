@@ -6,7 +6,7 @@ Agent Conductor:
 
 * Can coordinate with any type of agent, not just proprietary ones, which allows you to build a diverse network of agents.
 
-* Leverages Einstein LLM by default for its reasoning and planning capabilities.
+* Uses Einstein LLM for its reasoning and planning capabilities.
 
 * Integrates with MCP (MuleSoft Common Protocol) and A2A (Agent-to-Agent) connectors to automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers the Conductor can invoke by using an "allow-list" in the declarative specification file.
 
@@ -22,6 +22,81 @@ You must:
 
 * Install Anypoint Code Builder.
 * Have an Anypoint Platform account.
+* Have an Einstein instance with Einstein credits purchased for the beta. 
+
+== Creating an Agent Domain
+
+Define your Agent Conductor's logic using a YAML file.
+
+. Open Anypoint Code Builder.
+. Log in to Anypoint Platform.
+. Open the Command Palette by pressing `Command/Control + Shift + P`.
+. Type and select `MuleSoft: Create an Agent Domain (Beta)`.
+. Provide a unique name for your agent domain project when prompted.
++
+This generates a new project containing an `agent-domain.yaml` file. This YAML file serves as the declarative specification for your conductor.
+
+=== Configuring the YAML File
+
+The `agent-domain.yaml` file defines the agent domain and can contain definitions for one or multiple conductors. Configure these elements in the `agent-domain.yml` file. 
+
+* LLM Configuration:
+** `llm`
++
+References an LLM configuration. Initially, Einstein AI is the only supported LLM.
+** einsteinAiConfigRef
++
+The name of an `<ms-einstein-ai:config>` element defined in the same application.
+** `modelApiName`
++
+The name of the model to use (the default is `sfdc_ai__DefaultOpenAIGPT35Turbo`).
+** `probability`
++
+The level of randomness applied to the model (the default is `0.8`).
+** `locale`
++
+The model’s locale (the default is `EN_US`).
+* Core Conductor Parameters:
+** `prompt`
++
+A required string that defines the user's task or goal for the conductor to execute.
+** `instructions`
++
+Optional additional instructions and hints for the LLM to consider when building its plan.
+** `groundings`
++
+Optional additional information (e.g., historical data) to provide to the LLM for context.
+** `conversationId`
++
+An optional unique identifier for the conversation; if not provided, one is automatically generated.
+** `maxLoops`
++
+An optional integer parameter that sets the default limit for how many iterations each loop execution can have (the default is `10`).
+* Tool Integration:
+** mcpServers
++
+A list of MCP servers that the conductor can use as tools. The module automatically introspects these servers to discover and make their tools available to the LLM.
+** a2aClients
++
+A list of A2A clients that the conductor can use as tools, following a similar pattern to MCP integration.
+** `tools`
++
+A list of custom tools that can be defined directly within the application itself. Each custom tool requires:
++
+** `name`
++
+A unique name within this context.
+** `description`
++
+Description of the tool's purpose, capabilities, and when to use it.
+** `input`
++
+A description of what the tool takes as input (e.g., a JSON schema or natural language description).
+** `output`
++
+A description of the tool's output
+
+
 
 
 
