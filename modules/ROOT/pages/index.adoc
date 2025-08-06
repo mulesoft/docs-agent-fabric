@@ -1,3 +1,205 @@
-= Agent Fabric Overview
+= Agent Conductor (Beta) Overview
 
-Placeholder description.
+[NOTE]
+====
+NOT FOR PRODUCTION USE
+
+Agent Conductor is a beta service that is subject to the https://www.salesforce.com/company/legal/agreements/[Beta Services Terms at Agreements - Salesforce.com] or a written Unified Pilot Agreement, if executed by Customer, and the Non-GA Gen AI terms in the https://ptd.salesforce.com/[Product Terms Directory].
+====
+
+Use Agent Conductor (beta) to manage and coordinate the execution of multiple agents. Agent Conductor (beta) solves the problem of integrating and automating complex workflows that involve various agents and tools. 
+
+Complex tasks often require a series of steps, with each step potentially handled by a different agent or tool. Manually managing this process is difficult and prone to errors. Agent Conductor acts as the central hub for defining, validating, and executing these multi-step workflows.
+
+Agent Conductor (beta) allows you to define your desired workflow in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business logic of your workflow without needing to understand the inner workings of the orchestration engine.
+
+By using Agent Conductor (beta), you can create robust, automated workflows with several key benefits:
+
+* Simplified Development
++
+You define your agent workflows using a simple YAML file, which is much easier and faster than writing complex code.
+
+* Safety and Governance
++
+The conductor validates your workflow against predefined policies before execution, acting as a safety guardrail.
+
+* Observability
++
+After a workflow runs, you can view logs and traces to understand the execution path, debug issues, and ensure traceability.
+
+* Flexibility
++
+Agent Conductor supports various workflow patterns, including sequential, parallel, and human-in-the-loop processes, allowing you to handle a wide range of use cases.
++
+Agent Conductor can coordinate with any type of agent, not just proprietary ones, which allows you to build a diverse network of agents.
+
+* Tool and Agent Invocation
++
+Manages the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
++
+Agent Conductor uses Einstein LLM for its reasoning and planning capabilities and integrates with MCP (Model Context Protocol) and A2A (Agent-to-Agent) connectors to automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers the Conductor can invoke by using an "allow-list".
+
+== Before You Begin
+
+To use Agent Conductor (beta), you must have:
+
+* An Anypoint Platform (Titanium or Anypoint Integration Advanced package)
+* An Einstein instance with Einstein credits purchased for the beta 
+* Managed Flex Gateways
+
+You must also have this software installed for your operating system:
+
+* Visual Studio Code
+* Anypoint Code Builder
+* Node 20
+* Anypoint CLI
+* Git
+* PowerShell for Windows
+
+== Getting Started with Agent Conductor (beta) Coming Soon!
+
+We are working on getting this documentation ready for you. In the meantime, you can watch this video to get started with Agent Conductor (beta).
+
+
+
+////
+== Creating an Agent Domain
+
+Define your Agent Conductor's logic using a YAML file.
+
+. Open Anypoint Code Builder.
+. Log in to Anypoint Platform.
+. Open the Command Palette by pressing `Command/Control + Shift + P`.
+. Type and select `MuleSoft: Create an Agent Domain (Beta)`.
+. Provide a unique name for your agent domain project when prompted.
++
+This generates a new project containing an `agent-domain.yaml` file. This YAML file serves as the declarative specification for your conductor.
+////
+
+== Setting up Anypoint Code Builder
+
+. Download and install https://code.visualstudio.com/download[Visual Studio Code].
++
+If you already have Visual Studio Code installed, check for updates:
+.. In Visual Studio Code, right-click *Code*, and select *Check for Updates*.
+. xref:anypoint-code-builder::start-acb.adoc[Install Anypoint Code Builder].
+. Install the Code Command from VSCode:
+.. Open Visual Studio Code.
+.. Press `cmd+shift+p` to launch the command palette. 
+.. Type `install code`.
+.. Select `Install 'code' command in PATH`.
+. (Windows) https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5&viewFallbackFrom=powershell-7.3[Install PowerShell].
+. Install Git:
++
+On Windows:
++
+... https://git-scm.com/download/win[Install Git for Windows].
+... Run `git bash` from the Start menu.
++
+On Mac:
++
+.. Open a new terminal window. 
+.. Verify that you have homebrew installed by entering `brew --version`. 
++
+If you receive a version, you have homebrew installed.
++
+.. If you don't have homebrew installed, enter:
++   
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+.. Enter `brew install git`.
+. Log in to your Anypoint Platform account.
+
+== Setting up the CLI
+
+. Install Node:
+.. Download Node 20 (v20.19.4) for your OS from here.
+.. Follow the steps in the installer.
+.. After Node is installed, open a terminal and verify `node -v` returns Node 20 version.
+. Download CLI package and find where the installed package is located.[Download and install Anypoint CLI].
+
+
+=== Configuring the YAML File
+
+The `agent-domain.yaml` file defines the agent domain and can contain definitions for one or multiple conductors. Configure these elements in the `agent-domain.yml` file. 
+
+* LLM Configuration:
+** `llm`
++
+References an LLM configuration. Initially, Einstein AI is the only supported LLM.
+** `einsteinAIConfigRef`
++
+The name of an `<ms-einstein-ai:config>` element defined in the same application.
+** `modelApiName`
++
+The name of the model to use (the default is `sfdc_ai__DefaultOpenAIGPT35Turbo`).
+** `probability`
++
+The level of randomness applied to the model (the default is `0.8`).
+** `locale`
++
+The model’s locale (the default is `EN_US`).
+* Core Conductor Parameters:
+** `prompt`
++
+A required string that defines the user's task or goal for the conductor to execute.
+** `instructions`
++
+Optional additional instructions and hints for the LLM to consider when building its plan.
+** `groundings`
++
+Optional additional information (e.g., historical data) to provide to the LLM for context.
+** `conversationId`
++
+An optional unique identifier for the conversation; if not provided, one is automatically generated.
+** `maxLoops`
++
+An optional integer parameter that sets the default limit for how many iterations each loop execution can have (the default is `10`).
+* Tool Integration:
+** mcpServers
++
+A list of MCP servers that the conductor can use as tools. The module automatically introspects these servers to discover and make their tools available to the LLM.
+** a2aClients
++
+A list of A2A clients that the conductor can use as tools, following a similar pattern to MCP integration.
+** `tools`
++
+A list of custom tools that can be defined directly within the application itself. Each custom tool requires:
++
+** `name`
++
+A unique name within this context.
+** `description`
++
+Description of the tool's purpose, capabilities, and when to use it.
+** `input`
++
+A description of what the tool takes as input (e.g., a JSON schema or natural language description).
+** `output`
++
+A description of the tool's output
+
+==== Example YAML File
+
+
+```yaml
+
+```
+
+== Publishing to Exchange
+
+After your agent domain project is configured, you can publish it to Anypoint Exchange as discoverable assets.
+
+. Open the Command Palette in Anypoint Code Builder.
+. Type and select `MuleSoft: Publish Agent Domain Project to Exchange (Beta)`.
+. Provide the asset version for the project when prompted.
++
+After the agent domain assets are published to Exchange, the conductors defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `conductors`, making them discoverable and reusable across your organization
+
+
+
+
+
+== See Also
+
+* xref:anypoint-code-builder::index.adoc[]
+* xref:exchange::index.adoc[]

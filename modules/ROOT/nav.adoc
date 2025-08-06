@@ -1,2 +1,2 @@
-.xref:index.adoc[MuleSoft MCP Server]
-* xref:index.adoc[MuleSoft MCP Server Overview]
+.xref:index.adoc[MuleSoft Agent Fabric]
+* xref:index.adoc[Agent Fabric Overview]
