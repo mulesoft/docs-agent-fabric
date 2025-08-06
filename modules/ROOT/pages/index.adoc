@@ -1,29 +1,46 @@
-= Agent Conductor Overview
+= Agent Conductor (Beta) Overview
 
-Agent Conductor helps you with your multi-agent strategy as you move into a multi-agent world. Its main function is to act as an intelligent orchestrator, or router, that ensures the correct agents are activated at the appropriate time to handle specific sub-tasks. This allows a network of different agents to work together to accomplish your business goals. 
+Use Agent Conductor (beta) to manage and coordinate the execution of multiple agents. Agent Conductor (beta) solves the problem of integrating and automating complex workflows that involve various agents and tools. 
 
-Agent Conductor:
+Complex tasks often require a series of steps, with each step potentially handled by a different agent or tool. Manually managing this process is difficult and prone to errors. Agent Conductor acts as the central hub for defining, validating, and executing these multi-step workflows.
 
-* Can coordinate with any type of agent, not just proprietary ones, which allows you to build a diverse network of agents.
+Agent Conductor (beta) allows you to define your desired workflow in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business logic of your workflow without needing to understand the inner workings of the orchestration engine.
 
-* Uses Einstein LLM for its reasoning and planning capabilities.
+By using Agent Conductor (beta), you can create robust, automated workflows with several key benefits:
 
-* Integrates with MCP (MuleSoft Common Protocol) and A2A (Agent-to-Agent) connectors to automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers the Conductor can invoke by using an "allow-list" in the declarative specification file.
+* Simplified Development
++
+You define your agent workflows using a simple YAML file, which is much easier and faster than writing complex code.
 
-* Uses the A2A protocol's state management layer to track the progress of a workflow and maintain context in ongoing orchestrations.
+* Safety and Governance
++
+The conductor validates your workflow against predefined policies before execution, acting as a safety guardrail.
 
-* Includes a max loop parameter to prevent runaway processes.
+* Observability
++
+After a workflow runs, you can view logs and traces to understand the execution path, debug issues, and ensure traceability.
 
-* Provides basic observability and traceability. You will be able to view logs and traces after a workflow has been executed, which will help you debug and understand the decision paths taken.
+* Flexibility
++
+Agent Conductor supports various workflow patterns, including sequential, parallel, and human-in-the-loop processes, allowing you to handle a wide range of use cases.
++
+Agent Conductor can coordinate with any type of agent, not just proprietary ones, which allows you to build a diverse network of agents.
+
+* Tool and Agent Invocation
++
+Manages the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
++
+Agent Conductor uses Einstein LLM for its reasoning and planning capabilities and integrates with MCP (Model Context Protocol) and A2A (Agent-to-Agent) connectors to automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers the Conductor can invoke by using an "allow-list".
 
 == Before You Begin
 
-You must:
+To use Agent Conductor (beta), you must have:
 
-* Install Anypoint Code Builder.
-* Have an Anypoint Platform account.
-* Have an Einstein instance with Einstein credits purchased for the beta. 
+* An Anypoint Platform (Titanium or Anypoint Integration Advanced package)
+* An Einstein instance with Einstein credits purchased for the beta 
+* Managed Flex Gateways
 
+////
 == Creating an Agent Domain
 
 Define your Agent Conductor's logic using a YAML file.
@@ -35,6 +52,47 @@ Define your Agent Conductor's logic using a YAML file.
 . Provide a unique name for your agent domain project when prompted.
 +
 This generates a new project containing an `agent-domain.yaml` file. This YAML file serves as the declarative specification for your conductor.
+////
+
+== Setting up Anypoint Code Builder
+
+. Download and install https://code.visualstudio.com/download[Visual Studio Code].
++
+If you already have Visual Studio Code installed, check for updates:
+.. In Visual Studio Code, right-click *Code*, and select *Check for Updates*.
+. xref:anypoint-code-builder::start-acb.adoc[Install Anypoint Code Builder].
+. Install the Code Command from VSCode:
+.. Open Visual Studio Code.
+.. Press `cmd+shift+p` to launch the command palette. 
+.. Type `install code`.
+.. Select `Install 'code' command in PATH`.
+. (Windows) https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5&viewFallbackFrom=powershell-7.3[Install PowerShell].
+. Install Git:
++
+On Windows:
+... https://git-scm.com/download/win[Install Git for Windows].
+... Run `git bash` from the Start menu.
++
+On Mac:
+.. Open a new terminal window. 
+.. Verify that you have homebrew installed by entering `brew --version`. 
++
+If you receive a version, you have homebrew installed.
++
+.. If you don't have homebrew installed, enter:
++   
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+.. Enter `brew install git`.
+. Log in to your Anypoint Platform account.
+
+== Setting up the CLI
+
+. Install Node:
+.. Download Node 20 (v20.19.4) for your OS from here.
+.. Follow the steps in the installer.
+.. After Node is installed, open a terminal and verify `node -v` returns Node 20 version.
+. Download CLI package and find where the installed package is located.[Download and install Anypoint CLI].
+
 
 === Configuring the YAML File
 
@@ -44,7 +102,7 @@ The `agent-domain.yaml` file defines the agent domain and can contain definition
 ** `llm`
 +
 References an LLM configuration. Initially, Einstein AI is the only supported LLM.
-** einsteinAiConfigRef
+** `einsteinAIConfigRef`
 +
 The name of an `<ms-einstein-ai:config>` element defined in the same application.
 ** `modelApiName`
@@ -95,6 +153,13 @@ A description of what the tool takes as input (e.g., a JSON schema or natural la
 ** `output`
 +
 A description of the tool's output
+
+==== Example YAML File
+
+
+```yaml
+
+```
 
 == Publishing to Exchange
 
