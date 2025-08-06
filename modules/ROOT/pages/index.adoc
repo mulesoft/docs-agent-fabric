@@ -92,10 +92,12 @@ If you already have Visual Studio Code installed, check for updates:
 . Install Git:
 +
 On Windows:
++
 ... https://git-scm.com/download/win[Install Git for Windows].
 ... Run `git bash` from the Start menu.
 +
 On Mac:
++
 .. Open a new terminal window. 
 .. Verify that you have homebrew installed by entering `brew --version`. 
 +
