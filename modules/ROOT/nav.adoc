@@ -1,2 +1,2 @@
 .xref:index.adoc[MuleSoft Agent Fabric]
-* xref:index.adoc[Agent Fabric]
+* xref:index.adoc[Overview]
