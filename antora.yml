@@ -1,5 +1,5 @@
 name: agent-fabric
 title: Agent Fabric
-version: latest
+version: ~
 nav:
 - modules/ROOT/nav.adoc
