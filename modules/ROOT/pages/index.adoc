@@ -1,43 +1,30 @@
-= Agent Conductor (Beta) Overview
+= Agent Fabric Overview
 
-[NOTE]
-====
-NOT FOR PRODUCTION USE
+Agent Fabric manages and coordinates the execution of agents across your enterprise, regardless of where they’re deployed. Agent Fabric solves the problem of integrating and automating complex processes that involve multiple agents and tools. 
 
-Agent Conductor is a beta service that is subject to the https://www.salesforce.com/company/legal/agreements/[Beta Services Terms at Agreements - Salesforce.com] or a written Unified Pilot Agreement, if executed by Customer, and the Non-GA Gen AI terms in the https://ptd.salesforce.com/[Product Terms Directory].
-====
+Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. Broker groups (networks of agents in a domain) act as central hubs for defining, validating, and executing these multistep processes.
 
-Use Agent Conductor (beta) to manage and coordinate the execution of multiple agents. Agent Conductor (beta) solves the problem of integrating and automating complex workflows that involve various agents and tools. 
+Define your ‌agent network in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business constraints and context of your process without needing to understand the inner workings of the orchestration engine.
 
-Complex tasks often require a series of steps, with each step potentially handled by a different agent or tool. Manually managing this process is difficult and prone to errors. Agent Conductor acts as the central hub for defining, validating, and executing these multi-step workflows.
-
-Agent Conductor (beta) allows you to define your desired workflow in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business logic of your workflow without needing to understand the inner workings of the orchestration engine.
-
-By using Agent Conductor (beta), you can create robust, automated workflows with several key benefits:
+Create robust, automated agent networks with these key benefits.
 
 * Simplified Development
 +
-You define your agent workflows using a simple YAML file, which is much easier and faster than writing complex code.
-
+Define your agent processes using a simple YAML file, which is easier and faster than writing complex code.
 * Safety and Governance
 +
-The conductor validates your workflow against predefined policies before execution, acting as a safety guardrail.
-
+A broker group validates your agent network against predefined policies before execution, acting as a safety guardrail.
 * Observability
 +
-After a workflow runs, you can view logs and traces to understand the execution path, debug issues, and ensure traceability.
-
+After a process runs, view logs and traces to understand the execution path, debug issues, and ensure traceability.
 * Flexibility
 +
-Agent Conductor supports various workflow patterns, including sequential, parallel, and human-in-the-loop processes, allowing you to handle a wide range of use cases.
-+
-Agent Conductor can coordinate with any type of agent, not just proprietary ones, which allows you to build a diverse network of agents.
-
+Broker groups coordinate with any type of agent, regardless of where it’s built and deployed, which allows you to build a diverse network of agents.
 * Tool and Agent Invocation
 +
-Manages the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
-+
-Agent Conductor uses Einstein LLM for its reasoning and planning capabilities and integrates with MCP (Model Context Protocol) and A2A (Agent-to-Agent) connectors to automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers the Conductor can invoke by using an "allow-list".
+Manage the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
+
+Broker groups use OpenAI for reasoning and planning capabilities. Broker groups integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A). These connectors let you automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers a broker group can invoke by using an allowlist.
 
 == Before You Begin
 
@@ -56,9 +43,6 @@ You must also have this software installed for your operating system:
 * Git
 * PowerShell for Windows
 
-== Getting Started with Agent Conductor (beta) Coming Soon!
-
-We are working on getting this documentation ready for you. In the meantime, you can watch this video to get started with Agent Conductor (beta).
 
 
 
