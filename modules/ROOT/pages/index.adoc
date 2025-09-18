@@ -26,164 +26,50 @@ Manage the invocation of both deterministic (tool-based) and probabilistic (LLM-
 
 Broker groups use OpenAI for reasoning and planning capabilities. Broker groups integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A). These connectors let you automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers a broker group can invoke by using an allowlist.
 
+== Architecture
+
+[NEED DIAGRAM]
+
+== Basic Concepts 
+
+=== What’s a broker?
+
+A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers are assembled into groups so that Agent Fabric can leverage them to accomplish tasks.
+
+=== What’s a broker group?
+
+A broker group is part of an agent network. It consists of a group of brokers in the same domain and a set of external services (agents and MCP servers) that assist them. You define broker groups in a YAML template which is provided for you.
+
+=== What’s an external agent?
+
+An external agent is outside your broker group. These agents can either be brokers defined in a different broker group, or another agent used in your company.
+
 == Before You Begin
 
-To use Agent Conductor (beta), you must have:
+To use Agent Fabric, you must have:
 
-* An Anypoint Platform (Titanium or Anypoint Integration Advanced package)
-* An Einstein instance with Einstein credits purchased for the beta 
-* Managed Flex Gateways
+* An Anypoint Platform (Titanium or Anypoint Integration Advanced package). You can use an existing account or create one from Anypoint Platform.
+* An OpenAI instance and login credentials. 
+* A managed Flex Gateway.
+* CloudHub 2.0 with Managed Flex Gateway and private space entitlements.
 
-You must also have this software installed for your operating system:
+Also, have this software installed.
 
-* Visual Studio Code
-* Anypoint Code Builder
-* Node 20
-* Anypoint CLI
-* Git
-* PowerShell for Windows
+* Visual Studio Code (VS Code) with latest updates and code command configured in $PATH. For more information, see https://code.visualstudio.com/docs/setup/mac#_launch-vs-code-from-the-command-line[Launch VS Code from the command line].
+* PowerShell (Windows operating systems only). For more information, see https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5&viewFallbackFrom=powershell-7.3[Installing PowerShell on Windows].
+PowerShell (Windows operating systems only). For more information, see Installing PowerShell on Windows.
 
+== Authentication Types
 
+These authentication types are supported.
 
-
-////
-== Creating an Agent Domain
-
-Define your Agent Conductor's logic using a YAML file.
-
-. Open Anypoint Code Builder.
-. Log in to Anypoint Platform.
-. Open the Command Palette by pressing `Command/Control + Shift + P`.
-. Type and select `MuleSoft: Create an Agent Domain (Beta)`.
-. Provide a unique name for your agent domain project when prompted.
-+
-This generates a new project containing an `agent-domain.yaml` file. This YAML file serves as the declarative specification for your conductor.
-////
-
-== Setting up Anypoint Code Builder
-
-. Download and install https://code.visualstudio.com/download[Visual Studio Code].
-+
-If you already have Visual Studio Code installed, check for updates:
-.. In Visual Studio Code, right-click *Code*, and select *Check for Updates*.
-. xref:anypoint-code-builder::start-acb.adoc[Install Anypoint Code Builder].
-. Install the Code Command from VSCode:
-.. Open Visual Studio Code.
-.. Press `cmd+shift+p` to launch the command palette. 
-.. Type `install code`.
-.. Select `Install 'code' command in PATH`.
-. (Windows) https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5&viewFallbackFrom=powershell-7.3[Install PowerShell].
-. Install Git:
-+
-On Windows:
-+
-... https://git-scm.com/download/win[Install Git for Windows].
-... Run `git bash` from the Start menu.
-+
-On Mac:
-+
-.. Open a new terminal window. 
-.. Verify that you have homebrew installed by entering `brew --version`. 
-+
-If you receive a version, you have homebrew installed.
-+
-.. If you don't have homebrew installed, enter:
-+   
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-.. Enter `brew install git`.
-. Log in to your Anypoint Platform account.
-
-== Setting up the CLI
-
-. Install Node:
-.. Download Node 20 (v20.19.4) for your OS from here.
-.. Follow the steps in the installer.
-.. After Node is installed, open a terminal and verify `node -v` returns Node 20 version.
-. Download CLI package and find where the installed package is located.[Download and install Anypoint CLI].
-
-
-=== Configuring the YAML File
-
-The `agent-domain.yaml` file defines the agent domain and can contain definitions for one or multiple conductors. Configure these elements in the `agent-domain.yml` file. 
-
-* LLM Configuration:
-** `llm`
-+
-References an LLM configuration. Initially, Einstein AI is the only supported LLM.
-** `einsteinAIConfigRef`
-+
-The name of an `<ms-einstein-ai:config>` element defined in the same application.
-** `modelApiName`
-+
-The name of the model to use (the default is `sfdc_ai__DefaultOpenAIGPT35Turbo`).
-** `probability`
-+
-The level of randomness applied to the model (the default is `0.8`).
-** `locale`
-+
-The model’s locale (the default is `EN_US`).
-* Core Conductor Parameters:
-** `prompt`
-+
-A required string that defines the user's task or goal for the conductor to execute.
-** `instructions`
-+
-Optional additional instructions and hints for the LLM to consider when building its plan.
-** `groundings`
-+
-Optional additional information (e.g., historical data) to provide to the LLM for context.
-** `conversationId`
-+
-An optional unique identifier for the conversation; if not provided, one is automatically generated.
-** `maxLoops`
-+
-An optional integer parameter that sets the default limit for how many iterations each loop execution can have (the default is `10`).
-* Tool Integration:
-** mcpServers
-+
-A list of MCP servers that the conductor can use as tools. The module automatically introspects these servers to discover and make their tools available to the LLM.
-** a2aClients
-+
-A list of A2A clients that the conductor can use as tools, following a similar pattern to MCP integration.
-** `tools`
-+
-A list of custom tools that can be defined directly within the application itself. Each custom tool requires:
-+
-** `name`
-+
-A unique name within this context.
-** `description`
-+
-Description of the tool's purpose, capabilities, and when to use it.
-** `input`
-+
-A description of what the tool takes as input (e.g., a JSON schema or natural language description).
-** `output`
-+
-A description of the tool's output
-
-==== Example YAML File
-
-
-```yaml
-
-```
-
-== Publishing to Exchange
-
-After your agent domain project is configured, you can publish it to Anypoint Exchange as discoverable assets.
-
-. Open the Command Palette in Anypoint Code Builder.
-. Type and select `MuleSoft: Publish Agent Domain Project to Exchange (Beta)`.
-. Provide the asset version for the project when prompted.
-+
-After the agent domain assets are published to Exchange, the conductors defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `conductors`, making them discoverable and reusable across your organization
-
-
-
+* Basic
+* Client Credentials
+* Anypoint Client Credentials
 
 
 == See Also
 
+* xref:agent-fabric-get-started.adoc[]
 * xref:anypoint-code-builder::index.adoc[]
 * xref:exchange::index.adoc[]
