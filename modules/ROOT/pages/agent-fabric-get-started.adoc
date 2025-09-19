@@ -1,13 +1,42 @@
 = Get Started with Agent Fabric
 
 
+== Discover and Register Agents and Tools 
 
-== Publishing to Exchange
+This phase focuses on ensuring that all necessary agentic assets (Agents, MCP Servers, and LLM providers) are available for use in the enterprise network. Assets are published, reused, discovered, and their metadata is managed in Anypoint Exchange.
 
-After your agent domain project is configured, you can publish it to Anypoint Exchange as discoverable assets.
+== Design and Build the Agent Network 
 
-. Open the Command Palette in Anypoint Code Builder.
-. Type and select `MuleSoft: Publish Agent Domain Project to Exchange (Beta)`.
-. Provide the asset version for the project when prompted.
-+
-After the agent domain assets are published to Exchange, the conductors defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `conductors`, making them discoverable and reusable across your organization.
+This phase involves creating a declarative specification that defines how the agents and tools work together to accomplish a business goal. The build experience takes place primarily within Anypoint Code Builder, which enables developers to create the Agent Network project.
+
+=== 1. Creating the Agent Network Project
+
+
+
+== Publish and Deploy the Broker 
+
+After the broker is authored, publish the assets to Anypoint Exchange and then deploy the assets in Runtime Manager.
+
+=== 1. Publishing the Broker
+
+After your agent agent network project is configured, you can publish it to Anypoint Exchange as discoverable assets. After the agent domain assets are published to Exchange, the brokers defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `brokers`, making them discoverable and reusable across your organization.
+
+
+=== 2. Deploying the Broker
+
+Deployment requires setting configuration variables and specifying runtime details such as the environment and gateway targets.
+
+
+== Govern and Secure the Agent Fabric
+
+This phase ensures that security, compliance, and operational guardrails are applied to the deployed agent network. This is managed through API Manager and enforced by Flex Gateway. This includes managing connection details and policies.
+
+
+== Observe and Visualize Agent Fabric 
+
+After deployment, you need visibility into how the network is performing and interacting. View a visual map of all agents, brokers, and MCP servers and their connections in Agent Visualizer. 
+
+You can also access operational data for each assetsuch as logs, metrics, and traces through Anypoint Monitoring and API Manager
+
+
+== See Also
