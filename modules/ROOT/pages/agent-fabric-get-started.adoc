@@ -1,42 +1,81 @@
 = Get Started with Agent Fabric
 
 
+[[discover-and-register-agents-and-tools]]
 == Discover and Register Agents and Tools 
 
-This phase focuses on ensuring that all necessary agentic assets (Agents, MCP Servers, and LLM providers) are available for use in the enterprise network. Assets are published, reused, discovered, and their metadata is managed in Anypoint Exchange.
+Use Anypoint Exchange to discover and register agentic assets (agents, brokers, MCP Servers, and so on). These assets are published and their metadata is managed in Anypoint Exchange.
 
+[%header,cols="25a,25a,50a"]
+|===
+| Goal | Product | Key Steps
+
+| Make agentic assets discoverable and reusable | Anypoint Exchange | Assets are registered with definitions (A2A cards) and stored in Exchange. The assets are searchable by tags, metadata, and names.
+| Register new assets | Anypoint Exchange | Assets are registered with definitions ("cards") and stored in Exchange. The assets are searchable by tags, metadata, and names.
+| Classify and describe assets | Anypoint Exchange | Assets are classified and described with tags, metadata, types,and names.
+| Import Agentforce agents | Anypoint Exchange | Pull Agentforce agents into Exchange automatically via synchronization in Exchange Settings.
+| Manage deployment details | Anypoint Exchange | Specify environment-specific URLs, keys,secrets, and rate-limit tiers for both managed and unmanaged assets during registration. These details are used for runtime resolution by the Governance capability.
+|===
+
+[[design-and-build-the-agent-network]]
 == Design and Build the Agent Network 
 
 This phase involves creating a declarative specification that defines how the agents and tools work together to accomplish a business goal. The build experience takes place primarily within Anypoint Code Builder, which enables developers to create the Agent Network project.
 
-=== 1. Creating the Agent Network Project
+[%header,cols="25a,25a,50a"]
+|===
+| Goal | Product | Key Steps
+
+|  |  | 
+|===
 
 
 
+[[publish-and-deploy-the-broker]]
 == Publish and Deploy the Broker 
 
 After the broker is authored, publish the assets to Anypoint Exchange and then deploy the assets in Runtime Manager.
 
-=== 1. Publishing the Broker
-
-After your agent agent network project is configured, you can publish it to Anypoint Exchange as discoverable assets. After the agent domain assets are published to Exchange, the brokers defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `brokers`, making them discoverable and reusable across your organization.
-
-
-=== 2. Deploying the Broker
-
-Deployment requires setting configuration variables and specifying runtime details such as the environment and gateway targets.
+[%header,cols="25a,25a,50a"]
+|===
+| Goal | Product | Key Steps
+| Publish the agent network project to Anypoint Exchange | Anypoint Exchange | Publish the agent network project to Anypoint Exchange as discoverable assets. After the agent domain assets are published to Exchange, the brokers defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `brokers`, making them discoverable and reusable across your organization.
+| Deploy the broker in Runtime Manager | Runtime Manager | Set configuration variables and specify runtime details such as the environment and gateway targets.
+|===
 
 
+[[govern-and-secure-agent-fabric]]
 == Govern and Secure the Agent Fabric
 
 This phase ensures that security, compliance, and operational guardrails are applied to the deployed agent network. This is managed through API Manager and enforced by Flex Gateway. This includes managing connection details and policies.
 
+[%header,cols="25a,25a,50a"]
+|===
+| Goal | Product | Key Steps
 
+|  |  | 
+|===
+
+
+[[observe-and-visualize-agent-fabric]]
 == Observe and Visualize Agent Fabric 
 
 After deployment, you need visibility into how the network is performing and interacting. View a visual map of all agents, brokers, and MCP servers and their connections in Agent Visualizer. 
 
-You can also access operational data for each assetsuch as logs, metrics, and traces through Anypoint Monitoring and API Manager
+You can also access operational data for each asset such as logs, metrics, and traces through Anypoint Monitoring and API Manager
+
+[%header,cols="25a,25a,50a"]
+|===
+| Goal | Product | Key Steps
+
+|  |  | 
+|===
 
 
 == See Also
+
+* xref:code-builder::index.adoc[Anypoint Code Builder]
+* xref:exchange::index.adoc[Anypoint Exchange]
+* xref:monitoring::index.adoc[Anypoint Monitoring]
+* xref:api-manager::index.adoc[API Manager]
+* xref:agent-visualizer::index.adoc[Agent Visualizer]
