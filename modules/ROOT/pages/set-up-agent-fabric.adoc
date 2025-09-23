@@ -9,7 +9,8 @@
 
 Before you begin, make sure you have:
 
-*CloudHub 2.0 with Managed Flex Gateway and private space entitlements.
+* CloudHub 2.0 with Managed Flex Gateway and private space entitlements.
+* 
 
 
 . Open Anypoint Platform.
