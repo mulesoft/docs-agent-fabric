@@ -4,4 +4,4 @@ include::partial$partial-define-agent-network-yaml.adoc[tags=agent-network-yaml-
 
 == Broker Groups in the YAML File
 
-
+include::partial$partial-define-agent-network-yaml.adoc[tags=broker-groups-in-yaml]
