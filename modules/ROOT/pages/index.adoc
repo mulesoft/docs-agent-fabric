@@ -30,6 +30,7 @@ Broker groups use OpenAI for reasoning and planning capabilities. Broker groups 
 
 [NEED DIAGRAM]
 
+
 == Basic Concepts 
 
 === What’s a broker?
@@ -44,28 +45,35 @@ A broker group is part of an agent network. It consists of a group of brokers in
 
 An external agent is outside your broker group. These agents can either be brokers defined in a different broker group, or another agent used in your company.
 
-== Before You Begin
+== Use Cases
 
-To use Agent Fabric, you must have:
+== Considerations
 
-* An Anypoint Platform (Titanium or Anypoint Integration Advanced package). You can use an existing account or create one from Anypoint Platform.
-* An OpenAI instance and login credentials. 
-* A managed Flex Gateway.
-* CloudHub 2.0 with Managed Flex Gateway and private space entitlements.
+=== Agent2Agent (A2A) Protocol
 
-Also, have this software installed.
+* Brokers use the A2A protocol to accept requests to reach other agents. 
+* A2A specification 0.2.5 is supported.
+* Text-based prompts and responses are supported. Image and binary message/artifact types aren’t supported.
+* These A2A features aren't available.
+** Task History
+** Push Notifications Config
+** Streaming
 
-* Visual Studio Code (VS Code) with latest updates and code command configured in $PATH. For more information, see https://code.visualstudio.com/docs/setup/mac#_launch-vs-code-from-the-command-line[Launch VS Code from the command line].
-* PowerShell (Windows operating systems only). For more information, see https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5&viewFallbackFrom=powershell-7.3[Installing PowerShell on Windows].
-PowerShell (Windows operating systems only). For more information, see Installing PowerShell on Windows.
-
-== Authentication Types
+=== Authentication Types
 
 These authentication types are supported.
 
 * Basic
 * Client Credentials
 * Anypoint Client Credentials
+
+== Before You Begin
+
+To use Agent Fabric, make sure you have:
+
+* A tenant relationship established with a trusted Salesforce organization.
+* An Anypoint Platform (Titanium or Anypoint Integration Advanced package). You can use an existing account or create one from Anypoint Platform.
+* An OpenAI instance and login credentials.
 
 
 == See Also

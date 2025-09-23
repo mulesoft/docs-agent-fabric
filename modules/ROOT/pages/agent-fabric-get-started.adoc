@@ -1,26 +1,25 @@
 = Get Started with Agent Fabric
 
+image::agent-fabric-pillars.png[]
 
 [[discover-and-register-agents-and-tools]]
 == Discover and Register Agents and Tools 
 
-Use Anypoint Exchange to discover and register agentic assets (agents, brokers, MCP Servers, and so on). These assets are published and their metadata is managed in Anypoint Exchange.
+Use Anypoint Exchange to discover agentic assets (agents, brokers, MCP Servers, and so on). These assets are published and their metadata is managed in Anypoint Exchange.
 
 [%header,cols="25a,25a,50a"]
 |===
 | Goal | Product | Key Steps
 
-| Make agentic assets discoverable and reusable | Anypoint Exchange | Assets are registered with definitions (A2A cards) and stored in Exchange. The assets are searchable by tags, metadata, and names.
-| Register new assets | Anypoint Exchange | Assets are registered with definitions ("cards") and stored in Exchange. The assets are searchable by tags, metadata, and names.
+| Make agentic assets discoverable and reusable | Anypoint Exchange | Each asset in an agent network project is published with definitions (A2A cards) and stored in Exchange. The assets are searchable by tags, metadata, and names.
 | Classify and describe assets | Anypoint Exchange | Assets are classified and described with tags, metadata, types,and names.
-| Import Agentforce agents | Anypoint Exchange | Pull Agentforce agents into Exchange automatically via synchronization in Exchange Settings.
-| Manage deployment details | Anypoint Exchange | Specify environment-specific URLs, keys,secrets, and rate-limit tiers for both managed and unmanaged assets during registration. These details are used for runtime resolution by the Governance capability.
+| Import Agentforce agents | Anypoint Exchange | Import Agentforce agents into Exchange automatically via synchronization in Exchange Settings.
 |===
 
 [[design-and-build-the-agent-network]]
 == Design and Build the Agent Network 
 
-This phase involves creating a declarative specification that defines how the agents and tools work together to accomplish a business goal. The build experience takes place primarily within Anypoint Code Builder, which enables developers to create the Agent Network project.
+Build an agent network project. Define how the agents and tools work together to accomplish your goals.
 
 [%header,cols="25a,25a,50a"]
 |===
@@ -28,7 +27,6 @@ This phase involves creating a declarative specification that defines how the ag
 
 |  |  | 
 |===
-
 
 
 [[publish-and-deploy-the-broker]]
@@ -62,7 +60,7 @@ This phase ensures that security, compliance, and operational guardrails are app
 
 After deployment, you need visibility into how the network is performing and interacting. View a visual map of all agents, brokers, and MCP servers and their connections in Agent Visualizer. 
 
-You can also access operational data for each asset such as logs, metrics, and traces through Anypoint Monitoring and API Manager
+You can also access operational data for each asset such as logs, metrics, and traces through Anypoint Monitoring and API Manager.
 
 [%header,cols="25a,25a,50a"]
 |===

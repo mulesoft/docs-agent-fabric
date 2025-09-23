@@ -1,0 +1,20 @@
+= Set Up the Environment for Agent Fabric
+
+
+
+== Creating a Private Space for the Environment
+
+== Setting Up Broker Group Gateways for Private Spaces 
+
+
+Before you begin, make sure you have:
+
+*CloudHub 2.0 with Managed Flex Gateway and private space entitlements.
+
+
+. Open Anypoint Platform.
+. Select the environment you want to use.
+. Select the private space you want to use.
+. Select the broker group you want to use.
+. Select the gateway you want to use.
+. Click *Save*.

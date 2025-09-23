@@ -1,0 +1,32 @@
+= Creating an Agent Network Project
+
+You can create an agent network project using Anypoint Code Builder or the Anypoint CLI.
+
+[[developing-with-anypoint-code-builder]]
+== Developing with Anypoint Code Builder
+
+Anypoint Code Builder includes all the broker group functionality out of the box. For more information, see xref:anypoint-code-builder::index.adoc[].
+
+If you are developing your agent network project with Anypoint Code Builder: 
+
+. See the Anypoint Code Builder Release Notes for OS and system compatibility information. 
+. Install Visual Studio Code (VS Code) with latest updates and code command configured in `$PATH``. For more information, see https://code.visualstudio.com/docs/setup/mac#_launch-vs-code-from-the-command-line[Launch VS Code from the command line].
+. Install Anypoint Code Builder Desktop.
+. xref:set-up-agent-fabric.adoc[Set up your environment]. 
+. Create an agent network project.
+. Define your agent network specification.
+. Publish your agent network project to Anypoint Exchange.
+. Deploy your agent network.
+. Secure your assets.
+. xref:agent-visualizer::index.adoc[Observe your agent network].
+
+
+[[developing-with-anypoint-cli]]
+== Developing with Anypoint CLI
+
+If you run operations within a CI/CD environment, you can use the Anypoint CLI plugin to set up, create, build, publish, and deploy broker group projects. For more information, see Create and Manage Broker Groups in a CI/CD Environment.
+
+If you are developing your agent network project with Anypoint CLI:
+
+* Install the Anypoint CLI.
+* Install the Anypoint CLI plugin for broker group operations.
