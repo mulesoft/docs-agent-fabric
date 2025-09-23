@@ -1,11 +1,7 @@
 = Define Your Agent Network
 
-An agent network YAML file defines the structure and behavior of your agent network.
+include::partial$partial-define-agent-network-yaml.adoc[tags=agent-network-yaml-intro]
 
-== YAML File Structure
+== Broker Groups in the YAML File
 
-The YAML file consists of the following sections:
 
-* `version`: The version of the YAML file.
-* `name`: The name of the agent network.
-* `description`: The description of the agent network.
