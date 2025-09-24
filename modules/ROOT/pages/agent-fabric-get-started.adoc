@@ -72,7 +72,7 @@ You can also access operational data for each asset such as logs, metrics, and t
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
 |===
-| image::reuse::lm_start.png[]
+| image::lm_start.png[]
 [.lm-bold]##Learn About Agent Fabric##
 
 Agent Fabric helps you design and orchestrate a network of agents to achieve complex goals across your enterprise.
@@ -80,7 +80,7 @@ Agent Fabric helps you design and orchestrate a network of agents to achieve com
 - xref:index.adoc[Learn About Agent Fabric]
 - https://www.youtube.com[Watch a Demo of MuleSoft Agent Fabric]
 
-| image::reuse::lm_explore_1.png[]
+| image::lm_explore_1.png[]
 [.lm-bold]##Discover Agentic Assets##
 
 Use Anypoint Exchange to discover and register agentic assets for reuse across your enterprise.
@@ -88,7 +88,7 @@ Use Anypoint Exchange to discover and register agentic assets for reuse across y
 - xref:exchange::index.adoc[Discover Assets in Exchange]
 - xref:exchange::to-find-info.adoc[Search and Filter Assets]
 
-| image::reuse::lm_explore_1.png[]
+| image::lm_explore_1.png[]
 [.lm-bold]##Design and Orchestrate Agent Networks##
 
 Design and coordinate brokers and agents using a declarative YAML approach. 
@@ -101,7 +101,7 @@ Design and coordinate brokers and agents using a declarative YAML approach.
 
 [.lm-table, cols="1a,1a", grid="none"]
 |===
-| image::reuse::lm_build_1.png[]
+| image::lm_build_1.png[]
 [.lm-bold]##Govern and Secure the Agent Network##
 
 Apply guardrails, enforce policies, and secure agent traffic across the network.
@@ -110,7 +110,7 @@ Apply guardrails, enforce policies, and secure agent traffic across the network.
 - xref:gateway::flex-gateway-secure-apis.adoc[Apply Policies to the Agent Network]
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
-| image::reuse::lm_analyze_1.png[]
+| image::lm_analyze_1.png[]
 [.lm-bold]##Observe and Gain Actionable Insights##
 
 Visualize your agent network and monitor performance and behavior.
