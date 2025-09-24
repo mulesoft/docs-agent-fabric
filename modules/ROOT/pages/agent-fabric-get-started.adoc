@@ -70,6 +70,69 @@ You can also access operational data for each asset such as logs, metrics, and t
 |===
 
 
+[.lm-table, cols="1a,1a,1a", grid="none"]
+|===
+| image::reuse::lm_start.png[]
+[.lm-bold]##Learn About Agent Fabric##
+
+Agent Fabric helps you design and orchestrate a network of agents to achieve complex goals across your enterprise.
+
+- xref:index.adoc[Learn About Agent Fabric]
+- https://www.youtube.com[Watch a Demo of MuleSoft Agent Fabric]
+
+| image::reuse::lm_explore_1.png[]
+[.lm-bold]##Discover and Register Agents and Tools##
+
+Use Anypoint Exchange to discover and register agentic assets for reuse across your enterprise.
+
+- xref:exchange::index.adoc[Discover Assets in Exchange]
+- xref:exchange::to-find-info.adoc[Search and Filter Assets]
+| {empty}
+|===
+
+[.lm-table, cols="1a,1a,1a", grid="none"]
+|===
+| image::reuse::lm_explore_1.png[]
+[.lm-bold]##Design and Orchestrate Agent Networks##
+
+Design and coordinate brokers and agents using a declarative YAML approach. 
+
+- xref:anypoint-code-builder::index.adoc[Create an Agent Network]
+- xref:agent-network-yaml-file.adoc[Define the Agent Network YAML]
+- xref:anypoint-code-builder::index.adoc[Build with Anypoint Code Builder]
+- xref:exchange::index.adoc[Publish to Exchange]
+| {empty}
+|===
+
+[.lm-table, cols="1a,1a,1a", grid="none"]
+|===
+| image::reuse::lm_audience_end_1.png[]
+[.lm-bold]##Govern and Secure Your Agents##
+
+Apply guardrails, enforce policies, and secure agent traffic across the network.
+
+- xref:gateway::index.adoc[Secure Agent Network Traffic with Flex Gateway]
+- xref:gateway::flex-gateway-secure-apis.adoc[Apply Policies to the Agent Network]
+| {empty}
+|===
+
+[.lm-table, cols="1a,1a,1a", grid="none"]
+|===
+| image::reuse::lm_analyze_1.png[]
+[.lm-bold]##Observe and Gain Actionable Insights##
+
+Visualize your agent network and monitor performance and behavior.
+
+- xref:agent-visualizer::index.adoc[Visualize Your Agent Network]
+- xref:monitoring::index.adoc[View Metrics, Logs, and Traces]
+- xref:gateway::index.adoc[Monitor Traffic with Flex Gateway]
+| {empty}
+|===
+
+
+
+
+
 == See Also
 
 * xref:code-builder::index.adoc[Anypoint Code Builder]
