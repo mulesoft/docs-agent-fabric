@@ -87,11 +87,8 @@ Use Anypoint Exchange to discover and register agentic assets for reuse across y
 
 - xref:exchange::index.adoc[Discover Assets in Exchange]
 - xref:exchange::to-find-info.adoc[Search and Filter Assets]
-| {empty}
 |===
 
-[.lm-table, cols="1a,1a,1a", grid="none"]
-|===
 | image::reuse::lm_explore_1.png[]
 [.lm-bold]##Design and Orchestrate Agent Networks##
 
@@ -101,7 +98,6 @@ Design and coordinate brokers and agents using a declarative YAML approach.
 - xref:agent-network-yaml-file.adoc[Define the Agent Network YAML]
 - xref:anypoint-code-builder::index.adoc[Build with Anypoint Code Builder]
 - xref:exchange::index.adoc[Publish to Exchange]
-| {empty}
 |===
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
@@ -113,7 +109,6 @@ Apply guardrails, enforce policies, and secure agent traffic across the network.
 
 - xref:gateway::index.adoc[Secure Agent Network Traffic with Flex Gateway]
 - xref:gateway::flex-gateway-secure-apis.adoc[Apply Policies to the Agent Network]
-| {empty}
 |===
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
@@ -126,7 +121,6 @@ Visualize your agent network and monitor performance and behavior.
 - xref:agent-visualizer::index.adoc[Visualize Your Agent Network]
 - xref:monitoring::index.adoc[View Metrics, Logs, and Traces]
 - xref:gateway::index.adoc[Monitor Traffic with Flex Gateway]
-| {empty}
 |===
 
 
