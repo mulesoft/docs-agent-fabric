@@ -81,13 +81,12 @@ Agent Fabric helps you design and orchestrate a network of agents to achieve com
 - https://www.youtube.com[Watch a Demo of MuleSoft Agent Fabric]
 
 | image::reuse::lm_explore_1.png[]
-[.lm-bold]##Discover and Register Agents and Tools##
+[.lm-bold]##Discover Agentic Assets##
 
 Use Anypoint Exchange to discover and register agentic assets for reuse across your enterprise.
 
 - xref:exchange::index.adoc[Discover Assets in Exchange]
 - xref:exchange::to-find-info.adoc[Search and Filter Assets]
-|===
 
 | image::reuse::lm_explore_1.png[]
 [.lm-bold]##Design and Orchestrate Agent Networks##
@@ -100,19 +99,17 @@ Design and coordinate brokers and agents using a declarative YAML approach.
 - xref:exchange::index.adoc[Publish to Exchange]
 |===
 
-[.lm-table, cols="1a,1a,1a", grid="none"]
+[.lm-table, cols="1a,1a", grid="none"]
 |===
-| image::reuse::lm_audience_end_1.png[]
-[.lm-bold]##Govern and Secure Your Agents##
+| image::reuse::lm_build_1.png[]
+[.lm-bold]##Govern and Secure the Agent Network##
 
 Apply guardrails, enforce policies, and secure agent traffic across the network.
 
 - xref:gateway::index.adoc[Secure Agent Network Traffic with Flex Gateway]
 - xref:gateway::flex-gateway-secure-apis.adoc[Apply Policies to the Agent Network]
-|===
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
-|===
 | image::reuse::lm_analyze_1.png[]
 [.lm-bold]##Observe and Gain Actionable Insights##
 
@@ -124,9 +121,7 @@ Visualize your agent network and monitor performance and behavior.
 |===
 
 
-
-
-
+[discrete]
 == See Also
 
 * xref:code-builder::index.adoc[Anypoint Code Builder]
