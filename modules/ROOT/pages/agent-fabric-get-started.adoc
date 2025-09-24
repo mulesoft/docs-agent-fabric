@@ -1,102 +1,45 @@
 = Get Started with Agent Fabric
+:page-article-style: learning-map
+
+MuleSoft Agent Fabric helps you turn your agent sprawl into a governed and highly coordinated, intelligent network. 
+
+* It brings all your agents into a single place for easy discovery. 
+* It enables you to execute complex processes that require multiple agents and tools with security and governance at the forefront. 
+* It gives you a holistic view of all your agent interactions, no matter where the agent was built or where it’s hosted. 
+
 
 image::agent-fabric-pillars.png[]
 
-[[discover-and-register-agents-and-tools]]
-== Discover and Register Agents and Tools 
 
-Use Anypoint Exchange to discover agentic assets (agents, brokers, MCP Servers, and so on). These assets are published and their metadata is managed in Anypoint Exchange.
-
-[%header,cols="25a,25a,50a"]
-|===
-| Goal | Product | Key Steps
-
-| Make agentic assets discoverable and reusable | Anypoint Exchange | Each asset in an agent network project is published with definitions (A2A cards) and stored in Exchange. The assets are searchable by tags, metadata, and names.
-| Classify and describe assets | Anypoint Exchange | Assets are classified and described with tags, metadata, types,and names.
-| Import Agentforce agents | Anypoint Exchange | Import Agentforce agents into Exchange automatically via synchronization in Exchange Settings.
-|===
-
-[[design-and-build-the-agent-network]]
-== Design and Build the Agent Network 
-
-Build an agent network project. Define how the agents and tools work together to accomplish your goals.
-
-[%header,cols="25a,25a,50a"]
-|===
-| Goal | Product | Key Steps
-
-|  |  | 
-|===
-
-
-[[publish-and-deploy-the-broker]]
-== Publish and Deploy the Broker 
-
-After the broker is authored, publish the assets to Anypoint Exchange and then deploy the assets in Runtime Manager.
-
-[%header,cols="25a,25a,50a"]
-|===
-| Goal | Product | Key Steps
-| Publish the agent network project to Anypoint Exchange | Anypoint Exchange | Publish the agent network project to Anypoint Exchange as discoverable assets. After the agent domain assets are published to Exchange, the brokers defined in your YAML file are automatically published individually in Exchange as agent assets and tagged as `brokers`, making them discoverable and reusable across your organization.
-| Deploy the broker in Runtime Manager | Runtime Manager | Set configuration variables and specify runtime details such as the environment and gateway targets.
-|===
-
-
-[[govern-and-secure-agent-fabric]]
-== Govern and Secure the Agent Fabric
-
-This phase ensures that security, compliance, and operational guardrails are applied to the deployed agent network. This is managed through API Manager and enforced by Flex Gateway. This includes managing connection details and policies.
-
-[%header,cols="25a,25a,50a"]
-|===
-| Goal | Product | Key Steps
-
-|  |  | 
-|===
-
-
-[[observe-and-visualize-agent-fabric]]
-== Observe and Visualize Agent Fabric 
-
-After deployment, you need visibility into how the network is performing and interacting. View a visual map of all agents, brokers, and MCP servers and their connections in Agent Visualizer. 
-
-You can also access operational data for each asset such as logs, metrics, and traces through Anypoint Monitoring and API Manager.
-
-[%header,cols="25a,25a,50a"]
-|===
-| Goal | Product | Key Steps
-
-|  |  | 
-|===
-
+The end-to-end AI journey for MuleSoft AI consists of various tasks, each with links to relevant content to assist you in completing them.
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
 |===
 | image::lm_start.png[]
 [.lm-bold]##Learn About Agent Fabric##
 
-Agent Fabric helps you design and orchestrate a network of agents to achieve complex goals across your enterprise.
+Agent Fabric helps you design and orchestrate a network of agents, brokers, and Model Context Protocol (MCP) servers to achieve complex goals across your enterprise.
 
-- xref:index.adoc[Learn About Agent Fabric]
-- https://www.youtube.com[Watch a Demo of MuleSoft Agent Fabric]
+- xref:index.adoc[Learn About Agent Fabric].
+- https://www.youtube.com[Watch a Demo of MuleSoft Agent Fabric].
 
 | image::lm_explore_1.png[]
 [.lm-bold]##Discover Agentic Assets##
 
-Use Anypoint Exchange to discover and register agentic assets for reuse across your enterprise.
+Use Anypoint Exchange to discover agentic assets for reuse across your enterprise.
 
-- xref:exchange::index.adoc[Discover Assets in Exchange]
-- xref:exchange::to-find-info.adoc[Search and Filter Assets]
+- xref:exchange::index.adoc[Discover Assets in Exchange].
+- xref:exchange::to-find-info.adoc[Search and Filter Assets].
 
 | image::lm_explore_1.png[]
-[.lm-bold]##Design and Orchestrate Agent Networks##
+[.lm-bold]##Build and Orchestrate Agent Networks##
 
-Design and coordinate brokers and agents using a declarative YAML approach. 
+Build your agent network and coordinate brokers and agents using a declarative YAML approach. 
 
-- xref:anypoint-code-builder::index.adoc[Create an Agent Network]
-- xref:agent-network-yaml-file.adoc[Define the Agent Network YAML]
-- xref:anypoint-code-builder::index.adoc[Build with Anypoint Code Builder]
-- xref:exchange::index.adoc[Publish to Exchange]
+- xref:anypoint-code-builder::index.adoc[Build an agent network project in Anypoint Code Builder].
+- xref:agent-network-yaml-file.adoc[Define the agent network in a YAML file].
+- xref:anypoint-code-builder::index.adoc[Publish the agent network project to Exchange].
+- xref:exchange::index.adoc[Deploy the agent network assets to Exchange].
 |===
 
 [.lm-table, cols="1a,1a", grid="none"]
@@ -104,10 +47,10 @@ Design and coordinate brokers and agents using a declarative YAML approach.
 | image::lm_build_1.png[]
 [.lm-bold]##Govern and Secure the Agent Network##
 
-Apply guardrails, enforce policies, and secure agent traffic across the network.
+Apply policies to your agents, brokers, and MCP servers to help manage security and control traffic.
 
-- xref:gateway::index.adoc[Secure Agent Network Traffic with Flex Gateway]
-- xref:gateway::flex-gateway-secure-apis.adoc[Apply Policies to the Agent Network]
+- xref:gateway::index.adoc[Secure your agent network with Flex Gateway].
+- xref:api-manager::manage-policies-overview.adoc[Apply policies in API Manager].
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
 | image::lm_analyze_1.png[]
@@ -115,9 +58,8 @@ Apply guardrails, enforce policies, and secure agent traffic across the network.
 
 Visualize your agent network and monitor performance and behavior.
 
-- xref:agent-visualizer::index.adoc[Visualize Your Agent Network]
-- xref:monitoring::index.adoc[View Metrics, Logs, and Traces]
-- xref:gateway::index.adoc[Monitor Traffic with Flex Gateway]
+- xref:agent-visualizer::index.adoc[Visualize your agent network in Agent Visualizer].
+- xref:monitoring::index.adoc[View Metrics, Logs, and Traces in Anypoint Monitoring].
 |===
 
 
