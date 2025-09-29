@@ -23,7 +23,15 @@ Agent Fabric helps you design and orchestrate a network of agents, brokers, and 
 - xref:index.adoc[Learn About Agent Fabric].
 - https://www.youtube.com[Watch a Demo of MuleSoft Agent Fabric].
 
-| image::lm_build_1.png[]
+| image::lm_explore_1.png[]
+[.lm-bold]##Discover Agentic Assets##
+
+Use Anypoint Exchange to discover agentic assets for reuse across your enterprise.
+
+- xref:exchange::index.adoc[Discover Assets in Exchange].
+- xref:exchange::to-find-info.adoc[Search and Filter Assets].
+
+| image::lm_explore_1.png[]
 [.lm-bold]##Build and Orchestrate Agent Networks##
 
 Build your agent network and coordinate brokers and agents using a declarative YAML approach. 
@@ -33,15 +41,6 @@ Build your agent network and coordinate brokers and agents using a declarative Y
 - xref:anypoint-code-builder::index.adoc[Publish the agent network project to Exchange].
 - xref:exchange::index.adoc[Deploy the agent network assets to Exchange].
 |===
-
-| image::lm_explore_1.png[]
-[.lm-bold]##Discover Agentic Assets##
-
-Use Anypoint Exchange to discover agentic assets for reuse across your enterprise.
-
-- xref:exchange::index.adoc[Discover Assets in Exchange].
-- xref:exchange::to-find-info.adoc[Search and Filter Assets in Exchange].
-
 
 [.lm-table, cols="1a,1a", grid="none"]
 |===
