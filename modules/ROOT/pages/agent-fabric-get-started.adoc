@@ -54,7 +54,6 @@ Apply policies to your agents, brokers, and MCP servers to help manage security 
 - xref:api-manager::manage-policies-overview.adoc[Apply policies in API Manager].
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
-|===
 | image::lm_analyze_1.png[]
 [.lm-bold]##Observe and Gain Actionable Insights##
 
