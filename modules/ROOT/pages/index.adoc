@@ -30,30 +30,36 @@ Broker groups use OpenAI for reasoning and planning capabilities. Broker groups 
 
 image::agent-fabric-architecture.png[Agent Fabric diagram showing a broker group orchestrating agents and MCP servers defined in YAML and published to Exchange, with traffic through Flex Gateway, governed by API Manager, and observed in Monitoring and Visualizer]
 
-* After you define the agent network in the agent network YAML in Anypoint Code Builder (brokers, agents, MCP servers), publish the agentic assets to Anypoint Exchange for discovery and reuse.
-* Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
-* Flex Gateway ingress sits in front of broker and API endpoints and enforces inbound policies from API Manager on traffic entering the network.
-* Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce outbound policies, control egress, and emit telemetry data.
-* Anypoint Monitoring collects logs, metrics, and traces from Flex Gateway and runtimes.
-
-
+. After you define the agent network in the agent network YAML in Anypoint Code Builder (brokers, agents, MCP servers), publish the agentic assets to Anypoint Exchange for discovery and reuse.
+. Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
+. Flex Gateway ingress sits in front of broker and API endpoints and enforces inbound policies from API Manager on traffic entering the network.
+. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce outbound policies, control egress, and emit telemetry data.
+. Anypoint Monitoring collects logs, metrics, and traces from Flex Gateway and runtimes.
 
 
 == Basic Concepts 
 
+=== What’s an agent network?
+
+An agent network consists of brokers in the same domain and a set of services (agents and MCP servers) that assist them. You define an agent network in a YAML template in your agent network project. The MuleSoft Dev Agent can help create and configure your YAML for you.
+
+
+=== What’s supported in an agent network?
+
+Brokers, agents, and MCP servers are supported in an agent network. Agents and MCP servers are defined locally in the agent network, or externally. Externally-defined agents and MCP servers are defined in a different agent network or elsewhere in your company. Your agent network can use both locally-defined and externally-defined components to complete tasks across your enterprise.
+
 === What’s a broker?
 
-A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers are assembled into groups so that Agent Fabric can leverage them to accomplish tasks.
+A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers assemble agents and MCP servers into groups so that Agent Fabric can leverage them to accomplish tasks.
 
-=== What’s a broker group?
 
-A broker group is part of an agent network. It consists of a group of brokers in the same domain and a set of external services (agents and MCP servers) that assist them. You define broker groups in a YAML template which is provided for you.
+Agents can also serve as brokers. Agents that are also brokers are shown in Anypoint Exchange after you publish your agent network assets.
 
-=== What’s an external agent?
-
-An external agent is outside your broker group. These agents can either be brokers defined in a different broker group, or another agent used in your company.
 
 == Use Cases
+
+=== Employee Onboarding
+
 
 == Considerations
 
@@ -76,10 +82,9 @@ These authentication types are supported.
 * Anypoint Client Credentials
 
 
-
-
 == See Also
 
 * xref:agent-fabric-get-started.adoc[]
+* xref:anypoint-code-builder::af-agent-networks.adoc[]
 * xref:anypoint-code-builder::index.adoc[]
 * xref:exchange::index.adoc[]

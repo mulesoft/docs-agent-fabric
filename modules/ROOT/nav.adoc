@@ -2,4 +2,4 @@
 * xref:index.adoc[Overview]
 * xref:agent-fabric-get-started.adoc[]
 //* xref:set-up-agent-fabric.adoc[]
-* xref:agent-network-yaml-file.adoc[]
+//* xref:agent-network-yaml-file.adoc[]

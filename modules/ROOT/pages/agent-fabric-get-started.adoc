@@ -36,10 +36,11 @@ Use Anypoint Exchange to discover agentic assets for reuse across your enterpris
 
 Build your agent network and coordinate brokers and agents using a declarative YAML approach. 
 
-- xref:anypoint-code-builder::index.adoc[Build an agent network project in Anypoint Code Builder].
-- xref:agent-network-yaml-file.adoc[Define the agent network in a YAML file].
-- xref:anypoint-code-builder::index.adoc[Publish the agent network project to Exchange].
-- xref:exchange::index.adoc[Deploy the agent network assets to Exchange].
+- xref:anypoint-code-builder::af-get-started.adoc[Get Started with agent networks].
+- xref:anypoint-code-builder::af-create-agent-network.adoc[Build an agent network project in Anypoint Code Builder].
+- xref:anypoint-code-builder::af-define-your-agent-network-specification.adoc[Define the agent network in a YAML file].
+- xref:anypoint-code-builder::af-publish-agent-network-assets.adoc[Publish the agent network project to Exchange].
+- xref:anypoint-code-builder::af-deploy-agent-network-targets.adoc[Deploy the agent network assets to Exchange].
 |===
 
 [.lm-table, cols="1a,1a", grid="none"]
@@ -59,7 +60,10 @@ Apply policies to your agents, brokers, and MCP servers to help manage security 
 Visualize your agent network and monitor performance and behavior.
 
 - xref:agent-visualizer::index.adoc[Visualize your agent network in Agent Visualizer].
-- xref:monitoring::index.adoc[View Metrics, Logs, and Traces in Anypoint Monitoring].
+- xref:monitoring::anypoint-insights-agentic.adoc[View Metrics in Anypoint Monitoring].
+- xref:monitoring::logs-us-eu.adoc#search-agentic[View logs in Anypoint Monitoring].
+- xref:monitoring::traces.adoc[View traces in Anypoint Monitoring].
+
 |===
 
 
