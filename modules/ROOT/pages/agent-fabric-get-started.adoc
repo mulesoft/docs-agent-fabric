@@ -11,7 +11,7 @@ MuleSoft Agent Fabric helps you turn your agent sprawl into a governed and highl
 image::agent-fabric-pillars.png[]
 
 
-The end-to-end AI journey for MuleSoft AI consists of various tasks, each with links to relevant content to assist you in completing them.
+The end-to-end AI journey for Agent Fabric consists of various tasks, each with links to relevant content to assist you in completing them.
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
 |===
@@ -31,7 +31,7 @@ Use Anypoint Exchange to discover agentic assets for reuse across your enterpris
 - xref:exchange::index.adoc[Discover Assets in Exchange].
 - xref:exchange::to-find-info.adoc[Search and Filter Assets].
 
-| image::lm_explore_1.png[]
+| image::lm_build_1.png[]
 [.lm-bold]##Build and Orchestrate Agent Networks##
 
 Build your agent network and coordinate brokers and agents using a declarative YAML approach. 

@@ -1,8 +1,8 @@
 = Agent Fabric Overview
 
-Agent Fabric manages and coordinates the execution of agents across your enterprise, regardless of where they’re deployed. Agent Fabric solves the problem of integrating and automating complex processes that involve multiple agents and tools. 
+MuleSoft Agent Fabric maximizes the value of your agents by making them discoverable and capable of working together to solve complex business processes, with governance and visibility at the forefront. 
 
-Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. Broker groups (networks of agents in a domain) act as central hubs for defining, validating, and executing these multistep processes.
+Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. An agent network (networks of agents in a domain) act as central hubs for defining, validating, and executing these multistep processes.
 
 Define your ‌agent network in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business constraints and context of your process without needing to understand the inner workings of the orchestration engine.
 
@@ -13,22 +13,23 @@ Create robust, automated agent networks with these key benefits.
 Define your agent processes using a simple YAML file, which is easier and faster than writing complex code.
 * Safety and Governance
 +
-A broker group validates your agent network against predefined policies before execution, acting as a safety guardrail.
+Ensure control and compliance across every agent interaction with enterprise-grade governance. 
 * Observability
 +
-After a process runs, view logs and traces to understand the execution path, debug issues, and ensure traceability.
+Gain insight into agent actions with a visual trace of their decision-making. 
 * Flexibility
 +
-Broker groups coordinate with any type of agent, regardless of where it’s built and deployed, which allows you to build a diverse network of agents.
+An agent network enables you to coordinate any type of agent, regardless of where it’s built and deployed so you can build a diverse network of agents.
 * Tool and Agent Invocation
 +
 Manage the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
 
-Broker groups use OpenAI for reasoning and planning capabilities. Broker groups integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A). These connectors let you automatically discover and register tools that the LLM can use. You can also specify which agents and MCP servers a broker group can invoke by using an allowlist.
+Agent Fabric uses OpenAI for reasoning and planning capabilities. Agent networks integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A). These connectors let you automatically discover and register tools that the LLM can use. 
+
 
 == Architecture
 
-image::agent-fabric-architecture.png[Agent Fabric diagram showing a broker group orchestrating agents and MCP servers defined in YAML and published to Exchange, with traffic through Flex Gateway, governed by API Manager, and observed in Monitoring and Visualizer]
+image::agent-fabric-architecture.png[Agent Fabric diagram showing agents and MCP servers defined in YAML and published to Exchange, with traffic through Flex Gateway, governed by API Manager, and observed in Monitoring and Visualizer]
 
 . After you define the agent network in the agent network YAML in Anypoint Code Builder (brokers, agents, MCP servers), publish the agentic assets to Anypoint Exchange for discovery and reuse.
 . Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
@@ -41,24 +42,20 @@ image::agent-fabric-architecture.png[Agent Fabric diagram showing a broker group
 
 === What’s an agent network?
 
-An agent network consists of brokers in the same domain and a set of services (agents and MCP servers) that assist them. You define an agent network in a YAML template in your agent network project. The MuleSoft Dev Agent can help create and configure your YAML for you.
-
-
-=== What’s supported in an agent network?
-
-Brokers, agents, and MCP servers are supported in an agent network. Agents and MCP servers are defined locally in the agent network, or externally. Externally-defined agents and MCP servers are defined in a different agent network or elsewhere in your company. Your agent network can use both locally-defined and externally-defined components to complete tasks across your enterprise.
+An agent network consists of brokers, agents, and MCP servers in the same domain. You define an agent network in a YAML template in your agent network project. The MuleSoft Dev Agent can help create and configure your YAML for you. For more information, see xref:anypoint-code-builder::af-get-started.adoc[].
 
 === What’s a broker?
 
-A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers assemble agents and MCP servers into groups so that Agent Fabric can leverage them to accomplish tasks.
+A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. A broker is defined by the agents and MCP servers it can leverage to accomplish tasks.
 
-
-Agents can also serve as brokers. Agents that are also brokers are shown in Anypoint Exchange after you publish your agent network assets.
+A broker is a specialized agent that is shown in Anypoint Exchange after you publish your agent network assets and can be reused by other brokers. 
 
 
 == Use Cases
 
 === Employee Onboarding
+
+
 
 
 == Considerations
@@ -80,7 +77,6 @@ These authentication types are supported.
 * Basic
 * Client Credentials
 * Anypoint Client Credentials
-
 
 == See Also
 
