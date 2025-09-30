@@ -3,15 +3,14 @@
 
 MuleSoft Agent Fabric helps you turn your agent sprawl into a governed and highly coordinated, intelligent network. 
 
-* It brings all your agents into a single place for easy discovery. 
-* It enables you to execute complex processes that require multiple agents and tools with security and governance at the forefront. 
-* It gives you a holistic view of all your agent interactions, no matter where the agent was built or where it’s hosted. 
-
+* It starts with discovery. Publish your agents in Exchange,  where every agent, no matter where it’s built, is cataloged and made easy to find, reuse, and compose into solutions.
+* Next is orchestration. Connect and coordinate agents across ecosystems so that multi-step processes run smoothly, and agents can work together to deliver the right outcome.
+* Then comes governance. Ensure every agent interaction is consistent, compliant, and secure..
+* And finally, observing. Gain end-to-end visibility into how agents make decisions and perform, turning black-box AI into transparent, accountable systems.
 
 image::agent-fabric-pillars.png[]
 
-
-The end-to-end AI journey for Agent Fabric consists of various tasks, each with links to relevant content to assist you in completing them.
+The end-to-end journey for Agent Fabric consists of various tasks, each with links to relevant content to assist you in completing them.
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
 |===
