@@ -27,7 +27,11 @@ Agent Fabric helps you design and orchestrate a network of agents, brokers, and 
 
 Use Anypoint Exchange to discover agentic assets for reuse across your enterprise.
 
-- xref:exchange::index.adoc[Discover Assets in Exchange].
+- xref:exchange::to-find-info.adoc[Discover Assets in Exchange].
+- xref:exchange::asset-types.adoc[Learn about the asset types published in Exchange].
+- xref:exchange::importing-agentforce-agents.adoc[Import Agentforce agents].
+- xref:exchange::to-create-an-asset.adoc#create-agent[Create and publish an agent in Exchange].
+- xref:exchange::to-create-an-asset.adoc#create-mcp-server[Create and publish an MCP server in Exchange].
 - xref:exchange::to-find-info.adoc[Search and Filter Assets].
 
 | image::lm_build_1.png[]
@@ -50,6 +54,7 @@ Build your agent network and coordinate brokers and agents using a declarative Y
 Apply policies to your agents, brokers, and MCP servers to help manage security and control traffic.
 
 - xref:gateway::index.adoc[Secure your agent network with Flex Gateway].
+- xref:gateway::create-instance-task-agent-tool.adoc[Add a Flex Gateway Agent or Tool Instance].
 - xref:api-manager::manage-policies-overview.adoc[Apply policies in API Manager].
 
 [.lm-table, cols="1a,1a,1a", grid="none"]
@@ -62,6 +67,7 @@ Visualize your agent network and monitor performance and behavior.
 - xref:monitoring::anypoint-insights-agentic.adoc[View Metrics in Anypoint Monitoring].
 - xref:monitoring::logs-us-eu.adoc#search-agentic[View logs in Anypoint Monitoring].
 - xref:monitoring::traces.adoc[View traces in Anypoint Monitoring].
+- xref:api-manager::
 
 |===
 
