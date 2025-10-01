@@ -59,25 +59,7 @@ A broker is a specialized agent that is shown in Anypoint Exchange after you pub
 
 
 
-== Considerations
 
-=== Agent2Agent (A2A) Protocol
-
-* Brokers use the A2A protocol to accept requests to reach other agents. 
-* A2A specification 0.2.5 is supported.
-* Text-based prompts and responses are supported. Image and binary message/artifact types aren’t supported.
-* These A2A features aren't available.
-** Task History
-** Push Notifications Config
-** Streaming
-
-=== Authentication Types
-
-These authentication types are supported.
-
-* Basic
-* Client Credentials
-* Anypoint Client Credentials
 
 == See Also
 
