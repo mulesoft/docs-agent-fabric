@@ -19,54 +19,54 @@ The end-to-end journey for Agent Fabric consists of various tasks, each with lin
 
 Agent Fabric helps you design and orchestrate a network of agents, brokers, and Model Context Protocol (MCP) servers to achieve complex goals across your enterprise.
 
-- https://www.youtube.com/watch?v=GAqwPie16ic[Watch a video to learn about Agent Fabric].
-- https://www.mulesoft.com/lp/demo/agent-fabric-interactive-demo[Watch an interactive demo of MuleSoft Agent Fabric].
+- https://www.youtube.com/watch?v=GAqwPie16ic[Watch a Video to Learn About Agent Fabric]
+- https://www.mulesoft.com/lp/demo/agent-fabric-interactive-demo[Watch an Interactive Demo of Agent Fabric]
 
 | image::lm_explore_1.png[]
 [.lm-bold]##Discover Agentic Assets##
 
 Use Anypoint Exchange to discover agentic assets for reuse across your enterprise.
 
-- https://www.mulesoft.com/platform/exchange[Discover assets in Anypoint Exchange].
-- xref:exchange::asset-types.adoc[Learn about the asset types published in Exchange].
-- xref:exchange::importing-agentforce-agents.adoc[Import Agentforce agents].
-- xref:exchange::to-create-an-asset.adoc#create-agent[Create and publish an agent in Exchange].
-- xref:exchange::to-create-an-asset.adoc#create-mcp-server[Create and publish an MCP server in Exchange].
-- xref:exchange::to-find-info.adoc[Search and Filter Assets].
+- https://www.mulesoft.com/platform/exchange[Discover Assets in Anypoint Exchange]
+- xref:exchange::asset-types.adoc[Learn About Asset Types Published in Exchange]
+- xref:exchange::importing-agentforce-agents.adoc[Import Agentforce Agents]
+- xref:exchange::to-create-an-asset.adoc#create-agent[Create and Publish an Agent in Exchange]
+- xref:exchange::to-create-an-asset.adoc#create-mcp-server[Create and Publish an MCP Server in Exchange]
+- xref:exchange::to-find-info.adoc[Search and Filter Assets]
 
 | image::lm_build_1.png[]
 [.lm-bold]##Build and Orchestrate Agent Networks##
 
 Build your agent network and coordinate brokers and agents using a declarative YAML approach. 
 
-- xref:anypoint-code-builder::af-get-started.adoc[Get Started with agent networks].
-- xref:anypoint-code-builder::af-create-agent-network.adoc[Build an agent network project in Anypoint Code Builder].
-- xref:anypoint-code-builder::af-define-your-agent-network-specification.adoc[Define the agent network in a YAML file].
-- xref:anypoint-code-builder::af-publish-agent-network-assets.adoc[Publish the agent network project to Exchange].
-- xref:anypoint-code-builder::af-deploy-agent-network-targets.adoc[Deploy the agent network assets to Exchange].
+- xref:anypoint-code-builder::af-get-started.adoc[Get Started with Agent Networks]
+- xref:anypoint-code-builder::af-create-agent-network.adoc[Build an Agent Network Project in Anypoint Code Builder]
+- xref:anypoint-code-builder::af-define-your-agent-network-specification.adoc[Define the Agent Network in a YAML File]
+- xref:anypoint-code-builder::af-publish-agent-network-assets.adoc[Publish the Agent Network Project to Exchange]
+- xref:anypoint-code-builder::af-deploy-agent-network-targets.adoc[Deploy the Agent Network Assets to Exchange]
 |===
 
-[.lm-table, cols="1a,1a", grid="none"]
+[.lm-table, cols="1a,1a", width="66%", grid="none"]
 |===
 | image::lm_build_1.png[]
 [.lm-bold]##Govern and Secure the Agent Network##
 
 Apply policies to your agents, brokers, LLMs, and MCP servers to help manage security and control traffic.
 
-- xref:gateway::index.adoc[Secure your agent network with Flex Gateway].
-- xref:gateway::create-instance-task-agent-tool.adoc[Add a Flex Gateway Agent or Tool Instance].
+- xref:gateway::index.adoc[Secure Your Agent Network with Flex Gateway]
+- xref:gateway::create-instance-task-agent-tool.adoc[Add a Flex Gateway Agent or Tool Instance]
 - xref:gateway::flex-gateway-secure-apis.adoc[Secure Flex Gateway Instances with Policies]
 
-[.lm-table, cols="1a,1a,1a", grid="none"]
 | image::lm_analyze_1.png[]
 [.lm-bold]##Observe and Gain Actionable Insights##
 
 Visualize your agent network and monitor performance and behavior.
 
-- xref:agent-visualizer::index.adoc[Visualize your agent network in Agent Visualizer].
-- xref:monitoring::anypoint-insights-agentic.adoc[View Metrics in Anypoint Monitoring].
-- xref:monitoring::logs-us-eu.adoc#search-agentic[View logs in Anypoint Monitoring].
-- xref:monitoring::traces.adoc[View traces in Anypoint Monitoring].
+- xref:agent-visualizer::index.adoc[Visualize Your Agent Network in Agent Visualizer]
+- xref:monitoring::anypoint-insights-agentic.adoc[View Metrics in Anypoint Monitoring]
+- xref:monitoring::logs-us-eu.adoc#search-agentic[View Logs in Anypoint Monitoring]
+- xref:monitoring::traces.adoc[View Traces in Anypoint Monitoring]
+
 
 |===
 
