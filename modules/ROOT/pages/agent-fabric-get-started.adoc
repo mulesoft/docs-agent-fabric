@@ -3,10 +3,10 @@
 
 MuleSoft Agent Fabric helps you turn your agent sprawl into a governed and highly coordinated, intelligent network. 
 
-* It starts with discovery. Publish your agents in Exchange,  where every agent, no matter where it’s built, is cataloged and made easy to find, reuse, and compose into solutions.
-* Next is orchestration. Connect and coordinate agents across ecosystems so that multi-step processes run smoothly, and agents can work together to deliver the right outcome.
-* Then comes governance. Ensure every agent interaction is consistent, compliant, and secure..
-* And finally, observing. Gain end-to-end visibility into how agents make decisions and perform, turning black-box AI into transparent, accountable systems.
+* Discover every agent and tool with Agent Registry, a centralized catalog for all your AI assets
+* Orchestrate agents across ecosystems with Agent Broker, a context-aware routing service for agents and assets
+* Govern any agent with Flex Gateway Support for MCP & A2A, a high-performance gateway for policies and controls
+* Observe every agent interaction with Agent Visualizer, a visual map for your agent network
 
 image::agent-fabric-pillars.png[]
 
@@ -19,15 +19,15 @@ The end-to-end journey for Agent Fabric consists of various tasks, each with lin
 
 Agent Fabric helps you design and orchestrate a network of agents, brokers, and Model Context Protocol (MCP) servers to achieve complex goals across your enterprise.
 
-- xref:index.adoc[Learn About Agent Fabric].
-- https://www.youtube.com[Watch a Demo of MuleSoft Agent Fabric].
+- https://www.mulesoft.com/ai/agent-fabric?d=cta-body-promo-8&_ga=2.265807375.1006287180.1759277779-1725526871.1758864992&_gl=1*11zel4m*_gcl_au*ODQ5Mjc5NTY5LjE3NTg4NjQ5OTA.*_ga*MTcyNTUyNjg3MS4xNzU4ODY0OTky*_ga_3VHBZ2DJWP*czE3NTkyNzc3NzckbzckZzEkdDE3NTkyNzc5NTYkajIkbDAkaDA[Learn About Agent Fabric].
+- https://www.mulesoft.com/lp/demo/agent-fabric-interactive-demo[Watch an interactive demo of MuleSoft Agent Fabric].
 
 | image::lm_explore_1.png[]
 [.lm-bold]##Discover Agentic Assets##
 
 Use Anypoint Exchange to discover agentic assets for reuse across your enterprise.
 
-- xref:exchange::to-find-info.adoc[Discover Assets in Exchange].
+- https://www.mulesoft.com/platform/exchange[Discover assets in Anypoint Exchange].
 - xref:exchange::asset-types.adoc[Learn about the asset types published in Exchange].
 - xref:exchange::importing-agentforce-agents.adoc[Import Agentforce agents].
 - xref:exchange::to-create-an-asset.adoc#create-agent[Create and publish an agent in Exchange].

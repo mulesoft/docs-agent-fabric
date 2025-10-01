@@ -1,6 +1,6 @@
 = Agent Fabric Overview
 
-MuleSoft Agent Fabric maximizes the value of your agents by making them discoverable and capable of working together to solve complex business processes, with governance and visibility at the forefront. 
+MuleSoft Agent Fabric is an intelligent solution that maximizes the potential of every AI agent, no matter where it’s built, with centralized discovery, orchestration across agents and tools, cross-ecosystem governance, and full transparency into agent performance.
 
 Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. An agent network (networks of agents in a domain) act as central hubs for defining, validating, and executing these multistep processes.
 
@@ -34,7 +34,7 @@ image::agent-fabric-architecture.png[Agent Fabric diagram showing agents and MCP
 . After you define the agent network in the agent network YAML in Anypoint Code Builder (brokers, agents, MCP servers), publish the agentic assets to Anypoint Exchange for discovery and reuse.
 . Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
 . Flex Gateway ingress sits in front of broker and API endpoints and enforces inbound policies from API Manager on traffic entering the network.
-. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce outbound policies, control egress, and emit telemetry data.
+. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce outbound policies, manage connections, and emit telemetry data.
 . Anypoint Monitoring collects logs, metrics, and traces from Flex Gateway and runtimes.
 
 
@@ -42,7 +42,7 @@ image::agent-fabric-architecture.png[Agent Fabric diagram showing agents and MCP
 
 === What’s an agent network?
 
-An agent network consists of brokers, agents, and MCP servers in the same domain. You define an agent network in a YAML template in your agent network project. The MuleSoft Dev Agent can help create and configure your YAML for you. For more information, see xref:anypoint-code-builder::af-get-started.adoc[].
+An agent network consists of brokers, agents, and MCP servers in the same domain. You define an agent network in a YAML template in your agent network project. The MuleSoft Dev Agent can help create and configure your YAML for you. For more information, see xref:anypoint-code-builder::af-agent-networks.adoc[].
 
 === What’s a broker?
 
