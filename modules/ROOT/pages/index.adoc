@@ -24,7 +24,7 @@ An agent network enables you to coordinate any type of agent, regardless of wher
 +
 Manage the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
 
-Agent Fabric uses OpenAI for reasoning and planning capabilities. Agent networks integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A). These connectors let you automatically discover and register tools that the LLM can use. 
+Agent Fabric uses LLMs for reasoning and planning capabilities. Agent networks integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A). 
 
 
 == Architecture
@@ -34,7 +34,7 @@ image::agent-fabric-architecture.png[Agent Fabric diagram showing agents and MCP
 [calloutlist]
 . After you define the agent network in the agent network YAML in Anypoint Code Builder (brokers, agents, MCP servers), publish the agentic assets to Anypoint Exchange for discovery and reuse.
 . Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
-. Flex Gateway ingress sits in front of broker and API endpoints and enforces policies on incoming traffic entering the network.
+. Flex Gateway ingress sits in front of broker and API endpoints and enforces policies on incoming traffic to the network.
 . Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce policies, manage connections, and emit telemetry data.
 . Anypoint Monitoring collects logs, metrics, and traces from Flex Gateway and runtimes.
 
@@ -47,15 +47,15 @@ An agent network consists of brokers, agents, and MCP servers in the same domain
 
 === What’s a broker?
 
-A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. A broker is defined by the agents and MCP servers it can leverage to accomplish tasks.
+A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. It's defined by the agents and MCP servers it can leverage to accomplish tasks.
 
 A broker is a specialized agent that is shown in Anypoint Exchange after you publish your agent network assets and can be reused by other brokers. 
 
 
-== Use Case: Employee Onboarding
+== Example Use Case: Employee Onboarding
 
 === Goal
-Seamlessly activate a new hire across HR, IT, Security, and Facilities with a single, policy‑governed workflow.
+Seamlessly activate a new hire across HR, IT, Security, and Facilities with a single, policy‑governed experience.
 
 === Solution
 
@@ -64,7 +64,7 @@ Seamlessly activate a new hire across HR, IT, Security, and Facilities with a si
 Publish existing agents and tools (HRIS, Identity, ITSM, Payroll, Facilities, LMS) in Exchange for reuse.
 * Orchestrate
 +
-An agent network decomposes task of onboarding the new hire (create HR record, provision identity, assign hardware, grant app access, enroll in benefits and training), calling MCP and A2A agents as needed, with human‑in‑the‑loop approvals where required.
+An agent broker decomposes the task of onboarding the new hire (create HR record, provision identity, assign hardware, grant app access, enroll in benefits and training), calling MCP and A2A agents as needed, with human‑in‑the‑loop approvals where required.
 * Govern
 +
 Flex Gateway enforces authentication, least‑privilege access, and guardrails. API Manager policies ensure consistent controls across all calls and data exchanges.
