@@ -67,7 +67,7 @@ Visualize your agent network and monitor performance and behavior.
 - xref:monitoring::anypoint-insights-agentic.adoc[View Metrics in Anypoint Monitoring]
 - xref:monitoring::logs-us-eu.adoc#search-agentic[View Logs in Anypoint Monitoring]
 - xref:monitoring::traces.adoc[View Traces in Anypoint Monitoring]
-// - xref:api-manager::
+
 
 |===
 
