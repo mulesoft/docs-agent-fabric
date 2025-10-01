@@ -51,11 +51,12 @@ Build your agent network and coordinate brokers and agents using a declarative Y
 | image::lm_build_1.png[]
 [.lm-bold]##Govern and Secure the Agent Network##
 
-Apply policies to your agents, brokers, and MCP servers to help manage security and control traffic.
+Apply policies to your agents, brokers, LLMs, and MCP servers to help manage security and control traffic.
 
 - xref:gateway::index.adoc[Secure Your Agent Network with Flex Gateway]
 - xref:gateway::create-instance-task-agent-tool.adoc[Add a Flex Gateway Agent or Tool Instance]
 - xref:api-manager::manage-policies-overview.adoc[Apply Policies in API Manager]
+- xref:gateway::flex-gateway-secure-apis.adoc[Secure Flex Gateway Instances with Policies]
 
 | image::lm_analyze_1.png[]
 [.lm-bold]##Observe and Gain Actionable Insights##

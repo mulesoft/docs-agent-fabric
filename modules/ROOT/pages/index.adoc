@@ -34,8 +34,8 @@ image::agent-fabric-architecture.png[Agent Fabric diagram showing agents and MCP
 [calloutlist]
 . After you define the agent network in the agent network YAML in Anypoint Code Builder (brokers, agents, MCP servers), publish the agentic assets to Anypoint Exchange for discovery and reuse.
 . Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
-. Flex Gateway ingress sits in front of broker and API endpoints and enforces inbound policies from API Manager on traffic entering the network.
-. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce outbound policies, manage connections, and emit telemetry data.
+. Flex Gateway ingress sits in front of broker and API endpoints and enforces policies on incoming traffic entering the network.
+. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce policies, manage connections, and emit telemetry data.
 . Anypoint Monitoring collects logs, metrics, and traces from Flex Gateway and runtimes.
 
 
@@ -52,14 +52,35 @@ A broker is an intelligent routing service that coordinates task delegation acro
 A broker is a specialized agent that is shown in Anypoint Exchange after you publish your agent network assets and can be reused by other brokers. 
 
 
-== Use Cases
+== Use Case: Employee Onboarding
 
-=== Employee Onboarding
+=== Goal
+Seamlessly activate a new hire across HR, IT, Security, and Facilities with a single, policy‑governed workflow.
 
+=== Solution
 
+* Discover
++
+Publish existing agents and tools (HRIS, Identity, ITSM, Payroll, Facilities, LMS) in Exchange for reuse.
+* Orchestrate
++
+An agent network decomposes task of onboarding the new hire (create HR record, provision identity, assign hardware, grant app access, enroll in benefits and training), calling MCP and A2A agents as needed, with human‑in‑the‑loop approvals where required.
+* Govern
++
+Flex Gateway enforces authentication, least‑privilege access, and guardrails. API Manager policies ensure consistent controls across all calls and data exchanges.
+* Observe
++
+Monitoring and traces (beta) give end‑to‑end visibility into progress, failures, and latency. Visualization shows which agents interacted and where bottlenecks occurred.
+Reuse
++
+The onboarding definition (YAML) is versioned and shareable, enabling rapid adaptation for roles, regions, or subsidiaries without rebuilding flows.
+* Trust and Compliance
++
+Centralized credentials, audit trails, and policy inheritance support security, privacy, and regulatory requirements (PII handling, approvals, separation of duties).
 
+=== Outcome
 
-
+Faster time‑to‑productivity, fewer handoffs, lower error rates, and a consistent new‑hire experience across the enterprise.
 
 == See Also
 
