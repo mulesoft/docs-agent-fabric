@@ -35,7 +35,7 @@ image::agent-fabric-architecture.png[Agent Fabric diagram showing agents and MCP
 . After you define the agent network in the agent network YAML in Anypoint Code Builder (brokers, agents, MCP servers), publish the agentic assets to Anypoint Exchange for discovery and reuse.
 . Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
 . Flex Gateway ingress sits in front of broker and API endpoints and enforces policies on incoming traffic entering the network.
-. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce outbound policies, manage connections, and emit telemetry data.
+. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce policies, manage connections, and emit telemetry data.
 . Anypoint Monitoring collects logs, metrics, and traces from Flex Gateway and runtimes.
 
 
