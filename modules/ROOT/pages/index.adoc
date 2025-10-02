@@ -41,7 +41,7 @@ image::agent-fabric-architecture.png[Agent Fabric showing agents and MCP servers
 
 == Basic Concepts 
 
-=== What’s an agent network?
+=== What’s an Agent Network?
 
 An agent network consists of brokers, agents, and MCP servers in the same domain. You define an agent network in a YAML template in your agent network project. The MuleSoft Dev Agent can help create and configure your YAML for you. For more information, see xref:anypoint-code-builder::af-agent-networks.adoc[].
 
