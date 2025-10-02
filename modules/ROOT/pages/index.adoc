@@ -2,7 +2,7 @@
 
 MuleSoft Agent Fabric is an intelligent solution that maximizes the potential of every AI agent, no matter where it’s built, with centralized discovery, orchestration across agents and tools, cross-ecosystem governance, and full transparency into agent performance.
 
-Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. An agent network (networks of agents in a domain) act as central hubs for defining, validating, and executing these multistep processes.
+Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. An agent network (networks of agents in a domain)actst as a central hub for defining, validating, and executing these multistep processes.
 
 Define your ‌agent network in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business constraints and context of your process without needing to understand the inner workings of the orchestration engine.
 
