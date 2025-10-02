@@ -76,7 +76,7 @@ Reuse
 The onboarding definition (YAML) is versioned and shareable, enabling rapid adaptation for roles, regions, or subsidiaries without rebuilding flows.
 * Trust and Compliance
 +
-Centralized credentials, audit trails, and policy inheritance support security, privacy, and regulatory requirements (PII handling, approvals, separation of duties).
+Centralized credentials, audit trails, and policy inheritance support security, privacy, and regulatory requirements (PII handling, approvals, and separation of duties).
 
 === Outcome
 
