@@ -19,7 +19,7 @@ Ensure control and compliance across every agent interaction with enterprise-gra
 Gain insight into agent actions with a visual trace of their decision-making. 
 * Flexibility
 +
-An agent network enables you to coordinate any type of agent, regardless of where it’s built and deployed so you can build a diverse network of agents.
+Coordinate any type of agent, regardless of where it’s built and deployed so you can build a diverse network of agents.
 * Tool and Agent Invocation
 +
 Manage the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
