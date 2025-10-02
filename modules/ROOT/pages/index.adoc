@@ -26,26 +26,22 @@ Manage the invocation of both deterministic (tool-based) and probabilistic (LLM-
 
 Agent Fabric uses LLMs for reasoning and planning capabilities. Agent networks integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A). 
 
-
 == Architecture
 
 image::agent-fabric-architecture.png[Agent Fabric showing agents and MCP servers defined in YAML and published to Exchange, with traffic through Flex Gateway, governed by API Manager, and observed in Monitoring and Visualizer]
 
 [calloutlist]
-. After you define the agent network (brokers, agents, MCP servers) in the agent network YAML in Anypoint Code Builder, publish the agentic assets to Anypoint Exchange for discovery and reuse.
+. Publish the agentic assets to Anypoint Exchange for discovery and reuse after you define the agent network (brokers, agents, MCP servers) in the agent network YAML in Anypoint Code Builder.
 . Deploy the agentic assets to CloudHub 2.0 (managed in Runtime Manager).
-. Flex Gateway ingress sits in front of broker and API endpoints and enforces policies on incoming traffic to the network.
-. Flex Gateway egress sits on outbound paths from brokers and agents to external agents and services to enforce policies, manage connections, and emit telemetry data.
-. Anypoint Monitoring collects logs, metrics, and traces from Flex Gateway and runtimes.
+. Enforce policies on incoming traffic to the network with an ingress Flex Gateway, which sits in front of broker and API endpoints.
+. Enforce policies, manage connections, and emit telemetry data with an egress Flex Gateway, which sits on outbound paths from brokers and agents to external agents and services.
+. Collect logs, metrics, and traces from Flex Gateway and runtimes in Anypoint Monitoring.
 
-
-== Basic Concepts 
-
-=== What’s an Agent Network?
+== What’s an Agent Network?
 
 An agent network consists of brokers, agents, and MCP servers in the same domain. You define an agent network in a YAML template in your agent network project. The MuleSoft Dev Agent can help create and configure your YAML for you. For more information, see xref:anypoint-code-builder::af-agent-networks.adoc[].
 
-=== What’s a Broker?
+== What’s a Broker?
 
 A broker is an intelligent routing agent that coordinates task delegation across specialized agents in your enterprise. It's defined by the agents and MCP servers it leverages to accomplish tasks.
 

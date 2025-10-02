@@ -6,7 +6,7 @@ MuleSoft Agent Fabric helps you turn your agent sprawl into a governed and highl
 
 * Discover agents and MCP servers with Anypoint Exchange, a centralized catalog for all your AI assets.
 * Orchestrate agents across ecosystems with agent brokers, an intelligent routing agent that plans and delegates based on context (request intent, policies, identity, and runtime state) of agents and assets.
-* Govern any agent with Flex Gateway support for MCP and A2A, a high-performance gateway for policies and controls.
+* Govern any agent with Flex Gateway support for Model Context Protocol (MCP) and Agent2Agent (A2A), a high-performance gateway for policies and controls.
 * Observe every agent interaction with Agent Visualizer, a visual map for your agent network.
 +
 View metrics, logs, and traces in Anypoint Monitoring.
@@ -20,7 +20,7 @@ The end-to-end journey for Agent Fabric consists of various tasks, each with lin
 | image::lm_start.png[]
 [.lm-bold]##Learn About Agent Fabric##
 
-Agent Fabric helps you design and orchestrate a network of agents, brokers, and Model Context Protocol (MCP) servers to achieve complex goals across your enterprise.
+Agent Fabric helps you design and orchestrate a network of agents, brokers, and MCP servers to achieve complex goals across your enterprise.
 
 - https://www.youtube.com/watch?v=GAqwPie16ic[Watch a Video to Learn About Agent Fabric]
 - https://www.mulesoft.com/lp/demo/agent-fabric-interactive-demo[Watch an Interactive Demo of Agent Fabric]
