@@ -47,7 +47,7 @@ An agent network consists of brokers, agents, and MCP servers in the same domain
 
 === What’s a broker?
 
-A broker is an intelligent routing service that coordinates task delegation across specialized agents in your enterprise. It's defined by the agents and MCP servers it can leverage to accomplish tasks.
+A broker is an intelligent routing agent that coordinates task delegation across specialized agents in your enterprise. It's defined by the agents and MCP servers it can leverage to accomplish tasks.
 
 A broker is a specialized agent that is shown in Anypoint Exchange after you publish your agent network assets and can be reused by other brokers. 
 
