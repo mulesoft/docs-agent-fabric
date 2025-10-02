@@ -56,6 +56,7 @@ Apply policies to your agents, brokers, LLMs, and MCP servers to help manage sec
 
 - xref:gateway::index.adoc[Secure Your Agent Network with Flex Gateway]
 - xref:gateway::create-instance-task-agent-tool.adoc[Add a Flex Gateway Agent or Tool Instance]
+- xref:gateway::flex-gateway-managed-ingress-egress.adoc[Deploy Agent Fabric Ingress and Egress Managed Flex Gateways]
 - xref:gateway::flex-gateway-secure-apis.adoc[Secure Flex Gateway Instances with Policies]
 
 | image::lm_analyze_1.png[]
