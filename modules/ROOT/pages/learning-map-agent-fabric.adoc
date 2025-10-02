@@ -35,7 +35,7 @@ Use Anypoint Exchange to discover agentic assets for reuse across your enterpris
 - xref:exchange::importing-agentforce-agents.adoc[Import Agentforce Agents]
 - xref:exchange::to-create-an-asset.adoc#create-agent[Create and Publish an Agent in Exchange]
 - xref:exchange::to-create-an-asset.adoc#create-mcp[Create and Publish an MCP Server in Exchange]
-- xref:exchange::to-create-an-asset.adoc#create-llm[Create and publish an LLM in Exchange]
+- xref:exchange::to-create-an-asset.adoc#create-llm[Create and Publish an LLM in Exchange]
 - xref:exchange::to-find-info.adoc[Search and Filter Assets]
 
 | image::lm_build_1.png[]
