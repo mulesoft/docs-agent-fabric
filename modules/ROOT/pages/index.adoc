@@ -4,7 +4,7 @@ MuleSoft Agent Fabric is an agent management platform that maximizes the potenti
 
 Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. An agent network (a network of agents in a domain) acts as a coordinated group for defining, validating, and executing these multistep processes.
 
-Define your ‌agent network in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business constraints and context of your agenticprocess without needing to understand the inner workings of the orchestration engine.
+Define your ‌agent network in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business constraints and context of your agentic process without needing to understand the inner workings of the orchestration engine.
 
 Create robust, automated agent networks with these key benefits.
 
