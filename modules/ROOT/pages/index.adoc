@@ -1,25 +1,25 @@
 = Agent Fabric Overview
 
-MuleSoft Agent Fabric is an intelligent solution that maximizes the potential of every AI agent, no matter where it’s built, with centralized discovery, orchestration across agents and tools, cross-ecosystem governance, and full transparency into agent performance.
+MuleSoft Agent Fabric is an agent management platform that maximizes the potential of every AI agent, no matter where it’s built, with centralized discovery, orchestration across agents and tools, cross-ecosystem governance, and full transparency into agentic interactions.
 
-Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. An agent network (networks of agents in a domain)actst as a central hub for defining, validating, and executing these multistep processes.
+Complex tasks often require a series of steps, with each step‌ handled by a different agent or tool. Managing this process manually is difficult and error-prone. An agent network (a network of agents in a domain) acts as a coordinated group for defining, validating, and executing these multistep processes.
 
-Define your ‌agent network in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business constraints and context of your process without needing to understand the inner workings of the orchestration engine.
+Define your ‌agent network in a simple, human-readable YAML file, abstracting away the underlying technical complexities. This approach allows you to focus on the business constraints and context of your agenticprocess without needing to understand the inner workings of the orchestration engine.
 
 Create robust, automated agent networks with these key benefits.
 
 * Simplified Development
 +
-Define your agent processes using a simple YAML file, which is easier and faster than writing complex code.
+Define your agent processes in an intentional way using a simple YAML file, which is easier and faster than writing complex code.
 * Safety and Governance
 +
-Ensure control and compliance across every agent interaction with enterprise-grade governance. 
+Ensure control and compliance across every agent and tool interaction with enterprise-grade governance. 
 * Observability
 +
 Gain insight into agent actions with a visual trace of their decision-making. 
 * Flexibility
 +
-Coordinate any type of agent, regardless of where it’s built and deployed so you can build a diverse network of agents.
+Coordinate any type of agent and tool, regardless of where it’s built and deployed so you can build a diverse network of agents.
 * Tool and Agent Invocation
 +
 Manage the invocation of both deterministic (tool-based) and probabilistic (LLM-based) actions.
