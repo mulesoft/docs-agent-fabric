@@ -1,3 +1,5 @@
 = Get Started with Agent Networks
+:keywords: agent networks, ai agents, mulesoft, get started, agent orchestration, setup, configuration
+:page-aliases: general::agent-networks-get-started.adoc
 
-include::anypoint-code-builder::partial$af-shared.adoc[tag=get-started]
+include::agent-network::partial$af-shared.adoc[tag=get-started]
