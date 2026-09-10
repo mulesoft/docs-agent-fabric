@@ -1,4 +1,4 @@
 .xref:index.adoc[Agent Fabric]
 * xref:index.adoc[Overview]
+* xref:learning-map-agent-fabric.adoc[Get Started with Agent Fabric]
 * xref:agent-fabric-release-notes.adoc[Release Notes]
-* xref:agent-fabric-get-started.adoc[]
