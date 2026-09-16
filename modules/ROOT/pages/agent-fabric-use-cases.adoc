@@ -28,7 +28,7 @@ Each use case below maps a specific business problem to the Agent Fabric capabil
 
 Use a centralized registry and automated scanners to discover, catalog, and manage agents across your organization. Know what exists and where before you apply governance. For example, a business process outsourcer managing agents across multiple client platforms, or an enterprise security team asked to audit every agent in production, can use Registry and Scanners to get a complete, current picture without manually tracking deployments.
 
-For more information, see xref:general::exp-services-add-to-portfolio.adoc[].
+For more information, see xref:exp-services-add-to-portfolio.adoc[].
 
 == Make APIs Agent-Ready with MCP Bridge
 
@@ -40,7 +40,7 @@ For more information, see xref:af-use-case-mcp-bridge.adoc[].
 
 Consistently enforce business rules, PII policies, and guardrails across all agents regardless of platform. Apply policies one time through a gateway rather than reimplementing them for each platform. For example, a regulated industry deploying agents across Agentforce, Bedrock, and custom Mule implementations can enforce the same data privacy and rate limiting rules everywhere through a single Omni Gateway policy.
 
-For more information, see xref:general::exp-policies-apply-manage.adoc[].
+For more information, see xref:exp-policies-apply-manage.adoc[].
 
 == Monitor Costs and Optimize Model Selection
 

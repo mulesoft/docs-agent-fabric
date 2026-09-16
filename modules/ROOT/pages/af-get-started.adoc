@@ -47,7 +47,7 @@ Permissions::
 Confirm how your administrator maps jobs to roles:
 
 * Agent Fabric uses Anypoint Platform access management. Your administrator maps jobs to roles and permissions in Access Management, and exact permission names differ by organization.
-* Use the permission tables in each job section together with your internal access guide. For the enhanced experience permissions table, see xref:general::exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+* Use the permission tables in each job section together with your internal access guide. For the enhanced experience permissions table, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
 * If you can't complete an action or a page shows an authorization error, ask your organization administrator for the matching permission or role.
 
 [TIP]
@@ -82,7 +82,7 @@ You also need these permissions:
 | Register agents, APIs, and LLMs | One of: Exchange Contributor, Exchange Administrator, or Exchange Creator
 |===
 
-Learn more: xref:general::exp-portfolio-overview.adoc[] and xref:general::exp-services-add-to-portfolio.adoc[].
+Learn more: xref:exp-portfolio-overview.adoc[] and xref:exp-services-add-to-portfolio.adoc[].
 
 === Discover Services with Scanners
 
@@ -93,7 +93,7 @@ Before you create scanners, confirm you have:
 * An Anypoint Platform account with the required product access for Agent Fabric. See <<before-you-begin>>.
 * Access to, and active context in, the business group where you want to add the scanner.
 * A connected cloud provider under *Platform* > *Providers* for each source you scan.
-* Provider-specific credentials, roles, and permission scopes for that scanner. For example, writing policies to a third-party gateway requires connection credentials that carry the provider's write scope, and the Microsoft Copilot Studio scanner can require a pre-configured OAuth app. See xref:general::exp-scanners-prerequisites-reference.adoc[].
+* Provider-specific credentials, roles, and permission scopes for that scanner. For example, writing policies to a third-party gateway requires connection credentials that carry the provider's write scope, and the Microsoft Copilot Studio scanner can require a pre-configured OAuth app. See xref:exp-scanners-prerequisites-reference.adoc[].
 * The Akamai API Security scanner, available only when your administrator turns on that feature for your organization.
 
 You also need these permissions:
@@ -105,7 +105,7 @@ You also need these permissions:
 | View *Providers* | Exchange Administrator, or the required scanner entitlements for API, MCP, or agent scanners
 |===
 
-Learn more: xref:general::exp-scanners-add-from-providers.adoc[] and xref:general::exp-providers-manage.adoc[].
+Learn more: xref:exp-scanners-add-from-providers.adoc[] and xref:exp-providers-manage.adoc[].
 
 [[enable-actions]]
 == Expose Existing APIs as MCP Servers
@@ -129,7 +129,7 @@ You also need these permissions:
 | Create an MCP server | One of: Exchange Contributor, Exchange Administrator, or Exchange Creator, plus API Manager: Manage APIs Configuration on at least one environment
 |===
 
-Learn more: xref:general::exp-services-create-mcp-server.adoc[] and xref:af-use-case-mcp-bridge.adoc[].
+Learn more: xref:exp-services-create-mcp-server.adoc[] and xref:af-use-case-mcp-bridge.adoc[].
 
 === Build a Custom MCP Server in Mule
 
@@ -178,7 +178,7 @@ You also need these permissions:
 | Create an A2A bridge | One of: Exchange Contributor, Exchange Administrator, or Exchange Creator, plus API Manager: Manage APIs Configuration on the target environment
 |===
 
-Learn more: xref:general::exp-services-create-a2a-bridge.adoc[].
+Learn more: xref:exp-services-create-a2a-bridge.adoc[].
 
 === Add A2A Support to a Mule Application
 
@@ -251,7 +251,7 @@ Before you create instances of services or apply policies, confirm you have:
 
 * An Anypoint Platform account with the required product access for Agent Fabric. See <<before-you-begin>>.
 * An Omni Gateway for each managed instance.
-* A connected provider scanner whose credentials carry the provider's write scope, required to apply policies to third-party gateway APIs (Azure API Management, Google Apigee, or Kong Gateway). See xref:general::exp-scanners-prerequisites-reference.adoc#_policy_write_prerequisites[Policy Write Prerequisites].
+* A connected provider scanner whose credentials carry the provider's write scope, required to apply policies to third-party gateway APIs (Azure API Management, Google Apigee, or Kong Gateway). See xref:exp-scanners-prerequisites-reference.adoc#_policy_write_prerequisites[Policy Write Prerequisites].
 
 You also need these permissions:
 
@@ -265,7 +265,7 @@ You also need these permissions:
 | Apply, edit, enable, disable, or remove policies | API Manager: Manage Policies
 |===
 
-Learn more: xref:general::exp-instances-add.adoc[], xref:general::exp-policies-apply-manage.adoc[], and xref:general::exp-policies-universal.adoc[].
+Learn more: xref:exp-instances-add.adoc[], xref:exp-policies-apply-manage.adoc[], and xref:exp-policies-universal.adoc[].
 
 === Create Governance Strategies
 
@@ -286,7 +286,7 @@ You also need these permissions:
 | View governance reports | One of: API Governance: Governance Viewer or Governance Administrator (You also need Exchange Viewer for the conformance badge)
 |===
 
-Learn more: xref:general::exp-governance-work-with-strategies.adoc[], xref:general::exp-governance-govern-third-party-apis.adoc[], and xref:general::exp-governance-monitor-cross-gateway-conformance.adoc[].
+Learn more: xref:exp-governance-work-with-strategies.adoc[], xref:exp-governance-govern-third-party-apis.adoc[], and xref:exp-governance-monitor-cross-gateway-conformance.adoc[].
 
 [[cost-control]]
 == See LLM Spend, Cap It, and Reduce Token Use
@@ -303,8 +303,8 @@ Before you create a model proxy, confirm you have:
 * A deployed Omni Gateway version 1.11.4 or later, running in Connected Mode. Model Proxy runs only on Omni Gateway.
 * Up to 50 model proxies on each Large Omni Gateway.
 * API keys to authenticate with your LLM providers.
-* A configured semantic routing service if you want to use semantic routing. See xref:general::model-proxy-semantic-service.adoc[].
-* A configured semantic caching service if you want to enable semantic caching. See xref:general::model-proxy-semantic-caching-service.adoc[].
+* A configured semantic routing service if you want to use semantic routing. See xref:model-proxy-semantic-service.adoc[].
+* A configured semantic caching service if you want to enable semantic caching. See xref:model-proxy-semantic-caching-service.adoc[].
 * A connection to an external vault (AWS Secrets Manager, Microsoft Azure Key Vault, or HashiCorp Vault) under *Platform* > *Providers* if you want to authenticate a route with a secret from your vault.
 
 You also need these permissions:
@@ -315,7 +315,7 @@ You also need these permissions:
 | Create a model proxy | API Manager: API Creator
 |===
 
-Learn more: xref:general::model-proxy.adoc[] and xref:general::model-proxy-create-model-proxy.adoc[].
+Learn more: xref:model-proxy.adoc[] and xref:model-proxy-create-model-proxy.adoc[].
 
 === Set Model Costs and Cap Spend with Wallets
 
@@ -338,7 +338,7 @@ You also need these permissions:
 | Use the Cost Management experience | API Manager: Manage Policies, View APIs Configuration, and View Policies; Anypoint Monitoring: Monitoring Viewer; and Exchange: Exchange Viewer. Anypoint Code Builder: Mule Developer Generative AI User is optional and required only to enable AI features.
 |===
 
-Learn more: xref:general::exp-governance-view-cost-and-token-usage.adoc[], xref:general::exp-model-wallets-manage.adoc[], xref:general::exp-models-manage-costs.adoc[], and xref:af-use-case-cost-management.adoc[].
+Learn more: xref:exp-governance-view-cost-and-token-usage.adoc[], xref:exp-model-wallets-manage.adoc[], xref:exp-models-manage-costs.adoc[], and xref:af-use-case-cost-management.adoc[].
 
 === Route and Cache Model Calls
 
@@ -360,7 +360,7 @@ You also need these permissions:
 | Configure semantic caching | One of: Exchange Contributor, Exchange Administrator, or Exchange Creator
 |===
 
-Learn more: xref:general::model-proxy-semantic-service.adoc[] and xref:general::model-proxy-semantic-caching-service.adoc[].
+Learn more: xref:model-proxy-semantic-service.adoc[] and xref:model-proxy-semantic-caching-service.adoc[].
 
 == Detect and Contain Rogue Agents
 
@@ -382,7 +382,7 @@ You also need these permissions:
 | Detect and contain rogue agents | API Manager: API Creator, View APIs Configuration, Edit APIs Configuration, View API Alerts, and Manage API Alerts
 |===
 
-Learn more: xref:general::exp-detect-and-contain-rogue-agents.adoc[].
+Learn more: xref:exp-detect-and-contain-rogue-agents.adoc[].
 
 == Keep Credentials in an External Vault
 
@@ -403,7 +403,7 @@ You also need these permissions:
 | Manage vaults | Secrets Manager: Manage Vault Integrations, Exchange Administrator, Exchange Contributor, API Manager: API Creator, and API Manager: Manage Policies
 |===
 
-Learn more: xref:general::exp-vaults-manage.adoc[].
+Learn more: xref:exp-vaults-manage.adoc[].
 
 == Correlate Akamai Risk to Discovered Services
 
@@ -426,7 +426,7 @@ You also need these permissions:
 | Set up Akamai risk correlation | Exchange Administrator in the target business group, plus write access to apply the correlation policy in the environments you scan
 |===
 
-Learn more: xref:general::exp-akamai-risk-correlation.adoc[].
+Learn more: xref:exp-akamai-risk-correlation.adoc[].
 
 [[observe]]
 == Monitor Latency, Errors, and Volume
@@ -453,13 +453,13 @@ You also need these permissions:
 | Manage alerts | One of: API Manager: Manage API Alerts or Runtime Manager: Manage Alerts
 |===
 
-Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:general::exp-services-monitoring.adoc[], and xref:general::exp-alerts-configure-notifications.adoc[].
+Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:exp-services-monitoring.adoc[], and xref:exp-alerts-configure-notifications.adoc[].
 
 == See Also
 
 * xref:index.adoc[Agent Fabric Overview]
 * xref:agent-fabric-use-cases.adoc[]
 * xref:learning-map-agent-fabric.adoc[]
-* xref:general::exp-home-start.adoc#permissions[Enhanced Experience Permissions]
+* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
 * xref:access-management::connecting-salesforce-orgs.adoc[]
 * xref:access-management::enabling-generative-ai.adoc[]
