@@ -138,15 +138,15 @@ For each API instance:
 . Apply the required MCP support policy so the server is callable.
 . Test the MCP server endpoint with sample requests.
 
-For the steps to create an MCP server from an existing API, see xref:general::exp-services-create-mcp-server.adoc[].
+For the steps to create an MCP server from an existing API, see xref:exp-services-create-mcp-server.adoc[].
 
-For the steps to deploy it on Omni Gateway, see xref:general::exp-instances-add.adoc[].
+For the steps to deploy it on Omni Gateway, see xref:exp-instances-add.adoc[].
 
 === Step 4: Apply Omni Gateway Policies
 
 The MCP server controls which API operations are available as tools. Omni Gateway policies control how agents can use those tools at runtime. After deploying the MCP server, apply policies to the MCP server to enforce authentication, rate limiting, logging, and alerting.
 
-For the steps to apply policies, see xref:general::exp-policies-apply-manage.adoc[].
+For the steps to apply policies, see xref:exp-policies-apply-manage.adoc[].
 
 === Step 5: Connect Agents
 
@@ -162,7 +162,7 @@ For the steps to apply policies, see xref:general::exp-policies-apply-manage.ado
 . Check gateway logs for attempts to call unexposed operations.
 . To change which operations agents can call, update the MCP server's tool selection and redeploy.
 
-To monitor MCP servers alongside other services in your portfolio, see xref:general::exp-services-monitoring.adoc[].
+To monitor MCP servers alongside other services in your portfolio, see xref:exp-services-monitoring.adoc[].
 
 
 == Tool Selection Strategies
@@ -304,7 +304,7 @@ MCP servers work with existing identity infrastructure so that agent access to A
 == Related Documentation
 
 * xref:agent-fabric-use-cases.adoc[]
-* xref:general::exp-services-create-mcp-server.adoc[]
-* xref:general::exp-instances-add.adoc[]
-* xref:general::exp-policies-apply-manage.adoc[]
-* xref:general::exp-services-monitoring.adoc[]
+* xref:exp-services-create-mcp-server.adoc[]
+* xref:exp-instances-add.adoc[]
+* xref:exp-policies-apply-manage.adoc[]
+* xref:exp-services-monitoring.adoc[]

@@ -51,7 +51,7 @@ Teams rebuild agents and tools that already exist when they can't find those ass
 
 Use the registry when you start a new agentic project and want to use existing assets or when you want to share assets built by your team.
 
-Learn more: xref:general::exp-portfolio-overview.adoc[]
+Learn more: xref:exp-portfolio-overview.adoc[]
 
 === Scanners
 
@@ -63,7 +63,7 @@ Agents appear on platforms faster than teams can manually register them. Scanner
 
 Use scanners when agents run on more than one platform and manual registration can't keep the registry current.
 
-Learn more: xref:general::exp-scanners-add-from-providers.adoc[]
+Learn more: xref:exp-scanners-add-from-providers.adoc[]
 
 [[agent-operations]]
 == Enable Agents to Take Action
@@ -81,7 +81,7 @@ Your APIs already do the work agents need them to do, but agents can't call APIs
 
 Use MCP Bridge when agents must call APIs you already have and you don't want to build a custom MCP server.
 
-Learn more: xref:general::exp-services-create-mcp-server.adoc[]
+Learn more: xref:exp-services-create-mcp-server.adoc[]
 
 === MCP Connector
 
@@ -104,7 +104,7 @@ Agent Fabric orchestrates only A2A-compliant agents, but many enterprise agents,
 
 Use A2A Bridge for agents that aren't yet A2A-compliant. Use A2A Connector when you need custom Mule application logic.
 
-Learn more: xref:general::exp-services-create-a2a-bridge.adoc[]
+Learn more: xref:exp-services-create-a2a-bridge.adoc[]
 
 === A2A Connector
 
@@ -177,7 +177,7 @@ A defined policy isn't the same as healthy traffic. Monitoring shows latency, er
 
 Use monitoring during development to validate performance and in production to meet SLAs and catch issues before they affect users.
 
-Learn more: xref:general::exp-services-monitoring.adoc[] and xref:general::exp-alerts-configure-notifications.adoc[]
+Learn more: xref:exp-services-monitoring.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
 
 [[govern]]
 == AI Security and Governance
@@ -194,7 +194,7 @@ Omni Gateway is Agent Fabric's runtime enforcement point: a single gateway that 
 
 Use a managed instance on Omni Gateway when agents or APIs handle sensitive data, call external systems, or must follow the same runtime rules in every environment. LLM traffic uses a model proxy, which you also deploy to Omni Gateway.
 
-Learn more: xref:general::exp-instances-add.adoc[] and xref:general::exp-policies-apply-manage.adoc[]
+Learn more: xref:exp-instances-add.adoc[] and xref:exp-policies-apply-manage.adoc[]
 
 === Governance Strategies
 
@@ -207,7 +207,7 @@ Rewriting the same security, privacy, and cost rules for every agent and service
 
 Use governance strategies when agents, APIs, and MCP servers must follow the same auditable rules.
 
-Learn more: xref:general::exp-governance-work-with-strategies.adoc[]
+Learn more: xref:exp-governance-work-with-strategies.adoc[]
 
 === Universal Policies
 
@@ -219,7 +219,7 @@ On a multi-vendor gateway landscape, the same control is a different native poli
 
 Use Universal Policies when you run gateways from more than one vendor and need the same controls on all of them.
 
-Learn more: xref:general::exp-policies-universal.adoc[]
+Learn more: xref:exp-policies-universal.adoc[]
 
 === Cross-Gateway and Third-Party API Governance
 
@@ -230,15 +230,15 @@ Services that run on a third-party API gateway still must meet your standards. F
 
 Use cross-gateway governance when APIs that matter to the business run on a connected third-party gateway and still need to meet your standards.
 
-Learn more: xref:general::exp-governance-govern-third-party-apis.adoc[] and xref:general::exp-governance-monitor-cross-gateway-conformance.adoc[]
+Learn more: xref:exp-governance-govern-third-party-apis.adoc[] and xref:exp-governance-monitor-cross-gateway-conformance.adoc[]
 
 === Security
 
 A compromised, misconfigured, or malicious agent can leak data, take unauthorized actions, or drive unexpected cost. These controls detect that behavior, keep credentials in the vault you already use, and surface known risk on services you've already discovered.
 
-* Detect and contain rogue agents: Apply Rogue Agent Detection and Agent Kill Switch policies to each model proxy you want to protect. Detection flags risky behavior for your review. The Kill Switch policy blocks that agent's access to the model proxy when you quarantine it. Quarantine always requires your review, and you reverse it if needed. Learn more: xref:general::exp-detect-and-contain-rogue-agents.adoc[]
-* External vaults: Register an external vault so credentials stay in AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault. Only metadata is stored (zero-copy). Learn more: xref:general::exp-vaults-manage.adoc[]
-* Akamai risk correlation: Correlate security findings to APIs and MCP services you've already discovered, so you can triage risk before it becomes an incident. Learn more: xref:general::exp-akamai-risk-correlation.adoc[]
+* Detect and contain rogue agents: Apply Rogue Agent Detection and Agent Kill Switch policies to each model proxy you want to protect. Detection flags risky behavior for your review. The Kill Switch policy blocks that agent's access to the model proxy when you quarantine it. Quarantine always requires your review, and you reverse it if needed. Learn more: xref:exp-detect-and-contain-rogue-agents.adoc[]
+* External vaults: Register an external vault so credentials stay in AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault. Only metadata is stored (zero-copy). Learn more: xref:exp-vaults-manage.adoc[]
+* Akamai risk correlation: Correlate security findings to APIs and MCP services you've already discovered, so you can triage risk before it becomes an incident. Learn more: xref:exp-akamai-risk-correlation.adoc[]
 
 ////
 === Trusted Agent Identity
@@ -270,7 +270,7 @@ Agents that call each LLM provider directly get a different endpoint, a differen
 
 Use a model proxy when agents call LLMs and you need the same governance, routing, and cost visibility across providers.
 
-Learn more: xref:general::model-proxy.adoc[], xref:general::model-proxy-semantic-service.adoc[], and xref:general::model-proxy-semantic-caching-service.adoc[]
+Learn more: xref:model-proxy.adoc[], xref:model-proxy-semantic-service.adoc[], and xref:model-proxy-semantic-caching-service.adoc[]
 
 === Budget Management
 
@@ -286,9 +286,9 @@ Use budget management when you need visibility and limits on LLM spend. Model wa
 
 Learn more:
 
-* xref:general::exp-governance-view-cost-and-token-usage.adoc[]
-* xref:general::exp-model-wallets-manage.adoc[]
-* xref:general::exp-models-manage-costs.adoc[]
+* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:exp-model-wallets-manage.adoc[]
+* xref:exp-models-manage-costs.adoc[]
 
 === Cost Optimization
 
@@ -300,7 +300,7 @@ A frontier model for a simple task, a repeated prompt, or a bloated payload all 
 
 Use cost optimization when token consumption is a significant cost and you want to reduce spend.
 
-Learn more: xref:general::exp-governance-view-cost-and-token-usage.adoc[]
+Learn more: xref:exp-governance-view-cost-and-token-usage.adoc[]
 
 [[supporting-tools]]
 == Supporting Tools
@@ -341,6 +341,6 @@ Learn more: xref:anypoint-code-builder::vibes-get-started.adoc[] and xref:agent-
 
 == See Also
 
-* xref:general::exp-home-start.adoc#permissions[Enhanced Experience Permissions]
+* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
 * xref:access-management::connecting-salesforce-orgs.adoc[]
 * xref:access-management::enabling-generative-ai.adoc[]

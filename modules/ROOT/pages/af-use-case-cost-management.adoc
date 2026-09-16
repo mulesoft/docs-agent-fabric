@@ -179,7 +179,7 @@ Follow these steps to set up cost management in Agent Fabric.
 
 Set the input and output token cost for each model your proxies use so token usage translates into spend. Dollar figures accrue only from the time you set costs, not retroactively, so set them early. A model with no configured cost shows zero spend, though its token usage is still counted.
 
-For the steps to set model costs, see xref:general::exp-models-manage-costs.adoc[].
+For the steps to set model costs, see xref:exp-models-manage-costs.adoc[].
 
 === Step 3: Turn On Cost Visibility
 
@@ -223,13 +223,13 @@ For the steps to set model costs, see xref:general::exp-models-manage-costs.adoc
 == Related Documentation
 
 * xref:agent-fabric-use-cases.adoc[]
-* xref:general::model-proxy.adoc[]
-* xref:general::model-proxy-semantic-service.adoc[]
-* xref:general::model-proxy-semantic-caching-service.adoc[]
-* xref:general::exp-models-manage-costs.adoc[]
-* xref:general::exp-governance-view-cost-and-token-usage.adoc[]
-* xref:general::exp-model-wallets-manage.adoc[]
-* xref:general::model-proxy-token-reports.adoc[]
-* xref:general::exp-detect-and-contain-rogue-agents.adoc[]
+* xref:model-proxy.adoc[]
+* xref:model-proxy-semantic-service.adoc[]
+* xref:model-proxy-semantic-caching-service.adoc[]
+* xref:exp-models-manage-costs.adoc[]
+* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:exp-model-wallets-manage.adoc[]
+* xref:model-proxy-token-reports.adoc[]
+* xref:exp-detect-and-contain-rogue-agents.adoc[]
 
 
