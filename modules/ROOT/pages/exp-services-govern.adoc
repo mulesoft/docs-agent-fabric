@@ -1,0 +1,29 @@
+= Govern Services in Your Portfolio
+:keywords: governance strategies, universal policies, API policies, cross-gateway conformance, API governance, Anypoint Platform
+
+Govern the services you run so APIs, agents, and MCP servers follow the controls and policies your organization requires. As your portfolio spans Anypoint Platform and external gateway providers, define standards once, apply policies where they belong, and monitor conformance from one place.
+
+* xref:exp-governance-work-with-strategies.adoc[Work with Governance Strategies]
++
+Create and manage strategies that validate service conformance or enforce runtime requirements across the services in your portfolio.
+
+* xref:exp-policies-overview.adoc[Manage Policies on Gateway Providers]
++
+View and manage supported policies on Anypoint Platform and external gateway providers from an API instance in *Portfolio*.
+
+* xref:exp-policies-universal.adoc[Apply Universal Policies]
++
+Configure a policy once and apply the provider-native version across selected Anypoint Platform, Google Apigee, Azure API Management, and Kong Gateway instances.
+
+* xref:exp-governance-monitor-cross-gateway-conformance.adoc[Monitor Cross-Gateway Conformance]
++
+Review conformance results for APIs across Anypoint Platform and connected third-party providers, then focus on the services that need attention.
+
+== See Also
+
+* xref:exp-governance-create-strategy.adoc[]
+* xref:exp-governance-manage-strategies.adoc[]
+* xref:exp-governance-govern-third-party-apis.adoc[]
+* xref:exp-policies-apply-manage.adoc[]
+* xref:exp-policies-activity-log.adoc[]
+* xref:exp-policies-provider-reference.adoc[]
