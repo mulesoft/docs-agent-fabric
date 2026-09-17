@@ -1,5 +1,6 @@
 = Receive Notifications on External Systems
 :keywords: external systems, slack integration, claude desktop, mcp, mulesoft enhanced experience, integrations
+:page-aliases: general::exp-connect-with-external-systems.adoc
 
 Connect to external systems so teams can act on governed services without leaving their preferred environment. You can integrate with collaboration tools like Slack or AI assistants like Claude Desktop.
 

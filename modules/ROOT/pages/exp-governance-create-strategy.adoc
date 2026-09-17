@@ -106,5 +106,5 @@ For step-by-step guidance on authoring rulesets from your IDE, see the https://d
 
 * xref:exp-governance-work-with-strategies.adoc[]
 * xref:exp-governance-manage-strategies.adoc[]
-* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:costs-manage.adoc[]
 * xref:exp-services-view-details.adoc[]

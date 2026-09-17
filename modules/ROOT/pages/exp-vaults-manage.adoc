@@ -169,7 +169,7 @@ For model proxy setup, see xref:model-proxy.adoc[].
 
 == See Also
 
-* xref:exp-securing-services.adoc[]
+* xref:services-secure.adoc[]
 * xref:exp-providers-manage.adoc[]
 * xref:exp-scanners-add-from-providers.adoc[]
 * xref:exp-scanners-prerequisites-reference.adoc[]

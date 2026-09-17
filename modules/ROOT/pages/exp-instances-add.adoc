@@ -72,4 +72,4 @@ If the instance uses a Kong gateway, applying a policy targets the gateway level
 * xref:exp-services-register-manually.adoc[]
 * xref:exp-services-connect-providers-to-add.adoc[]
 * xref:exp-services-view-details.adoc[]
-* xref:exp-services-monitoring.adoc[]
+* xref:services-monitor.adoc[]

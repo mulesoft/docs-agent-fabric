@@ -380,5 +380,5 @@ The AI assistant operates within your organization's security and privacy contro
 * xref:exp-home-start.adoc[]
 * xref:exp-overview.adoc[]
 * xref:exp-portfolio-overview.adoc[]
-* xref:exp-services-monitoring.adoc[]
+* xref:services-monitor.adoc[]
 * xref:exp-governance-work-with-strategies.adoc[]

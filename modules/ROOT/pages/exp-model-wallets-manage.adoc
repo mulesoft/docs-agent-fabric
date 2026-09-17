@@ -125,7 +125,7 @@ Add multiple budget limits to a wallet. Assign each model to only one budget lim
 --
 . Select *Add Budget*.
 
-Spend-based budgets depend on model costs. To track dollar spend accurately, set a cost for each model on the *Models* page. Models without configured costs show zero spend. See xref:exp-models-manage-costs.adoc[Setting Model Costs for Spend Tracking].
+Spend-based budgets depend on model costs. To track dollar spend accurately, set a cost for each model on the *Models* page. Models without configured costs show zero spend. See xref:exp-models-costs-manage.adoc[Setting Model Costs for Spend Tracking].
 
 When a wallet reaches its budget, the model proxy blocks requests to that provider's models. If a fallback route exists, then the model proxy routes the request to the next model in the proxy's route.
 
@@ -138,5 +138,5 @@ Budgets are approximate rather than a real-time hard cutoff. The model proxy tra
 * xref:gateway::policies-included-jwt-validation.adoc[]
 * xref:gateway::policies-included-client-id-enforcement.adoc[]
 * xref:gateway::policies-included-dataweave-headers-transformation.adoc[]
-* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:costs-manage.adoc[]
 * xref:exp-services-register-manually.adoc[]

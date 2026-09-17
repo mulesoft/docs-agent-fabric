@@ -97,5 +97,5 @@ For the full apply and management workflow, see xref:exp-policies-apply-manage.a
 * xref:exp-services-create-mcp-server.adoc[]
 * xref:model-proxy-semantic-service.adoc[]
 * xref:exp-instances-add.adoc[]
-* xref:exp-services-monitoring.adoc[]
+* xref:services-monitor.adoc[]
 * xref:exp-services-view-detailed-metrics.adoc[]

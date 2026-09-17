@@ -63,5 +63,5 @@ Coordinate with service owners and your governance team if changes affect produc
 
 * xref:exp-governance-work-with-strategies.adoc[]
 * xref:exp-governance-create-strategy.adoc[]
-* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:costs-manage.adoc[]
 * xref:exp-services-view-details.adoc[]

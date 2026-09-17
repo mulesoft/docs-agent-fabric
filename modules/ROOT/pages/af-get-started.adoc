@@ -338,7 +338,7 @@ You also need these permissions:
 | Use the Cost Management experience | API Manager: Manage Policies, View APIs Configuration, and View Policies; Anypoint Monitoring: Monitoring Viewer; and Exchange: Exchange Viewer. Anypoint Code Builder: Mule Developer Generative AI User is optional and required only to enable AI features.
 |===
 
-Learn more: xref:exp-governance-view-cost-and-token-usage.adoc[], xref:exp-model-wallets-manage.adoc[], xref:exp-models-manage-costs.adoc[], and xref:af-use-case-cost-management.adoc[].
+Learn more: xref:costs-manage.adoc[], xref:exp-model-wallets-manage.adoc[], xref:exp-models-costs-manage.adoc[], and xref:af-use-case-cost-management.adoc[].
 
 === Route and Cache Model Calls
 
@@ -453,7 +453,7 @@ You also need these permissions:
 | Manage alerts | One of: API Manager: Manage API Alerts or Runtime Manager: Manage Alerts
 |===
 
-Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:exp-services-monitoring.adoc[], and xref:exp-alerts-configure-notifications.adoc[].
+Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:services-monitor.adoc[], and xref:exp-alerts-configure-notifications.adoc[].
 
 == See Also
 

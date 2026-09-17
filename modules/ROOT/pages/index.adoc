@@ -177,7 +177,7 @@ A defined policy isn't the same as healthy traffic. Monitoring shows latency, er
 
 Use monitoring during development to validate performance and in production to meet SLAs and catch issues before they affect users.
 
-Learn more: xref:exp-services-monitoring.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
+Learn more: xref:services-monitor.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
 
 [[govern]]
 == AI Security and Governance
@@ -286,9 +286,9 @@ Use budget management when you need visibility and limits on LLM spend. Model wa
 
 Learn more:
 
-* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:costs-manage.adoc[]
 * xref:exp-model-wallets-manage.adoc[]
-* xref:exp-models-manage-costs.adoc[]
+* xref:exp-models-costs-manage.adoc[]
 
 === Cost Optimization
 
@@ -300,7 +300,7 @@ A frontier model for a simple task, a repeated prompt, or a bloated payload all 
 
 Use cost optimization when token consumption is a significant cost and you want to reduce spend.
 
-Learn more: xref:exp-governance-view-cost-and-token-usage.adoc[]
+Learn more: xref:costs-manage.adoc[]
 
 [[supporting-tools]]
 == Supporting Tools

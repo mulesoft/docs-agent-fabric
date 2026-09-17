@@ -69,8 +69,8 @@ Put Omni Gateway in the request path so authentication, monitoring, and policy r
 Give agents one governed endpoint for multiple LLM providers. Then cap token spend and reduce what each call consumes.
 
 - xref:model-proxy.adoc[]
-- xref:exp-governance-view-cost-and-token-usage.adoc[]
-- xref:exp-models-manage-costs.adoc[]
+- xref:costs-manage.adoc[]
+- xref:exp-models-costs-manage.adoc[]
 - xref:exp-model-wallets-manage.adoc[]
 - xref:model-proxy-semantic-service.adoc[]
 - xref:model-proxy-semantic-caching-service.adoc[]
@@ -81,7 +81,7 @@ Give agents one governed endpoint for multiple LLM providers. Then cap token spe
 See how agents, brokers, and MCP servers connect. Watch latency, errors, and volume in production.
 
 - xref:agent-visualizer::index.adoc[Visualize Your Agent Network in Agent Visualizer]
-- xref:exp-services-monitoring.adoc[]
+- xref:services-monitor.adoc[]
 - xref:exp-services-view-detailed-metrics.adoc[]
 - xref:exp-alerts-configure-notifications.adoc[]
 |===

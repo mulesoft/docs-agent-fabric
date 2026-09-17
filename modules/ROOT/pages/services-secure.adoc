@@ -1,5 +1,6 @@
 = Securing Services in Your Portfolio
 :keywords: securing services, external vaults, secrets manager, credentials, Akamai API Security, risk correlation, rogue agents, Azure Key Vault, HashiCorp Vault, portfolio, anypoint platform
+:page-aliases: general::exp-securing-services.adoc
 
 Secure the services you already run so leaked keys, open vulnerabilities, and compromised agents are harder to start and faster to stop. Those failures can expose data, take unauthorized actions, or generate unexpected cost. As you add APIs, MCP servers, and agents, security has to travel with each service, not live only in a disconnected tool.
 

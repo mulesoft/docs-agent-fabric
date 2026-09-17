@@ -45,4 +45,4 @@ If a model has no configured cost, then spend tracking and spend-based wallet bu
 == See Also
 
 * xref:exp-model-wallets-manage.adoc[Capping Spend for Callers of Model Proxies]
-* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:costs-manage.adoc[]

@@ -162,7 +162,7 @@ For the steps to apply policies, see xref:exp-policies-apply-manage.adoc[].
 . Check gateway logs for attempts to call unexposed operations.
 . To change which operations agents can call, update the MCP server's tool selection and redeploy.
 
-To monitor MCP servers alongside other services in your portfolio, see xref:exp-services-monitoring.adoc[].
+To monitor MCP servers alongside other services in your portfolio, see xref:services-monitor.adoc[].
 
 
 == Tool Selection Strategies
@@ -307,4 +307,4 @@ MCP servers work with existing identity infrastructure so that agent access to A
 * xref:exp-services-create-mcp-server.adoc[]
 * xref:exp-instances-add.adoc[]
 * xref:exp-policies-apply-manage.adoc[]
-* xref:exp-services-monitoring.adoc[]
+* xref:services-monitor.adoc[]

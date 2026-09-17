@@ -1,5 +1,6 @@
 = Managing Costs and Token Usage
 :keywords: cost management, token usage, ai governance, usage metrics, anypoint platform, cost tracking, ai services
+:page-aliases: general::exp-governance-view-cost-and-token-usage.adoc
 
 Use cost and token metrics to understand usage, control spend, and identify optimization opportunities.
 
@@ -52,7 +53,7 @@ The *Tokens*/*Cost* toggle next to the tabs controls whether *Cost Management* m
 
 To view spend in dollars, set the toggle to *Cost*.
 
-Before dollar amounts appear, you must configure a cost rate for each model. Until you set model rates, the *Cost* view shows a prompt to configure your models, and metrics that depend on cost show zero. To set rates, select *Configure Costs*, or set a cost per token for each model on the *Models* page. See xref:exp-models-manage-costs.adoc[Setting Model Costs for Spend Tracking].
+Before dollar amounts appear, you must configure a cost rate for each model. Until you set model rates, the *Cost* view shows a prompt to configure your models, and metrics that depend on cost show zero. To set rates, select *Configure Costs*, or set a cost per token for each model on the *Models* page. See xref:exp-models-costs-manage.adoc[Setting Model Costs for Spend Tracking].
 
 === When Cost Tracking Begins
 
@@ -189,5 +190,5 @@ For model proxies, you can apply these optimization policies to reduce token cos
 * xref:exp-governance-create-strategy.adoc[]
 * xref:exp-governance-manage-strategies.adoc[]
 * xref:exp-services-view-details.adoc[]
-* xref:exp-services-monitoring.adoc[]
+* xref:services-monitor.adoc[]
 * xref:exp-services-view-detailed-metrics.adoc[]

@@ -151,9 +151,9 @@ After reactivation the audit log records the action.
 
 == See Also
 
-* xref:exp-securing-services.adoc[]
+* xref:services-secure.adoc[]
 * xref:exp-alerts-configure-notifications.adoc[]
 * xref:exp-instances-add.adoc[]
 * xref:exp-home-start.adoc[]
-* xref:exp-services-monitoring.adoc[]
+* xref:services-monitor.adoc[]
 * xref:gateway::policies-included-jwt-validation.adoc[]

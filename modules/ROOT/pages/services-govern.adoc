@@ -1,5 +1,6 @@
 = Govern Services in Your Portfolio
 :keywords: governance strategies, universal policies, API policies, cross-gateway conformance, API governance, Anypoint Platform
+:page-aliases: general::exp-services-govern.adoc
 
 Govern the services you run so APIs, agents, and MCP servers follow the controls and policies your organization requires. As your portfolio spans Anypoint Platform and external gateway providers, define standards once, apply policies where they belong, and monitor conformance from one place.
 

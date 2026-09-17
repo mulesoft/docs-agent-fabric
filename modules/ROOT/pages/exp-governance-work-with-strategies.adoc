@@ -36,7 +36,7 @@ Work with your governance lead when strategy changes affect production or compli
 
 * Create strategies for compliance validation or runtime enforcement. See xref:exp-governance-create-strategy.adoc[].
 * Manage strategies by updating scope, rules, status, and priority. See xref:exp-governance-manage-strategies.adoc[].
-* Monitor token usage in *Governance* > *Cost Management*. See xref:exp-governance-view-cost-and-token-usage.adoc[].
+* Monitor token usage in *Governance* > *Cost Management*. See xref:costs-manage.adoc[].
 * Review conformance reporting for xref:exp-overview.adoc[supported catalog types].
 * Apply policies to services from *Portfolio*. See xref:exp-services-view-details.adoc[].
 
@@ -83,7 +83,7 @@ After a scan runs, the API listing and API detail pages don't automatically refl
 
 * xref:exp-governance-create-strategy.adoc[]
 * xref:exp-governance-manage-strategies.adoc[]
-* xref:exp-governance-view-cost-and-token-usage.adoc[]
+* xref:costs-manage.adoc[]
 * xref:exp-overview.adoc[]
 * xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
 * xref:exp-services-view-details.adoc[]

@@ -79,8 +79,8 @@ Test APIs and MCP servers in playgrounds without leaving the portfolio.
 
 Monitor usage and performance, and apply optimization policies to manage costs.
 
-- xref:exp-services-monitoring.adoc[]
-- xref:exp-governance-view-cost-and-token-usage.adoc[]
+- xref:services-monitor.adoc[]
+- xref:costs-manage.adoc[]
 - xref:model-proxy-token-reports.adoc[]
 - xref:exp-services-view-detailed-metrics.adoc[]
 - xref:exp-alerts-configure-notifications.adoc[]
@@ -119,5 +119,5 @@ Connect the enhanced experience to Slack and Claude Desktop.
 
 * xref:exp-home-start.adoc[]
 * xref:exp-compare.adoc[]
-* xref:exp-troubleshoot.adoc[]
+* xref:troubleshoot.adoc[]
 * xref:exp-ai-assistant-troubleshoot.adoc[]

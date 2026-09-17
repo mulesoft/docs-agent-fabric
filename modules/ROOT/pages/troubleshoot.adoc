@@ -1,5 +1,6 @@
 = Troubleshoot Agent Fabric
 :keywords: enhanced experience, troubleshooting, authentication errors, 403 forbidden, 401 unauthorized, permission errors, mulesoft, agent fabric
+:page-aliases: general::exp-troubleshoot.adoc
 
 When authentication, connection, or data issues occur in the enhanced experience, use this information to identify the cause and find solutions. Common issues include permission errors, provider connection failures, rate limiting, missing data, and SSL certificate problems.
 
