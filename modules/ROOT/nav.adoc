@@ -32,7 +32,7 @@
   ** xref:exp-services-create-a2a-bridge.adoc[]
   ** xref:agent-network::af-agent-networks.adoc[Build Agent Networks]
 
-** xref:exp-securing-services.adoc[]
+* xref:exp-securing-services.adoc[]
   ** xref:exp-detect-and-contain-rogue-agents.adoc[]
   ** xref:exp-vaults-manage.adoc[]
   ** xref:exp-akamai-risk-correlation.adoc[]
