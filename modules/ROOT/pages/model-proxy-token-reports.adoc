@@ -1,4 +1,4 @@
-= Viewing Token Usage and Model Proxy Metrics
+= View Token Usage and Model Proxy Metrics
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -1,4 +1,4 @@
-= Securing Services in Your Portfolio
+= Secure Services in Your Portfolio
 :keywords: securing services, external vaults, secrets manager, credentials, Akamai API Security, risk correlation, rogue agents, Azure Key Vault, HashiCorp Vault, portfolio, anypoint platform
 :page-aliases: general::exp-securing-services.adoc
 
