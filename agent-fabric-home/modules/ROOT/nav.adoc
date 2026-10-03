@@ -69,5 +69,5 @@
   ** xref:exp-slack-integrate.adoc[]
 // ** xref:exp-teams-integrate.adoc[]
   ** xref:exp-claude-desktop-connect.adoc[]
- * xref:troubleshoot.adoc[]
+ * xref:troubleshoot.adoc[Troubleshoot]
    ** xref:exp-ai-assistant-troubleshoot.adoc[]

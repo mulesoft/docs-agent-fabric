@@ -1,4 +1,4 @@
-= Troubleshoot Agent Fabric
+= Troubleshoot Authentication and Connection Issues
 :keywords: enhanced experience, troubleshooting, authentication errors, 403 forbidden, 401 unauthorized, permission errors, mulesoft, agent fabric
 :page-aliases: general::exp-troubleshoot.adoc
 
