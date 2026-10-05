@@ -1,12 +1,14 @@
-= Building Agent Networks for Agent Fabric
+= Overview of Agent Networks
 
 An agent network is a coordinated group of agents, brokers, LLMs, and MCP servers that acts as a central hub for defining, validating, and executing agentic processes across your enterprise.
 
 An agent network provides the building blocks of your agentic deployment while MuleSoft Agent Fabric helps you maximize the potential of every AI agent with centralized discovery, orchestration across agents and tools, cross-ecosystem governance, and full transparency into agentic interactions.
 
-You define your agent network in a simple, human-readable YAML file in Anypoint Code Builder. This approach abstracts away the underlying technical complexities, allowing you to focus on the business constraints and context of your process without needing to understand the inner workings of the orchestration engine.
+This page provides foundational concepts about agent networks. For version-specific implementation guidance, see:
 
-At the start of a new agent network project, MuleSoft provides a YAML template and Agent Script file to give you a head start. You can use MuleSoft Vibes to configure your network, publish the assets to Anypoint Exchange, and deploy your agent network instance.
+* xref:2.0:af-agent-networks.adoc[Agent Networks 2.0]
+* xref:1.0:af-agent-networks.adoc[Agent Networks 1.0]
+
 
 [[key-benefits]]
 == Key Benefits of Agent Networks
@@ -38,6 +40,7 @@ Brokers in agent network 2.0 architecture use a guided deterministic approach by
 * Deterministic nodes manage all remaining predefined execution paths, ensuring a fixed and guaranteed workflow after a key probabilistic judgment has been finalized.  
 
 This structure allows brokers to apply high-level LLM intelligence where complex judgment is needed, while the overall agent graph maintains reliable, rule-based predictability across the operational flow.
+
 
 [[agent-network-components]]
 == Agent Network Components
