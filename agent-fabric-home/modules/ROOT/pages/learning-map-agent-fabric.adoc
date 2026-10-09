@@ -1,0 +1,99 @@
+= Learn About Agent Fabric
+:keywords: agent fabric, mulesoft, getting started, ai agents, learning map, anypoint platform
+:page-aliases: agent-fabric::agent-fabric-get-started.adoc, general::learning-map-agent-fabric.adoc
+:page-article-style: learning-map
+
+AI agents, MCP servers, and APIs are built across multiple platforms. That makes reuse, consistent security, and end-to-end LLM spend tracking difficult. Agent Fabric is the control plane for that landscape.
+
+* Find every agent, MCP server, and API in the registry so you reuse what exists instead of rebuilding it.
+* Make the APIs, applications, and agents you already run available as tools, so agents can take action without a rebuild.
+* Put the same authentication, access, and security rules on live traffic, regardless of which platform built the agent.
+* See where token spend goes, cap it, and stop paying a frontier model for work a smaller model can do.
+
+The end-to-end journey for Agent Fabric consists of these tasks, each with links to relevant content to assist you in completing them.
+
+[.lm-table, cols="1a,1a,1a", grid="none"]
+|===
+| image::lm_start.png[""]
+[.lm-bold]##Learn About Agent Fabric##
+
+Start with how the registry, agent actions, governance, and cost control fit together. Then pick a job.
+
+- xref:index.adoc[Agent Fabric Overview]
+
+| image::lm_explore_1.png[""]
+[.lm-bold]##Discover Agentic Assets##
+
+Catalog agents, MCP servers, and APIs so you reuse what exists. Keep that inventory current with scanners.
+
+- xref:exp-portfolio-overview.adoc[]
+- xref:exp-services-add-to-portfolio.adoc[]
+- xref:exp-scanners-add-from-providers.adoc[]
+
+| image::lm_build_1.png[""]
+[.lm-bold]##Enable Agent Actions##
+
+Make the APIs, applications, and agents you already run available as tools. Start by exposing existing APIs as MCP servers, and use an A2A bridge for agents that aren't A2A-compliant. Add a broker only when work spans specialized agents.
+
+- xref:exp-services-create-mcp-server.adoc[]
+- https://videos.mulesoft.com/watch/Dn9QXJKDzTxSJPNgra9LoM[Watch a Video to Learn About MCP Bridge]
+- xref:exp-services-create-a2a-bridge.adoc[]
+- xref:mcp-connector::index.adoc[MCP Connector]
+- xref:a2a-connector::index.adoc[A2A Connector]
+- xref:anypoint-code-builder::vibes-get-started.adoc[Generate Network Configurations with MuleSoft Vibes]
+- xref:agent-network::af-publish-agent-network-assets.adoc[Publish the Agent Network Project to Anypoint Exchange]
+- xref:agent-network::af-deploy-agent-network-targets.adoc[Deploy the Agent Network Assets]
+|===
+
+[.lm-table, cols="1a,1a,1a", grid="none"]
+|===
+| image::lm_build_1.png[""]
+[.lm-bold]##Apply Security and Governance##
+
+Put Omni Gateway in the request path so authentication, monitoring, and policy run on live traffic. Define rules once, then apply them across agents, APIs, and MCP servers.
+
+- xref:exp-instances-add.adoc[]
+- xref:exp-policies-apply-manage.adoc[]
+- xref:exp-governance-work-with-strategies.adoc[]
+- xref:exp-policies-universal.adoc[]
+- xref:exp-governance-govern-third-party-apis.adoc[]
+- xref:exp-governance-monitor-cross-gateway-conformance.adoc[]
+- xref:exp-detect-and-contain-rogue-agents.adoc[]
+- xref:exp-vaults-manage.adoc[]
+- xref:exp-akamai-risk-correlation.adoc[]
+- xref:gateway::gateway-managed-ingress-egress.adoc[Deploy Agent Fabric Ingress and Egress Managed Omni Gateways]
+
+| image::lm_analyze_1.png[""]
+[.lm-bold]##Control LLM Spend##
+
+Give agents one governed endpoint for multiple LLM providers. Then cap token spend and reduce what each call consumes.
+
+- xref:model-proxy.adoc[]
+- xref:costs-manage.adoc[]
+- xref:exp-models-costs-manage.adoc[]
+- xref:exp-model-wallets-manage.adoc[]
+- xref:model-proxy-semantic-service.adoc[]
+- xref:model-proxy-semantic-caching-service.adoc[]
+
+| image::lm_analyze_1.png[""]
+[.lm-bold]##Observe Agent Traffic##
+
+See how agents, brokers, and MCP servers connect. Watch latency, errors, and volume in production.
+
+- xref:agent-visualizer::index.adoc[Visualize Your Agent Network in Agent Visualizer]
+- xref:services-monitor.adoc[]
+- xref:exp-services-view-detailed-metrics.adoc[]
+- xref:exp-alerts-configure-notifications.adoc[]
+|===
+
+
+[discrete]
+== See Also
+
+* xref:index.adoc[Agent Fabric Overview]
+* xref:exp-overview.adoc[]
+* xref:anypoint-code-builder::index.adoc[Anypoint Code Builder]
+* xref:agent-visualizer::index.adoc[Agent Visualizer]
+* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
+* xref:access-management::connecting-salesforce-orgs.adoc[]
+* xref:access-management::enabling-generative-ai.adoc[]
