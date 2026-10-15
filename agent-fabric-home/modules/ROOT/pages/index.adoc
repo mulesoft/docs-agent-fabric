@@ -1,7 +1,9 @@
 = Agent Fabric Overview
-:keywords: mulesoft agent fabric, mcp server, mcp bridge, mcp connector, a2a bridge, a2a connector, agent broker, enterprise actionability, ai agents, mulesoft integration, model context protocol
+:keywords: mulesoft agent fabric, mcp server, mcp bridge, mcp connector, a2a bridge, a2a connector, agent broker, enterprise actionability, ai agents, mulesoft integration, model context protocol, portfolio, enhanced mulesoft experience
 
 Teams build AI agents, MCP servers, and APIs across multiple platforms. As a result, it's challenging to easily reuse, apply consistent security controls, or track end-to-end cost. Agent Fabric is the AI control plane for that landscape. With Agent Fabric, gain visibility across every asset, let agents take action in your existing tech stack, enforce universal policies at runtime, and see and optimize what your AI investments are costing.
+
+Sign in to Agent Fabric through the entry point your organization provides, such as Anypoint Platform or a direct URL. The catalogs, dashboards, and governance tools you see depend on the permissions your administrator assigns. To set up access and learn your way around, see xref:af-get-started.adoc[].
 
 
 [[how-agent-fabric-works]]
@@ -11,7 +13,7 @@ You can't apply governance, security, or cost controls to agents you don't know 
 
 image::agent-fabric-pillars.png["Diagram of Agent Fabric: a visibility foundation that supports connecting agents to existing systems, governing production traffic, and controlling LLM cost"]
 
-* <<agent-registry,Agent registry>>
+* <<agent-registry,Registry>>
 +
 Find every agent, MCP server, and API, and reuse what exists instead of rebuilding assets.
 * <<agent-operations,Enable agents to take action>>
@@ -36,9 +38,11 @@ Govern, secure, and manage the costs of agents across any platform, including Sa
 ////
 
 [[agent-registry]]
-== Agent Registry
+== Registry
 
-The registry is a single inventory of agents, MCP servers, APIs, and related services, regardless of which platform built them. Find what already exists, then keep the catalog current as new assets appear.
+The registry (Portfolio) is a single inventory of agents, MCP servers, APIs, and related services, regardless of which platform built them. Find what already exists, then keep the catalog current as new assets appear.
+
+Each asset type has its own catalog: *Agents*, *MCP Servers*, *Model Proxies*, *APIs* (REST and GraphQL), and *Gateways* (Omni Gateway, external gateways, and unmanaged gateways).
 
 === Registry
 
@@ -74,12 +78,12 @@ Start by exposing existing APIs as MCP servers, and use an A2A bridge for agents
 
 === Expose APIs as MCP Servers
 
-Your APIs already do the work agents need them to do, but agents can't call APIs as tools until you expose those APIs as MCP servers. MCP Bridge turns an existing API or SaaS system into an MCP server without custom code and without changing the underlying system.
+Your APIs already do the work agents need them to do, but agents can't call APIs as tools until you expose those APIs as MCP servers. Agent Fabric turns an existing API or SaaS system into an MCP server without custom code and without changing the underlying system.
 
 * Publish only the operations agents should call.
 * Apply existing governance policies to the resulting MCP server.
 
-Use MCP Bridge when agents must call APIs you already have and you don't want to build a custom MCP server.
+Expose APIs as MCP servers when agents must call APIs you already have and you don't want to build a custom MCP server.
 
 Learn more: xref:exp-services-create-mcp-server.adoc[]
 
@@ -192,7 +196,7 @@ Omni Gateway is Agent Fabric's runtime enforcement point: a single gateway that 
 * Limit which tools and APIs an agent can call.
 * Keep an audit trail of traffic for security and compliance.
 
-Use a managed instance on Omni Gateway when agents or APIs handle sensitive data, call external systems, or must follow the same runtime rules in every environment. LLM traffic uses a model proxy, which you also deploy to Omni Gateway.
+Use a managed instance on Omni Gateway when agents or APIs handle sensitive data, call external systems, or must follow the same runtime rules in every environment. When you don't need Omni Gateway in the request path, create an unmanaged instance instead. LLM traffic uses a model proxy, which you also deploy to Omni Gateway.
 
 Learn more: xref:exp-instances-add.adoc[] and xref:exp-policies-apply-manage.adoc[]
 
@@ -200,9 +204,9 @@ Learn more: xref:exp-instances-add.adoc[] and xref:exp-policies-apply-manage.ado
 
 Rewriting the same security, privacy, and cost rules for every agent and service doesn't scale. A governance strategy defines those rules once and applies them across the agents, APIs, and MCP servers in scope.
 
-* Define rules once for access, data privacy, performance and cost, and compliance.
+* Define rules once across access and security, data privacy and integrity, performance and cost, and compliance and observability.
 * Apply them at the service or instance so live traffic matches the strategy.
-* See which services fail conformance.
+* Review conformance reports that summarize scores, rule violations, warnings, and severity for each service.
 * Block or flag noncompliant activity.
 
 Use governance strategies when agents, APIs, and MCP servers must follow the same auditable rules.
@@ -226,6 +230,7 @@ Learn more: xref:exp-policies-universal.adoc[]
 Services that run on a third-party API gateway still must meet your standards. Federated governance includes those APIs in the same conformance view so they don't escape oversight.
 
 * Govern third-party APIs alongside MuleSoft-hosted APIs.
+* Apply, enable, disable, and remove policies on connected Azure API Management, Google Apigee, and Kong Gateway instances directly from Anypoint Platform, with no Omni Gateway in the request path. Policy write requires a scanner connection whose credentials carry the provider's write scope.
 * Monitor conformance across gateways from different vendors.
 
 Use cross-gateway governance when APIs that matter to the business run on a connected third-party gateway and still need to meet your standards.
@@ -237,7 +242,7 @@ Learn more: xref:exp-governance-govern-third-party-apis.adoc[] and xref:exp-gove
 A compromised, misconfigured, or malicious agent can leak data, take unauthorized actions, or drive unexpected cost. These controls detect that behavior, keep credentials in the vault you already use, and surface known risk on services you've already discovered.
 
 * Detect and contain rogue agents: Apply Rogue Agent Detection and Agent Kill Switch policies to each model proxy you want to protect. Detection flags risky behavior for your review. The Kill Switch policy blocks that agent's access to the model proxy when you quarantine it. Quarantine always requires your review, and you reverse it if needed. Learn more: xref:exp-detect-and-contain-rogue-agents.adoc[]
-* External vaults: Register an external vault so credentials stay in AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault. Only metadata is stored (zero-copy). Learn more: xref:exp-vaults-manage.adoc[]
+* External vaults: Register an external vault so credentials stay in AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault. MuleSoft never stores, displays, or logs secret values. A model proxy can reference a vault secret instead of storing a key. Learn more: xref:exp-vaults-manage.adoc[]
 * Akamai risk correlation: Correlate security findings to APIs and MCP services you've already discovered, so you can triage risk before it becomes an incident. Learn more: xref:exp-akamai-risk-correlation.adoc[]
 
 ////
@@ -274,13 +279,13 @@ Learn more: xref:model-proxy.adoc[], xref:model-proxy-semantic-service.adoc[], a
 
 === Budget Management
 
-Token usage and spend are visible, so you track and cap cost as needed. Set model costs so token counts read as dollars. Set budgets to limit spend or tokens over time. Use model wallets to cap a caller's token or dollar spend against a provider.
+Token usage and spend are visible in one place, so you can track and cap cost. Set model costs so token counts read as dollars. Spend counts only from the time you set those costs. A model wallet identifies a caller of a model proxy, and budgets on the wallet cap that caller's spend or tokens against a provider.
 
-* Monitor token usage and spend across model proxies, agents, and MCP servers.
-* See which providers and model wallets are at risk or at their limit.
+* Monitor organization-wide token usage and spend by provider and by model wallet.
+* See which budgets are at risk (75% of the limit or more) or at their limit.
 * Set input and output token costs per model so reports read as dollars.
-* Set daily, weekly, or monthly budgets by spend or by tokens.
-* Cap a model-proxy caller's token or dollar spend against a provider. After the budget is reached, the proxy blocks further requests to that provider's models.
+* Add daily, weekly, or monthly budgets to a model wallet, measured by spend or by tokens.
+* When a wallet reaches its budget, the proxy blocks further requests to that provider's models, or routes them to the next model if the proxy has a fallback route.
 
 Use budget management when you need visibility and limits on LLM spend. Model wallets require an identity provider. Budgets are approximate: Usage can briefly exceed a limit before the proxy blocks requests.
 
@@ -296,7 +301,7 @@ A frontier model for a simple task, a repeated prompt, or a bloated payload all 
 
 * Route by model or by meaning (semantic routing) instead of always using the most expensive model.
 * Reuse results for similar requests with semantic caching.
-* Trim unnecessary tools and payload with optimization policies.
+* Review estimated savings for each model proxy, agent, and MCP server in *Governance* > *Cost Management*, then apply the recommended optimization policy, such as MCP Tool Mapping, Clean Payloads, or Semantic Caching.
 
 Use cost optimization when token consumption is a significant cost and you want to reduce spend.
 
@@ -304,6 +309,18 @@ Learn more: xref:costs-manage.adoc[]
 
 [[supporting-tools]]
 == Supporting Tools
+
+=== MuleSoft Agent
+
+Finding the right page, service, or setting across a large registry takes time. The MuleSoft Agent, available from every page in Agent Fabric, helps you navigate, search, and manage your registry through natural language conversations.
+
+* Get context-aware guidance based on your current task.
+* Have the agent perform actions after you confirm them.
+* Get suggested next steps.
+
+Use the MuleSoft Agent when you want to find or change something without navigating to it yourself.
+
+Learn more: xref:exp-ai-assistant-use.adoc[]
 
 === Anypoint Code Builder
 
@@ -341,6 +358,8 @@ Learn more: xref:anypoint-code-builder::vibes-get-started.adoc[] and xref:agent-
 
 == See Also
 
-* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
+* xref:af-get-started.adoc[]
+* xref:af-get-started.adoc#permissions[Agent Fabric Permissions]
+* xref:exp-compare.adoc[]
 * xref:access-management::connecting-salesforce-orgs.adoc[]
 * xref:access-management::enabling-generative-ai.adoc[]
