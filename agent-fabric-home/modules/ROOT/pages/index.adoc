@@ -1,13 +1,13 @@
 = Agent Fabric Overview
-:keywords: mulesoft agent fabric, mcp server, mcp bridge, mcp connector, a2a bridge, a2a connector, agent broker, enterprise actionability, ai agents, mulesoft integration, model context protocol, portfolio, enhanced mulesoft experience
+:keywords: agent fabric, mcp server, mcp bridge, mcp connector, a2a bridge, a2a connector, agent broker, enterprise actionability, ai agents, mulesoft integration, model context protocol, portfolio, enhanced mulesoft experience
 
-Teams build AI agents, MCP servers, and APIs across multiple platforms. As a result, it's challenging to easily reuse, apply consistent security controls, or track end-to-end cost. Agent Fabric is the AI control plane for that landscape. With Agent Fabric, gain visibility across every asset, let agents take action in your existing tech stack, enforce universal policies at runtime, and see and optimize what your AI investments are costing.
+Teams build AI agents, MCP servers, and APIs across multiple platforms. As a result, it's challenging to easily reuse, apply consistent security controls, or track end-to-end cost. Agent Fabric is the AI control plane for that landscape. With Agent Fabric, gain visibility across every asset, let agents take action in your existing tech stack, enforce open policies at runtime, and see and optimize what your AI investments are costing.
 
 Sign in to Agent Fabric through the entry point your organization provides, such as Anypoint Platform or a direct URL. The catalogs, dashboards, and governance tools you see depend on the permissions your administrator assigns. To set up access and learn your way around, see xref:af-get-started.adoc[].
 
 
-[[how-agent-fabric-works]]
-== How Agent Fabric Works
+[[key-benefits]]
+== Key Benefits of Agent Fabric
 
 You can't apply governance, security, or cost controls to agents you don't know about. After you capture an inventory of agents, choose the jobs you need those agents to do.
 
@@ -26,16 +26,38 @@ Put the same authentication, access, and security rules on every agent, MCP serv
 +
 See where token spend goes, cap it, and stop paying frontier models for work smaller models can do.
 
-////
-MuleSoft supports Agentforce and Agent Fabric together. Each plays a distinct role:
+[[before-you-begin]]
+== Before You Begin
 
-* Agentforce
+Complete these checks with your administrator before you rely on Agent Fabric in production. Requirements vary by entry point and by which jobs you do.
+
+Access and Credentials::
 +
-Build and deploy Salesforce-native agents for use within the Salesforce ecosystem.
-* Agent Fabric
+* Confirm that you have an Anypoint Platform user account and valid credentials for your organization's entry path.
+* Confirm that you can reach Agent Fabric and integrated services, such as Anypoint Platform or a connected coding assistant, from the networks and locations you use.
+
+Platform and Product Access::
 +
-Govern, secure, and manage the costs of agents across any platform, including Salesforce Agentforce, Amazon Bedrock, Google Vertex AI, Microsoft Copilot Studio, and others. Choose Agent Fabric when you need a network of agents that use the same security, compliance, and cost management rules regardless of where you built them.
-////
+Confirm these platform settings with your administrator:
+
+* Confirm that your organization has the required product access for Agent Fabric and that an administrator turned it on for your Anypoint Platform business group or organization. If Agent Fabric isn't available, contact your Anypoint Platform organization administrator or MuleSoft account team.
+* Confirm that generative AI is turned on for your organization when you use AI-assisted features. See xref:access-management::enabling-generative-ai.adoc[].
+* Confirm that any connected Salesforce orgs are linked. See xref:access-management::connecting-salesforce-orgs.adoc[].
+* Confirm that required integrations with Anypoint Platform or your development environment work end to end.
+* If Agent Fabric connects to other services, work with your administrator to configure authentication, such as API keys or OAuth tokens.
+* Confirm that your administrator approved and configured required external connections, such as cloud providers under *Platform* > *Providers*.
+
+Permissions::
+Confirm that your administrator assigned the permissions for the jobs you do. See <<permissions>>.
+
+[TIP]
+====
+These apply to more than one job:
+
+* *Omni Gateway* (managed or self-managed) puts authentication, monitoring, and policy in the request path. It's required for managed instances, A2A bridges, model proxies, and rogue-agent containment. Model Proxy requires an Omni Gateway running in Connected Mode.
+* An identity provider (IdP) that issues JSON Web Tokens (JWTs) is required for model wallets and rogue-agent detection.
+* A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
+====
 
 [[agent-registry]]
 == Registry
@@ -213,17 +235,17 @@ Use governance strategies when agents, APIs, and MCP servers must follow the sam
 
 Learn more: xref:exp-governance-work-with-strategies.adoc[]
 
-=== Universal Policies
+=== Open Policies
 
-On a multi-vendor gateway landscape, the same control is a different native policy on each platform, so gaps appear. Author the intent once with Universal Policies. MuleSoft translates it for each API gateway.
+On a multi-vendor gateway landscape, the same control is a different native policy on each platform, so gaps appear. Author the intent once with open policies. MuleSoft translates it for each API gateway.
 
 * Author a policy once and apply it across gateways from multiple vendors.
 * Enforce common controls such as API key enforcement, CORS, header manipulation, IP allowlisting, and JWT validation.
 * Keep the same governance as services move or scale across platforms.
 
-Use Universal Policies when you run gateways from more than one vendor and need the same controls on all of them.
+Use open policies when you run gateways from more than one vendor and need the same controls on all of them.
 
-Learn more: xref:exp-policies-universal.adoc[]
+Learn more: xref:exp-policies-open.adoc[]
 
 === Cross-Gateway and Third-Party API Governance
 
@@ -348,41 +370,40 @@ Use MuleSoft Vibes when you want to draft or change project files from a descrip
 
 Learn more: xref:anypoint-code-builder::vibes-get-started.adoc[] and xref:agent-network::af-define-your-agent-network-specification.adoc[]
 
-[[workflow]]
 == High-Level Workflow
 
-Catalog what you already run, then do the jobs those assets need. Sign-in, permissions, and navigation are covered in xref:af-get-started.adoc[].
+Manage and tune your AI portfolio by registering assets, applying security policies, and monitoring runtime health. Access centralized catalogs to track agents and gateways while verifying compliance through conformance reports and cost management tools. These integrated features help you optimize performance and maintain audit readiness across your environment
 
-. Complete onboarding and access.
+. Complete onboarding and access
 +
-Confirm your credentials and the permissions your administrator assigned. See xref:af-get-started.adoc#permissions[Agent Fabric Permissions]. Finish setup for supporting systems, such as connected providers under *Platform* > *Providers*, before you rely on Agent Fabric in production.
-. Learn the layout.
+Confirm your credentials and the permissions your administrator assigned, as described in <<permissions>>. Finish integration setup for supporting systems, such as connected providers under *Platform* > *Providers*, before you depend on the new experience in production.
+. Learn the layout
 +
-Sign in through your entry path and land on *Home*. Use *Portfolio* to register services, *Governance* for organization strategies and *Cost Management*, *Observability* for organization-wide health when your administrator turns those views on, and *Platform* to manage providers. For portfolio views, see xref:exp-portfolio-overview.adoc[]. For help from any page, see xref:exp-ai-assistant-use.adoc[].
-. Register services in *Portfolio*.
+Sign in through your entry path and land on *Home*. Scan *Portfolio* catalogs, *Governance*, *Observability*, and *Platform* so you know where to register assets, apply policies, read health signals, and manage providers. For AI assistant usage, see xref:exp-ai-assistant-use.adoc[].
+. Register assets in Portfolio
 +
-Open *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, or *Gateways*. Register a service manually, or use a scanner with a connected provider under *Platform* > *Providers* when discovery is enabled. See xref:exp-services-add-to-portfolio.adoc[].
-. Create and manage instances.
+Under *Portfolio*, open *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, or *Gateways*. Add assets to work with. Register manually or use connected providers under *Platform* > *Providers* if your organization enables discovery flows.
+. Create and manage instances
 +
-On a service detail page for an agent, MCP server, or API, open the *Instances* tab. Create a managed instance to put Omni Gateway in the request path, or an unmanaged instance when you don't need the gateway there. Model proxies and gateways don't include an *Instances* tab. See xref:exp-instances-add.adoc[].
-. Configure policies.
+On *Agents*, *MCP Servers*, *Model Proxies*, and *APIs*, open *Instances* to create managed or unmanaged deployments that match your needs. Managed instances on Omni Gateway give stronger governance and monitoring when the new experience exposes them. *Gateways* don't include an *Instances* tab.
+. Configure policies
 +
-On the *Policies* tab, apply policies for access, data privacy, performance, and compliance to the service or to one of its instances. For APIs on a connected third-party gateway, applying policies requires a scanner connection whose credentials carry the provider's write scope. See xref:exp-scanners-prerequisites-reference.adoc#_policy_write_prerequisites[Policy Write Prerequisites]. Use *Governance* for organization strategies and gateway-wide policies. See xref:exp-governance-work-with-strategies.adoc[].
-. Review governance results.
+On the *Policies* tab for a service or instance, apply governance policies that match access control, data privacy, performance, and compliance goals. Use *Governance* for gateway-wide policy work, organization strategies, and cost tools.
+. Review compliance
 +
-On *Agents*, *APIs*, and *MCP Servers*, open the *Conformance Report* tab to review scores, rule violations, and warnings from governance strategies. For gateways, use *Governance*. See xref:exp-services-view-details.adoc[].
-. Monitor runtime health.
+On *Agents*, *APIs*, and *MCP Servers*, open *Conformance Report* to review scores, violations, and warnings, then address the findings your governance team prioritizes. For gateways, use *Governance* for the same compliance story at the scope the new experience supports.
+. Monitor runtime health
 +
-On *Agents*, *APIs*, *MCP Servers*, and *Model Proxies*, open the *Monitoring* tab for latency, error rates, and request volume on traffic through Omni Gateway. Compare those metrics with dashboards, reports, and notifications under *Observability* when those views are turned on. See xref:services-monitor.adoc[].
-. Manage costs.
+On *Monitoring*, review live metrics such as latency, error rates, and request volume when the new experience surfaces Omni Gateway data for managed paths. Compare what you see with dashboards, reports, or notifications under *Observability* when your administrator enabled those views for your team.
+. Manage cost
 +
-Under *Governance*, open *Cost Management* to review token usage and spend. Apply the optimization policies Agent Fabric recommends, such as MCP Tool Mapping, Clean Payloads, or Semantic Caching. See xref:costs-manage.adoc[].
-. Operate and tune the portfolio.
+Under *Governance*, open *Cost Management* to study token usage and related spend signals. Apply the cost reduction strategies your organization adopted, such as tool mapping or tool sanitization, where the new experience supports them.
+. Operate and tune the portfolio
 +
-Keep agents, APIs, gateways, MCP servers, and model proxies aligned. Open *Versions* when you need configuration history before you change instances or policies. Adjust policies, instances, or registrations when monitoring or governance results show drift or new risk. See xref:exp-services-view-details.adoc[].
-. Improve on each cycle.
+Coordinate agents, APIs, gateways, MCP servers, and Model proxies so traffic, policies, and integrations stay aligned. Open *Versions* when you need configuration history before you change instances or policies. Adjust policies, instances, or registrations when monitoring and governance insights show drift or new risk.
+. Improve on each cycle
 +
-Use what monitoring and governance show to plan the next change. See xref:exp-governance-work-with-strategies.adoc[].
+Feed findings from monitoring and governance back into planning for the next change window.
 
 == What's Next
 

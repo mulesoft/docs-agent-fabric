@@ -26,6 +26,7 @@ Your organization can build access through another tool. Follow the internal acc
 Available access points depend on how your administrators configured the experience's integrations with other platforms.
 ////
 
+////
 [[before-you-begin]]
 == Before You Begin
 
@@ -58,6 +59,7 @@ These apply to more than one job:
 * An identity provider (IdP) that issues JSON Web Tokens (JWTs) is required for model wallets and rogue-agent detection.
 * A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
 ====
+////
 
 [[permissions]]
 == Agent Fabric Permissions
