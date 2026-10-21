@@ -32,10 +32,6 @@ Put the same authentication, access, and security rules on every agent, MCP serv
 +
 See where token spend goes, cap it, and stop paying frontier models for work smaller models can do.
 
-
-
-
-
 [[agent-registry]]
 == Registry
 
@@ -378,41 +374,8 @@ These apply to more than one job:
 * A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
 ====
 
-[[permissions]]
-== Agent Fabric Permissions
-// make this a partial in access management and include there as well.
 
-Agent Fabric uses Anypoint Platform access management.
-Your administrator maps jobs to roles and permissions in Access Management.
-Exact permission names differ by organization.
-Use this table with your internal access guide.
 
-include::access-management::partial$include-permissions-enhanced-exp.adoc[tag=experiencePermissionsTable]
-
-If you can't complete an action or a page shows an authorization error, ask your Anypoint Platform organization administrator for the matching permission or role.
-
-== Access Agent Fabric
-
-Your organization determines how you access Agent Fabric. Common options include these environments.
-
-* Anypoint Platform
-+
-In Anypoint Platform, look for the new experience banner or shortcut and choose *Go to the new experience*. Your administrator can also add a direct link in the main navigation or workspace.
-// * Slack
-// +
-// If your organization integrates the new experience with Slack, use the new experience Slack app to receive notifications and alerts, and follow links back into the product. Your workspace can also offer shortcuts or slash commands your admin configures.
-* Coding assistants
-+
-If your organization connects to a supported assistant, such as Claude Code, follow your internal instructions to open the new experience features from that development environment.
-* Direct URL
-+
-Your organization can share a standalone URL that signs you in outside other apps. Use the address your administrator or internal documentation provides.
-* Custom integrations
-+
-Your organization can build access through another tool. Follow the internal access instructions for custom integrations.
-
-[NOTE]
-Available access points depend on how your administrators configured integrations with other platforms.
 
 == High-Level Workflow
 

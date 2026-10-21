@@ -1,9 +1,8 @@
 = Get Started with Agent Fabric
-:keywords: mulesoft agent fabric, get started, prerequisites, permissions, access management, anypoint platform, omni gateway, mcp server, model proxy, portfolio, registry, workflow, enhanced mulesoft experience
+:keywords: agent fabric, get started, prerequisites, permissions, access management, anypoint platform, omni gateway, mcp server, model proxy, portfolio, registry, workflow
 
-Agent Fabric is the AI control plane for agents, MCP servers, and APIs built across platforms. Catalog those assets first. You can't govern, secure, or control the cost of agents you don't know about. Then do only the jobs you need: connect agents to the systems you already run, enforce the same rules on live traffic, and see and control LLM spend.
+Sign in to Agent Fabric, confirm you have the permissions your work requires, and learn where to find catalogs, policies, monitoring, and cost tools. Then choose your first job, such as registering assets, exposing an API as an MCP server, or applying a policy to live traffic.
 
-////
 [[access]]
 == Access Agent Fabric
 
@@ -24,8 +23,19 @@ Your organization can build access through another tool. Follow the internal acc
 
 [NOTE]
 Available access points depend on how your administrators configured the experience's integrations with other platforms.
-////
 
+[[permissions]]
+== Agent Fabric Permissions
+// make this a partial in access management and include there as well.
+
+Agent Fabric uses Anypoint Platform access management.
+Your administrator maps jobs to roles and permissions in Access Management.
+Exact permission names differ by organization.
+Use this table with your internal access guide.
+
+include::access-management::partial$include-permissions-enhanced-exp.adoc[tag=experiencePermissionsTable]
+
+If you can't complete an action or a page shows an authorization error, ask your Anypoint Platform organization administrator for the matching permission or role.
 ////
 [[before-you-begin]]
 == Before You Begin
@@ -61,40 +71,13 @@ These apply to more than one job:
 ====
 ////
 
-[[permissions]]
-== Agent Fabric Permissions
-
-Agent Fabric uses Anypoint Platform access management. Your administrator maps jobs to roles and permissions in Access Management, and exact permission names differ by organization. Use this table and the permission tables in each job section together with your internal access guide. *Portfolio* permissions use Exchange roles.
-
-include::access-management::partial$include-permissions-enhanced-exp.adoc[tag=experiencePermissionsTable]
-
-To apply open policies, or to apply, edit, enable, disable, or remove native policies on external gateways, you also need the Organization Administrator role. Without it, you can't load an open policy catalog, open a policy configuration form, apply an open policy, or apply, edit, enable, disable, or remove native policies on an external gateway. Listing native policy templates on an external gateway still uses the View Policies permission. Viewing policies already applied on Omni or Mule gateways still uses the View Policies or Manage Policies permission.
-
-If you can't complete an action or a page shows an authorization error, ask your Anypoint Platform organization administrator for the matching permission or role.
-
-[[how-you-work]]
+////[[how-you-work]]
 == How You Work in Agent Fabric
 
 Work starts in *Portfolio*, the registry of agents, MCP servers, APIs, model proxies, and gateways across platforms. Find what you already have, then do only the jobs those assets need. Connect agents to existing APIs and applications so they can take action. When live traffic must follow the same authentication, access, and security rules, create a managed instance on Omni Gateway and apply policies. Use monitoring to check runtime health, and use *Cost Management* under *Governance* to see and control token spend.
+ ////
 
-=== Find Your Way Around
-
-Your organization determines how you sign in to Agent Fabric. Common entry points include:
-
-* Anypoint Platform
-+
-Look for the banner or shortcut and choose *Go to the new experience*. Your administrator can also add a direct link in the main navigation or workspace.
-* Direct URL
-+
-Use the standalone address your administrator or internal documentation provides.
-* Coding assistants
-+
-If your organization connects Agent Fabric to a supported assistant, such as Claude Code, follow your internal instructions to open Agent Fabric features from that development environment.
-* Custom integrations
-+
-Follow your organization's internal access instructions.
-
-Available entry points depend on how your administrators configured integrations with other platforms.
+== Find Your Way Around
 
 After you sign in, you land on *Home*. The main navigation has four areas:
 
@@ -139,17 +122,20 @@ Review configuration history before you change instances or policies.
 
 === Choose a Job
 
-Catalog assets first, then open the job you need. Each section lists what you need before you start and links to the procedure.
+You can't govern, secure, or control the cost of agents you don't know about, so start by adding your agents, MCP servers, and APIs to the registry. After that, the jobs are independent. Choose the one that matches your next goal, in any order.
 
-* <<registry,Catalog agents, MCP servers, and APIs>> so teams can find and reuse them.
-* <<enable-actions,Expose existing APIs as MCP servers>> so agents can call them as tools.
-* <<a2a,Present non-A2A agents as A2A-compliant>> so Agent Fabric can orchestrate them.
-* <<coordinate-agents,Coordinate work across specialized agents>> when one agent isn't enough.
-* <<govern,Enforce the same policies on live traffic>> through Omni Gateway.
-* <<cost-control,See LLM spend, cap it, and reduce token use>>.
-* <<rogue-agents,Detect and contain rogue agents>>, <<vaults,keep credentials in an external vault>>, or <<akamai,correlate Akamai risk>> to services you already discovered.
-* <<observe,Monitor latency, errors, and volume>>.
+* Catalog agents, MCP servers, and APIs so teams can find and reuse them: xref:exp-services-add-to-portfolio.adoc[], xref:exp-services-register-manually.adoc[], and xref:exp-scanners-add-from-providers.adoc[]
+* Expose existing APIs as MCP servers so agents can call them as tools: xref:exp-services-create-mcp-server.adoc[]
+* Present non-A2A agents as A2A-compliant so Agent Fabric can orchestrate them: xref:exp-services-create-a2a-bridge.adoc[]
+* Coordinate work across specialized agents when one agent isn't enough: xref:agent-network::af-get-started.adoc[Get Started with Agent Networks]
+* Enforce the same policies on live traffic through Omni Gateway: xref:exp-instances-add.adoc[], xref:exp-policies-apply-manage.adoc[], and xref:exp-governance-work-with-strategies.adoc[]
+* See LLM spend, cap it, and reduce token use: xref:model-proxy-create-model-proxy.adoc[], xref:exp-models-costs-manage.adoc[], xref:exp-model-wallets-manage.adoc[], and xref:costs-manage.adoc[]
+* Detect and contain rogue agents: xref:exp-detect-and-contain-rogue-agents.adoc[]
+* Keep credentials in an external vault: xref:exp-vaults-manage.adoc[]
+* Correlate Akamai risk to services you already discovered: xref:exp-akamai-risk-correlation.adoc[]
+* Monitor latency, errors, and volume: xref:services-monitor.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
 
+////
 [[registry]]
 == Catalog Agents, MCP Servers, and APIs
 
@@ -545,6 +531,7 @@ You also need these permissions:
 |===
 
 Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:services-monitor.adoc[], and xref:exp-alerts-configure-notifications.adoc[].
+////
 
 == See Also
 
