@@ -1,5 +1,11 @@
 = Agent Fabric Overview
-:keywords: agent fabric, mcp server, mcp bridge, mcp connector, a2a bridge, a2a connector, agent broker, enterprise actionability, ai agents, mulesoft integration, model context protocol, portfolio, enhanced mulesoft experience
+:keywords: agent fabric, ai control plane, ai agents, agent registry, portfolio, scanners, mcp server, mcp bridge, mcp connector, model context protocol, a2a bridge, a2a connector, agent broker, agent network, agent visualizer, omni gateway, ai governance, governance strategies, open policies, rogue agent detection, external vault, model proxy, model wallet, semantic caching, ai cost control, token budget, cost optimization, mulesoft agent
+
+//What is this, and why would I care? (intro and Key Benefits)
+//What can it do? (the pillars)
+//What do I need to start? (setup)
+//What does day-to-day work look like? (workflow)
+//Where do I go next? (What's Next)
 
 Teams build AI agents, MCP servers, and APIs across multiple platforms. As a result, it's challenging to easily reuse, apply consistent security controls, or track end-to-end cost. Agent Fabric is the AI control plane for that landscape. With Agent Fabric, gain visibility across every asset, let agents take action in your existing tech stack, enforce open policies at runtime, and see and optimize what your AI investments are costing.
 
@@ -26,38 +32,9 @@ Put the same authentication, access, and security rules on every agent, MCP serv
 +
 See where token spend goes, cap it, and stop paying frontier models for work smaller models can do.
 
-[[before-you-begin]]
-== Before You Begin
 
-Complete these checks with your administrator before you rely on Agent Fabric in production. Requirements vary by entry point and by which jobs you do.
 
-Access and Credentials::
-+
-* Confirm that you have an Anypoint Platform user account and valid credentials for your organization's entry path.
-* Confirm that you can reach Agent Fabric and integrated services, such as Anypoint Platform or a connected coding assistant, from the networks and locations you use.
 
-Platform and Product Access::
-+
-Confirm these platform settings with your administrator:
-
-* Confirm that your organization has the required product access for Agent Fabric and that an administrator turned it on for your Anypoint Platform business group or organization. If Agent Fabric isn't available, contact your Anypoint Platform organization administrator or MuleSoft account team.
-* Confirm that generative AI is turned on for your organization when you use AI-assisted features. See xref:access-management::enabling-generative-ai.adoc[].
-* Confirm that any connected Salesforce orgs are linked. See xref:access-management::connecting-salesforce-orgs.adoc[].
-* Confirm that required integrations with Anypoint Platform or your development environment work end to end.
-* If Agent Fabric connects to other services, work with your administrator to configure authentication, such as API keys or OAuth tokens.
-* Confirm that your administrator approved and configured required external connections, such as cloud providers under *Platform* > *Providers*.
-
-Permissions::
-Confirm that your administrator assigned the permissions for the jobs you do. See <<permissions>>.
-
-[TIP]
-====
-These apply to more than one job:
-
-* *Omni Gateway* (managed or self-managed) puts authentication, monitoring, and policy in the request path. It's required for managed instances, A2A bridges, model proxies, and rogue-agent containment. Model Proxy requires an Omni Gateway running in Connected Mode.
-* An identity provider (IdP) that issues JSON Web Tokens (JWTs) is required for model wallets and rogue-agent detection.
-* A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
-====
 
 [[agent-registry]]
 == Registry
@@ -158,7 +135,6 @@ Use a broker when work spans multiple specialized agents.
 
 Learn more: xref:agent-network::af-define-your-agent-network-specification.adoc[]
 
-
 === Other AI Connectors
 
 Agents need the LLMs and knowledge stores you already operate. AI connectors give agentic workflows pre-built access to those models and vector databases so that you don't need to write a custom integration for each one.
@@ -179,7 +155,6 @@ Learn more:
 * xref:mulesoft-vectors-connector::index.adoc[MuleSoft Vectors Connector]
 * xref:mulesoft-webcrawler-connector::index.adoc[MuleSoft WebCrawler Connector]
 
-
 === Agent Visualizer
 
 Multi-agent systems are hard to operate when you can't see how work moves through them. Agent Visualizer maps your agents, MCP servers, and LLMs, including agents from external platforms, to verify routing in development and find bottlenecks and failures in production.
@@ -191,19 +166,6 @@ Multi-agent systems are hard to operate when you can't see how work moves throug
 Use Agent Visualizer during development to verify the network, at deployment to confirm routing, and in production to troubleshoot.
 
 Learn more: xref:agent-visualizer::index.adoc[]
-
-=== Monitor
-
-A defined policy isn't the same as healthy traffic. Monitoring shows latency, error rates, and request volume so that you can catch regressions and decide when to change policy or capacity.
-
-* View runtime health metrics for a service.
-* Compare signals across instances or environments.
-* Send alerts to Slack, Microsoft Teams, and email.
-* Use organization-wide dashboards when observability is enabled.
-
-Use monitoring during development to validate performance and in production to meet SLAs and catch issues before they affect users.
-
-Learn more: xref:services-monitor.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
 
 [[govern]]
 == AI Security and Governance
@@ -234,6 +196,19 @@ Rewriting the same security, privacy, and cost rules for every agent and service
 Use governance strategies when agents, APIs, and MCP servers must follow the same auditable rules.
 
 Learn more: xref:exp-governance-work-with-strategies.adoc[]
+
+=== Monitor
+
+A defined policy isn't the same as healthy traffic. Monitoring shows latency, error rates, and request volume so that you can catch regressions and decide when to change policy or capacity.
+
+* View runtime health metrics for a service.
+* Compare signals across instances or environments.
+* Send alerts to Slack, Microsoft Teams, and email.
+* Use organization-wide dashboards when observability is enabled.
+
+Use monitoring during development to validate performance and in production to meet SLAs and catch issues before they affect users.
+
+Learn more: xref:services-monitor.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
 
 === Open Policies
 
@@ -370,13 +345,82 @@ Use MuleSoft Vibes when you want to draft or change project files from a descrip
 
 Learn more: xref:anypoint-code-builder::vibes-get-started.adoc[] and xref:agent-network::af-define-your-agent-network-specification.adoc[]
 
+[[before-you-begin]]
+== Before You Begin
+
+Complete these checks with your administrator before you rely on Agent Fabric in production. Requirements vary by entry point and by which jobs you do.
+
+Access and Credentials::
++
+* Confirm that you have an Anypoint Platform user account and valid credentials for your organization's entry path.
+* Confirm that you can reach Agent Fabric and integrated services, such as Anypoint Platform or a connected coding assistant, from the networks and locations you use.
+
+Platform and Product Access::
++
+Confirm these platform settings with your administrator:
+
+* Confirm that your organization has the required product access for Agent Fabric and that an administrator turned it on for your Anypoint Platform business group or organization. If Agent Fabric isn't available, contact your Anypoint Platform organization administrator or MuleSoft account team.
+* Confirm that generative AI is turned on for your organization when you use AI-assisted features. See xref:access-management::enabling-generative-ai.adoc[].
+* Confirm that any connected Salesforce orgs are linked. See xref:access-management::connecting-salesforce-orgs.adoc[].
+* Confirm that required integrations with Anypoint Platform or your development environment work end to end.
+* If Agent Fabric connects to other services, work with your administrator to configure authentication, such as API keys or OAuth tokens.
+* Confirm that your administrator approved and configured required external connections, such as cloud providers under *Platform* > *Providers*.
+
+Permissions::
+Confirm that your administrator assigned the permissions for the jobs you do. See <<permissions>>.
+
+[TIP]
+====
+These apply to more than one job:
+
+* *Omni Gateway* (managed or self-managed) puts authentication, monitoring, and policy in the request path. It's required for managed instances, A2A bridges, model proxies, and rogue-agent containment. Model Proxy requires an Omni Gateway running in Connected Mode.
+* An identity provider (IdP) that issues JSON Web Tokens (JWTs) is required for model wallets and rogue-agent detection.
+* A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
+====
+
+[[permissions]]
+== Agent Fabric Permissions
+// make this a partial in access management and include there as well.
+
+Agent Fabric uses Anypoint Platform access management.
+Your administrator maps jobs to roles and permissions in Access Management.
+Exact permission names differ by organization.
+Use this table with your internal access guide.
+
+include::access-management::partial$include-permissions-enhanced-exp.adoc[tag=experiencePermissionsTable]
+
+If you can't complete an action or a page shows an authorization error, ask your Anypoint Platform organization administrator for the matching permission or role.
+
+== Access Agent Fabric
+
+Your organization determines how you access Agent Fabric. Common options include these environments.
+
+* Anypoint Platform
++
+In Anypoint Platform, look for the new experience banner or shortcut and choose *Go to the new experience*. Your administrator can also add a direct link in the main navigation or workspace.
+// * Slack
+// +
+// If your organization integrates the new experience with Slack, use the new experience Slack app to receive notifications and alerts, and follow links back into the product. Your workspace can also offer shortcuts or slash commands your admin configures.
+* Coding assistants
++
+If your organization connects to a supported assistant, such as Claude Code, follow your internal instructions to open the new experience features from that development environment.
+* Direct URL
++
+Your organization can share a standalone URL that signs you in outside other apps. Use the address your administrator or internal documentation provides.
+* Custom integrations
++
+Your organization can build access through another tool. Follow the internal access instructions for custom integrations.
+
+[NOTE]
+Available access points depend on how your administrators configured integrations with other platforms.
+
 == High-Level Workflow
 
-Manage and tune your AI portfolio by registering assets, applying security policies, and monitoring runtime health. Access centralized catalogs to track agents and gateways while verifying compliance through conformance reports and cost management tools. These integrated features help you optimize performance and maintain audit readiness across your environment
+Manage and tune your AI portfolio by registering assets, applying security policies, and monitoring runtime health. Access centralized catalogs to track agents and gateways while verifying compliance through conformance reports and cost management tools. These integrated features help you optimize performance and maintain audit readiness across your environment.
 
 . Complete onboarding and access
 +
-Confirm your credentials and the permissions your administrator assigned, as described in <<permissions>>. Finish integration setup for supporting systems, such as connected providers under *Platform* > *Providers*, before you depend on the new experience in production.
+Confirm your credentials and the permissions your administrator assigned, as described in <<permissions>>. Finish integration setup for supporting systems, such as connected providers under *Platform* > *Providers*, before you depend on Agent Fabric in production.
 . Learn the layout
 +
 Sign in through your entry path and land on *Home*. Scan *Portfolio* catalogs, *Governance*, *Observability*, and *Platform* so you know where to register assets, apply policies, read health signals, and manage providers. For AI assistant usage, see xref:exp-ai-assistant-use.adoc[].
