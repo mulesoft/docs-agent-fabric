@@ -80,7 +80,7 @@ Put Omni Gateway in the request path so authentication, monitoring, and policy e
 ** xref:exp-detect-and-contain-rogue-agents.adoc[Detect & Contain Rogue Agents]
 ** xref:exp-vaults-manage.adoc[Use Credentials from External Vaults]
 ** xref:exp-akamai-risk-correlation.adoc[Correlate Risk Using Akamai]
-- xref:gateway::gateway-managed-ingress-egress.adoc[Deploy Agent Network Ingress- & Egress-Managed Omni Gateways]
+- xref:gateway::gateway-managed-ingress-egress.adoc[Deploy Agent Network Managed Omni Gateways]
 - https://videos.mulesoft.com/watch/2E2PkqzMnLEjoDhL5YkywT[Video: AI Gateway LLMs Overview]
 - https://videos.mulesoft.com/watch/uQtoaAv9AUGmZQteNTTZF1[Video: Govern Salesforce Headless 360 with Agent Fabric]
 
