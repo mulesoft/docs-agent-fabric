@@ -286,9 +286,9 @@ A compromised, misconfigured, or malicious agent can leak data, take unauthorize
 
 
 [[cost-control]]
-== Control LLM Spend
+== Monitor Usage and Control Costs
 
-LLM token spend grows without a single place to see it, cap it, or reduce it. Budget management shows that spend and caps it. Cost optimization reduces what each call consumes.
+LLM token cost grows without a single place to see it, cap it, or reduce it. Budget management shows that spend and caps it. Cost optimization reduces what each call consumes.
 
 * <<model-proxy>>
 * <<budget-management>>
