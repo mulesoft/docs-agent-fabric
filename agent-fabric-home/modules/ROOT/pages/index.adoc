@@ -19,26 +19,30 @@ You can't apply governance, security, or cost controls to agents you don't know 
 
 image::agent-fabric-pillars.png["Diagram of Agent Fabric: a visibility foundation that supports connecting agents to existing systems, governing production traffic, and controlling LLM cost"]
 
-* <<agent-registry,Registry>>
+* <<register-services-agents,Registry>>
 +
 Find every agent, MCP server, and API, and reuse what exists instead of rebuilding assets.
 * <<agent-operations,Enable agents to take action>>
 +
 Make the APIs, applications, and agents you already run available as tools, so agents can update records and hand work to other agents without rebuilding the agents.
-* <<govern,AI security and governance>>
+* <<secure-govern,AI security and governance>>
 +
 Put the same authentication, access, and security rules on every agent, MCP server, and LLM call, so production traffic is routed by your rules.
 * <<cost-control,AI cost control>>
 +
 See where token spend goes, cap it, and stop paying frontier models for work smaller models can do.
 
-[[agent-registry]]
-== Registry
+[[register-services-agents]]
+== Register Services and Agents
 
 The registry (Portfolio) is a single inventory of agents, MCP servers, APIs, and related services, regardless of which platform built them. Find what already exists, then keep the catalog current as new assets appear.
 
 Each asset type has its own catalog: *Agents*, *MCP Servers*, *Model Proxies*, *APIs* (REST and GraphQL), and *Gateways* (Omni Gateway, external gateways, and unmanaged gateways).
 
+* <<registry>>
+* <<scanners>>
+
+[[registry]]
 === Registry
 
 Teams rebuild agents and tools that already exist when they can't find those assets. Besides your own agents, MCP servers, model proxies, APIs, and gateways, the catalog includes a curated set of public MCP servers from the Official MCP Registry and Informatica.
@@ -52,6 +56,7 @@ Use the registry when you start a new agentic project and want to use existing a
 
 Learn more: xref:exp-portfolio-overview.adoc[]
 
+[[scanners]]
 === Scanners
 
 Agents appear on platforms faster than teams can manually register them. Scanners watch supported platforms and automatically register any agents, APIs, and MCP servers they discover to the matching catalog in the registry.
@@ -71,7 +76,16 @@ An agent that can only describe a problem can't fix it. Agent Fabric exposes you
 
 Start by exposing existing APIs as MCP servers, and use an A2A bridge for agents that aren't A2A-compliant. Add a broker when work spans specialized agents. Use connectors when agents need to call LLMs or other AI services directly.
 
-=== Expose APIs as MCP Servers
+* <<mcp-servers>>
+* <<mcp-connector>>
+* <<a2a-bridge>>
+* <<a2a-connector>>
+* <<agent-broker>>
+* <<other-ai-connectors>>
+* <<agent-visualizer>>
+
+[[mcp-servers]]
+=== MCP Servers
 
 Your APIs already do the work agents need them to do, but agents can't call APIs as tools until you expose those APIs as MCP servers. Agent Fabric turns an existing API or SaaS system into an MCP server without custom code and without changing the underlying system.
 
@@ -82,6 +96,7 @@ Expose APIs as MCP servers when agents must call APIs you already have and you d
 
 Learn more: xref:exp-services-create-mcp-server.adoc[]
 
+[[mcp-connector]]
 === MCP Connector
 
 MCP Connector uses the Model Context Protocol so AI clients can invoke APIs, connectors, and apps from a Mule application. The resulting MCP server or client runs in Mule. As a server, the app exposes API-led investments, legacy systems, and SaaS applications that don't natively support MCP. As a client, the app can call external MCP servers.
@@ -94,6 +109,7 @@ Use MCP Connector when the tools agents need don't map to a single existing API 
 
 Learn more: xref:mcp-connector::index.adoc[MCP Connector]
 
+[[a2a-bridge]]
 === A2A Bridge
 
 Agent Fabric orchestrates only A2A-compliant agents, but many enterprise agents, including Agentforce agents, aren't A2A-compliant on their own. An A2A bridge presents those agents as A2A-compliant so they can join your network without being rebuilt.
@@ -105,6 +121,7 @@ Use A2A Bridge for agents that aren't yet A2A-compliant. Use A2A Connector when 
 
 Learn more: xref:exp-services-create-a2a-bridge.adoc[]
 
+[[a2a-connector]]
 === A2A Connector
 
 A2A Connector implements the A2A protocol in a Mule application so that application can act as an A2A server, an A2A client, or both.
@@ -131,6 +148,7 @@ Use a broker when work spans multiple specialized agents.
 
 Learn more: xref:agent-network::af-define-your-agent-network-specification.adoc[]
 
+[[other-ai-connectors]]
 === Other AI Connectors
 
 Agents need the LLMs and knowledge stores you already operate. AI connectors give agentic workflows pre-built access to those models and vector databases so that you don't need to write a custom integration for each one.
@@ -151,6 +169,7 @@ Learn more:
 * xref:mulesoft-vectors-connector::index.adoc[MuleSoft Vectors Connector]
 * xref:mulesoft-webcrawler-connector::index.adoc[MuleSoft WebCrawler Connector]
 
+[[agent-visualizer]]
 === Agent Visualizer
 
 Multi-agent systems are hard to operate when you can't see how work moves through them. Agent Visualizer maps your agents, MCP servers, and LLMs, including agents from external platforms, to verify routing in development and find bottlenecks and failures in production.
@@ -163,11 +182,19 @@ Use Agent Visualizer during development to verify the network, at deployment to 
 
 Learn more: xref:agent-visualizer::index.adoc[]
 
-[[govern]]
-== AI Security and Governance
+[[secure-govern]]
+== Secure and Govern Agent Traffic
 
 Agents that reach production without a defined security, identity, and compliance strategy become a risk, as different platforms enforce different rules, or even none at all. Define that strategy once, and Agent Fabric enforces it on live traffic across every agent, MCP server, and LLM call.
 
+* <<omni-gateway>>
+* <<governance-strategies>>
+* <<monitor>>
+* <<open-policies>>
+* <<cross-gateway-governance>>
+* <<security>>
+
+[[omni-gateway]]
 === Omni Gateway
 
 Omni Gateway is Agent Fabric's runtime enforcement point: a single gateway that sits in front of your agents, APIs, MCP servers, and LLM traffic, regardless of the platform that built them. A managed instance of an API, agent, or MCP server puts Omni Gateway in the request path so policy enforcement applies across data privacy, authentication, compliance, cost controls, and monitoring.
@@ -180,6 +207,7 @@ Use a managed instance on Omni Gateway when agents or APIs handle sensitive data
 
 Learn more: xref:exp-instances-add.adoc[] and xref:exp-policies-apply-manage.adoc[]
 
+[[governance-strategies]]
 === Governance Strategies
 
 Rewriting the same security, privacy, and cost rules for every agent and service doesn't scale. A governance strategy defines those rules once and applies them across the agents, APIs, and MCP servers in scope.
@@ -193,6 +221,7 @@ Use governance strategies when agents, APIs, and MCP servers must follow the sam
 
 Learn more: xref:exp-governance-work-with-strategies.adoc[]
 
+[[monitor]]
 === Monitor
 
 A defined policy isn't the same as healthy traffic. Monitoring shows latency, error rates, and request volume so that you can catch regressions and decide when to change policy or capacity.
@@ -206,6 +235,7 @@ Use monitoring during development to validate performance and in production to m
 
 Learn more: xref:services-monitor.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
 
+[[open-policies]]
 === Open Policies
 
 On a multi-vendor gateway landscape, the same control is a different native policy on each platform, so gaps appear. Author the intent once with open policies. MuleSoft translates it for each API gateway.
@@ -218,6 +248,7 @@ Use open policies when you run gateways from more than one vendor and need the s
 
 Learn more: xref:exp-policies-open.adoc[]
 
+[[cross-gateway-governance]]
 === Cross-Gateway and Third-Party API Governance
 
 Services that run on a third-party API gateway still must meet your standards. Federated governance includes those APIs in the same conformance view so they don't escape oversight.
@@ -230,6 +261,7 @@ Use cross-gateway governance when APIs that matter to the business run on a conn
 
 Learn more: xref:exp-governance-govern-third-party-apis.adoc[] and xref:exp-governance-monitor-cross-gateway-conformance.adoc[]
 
+[[security]]
 === Security
 
 A compromised, misconfigured, or malicious agent can leak data, take unauthorized actions, or drive unexpected cost. These controls detect that behavior, keep credentials in the vault you already use, and surface known risk on services you've already discovered.
@@ -254,10 +286,15 @@ A compromised, misconfigured, or malicious agent can leak data, take unauthorize
 
 
 [[cost-control]]
-== AI Cost Control
+== Control LLM Spend
 
 LLM token spend grows without a single place to see it, cap it, or reduce it. Budget management shows that spend and caps it. Cost optimization reduces what each call consumes.
 
+* <<model-proxy>>
+* <<budget-management>>
+* <<cost-optimization>>
+
+[[model-proxy]]
 === Model Proxy
 
 Agents that call each LLM provider directly get a different endpoint, a different policy set, and a different bill. A model proxy, deployed to Omni Gateway, is one governed endpoint for multiple providers. Routing, caching, and policy run in front of every call. Token data from those calls feeds cost management.
@@ -270,6 +307,7 @@ Use a model proxy when agents call LLMs and you need the same governance, routin
 
 Learn more: xref:model-proxy.adoc[], xref:model-proxy-semantic-service.adoc[], and xref:model-proxy-semantic-caching-service.adoc[]
 
+[[budget-management]]
 === Budget Management
 
 Token usage and spend are visible in one place, so you can track and cap cost. Set model costs so token counts read as dollars. Spend counts only from the time you set those costs. A model wallet identifies a caller of a model proxy, and budgets on the wallet cap that caller's spend or tokens against a provider.
@@ -288,6 +326,7 @@ Learn more:
 * xref:exp-model-wallets-manage.adoc[]
 * xref:exp-models-costs-manage.adoc[]
 
+[[cost-optimization]]
 === Cost Optimization
 
 A frontier model for a simple task, a repeated prompt, or a bloated payload all add cost without adding value. Optimization policies reduce token consumption for MCP servers, agents, and models without changing what the instance does.
@@ -300,6 +339,7 @@ Use cost optimization when token consumption is a significant cost and you want 
 
 Learn more: xref:costs-manage.adoc[]
 
+////
 [[supporting-tools]]
 == Supporting Tools
 
@@ -340,42 +380,7 @@ Hand-authoring a broker and agent network can be slow, and lead to mistakes at d
 Use MuleSoft Vibes when you want to draft or change project files from a description instead of authoring every file by hand.
 
 Learn more: xref:anypoint-code-builder::vibes-get-started.adoc[] and xref:agent-network::af-define-your-agent-network-specification.adoc[]
-
-[[before-you-begin]]
-== Before You Begin
-
-Complete these checks with your administrator before you rely on Agent Fabric in production. Requirements vary by entry point and by which jobs you do.
-
-Access and Credentials::
-+
-* Confirm that you have an Anypoint Platform user account and valid credentials for your organization's entry path.
-* Confirm that you can reach Agent Fabric and integrated services, such as Anypoint Platform or a connected coding assistant, from the networks and locations you use.
-
-Platform and Product Access::
-+
-Confirm these platform settings with your administrator:
-
-* Confirm that your organization has the required product access for Agent Fabric and that an administrator turned it on for your Anypoint Platform business group or organization. If Agent Fabric isn't available, contact your Anypoint Platform organization administrator or MuleSoft account team.
-* Confirm that generative AI is turned on for your organization when you use AI-assisted features. See xref:access-management::enabling-generative-ai.adoc[].
-* Confirm that any connected Salesforce orgs are linked. See xref:access-management::connecting-salesforce-orgs.adoc[].
-* Confirm that required integrations with Anypoint Platform or your development environment work end to end.
-* If Agent Fabric connects to other services, work with your administrator to configure authentication, such as API keys or OAuth tokens.
-* Confirm that your administrator approved and configured required external connections, such as cloud providers under *Platform* > *Providers*.
-
-Permissions::
-Confirm that your administrator assigned the permissions for the jobs you do. See <<permissions>>.
-
-[TIP]
-====
-These apply to more than one job:
-
-* *Omni Gateway* (managed or self-managed) puts authentication, monitoring, and policy in the request path. It's required for managed instances, A2A bridges, model proxies, and rogue-agent containment. Model Proxy requires an Omni Gateway running in Connected Mode.
-* An identity provider (IdP) that issues JSON Web Tokens (JWTs) is required for model wallets and rogue-agent detection.
-* A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
-====
-
-
-
+////
 
 == High-Level Workflow
 
@@ -414,6 +419,8 @@ Feed findings from monitoring and governance back into planning for the next cha
 
 == What's Next
 
+* xref:af-get-started.adoc[].
+
 * For a guided path through the registry, agent actions, governance, and cost control, get started with the xref:learning-map-agent-fabric.adoc[Agent Fabric learning map].
 
 * For the technical foundations and capability pillars, explore the https://www.mulesoft.com/lp/ebook/mulesoft-agent-fabric-technical-overview[Agent Fabric Technical Overview].
@@ -425,5 +432,8 @@ Feed findings from monitoring and governance back into planning for the next cha
 * xref:af-get-started.adoc[]
 * xref:af-get-started.adoc#permissions[Agent Fabric Permissions]
 * xref:exp-compare.adoc[]
+* xref:exp-ai-assistant-use.adoc[]
+* xref:anypoint-code-builder::index.adoc[]
+* xref:anypoint-code-builder::vibes-get-started.adoc[]
 * xref:access-management::connecting-salesforce-orgs.adoc[]
 * xref:access-management::enabling-generative-ai.adoc[]

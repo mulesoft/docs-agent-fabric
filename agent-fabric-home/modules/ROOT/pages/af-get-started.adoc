@@ -3,6 +3,39 @@
 
 Sign in to Agent Fabric, confirm you have the permissions your work requires, and learn where to find catalogs, policies, monitoring, and cost tools. Then choose your first job, such as registering assets, exposing an API as an MCP server, or applying a policy to live traffic.
 
+[[before-you-begin]]
+== Before You Begin
+
+Complete these checks with your administrator before you rely on Agent Fabric in production. Requirements vary by entry point and by which jobs you do.
+
+Access and Credentials::
++
+* Confirm that you have an Anypoint Platform user account and valid credentials for your organization's entry path.
+* Confirm that you can reach Agent Fabric and integrated services, such as Anypoint Platform or a connected coding assistant, from the networks and locations you use.
+
+Platform and Product Access::
++
+Confirm these platform settings with your administrator:
+
+* Confirm that your organization has the required product access for Agent Fabric and that an administrator turned it on for your Anypoint Platform business group or organization. If Agent Fabric isn't available, contact your Anypoint Platform organization administrator or MuleSoft account team.
+* Confirm that generative AI is turned on for your organization when you use AI-assisted features. See xref:access-management::enabling-generative-ai.adoc[].
+* Confirm that any connected Salesforce orgs are linked. See xref:access-management::connecting-salesforce-orgs.adoc[].
+* Confirm that required integrations with Anypoint Platform or your development environment work end to end.
+* If Agent Fabric connects to other services, work with your administrator to configure authentication, such as API keys or OAuth tokens.
+* Confirm that your administrator approved and configured required external connections, such as cloud providers under *Platform* > *Providers*.
+
+Permissions::
+Confirm that your administrator assigned the permissions for the jobs you do. See <<permissions>>.
+
+[TIP]
+====
+These apply to more than one job:
+
+* *Omni Gateway* (managed or self-managed) puts authentication, monitoring, and policy in the request path. It's required for managed instances, A2A bridges, model proxies, and rogue-agent containment. Model Proxy requires an Omni Gateway running in Connected Mode.
+* An identity provider (IdP) that issues JSON Web Tokens (JWTs) is required for model wallets and rogue-agent detection.
+* A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
+====
+
 [[access]]
 == Access Agent Fabric
 
@@ -36,46 +69,6 @@ Use this table with your internal access guide.
 include::access-management::partial$include-permissions-enhanced-exp.adoc[tag=experiencePermissionsTable]
 
 If you can't complete an action or a page shows an authorization error, ask your Anypoint Platform organization administrator for the matching permission or role.
-////
-[[before-you-begin]]
-== Before You Begin
-
-Complete these checks with your administrator before you rely on Agent Fabric in production. Requirements vary by entry point and by which jobs you do.
-
-Access and Credentials::
-+
-* Confirm that you have an Anypoint Platform user account and valid credentials for your organization's entry path.
-* Confirm that you can reach Agent Fabric and integrated services, such as Anypoint Platform or a connected coding assistant, from the networks and locations you use.
-
-Platform and Product Access::
-+
-Confirm these platform settings with your administrator:
-
-* Confirm that your organization has the required product access for Agent Fabric and that an administrator turned it on for your Anypoint Platform business group or organization. If Agent Fabric isn't available, contact your Anypoint Platform organization administrator or MuleSoft account team.
-* Confirm that generative AI is turned on for your organization when you use AI-assisted features. See xref:access-management::enabling-generative-ai.adoc[].
-* Confirm that any connected Salesforce orgs are linked. See xref:access-management::connecting-salesforce-orgs.adoc[].
-* Confirm that required integrations with Anypoint Platform or your development environment work end to end.
-* If Agent Fabric connects to other services, work with your administrator to configure authentication, such as API keys or OAuth tokens.
-* Confirm that your administrator approved and configured required external connections, such as cloud providers under *Platform* > *Providers*.
-
-Permissions::
-Confirm that your administrator assigned the permissions for the jobs you do. See <<permissions>>.
-
-[TIP]
-====
-These apply to more than one job:
-
-* *Omni Gateway* (managed or self-managed) puts authentication, monitoring, and policy in the request path. It's required for managed instances, A2A bridges, model proxies, and rogue-agent containment. Model Proxy requires an Omni Gateway running in Connected Mode.
-* An identity provider (IdP) that issues JSON Web Tokens (JWTs) is required for model wallets and rogue-agent detection.
-* A connected provider scanner is required before you apply policies to, or govern, third-party gateway APIs.
-====
-////
-
-////[[how-you-work]]
-== How You Work in Agent Fabric
-
-Work starts in *Portfolio*, the registry of agents, MCP servers, APIs, model proxies, and gateways across platforms. Find what you already have, then do only the jobs those assets need. Connect agents to existing APIs and applications so they can take action. When live traffic must follow the same authentication, access, and security rules, create a managed instance on Omni Gateway and apply policies. Use monitoring to check runtime health, and use *Cost Management* under *Governance* to see and control token spend.
- ////
 
 == Find Your Way Around
 
