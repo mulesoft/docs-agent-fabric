@@ -34,7 +34,7 @@ Start with how the registry, agent actions, governance, and cost control fit tog
 Catalog agents, MCP servers, and APIs from any provider or registry, add model proxies and gateways, and create MCP servers. Discover services with scanners.
 
 - xref:exp-portfolio-overview.adoc[]
-- xref:exp-services-add-to-portfolio[Add Services to Your Portfolio]
+- xref:exp-services-add-to-portfolio.adoc[Add Services to Your Portfolio]
 ** xref:exp-services-connect-providers-to-add.adoc[Connect to Service Providers]
 ** xref:exp-scanners-add-from-providers.adoc[Enable Automated Service Discovery]
 ** xref:exp-services-register-manually.adoc[Register Services Manually]
@@ -44,8 +44,6 @@ Catalog agents, MCP servers, and APIs from any provider or registry, add model p
 // - https://videos.mulesoft.com/watch/GJxX42uWd1gGComp3KQqEB[Agent Fabric & GoDaddy ANS Integration]
 - https://blogs.mulesoft.com/news/agent-scanners/[Blog: Catalog Agents Automatically With Scanners]
 - https://videos.mulesoft.com/watch/fqPcAHf5h7RYdfdSqhY9ju[Video: New Scanners for Agent Management]
-// - xref:exchange::importing-agentforce-agents.adoc[Import Agentforce Agents to Exchange]
-// - xref:exchange::to-create-an-asset.adoc[Create and Publish Assets to Exchange]
 
 
 | image::reuse::lm_develop_1.png[""]
@@ -67,7 +65,7 @@ Make your existing APIs, applications, and agents available as tools. Start by e
 [.lm-table, cols="1a,1a,1a", grid="none"]
 |===
 | image::reuse::lm_build_1.png[""]
-[.lm-bold]##Apply Security and Governance##
+[.lm-bold]##Apply Governance to Your Services##
 
 Put Omni Gateway in the request path so authentication, monitoring, and policy enforcement run on live traffic. Define rules once, then apply them across agents, APIs, and MCP servers.
 
@@ -76,13 +74,21 @@ Put Omni Gateway in the request path so authentication, monitoring, and policy e
 ** xref:exp-governance-govern-third-party-apis.adoc[Govern Third-Party Provider APIs]
 ** xref:exp-governance-monitor-cross-gateway-conformance.adoc[Monitor Cross-Gateway Conformance]
 - xref:exp-policies-overview.adoc[Manage Policies on Gateway Providers]
-- xref:services-secure.adoc[]
-** xref:exp-detect-and-contain-rogue-agents.adoc[Detect & Contain Rogue Agents]
-** xref:exp-vaults-manage.adoc[Use Credentials from External Vaults]
-** xref:exp-akamai-risk-correlation.adoc[Correlate Risk Using Akamai]
 - xref:gateway::gateway-managed-ingress-egress.adoc[Deploy Agent Network Managed Omni Gateways]
 - https://videos.mulesoft.com/watch/2E2PkqzMnLEjoDhL5YkywT[Video: AI Gateway LLMs Overview]
 - https://videos.mulesoft.com/watch/uQtoaAv9AUGmZQteNTTZF1[Video: Govern Salesforce Headless 360 with Agent Fabric]
+
+
+| image::reuse::lm_develop_1.png[""]
+[.lm-bold]##Secure Your Services##
+
+Secure the services you already run so leaked keys, open vulnerabilities, and compromised agents are harder to start and faster to stop.
+
+- xref:services-secure.adoc[]
+- xref:exp-detect-and-contain-rogue-agents.adoc[Detect & Contain Rogue Agents]
+- xref:exp-vaults-manage.adoc[Use Credentials from External Vaults]
+- xref:exp-akamai-risk-correlation.adoc[Correlate Risk Using Akamai]
+
 
 | image::reuse::lm_optimize_1.png[""]
 [.lm-bold]##Monitor Usage and Control Costs##
@@ -111,7 +117,8 @@ See how agents, brokers, and MCP servers connect. Watch latency, errors, and vol
 - xref:monitoring::traces.adoc[View Traces in Anypoint Monitoring]
 - xref:external-systems-connect.adoc[Connect to External Systems]
 
-
+|
+|
 |===
 
 
