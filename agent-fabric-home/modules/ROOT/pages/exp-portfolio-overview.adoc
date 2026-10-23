@@ -1,10 +1,16 @@
 = View Your Portfolio
-:keywords: portfolio overview, anypoint platform, api management, integration monitoring, portfolio dashboard, mulesoft
+:keywords: portfolio, api management, integration monitoring, portfolio dashboard, agent fabric, registry
 
 Use portfolio-level views to see how your agents, APIs, MCP servers, Model proxies, and gateways fit together before you drill into a single service. These summaries help you spot gaps in registration, policy coverage, and health signals.
 
 The exact layout depends on how your administrator configured your tenant and which catalogs they enabled.
 include::_partials/exp-navigation-labels.adoc[tag=ExpNavigationLabels]
+
+Watch this video to see how to navigate your portfolio:
+
+++++
+include::_partials/exp-portfolio-overview-video.html[]
+++++
 
 == Before You Begin
 
