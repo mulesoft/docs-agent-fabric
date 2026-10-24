@@ -1,5 +1,5 @@
 = Managing Costs and Token Usage
-:keywords: cost management, token usage, ai governance, usage metrics, anypoint platform, cost tracking, ai services
+:keywords: cost management, token usage, ai governance, usage metrics, cost tracking, ai services
 :page-aliases: general::exp-governance-view-cost-and-token-usage.adoc
 
 Use cost and token metrics to understand usage, control spend, and identify optimization opportunities.

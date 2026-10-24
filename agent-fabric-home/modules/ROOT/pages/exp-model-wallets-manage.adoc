@@ -1,5 +1,5 @@
 = Capping Spend for Callers of Model Proxies
-:keywords: model wallets, model wallet, budgets, token budget, spend limit, model proxies, jwt claims, cost management, anypoint platform
+:keywords: model wallets, model wallet, budgets, token budget, spend limit, model proxies, jwt claims, cost management
 
 A model wallet identifies a caller of a model proxy and caps that caller's token or dollar spend against a provider over a set time window. Each wallet has a system-generated client ID and required JSON Web Token (JWT) claims that you define.
 

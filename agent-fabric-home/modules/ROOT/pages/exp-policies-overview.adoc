@@ -1,5 +1,5 @@
 = Managing Policies on Gateway Providers
-:keywords: policies, gateway policies, external gateways, apigee, azure api management, kong, api manager, anypoint platform
+:keywords: policies, gateway policies, external gateways, apigee, azure api management, kong, api manager
 
 Manage policies not only on Anypoint and Mule gateways but on external gateway providers, such as Google Apigee, Azure API Management, and Kong Gateway. You work with these policies entirely through the Anypoint UI, from the *Policies* tab of an API instance in *Portfolio*.
 

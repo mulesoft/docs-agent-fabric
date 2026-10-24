@@ -1,7 +1,9 @@
 = Managing Governance Strategies
-:keywords: governance strategies, api governance, strategy metrics, filter strategies, anypoint platform, strategy actions, api management
+:keywords: governance strategies, api governance, strategy metrics, filter strategies, strategy actions, api management
 
 Keep governance strategies aligned with your portfolio by adjusting scope, rules, or status as your services and compliance requirements evolve. Summary cards show active strategy counts, type breakdowns, and governance coverage at a glance.
+
+NOTE: Automate strategy management using the MuleSoft MCP Platform Server. For details, see xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc#list-governance-strategies[list_governance_strategies] and related tools in the MuleSoft MCP Platform Server Tool Reference.
 
 == Display Governance Strategies
 

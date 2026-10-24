@@ -1,5 +1,5 @@
 = Learn About Agent Fabric
-:keywords: agent fabric, mulesoft, getting started, ai agents, learning map, anypoint platform
+:keywords: agent fabric, mulesoft, getting started, ai agents, learning map
 :page-aliases: agent-fabric::agent-fabric-get-started.adoc, general::learning-map-agent-fabric.adoc
 :page-article-style: learning-map
 

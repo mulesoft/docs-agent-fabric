@@ -1,5 +1,5 @@
 = Exploring MCP Server Tools in the MCP Playground
-:keywords: mcp server playground, test mcp server, mcp tools, tool invocation, anypoint platform, enhanced experience
+:keywords: mcp server playground, test mcp server, mcp tools, tool invocation, enhanced experience
 
 Use the MCP server playground to understand what an MCP server does and how it behaves without connecting it to an external tool such as Postman, the MCP Inspector, or Claude Desktop. Instead of reading only the overview and documentation, you explore the server's tools, invoke them, and see what they return, directly on the service detail page.
 

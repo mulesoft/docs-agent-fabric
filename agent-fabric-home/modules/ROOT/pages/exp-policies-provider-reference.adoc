@@ -1,5 +1,5 @@
 = Provider Support and Limitations for Policies
-:keywords: policy provider support, apigee, azure api management, kong, aws, injection points, policy permissions, anypoint platform
+:keywords: policy provider support, apigee, azure api management, kong, aws, injection points, policy permissions
 
 External gateways differ substantially in what they support and how they behave. This reference summarizes per-provider policy support, the setup each provider requires on your side, injection points, and locking behavior during operations.
 
