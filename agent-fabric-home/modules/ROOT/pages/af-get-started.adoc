@@ -1,5 +1,5 @@
 = Get Started with Agent Fabric
-:keywords: agent fabric, get started, prerequisites, permissions, access management, anypoint platform, omni gateway, mcp server, model proxy, portfolio, registry, workflow
+:keywords: agent fabric, get started, prerequisites, permissions, access management, omni gateway, mcp server, model proxy, portfolio, registry, workflow
 
 Sign in to Agent Fabric, confirm you have the permissions your work requires, and learn where to find catalogs, policies, monitoring, and cost tools. Then choose your first job, such as registering assets, exposing an API as an MCP server, or applying a policy to live traffic.
 

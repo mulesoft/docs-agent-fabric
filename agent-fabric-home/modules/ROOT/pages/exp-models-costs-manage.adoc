@@ -1,5 +1,5 @@
 = Setting Model Costs for Spend Tracking
-:keywords: models, model costs, cost per token, input tokens, output tokens, spend tracking, budgets, model proxies, cost management, anypoint platform
+:keywords: models, model costs, cost per token, input tokens, output tokens, spend tracking, budgets, model proxies, cost management
 
 Set a cost for each model so usage translates into spend tracking. The *Models* page lists the AI models available in your organization. Wallet budgets can cap spend or token count. Spend caps use the model costs that you set here.
 

@@ -1,5 +1,5 @@
 = Testing Services with Playgrounds
-:keywords: playground, api playground, mcp server playground, test api, test mcp server, anypoint platform, enhanced experience
+:keywords: playground, api playground, mcp server playground, test api, test mcp server, enhanced experience
 
 Use the playground to try services in your portfolio directly in the enhanced experience—no external tools required. Explore endpoints and tools, configure and send requests, and inspect responses without leaving the service detail page.
 

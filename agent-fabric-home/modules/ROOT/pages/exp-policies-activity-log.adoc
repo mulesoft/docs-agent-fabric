@@ -1,5 +1,5 @@
 = Tracking Policy Operations in the Activity Log
-:keywords: activity log, policy operations, asynchronous operations, policy status, api manager, anypoint platform
+:keywords: activity log, policy operations, asynchronous operations, policy status, api manager
 
 Every policy change on an external provider runs asynchronously, so a request that Anypoint accepts isn't the same as a policy that's applied on the gateway. Use the *Activity log* tab on an API instance to confirm what actually happened.
 

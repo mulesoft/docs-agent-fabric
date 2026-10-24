@@ -1,5 +1,5 @@
 = Testing APIs in the API Playground
-:keywords: api playground, test api, api endpoints, api authentication, request snippet, api response, anypoint platform, enhanced experience
+:keywords: api playground, test api, api endpoints, api authentication, request snippet, api response, enhanced experience
 
 Use the API playground to explore an API's endpoints, configure and send requests, and inspect responses from the service detail page. Instead of copying paths into an external tool such as Postman, you exercise the API in the enhanced experience and see the results next to its documentation.
 
