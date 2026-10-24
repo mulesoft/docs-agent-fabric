@@ -1,0 +1,9 @@
+name: agent-network-home
+title: Build and Visualize Agent Networks
+version: ~
+start_page: index.adoc
+nav:
+- modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    page-component-desc: Build AI-driven agent networks to orchestrate multi-agent workflows with governance and observability.
