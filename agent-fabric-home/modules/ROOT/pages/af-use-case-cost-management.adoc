@@ -167,58 +167,8 @@ Here's how it works:
 
 == Implementation Steps
 
-Follow these steps to set up cost management in Agent Fabric.
+For information about how to implement cost management in Agent Fabric, see xref:costs-manage.adoc[Cost Management].
 
-=== Step 1: Deploy the Model Proxy
-
-. Set up the Model Proxy as part of your Omni Gateway deployment.
-. Configure integration with your LLM providers.
-. Route agent traffic through the Model Proxy.
-
-=== Step 2: Set Model Costs
-
-Set the input and output token cost for each model your proxies use so token usage translates into spend. Dollar figures accrue only from the time you set costs, not retroactively, so set them early. A model with no configured cost shows zero spend, though its token usage is still counted.
-
-For the steps to set model costs, see xref:exp-models-costs-manage.adoc[].
-
-=== Step 3: Turn On Cost Visibility
-
-. Identify each caller at the proxy to allocate traffic costs to the right wallet.
-. Use Cost Management to view token consumption and spend by provider, model, and wallet.
-
-=== Step 4: Establish Baseline Costs
-
-. Monitor usage patterns for one to two weeks without optimization.
-. Identify current cost drivers.
-. Categorize query types by complexity and frequency.
-. Calculate baseline cost metrics.
-
-=== Step 5: Optimize with Semantic Routing and Caching
-
-. Define query complexity categories as prompt topics, and assign an appropriate model to each.
-. Create routing rules so routine requests reach a cost-effective model and complex ones reach an advanced model.
-. Enable semantic caching so similar requests reuse a stored response instead of calling the provider again.
-. Test routing and caching with sample queries.
-
-=== Step 6: Set Budget Controls with Model Wallets
-
-. Create a wallet for each caller (team, application, or agent) you want to cap. Wallets require an identity provider that issues signed tokens to identify callers.
-. Add a budget for each provider the caller routes to, choosing a daily, weekly, or monthly period.
-. Set the limit in dollars (USD) or tokens, so requests are blocked when the limit is reached.
-. Watch budget consumption in the Cost Management dashboard.
-
-=== Step 7: Add Runaway-Agent Containment
-
-. Apply the Rogue Agent Detection policy to the proxies you want to protect, and define the anomalies to flag.
-. Register each agent with a unique identity so flags and actions attribute correctly.
-. Apply the Agent Kill Switch policy so that when you quarantine a flagged agent, the proxy blocks its model access.
-. Review flagged activity before you quarantine, and restore access if a flag is a false positive.
-
-=== Step 8: Monitor and Optimize
-
-. Track cost trends after optimization.
-. Refine routing rules and budgets based on results.
-. Share cost savings and optimization wins.
 
 == Related Documentation
 
@@ -231,5 +181,3 @@ For the steps to set model costs, see xref:exp-models-costs-manage.adoc[].
 * xref:exp-model-wallets-manage.adoc[]
 * xref:model-proxy-token-reports.adoc[]
 * xref:exp-detect-and-contain-rogue-agents.adoc[]
-
-
