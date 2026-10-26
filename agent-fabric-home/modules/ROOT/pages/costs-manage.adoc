@@ -32,6 +32,19 @@ Before getting started, make sure you have:
 +
 For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
 
+== Set Up Cost Management
+
+Cost Management tracks only LLM traffic that passes through a model proxy. To track and control LLM spend, complete these tasks.
+
+. Route LLM traffic through a model proxy. See xref:model-proxy.adoc[Creating and Managing Model Proxies].
+. Set input and output token costs for each model. Cost tracking starts when you set costs and doesn't apply to earlier usage, so set costs before you route production traffic. See xref:exp-models-manage-costs.adoc[Setting Model Costs for Spend Tracking].
+. Create a model wallet for each caller so that spend maps to the team or agent that generated it. Model wallets require an identity provider that issues JWTs. See xref:exp-model-wallets-manage.adoc[Capping Spend for Callers of Model Proxies].
+. Establish a baseline. Monitor usage for one to two weeks before you apply optimizations, and identify which providers, models, and wallets drive the most cost.
+. Reduce spend. Apply optimization policies from the *Optimizations* tab, and route requests to lower-cost models with xref:model-proxy-semantic-service.adoc[semantic routing].
+. Cap spend. Add budgets to model wallets. See <<add-a-budget>>.
+. (Optional) Contain runaway agents with the Rogue Agent Detection and Agent Kill Switch policies. See xref:exp-detect-and-contain-rogue-agents.adoc[Detect and Contain Rogue Agents].
+. Review cost trends regularly, and adjust routing rules, policies, and budgets.
+
 == Cost and Token Data Locations
 
 The system displays token usage and performance data in several places:
