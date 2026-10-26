@@ -211,5 +211,5 @@ For model proxies, you can apply these optimization policies to reduce token cos
 * xref:exp-governance-create-strategy.adoc[]
 * xref:exp-governance-manage-strategies.adoc[]
 * xref:exp-services-view-details.adoc[]
-* xref:exp-services-monitoring.adoc[]
+* xref:services-monitor.adoc[]
 * xref:exp-services-view-detailed-metrics.adoc[]
