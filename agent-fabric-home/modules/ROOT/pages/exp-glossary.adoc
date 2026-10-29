@@ -6,46 +6,53 @@ Agent Fabric and the enhanced experience use a consistent set of terms across go
 A2A bridge::
 An A2A-compliant protocol server that presents an A2A facade in front of a non-A2A _source agent_. Implemented as a chain of policies running on an Omni Gateway instance, it translates between the A2A protocol and the agent's native protocol and manages the A2A task lifecycle. Create an A2A bridge to make agents built on platforms such as Salesforce Agentforce discoverable, governable, and orchestratable by Agent Fabric. See xref:exp-services-create-a2a-bridge.adoc[].
 
-A2A Bridge card::
+A2A bridge card::
 The A2A agent card that a bridge publishes. It's derived from the source agent's card plus any capabilities added by the bridge and any customizations you make. Bridge capabilities are set and locked by the platform so the card can't advertise a capability the bridge can't honor.
 
 A2A endpoint::
 An endpoint that exposes an agent's capabilities using the Agent-to-Agent (A2A) protocol. Point to an A2A endpoint during agent registration to fetch the agent card automatically.
 
 Agent::
-An AI-powered service registered in the Agents catalog. Agents connect via A2A endpoints or agent cards and support governance, policy application, and instance management in the enhanced experience.
+An autonomous software component that uses goals, context, and available tools, often through an LLM, to decide and execute actions on behalf of a user or system. Register an agent in the Agents catalog through an A2A endpoint or agent card to govern it, apply policies, and manage instances. In an agent network, define the agent in the project or reference one that already exists elsewhere. Published brokers appear in Anypoint Exchange as agents tagged as brokers, and agent assets must be A2A-compliant.
 
 Agent card::
 A metadata file that describes an agent's capabilities, endpoint, and connection details. Upload an agent card during manual registration, or point to an A2A endpoint to fetch one automatically.
+
+Agent network::
+A coordinated group of agents, brokers, LLMs, and MCP servers that defines, validates, and executes agentic processes across your enterprise. The project publishes to Anypoint Exchange as an agent network asset, which is a .zip of the project files. See xref:agent-network-home::index.adoc[].
+
+Agent Script::
+The language you use in agent network 2.0 to define a broker and its nodes. Each broker is stored in an `.agent` file. See xref:2.0@agent-network::af-agent-script-reference.adoc[].
 
 Akamai security findings::
 Security issues detected by Akamai API Security through live traffic inspection and surfaced in the *Conformance* tab of a governance strategy alongside governance rule results. Critical and High findings map to violations, Medium to warnings, and Low and Info to informational findings. Select a finding to view remediation opportunities and apply a policy directly from the detail panel.
 
 API::
-A service defined by a formal specification and managed in the APIs catalog. Supports REST (OAS, RAML), gRPC (Proto), and AsyncAPI formats. Register APIs manually with a spec file or import them via provider scanners.
+A service defined by a formal specification and managed in the APIs catalog. Supports REST (OAS, RAML), gRPC (Proto), and AsyncAPI formats. Register APIs manually with a spec file or import them through provider scanners.
 
-MuleSoft Agent::
-The embedded agentic experience built into the enhanced MuleSoft experience UI. Use MuleSoft Agent for setup guidance, portfolio questions, and recommendations without leaving the product.
+Broker::
+An intelligent routing service that coordinates task delegation across A2A-compliant agents. In agent network 2.0, you define the broker and its nodes in Agent Script so the graph can mix deterministic steps with LLM reasoning. In agent network 1.0, the broker is defined by the agents and MCP servers it can call and is referenced in the agent network YAML. After you publish, the broker appears in Anypoint Exchange as a specialized agent that other brokers can reuse.
 
-Conformance Report::
+Conformance report::
 A view on the detail pages of agents, APIs, and MCP servers that shows compliance scores, rule violations, and warnings that applied governance strategies generate.
 
 Cross-gateway conformance::
 A unified view of compliance status across APIs hosted on Anypoint Platform gateways and connected third-party provider gateways. Access cross-gateway conformance from the *Governed Services* tab of an active governance strategy. Use the *Any provider* filter to compare conformance by platform or focus on a specific provider.
 
+Edge::
+A transition between nodes in an agent network 2.0 broker graph. Input data enters a node, and output data leaves on the edge to the next node.
+
 Enhanced experience::
-The new MuleSoft UI for managing your AI portfolio, including governance, instance management, observability, and agentic experiences.
+The MuleSoft UI for managing your AI portfolio, including governance, instance management, observability, and agentic experiences.
 
 External gateway provider::
 A third-party API gateway connected through a provider scanner whose policies you can manage from Anypoint. Supported providers include Google Apigee, Azure API Management, and Kong Gateway, with partial support for Amazon API Gateway. Policy management reuses the scanner connection's credentials.
+
 External vault::
 A connection to your cloud secrets manager (AWS Secrets Manager, Microsoft Azure Key Vault, or HashiCorp Vault) configured under *Platform* > *Providers*. MuleSoft stores only secret metadata, such as names and paths, and resolves values from the vault when needed. Secret values are never stored, displayed, or logged. See xref:exp-vaults-manage.adoc[].
 
 Gateway::
 A runtime component that proxies traffic to backend services while enforcing policies. Supported types include Anypoint Omni Gateway (managed), external gateways, and unmanaged gateways.
-
-Injection point::
-Where a policy runs relative to the request and response (for example request or response on Apigee, or inbound, outbound, and backend on Azure API Management). Each policy template declares which injection points it allows.
 
 Governance > Cost Management::
 A section under Governance that surfaces token usage, daily spend signals, and cost optimization recommendations across your portfolio. Apply tool mapping, tool sanitization, and related strategies here where the experience supports them.
@@ -65,50 +72,62 @@ A bundled set of design-time and runtime rules that enforce a governance posture
 Governance Strategy > Controls::
 Design-time rules that validate services against selected rule sets and generate conformance reports. Apply controls as part of a governance strategy to optionally block noncompliant actions.
 
-Governance Strategy > Automated Policies::
-Runtime rules that govern traffic passing through service instances. Policies control access, data handling, rate limits, and other runtime behaviors defined in a governance strategy.
+Injection point::
+Where a policy runs relative to the request and response (for example, request or response on Apigee, or inbound, outbound, and backend on Azure API Management). Each policy template declares which injection points it allows.
 
 Instance::
-A deployed version of a service on a specific gateway or runtime. Instances receive traffic on the Instance URL and proxy requests to the Target URL. Supported service types include APIs, agents, MCP servers, and Model proxies.
+A deployed version of a service on a specific gateway or runtime. Instances receive traffic on the Instance URL and proxy requests to the Target URL. Supported service types include APIs, agents, MCP servers, and model proxies.
 
-Model Proxy::
-A gateway-backed service that routes requests to a large language model. Model proxies register in the Model Proxies catalog and support instance management, policy application, and token usage monitoring.
+LLM::
+A large language model that an agent network broker uses for reasoning and planning. The LLM asset in Exchange records the provider and contract. You set the model and connection in the agent network file. Brokers support models from OpenAI, Azure OpenAI, Amazon Bedrock, and Gemini, and they can call OpenAI and Gemini through a model proxy.
 
 Managed instance::
 An instance backed by Anypoint Omni Gateway that enables full policy enforcement, authentication, and monitoring integration. Managed instances provide stronger governance and observability than unmanaged paths.
 
-MCP Server::
-A server that implements the Model Context Protocol, exposing tools and resources to MCP clients. Create MCP servers from existing APIs, register them manually with an MCP URL or schema file, or import them via provider scanners.
+MCP server::
+A service that implements the Model Context Protocol (MCP) and exposes tools and data so AI clients and LLMs can call external capabilities. Create one from an existing API, register it with an MCP URL or schema file, or import it with a provider scanner. In an agent network, define the server in the project or reference one defined elsewhere. In the agent network file, MCP server assets are defined as tools, and publishing registers them in Exchange as MCP servers.
+
+Model proxy::
+A gateway-backed service that routes requests to a large language model. Model proxies register in the Model Proxies catalog and support instance management, policy application, and token usage monitoring. Agent network 1.0 calls this service an LLM proxy.
 
 MuleSoft Agent::
-The agentic experience for MuleSoft available in Slack. Use the MuleSoft Agent to receive notifications, run shortcuts, and navigate back into the enhanced experience from your messaging workspace.
+The AI assistant in the enhanced experience. Use it from any page to navigate, search, and manage the portfolio in natural language, including setup guidance and recommendations. The same assistant is available in Slack and Microsoft Teams for management tasks, notifications, and shortcuts that open the enhanced experience. Slackbot is a separate assistant. See xref:exp-ai-assistant-use.adoc[].
+
+Node::
+A step in an agent network 2.0 broker graph. Use a node to orchestrate an action with LLM reasoning or to run a deterministic action such as routing.
 
 Observability::
-A section that aggregates org-wide dashboards, reports, and notifications when your administrator enables and connects the observability backend for your business group. Use Observability to compare service-level monitoring signals with broader traffic patterns.
+A section that aggregates organization-wide dashboards, reports, and notifications when your administrator enables and connects the observability backend for your business group. Use Observability to compare service-level monitoring signals with broader traffic patterns.
 
-Platform MCP Server::
-The MCP server that exposes enhanced MuleSoft experience capabilities to MCP clients such as Claude Desktop. Use Platform MCP Server to access portfolio and governance features from supported development environments.
+Open policy::
+A provider-agnostic policy you configure once and apply across gateway providers such as Google Apigee, Azure API Management, Kong Gateway, and Omni Gateway. MuleSoft translates it into each provider's native policy. This is a creation experience: after you apply it, only native policies remain, and you can edit, remove, enable, or disable them where the provider allows. In the UI, these policies carry an *Open* badge. Earlier procedures call this a universal policy or a canonical policy. See xref:exp-policies-universal.adoc[].
+
+Platform MCP server::
+The MCP server that exposes enhanced experience capabilities to MCP clients such as Claude Desktop and Slackbot. Use it to work with the portfolio and governance from a supported client. This server is also called the MuleSoft Platform MCP Server.
 
 Portfolio::
-The set of services registered or discovered within your org, organized into catalogs for agents, APIs, MCP servers, Model proxies, and gateways. Each catalog provides governance, monitoring, and instance management for the services it contains.
+The set of services registered or discovered in your organization, organized into catalogs for agents, APIs, MCP servers, model proxies, and gateways. Each catalog supports governance, monitoring, and instance management. In Agent Fabric, this inventory is also called the registry.
 
-Providers::
-The external cloud platforms connected to the enhanced experience to enable automated service discovery and import, or to connect an external vault. Configure providers under *Platform* > *Providers*.
+Provider::
+An external cloud platform connected to the enhanced experience for automated service discovery and import, or for an external vault. Configure providers under *Platform* > *Providers*.
+
+Registry::
+In Agent Fabric, another name for the portfolio, the inventory of agents, MCP servers, APIs, model proxies, and gateways. In an agent network project, the section of the project that defines the assets, connections, and policies used to build, execute, and govern a broker. Assets in that section publish to Exchange, and a graph can also reference Exchange assets that aren't defined in the registry section.
 
 Scanner::
-A configured connection between the enhanced experience and a supported cloud provider. When a scanner runs, it discovers services and registers them in the matching Portfolio catalog. Scanners run on a schedule or on demand. A scanner is distinct from an external vault, which syncs secret metadata rather than discovering services.
+A configured connection between the enhanced experience and a supported cloud provider. When a scanner runs, it discovers services and registers them in the matching portfolio catalog. Scanners run on a schedule or on demand. A scanner is distinct from an external vault, which syncs secret metadata rather than discovering services.
 
 Secret::
 A credential stored in your external vault, such as an API key. The enhanced experience tracks secret metadata (name, path, usage, and last-rotated time) and can reference a secret from a model proxy's authentication configuration, so keys stay in your secrets manager. See xref:exp-vaults-manage.adoc[].
 
+Semantic service::
+A service that applies context-aware matching to route LLM-driven requests to the most relevant tools and pathways. It's available at Basic scale (managed internal configuration) or Advanced scale (external embedding API and vector database).
+
 Slackbot::
 The native Slack assistant that connects to the MuleSoft Platform MCP Server to answer questions about the MuleSoft platform from within Slack. After installing the MuleSoft for Slack app, open Slackbot and connect it through *Integrations*. Slackbot is separate from the MuleSoft Agent, which handles management tasks and notifications.
 
-Semantic Service::
-A service that applies context-aware matching to route LLM-driven requests to the most relevant tools and pathways. It's available at Basic scale (managed internal configuration) or Advanced scale (external embedding API and vector database).
-
 Source agent::
-An existing agent, built on a platform that isn't natively A2A-compliant, that you make A2A-compliant by creating an _A2A bridge_ in front of it. The bridge derives its A2A card from the source agent without modifying the source agent.
+An existing agent, built on a platform that isn't natively A2A-compliant, that you make A2A-compliant by creating an A2A bridge in front of it. The bridge derives its A2A card from the source agent without modifying the source agent.
 
 Target::
 The backend implementation that a gateway proxies traffic to after enforcing policies. Each instance defines a Target URL that points to the live service or runtime.
@@ -119,11 +138,11 @@ A governance control that defines which tools an LLM or agent can invoke. Apply 
 Tool sanitization::
 A governance control that filters or modifies tool inputs and outputs before they reach a model or service. Apply tool sanitization to reduce risk and cost for LLM-backed services.
 
-Unmanaged instance::
-A lighter-weight instance deployment that does not route traffic through Omni Gateway. Choose unmanaged instances when a full managed path does not match your operating model.
+Trigger::
+The entry point of an agent network 2.0 broker graph. A trigger specifies the event, call, or message that starts the workflow. Every graph starts with an A2A trigger.
 
-Universal (canonical) policy::
-A provider-agnostic policy you configure once and apply across a mix of gateway providers. Anypoint translates a universal policy into each provider's native policy. Universal is a creation experience, not a managed entity: after you apply it, only native policies exist. Those native policies behave like any other native policy on the provider. You can edit, remove, enable, or disable them where the provider supports those actions. In the UI, universal policies carry a *Universal* badge.
+Unmanaged instance::
+A lighter-weight instance deployment that doesn't route traffic through Omni Gateway. Choose unmanaged instances when a full managed path doesn't match your operating model.
 
 View-only policy::
-A discovered policy that Anypoint displays but can't create or edit, such as any policy that isn't one of the supported universal-backed policies. Depending on the provider, a view-only policy can still be removed or enabled/disabled.
+A discovered policy that you can view but can't create or edit, such as any policy that isn't one of the supported open policies. Depending on the provider, you can still remove a view-only policy or enable and disable it.

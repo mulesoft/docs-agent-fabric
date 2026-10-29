@@ -60,27 +60,13 @@ With this experience, you get faster time‑to‑productivity, fewer handoffs, l
 [[agent-network-components]]
 == Agent Network Components
 
-An agent network is a collection of agents, brokers, LLMs, and MCP servers that are connected to each other. Agent networks use LLMs for reasoning and planning capabilities and integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A) communication.
+An agent network connects agents, brokers, LLMs, and MCP servers. Agent networks use LLMs for reasoning and planning and integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A) communication.
 
-Broker::
-An intelligent routing service that coordinates task delegation across specialized A2A-compliant agents in your enterprise.
-A broker is defined by the agents and MCP servers it can leverage to accomplish tasks.
-Brokers originate from MuleSoft and are referenced in the agent network YAML.
-+
-After you publish your agent network, brokers appear as specialized agents in Anypoint Exchange and can be reused by other brokers.
-Agent::
-An autonomous software component that uses goals, context, and available tools, often via a large language model (LLM), to decide and execute actions on behalf of a user or system.
-+
-Agents can be defined either locally in the agent network or externally in a different agent network or elsewhere in your company.
-Your agent network can use both locally defined and externally defined agents to complete tasks.
-+
+In version 1.0, a broker is defined by the agents and MCP servers it can call, and you reference that broker in the agent network YAML. Agents and MCP servers can be defined in this project or referenced from another agent network or elsewhere in your company. After you publish, brokers appear as specialized agents in Anypoint Exchange and other brokers can reuse them.
+
 include::partial$af-shared.adoc[tags="agent-support"]
 
-MCP server::
-A service that implements the Model Context Protocol (MCP) to expose tools and data to AI clients, enabling LLMs to invoke external capabilities through a standard interface.
-+
-MCP servers can be defined either locally in the agent network or externally in a different agent network or elsewhere in your company.
-Your agent network can use both locally defined and externally defined MCP servers to complete tasks.
+For definitions of these components, see xref:agent-fabric::exp-glossary.adoc[].
 
 [[agent-networks-code-builder]]
 === Agent Networks in Anypoint Code Builder
@@ -215,3 +201,4 @@ NOTE: Agent networks don't support streaming with Server-Sent Events (SSE).
 == See Also
 
 * xref:af-get-started.adoc[]
+* xref:agent-fabric::exp-glossary.adoc[]

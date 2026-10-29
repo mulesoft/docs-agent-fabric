@@ -45,43 +45,11 @@ This structure allows brokers to apply high-level LLM intelligence where complex
 [[agent-network-components]]
 == Agent Network Components
 
-Agent networks use LLMs for reasoning and planning capabilities and integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A) communication.
+Agent networks use LLMs for reasoning and planning and integrate with Anypoint Connector for MCP (Model Context Protocol) and Anypoint Connector for Agent2Agent (A2A) communication.
 
-Broker::
-An intelligent routing service that coordinates task delegation across A2A-compliant agents in your enterprise.
-You define a broker and its nodes in Agent Script.
-Nodes are connected in a graph that encapsulates all steps that describe the orchestration of agents, tools, and LLMs.  
-A graph-based approach to agent brokers ensures that connected paths guarantee a specific order of operations and enable more complex orchestration that combines deterministic and non-deterministic elements.
-+
-After you publish your agent network, brokers appear as specialized agents in Anypoint Exchange and can be reused by other brokers.
-+
-A broker graph is composed of these elements:
-+
-Nodes:::
-Each "step" within a graph. Nodes can be used to orchestrate actions with LLM-powered reasoning or perform deterministic actions like routing.
-Trigger:::
-An entry point into a graph. Triggers specify events, calls, or messages that execute workflows. All graphs must start on an A2A trigger.
-Edges:::
-Transitions from node to node. Input data enters the node and output data exits the node.
+You define a broker and its nodes in Agent Script. Nodes connect in a graph so each path runs in a specific order and can combine deterministic steps with LLM reasoning. After you publish the agent network, brokers appear as specialized agents in Anypoint Exchange, and other brokers can reuse them. Agents and MCP servers can be defined in this project or referenced from another agent network or elsewhere in your company. Agent assets must be A2A-compliant.
 
-Agent::
-An autonomous software component that uses goals, context, and available tools, often via a LLM, to decide and execute actions on behalf of a user or system.
-+
-Agents can be defined either locally in the agent network or externally in a different agent network or elsewhere in your company.
-Your agent network can use both locally defined and externally defined agents to complete tasks.
-+
-include::partial$af-shared.adoc[tags="agent-support"]
-
-MCP server::
-A service that implements the Model Context Protocol (MCP) to expose tools and data to AI clients, enabling LLMs to invoke external capabilities through a standard interface.
-+
-MCP servers can be defined either locally in the agent network or externally in a different agent network or elsewhere in your company.
-Your agent network can use both locally defined and externally defined MCP servers to complete tasks.
-
-Registry::
-A section within an agent network project that defines the assets, connections, and policies necessary to build, execute, and govern a broker.
-Assets defined in this section of an agent network file are published to Exchange and become reusable.
-You can also reference existing assets from Exchange in a graph without needing to define them in the registry section.
+For definitions of these components, see xref:agent-fabric::exp-glossary.adoc[].
 
 [[yaml-and-agent-script]]
 == Agent Network YAML and Agent Script
@@ -125,26 +93,14 @@ NOTE: In a private space using a two-gateway configuration, policies, traffic, a
 [[exchange-assets]]
 == Agent Network Assets in Anypoint Exchange
 
-Agent network projects support these asset types in Exchange:
+When you publish an agent network project to Exchange, the project becomes an agent network asset (a .zip of the project files), and the agentic assets in the project file register as agents or MCP servers. Brokers publish with the agent asset type and are tagged as brokers. An LLM asset records only the provider and contract. You set the model and connection in the agent network file. MCP server assets are defined as `Tools` in that file.
 
-Agent Network::
-An agent network project is published in Exchange as an agent network asset. The asset is a .zip file that contains all project files. To learn more, see <<yaml-and-agent-script,Agent Network YAML and Agent Script>> or 2.0@agent-network::af-project-files.adoc[].
-
-Agents::
-Programs that perform tasks autonomously or semiautonomously. AI agents use the Agent2Agent (A2A) protocol to communicate and collaborate with each other to perform tasks.
-+
-When you publish agent network projects to Exchange, the individual agentic assets defined in the agent network project file are registered as either agents or MCP servers. Brokers are published with the agent asset type and are automatically tagged as brokers for easy identification.
-
-LLMs (Large Language Models)::
-AI assets for processing, understanding, and generating human-readable language. Agent network projects support <<llm-support,various LLMs>>. The LLM asset type defines only the provider and contract information. You define the model and connectivity details in the agent network file.
-
-MCP Servers::
-Applications or APIs exposed through the Model Context Protocol (MCP). MCP is an open protocol designed to standardize how applications provide context and capabilities to LLMs and AI agents. In the agent network file, MCP server assets are defined as `Tools`.
+Agent network projects support <<llm-support,several LLMs>>. For definitions of these asset types, see xref:agent-fabric::exp-glossary.adoc[]. To learn more about the project files, see <<yaml-and-agent-script,Agent Network YAML and Agent Script>> or xref:2.0@agent-network::af-project-files.adoc[].
 
 [[llm-support]]
 == Large Language Models
 
-Agent network brokers support the latest models from OpenAI, Azure OpenAI, Bedrock OpenAI, and Gemini, as well as LLM Proxies.
+Agent network brokers support the latest models from OpenAI, Azure OpenAI, Bedrock OpenAI, and Gemini, as well as model proxies.
 
 * https://developers.openai.com/api/docs/models[OpenAI]
 * https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models[Azure OpenAI]
@@ -194,3 +150,4 @@ The Agent2Agent (A2A) Protocol governs agent-to-agent communication and powers o
 * xref:2.0@agent-network::af-create-agent-network.adoc[]
 * xref:2.0@agent-network::af-project-files.adoc[]
 * xref:agent-fabric::index.adoc[]
+* xref:agent-fabric::exp-glossary.adoc[]
