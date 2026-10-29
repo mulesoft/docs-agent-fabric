@@ -20,6 +20,7 @@ The end-to-end journey for Agent Fabric consists of these tasks, each with links
 Start with how the registry, agent actions, governance, and cost control fit together. Then pick a job.
 
 - xref:agent-fabric-overview.adoc[Agent Fabric Overview]
+- xref:exp-glossary.adoc[Agent Fabric Glossary]
 - xref:exp-ai-assistant-use.adoc[Use the MuleSoft Agent]
 - xref:exp-compare.adoc[Comparison: Enhanced Experience & Anypoint Platform]
 - https://salesforce.vidyard.com/watch/8B2uU8xgSRp5DGqB7NcRsU[Video: Get Started with Enhanced MuleSoft Experience]
