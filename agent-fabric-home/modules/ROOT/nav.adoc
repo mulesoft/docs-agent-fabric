@@ -69,7 +69,7 @@
      *** xref:agent-viz-view-and-navigate-agent-network.adoc[]
      *** xref:agent-viz-node-governance.adoc[]
 
- * xref:external-systems-connect.adoc[]
+ * xref:external-systems-connect.adoc[Work with Platform Agents & Tools]
   ** xref:exp-slack-integrate.adoc[]
   ** xref:exp-claude-desktop-connect.adoc[]
 
@@ -77,5 +77,3 @@
  * xref:troubleshoot.adoc[]
    ** xref:agent-viz-troubleshoot-agent-network.adoc[]
    ** xref:exp-ai-assistant-troubleshoot.adoc[]
-
-
