@@ -1,5 +1,6 @@
 = Agent Fabric Overview
 :keywords: agent fabric, ai control plane, ai agents, agent registry, portfolio, scanners, mcp server, mcp bridge, mcp connector, model context protocol, a2a bridge, a2a connector, agent broker, agent network, agent visualizer, omni gateway, ai governance, governance strategies, open policies, rogue agent detection, external vault, model proxy, model wallet, semantic caching, ai cost control, token budget, cost optimization, mulesoft agent
+:page-aliases: general::exp-compare.adoc 
 
 //What is this, and why would I care? (intro and Key Benefits)
 //What can it do? (the pillars)
