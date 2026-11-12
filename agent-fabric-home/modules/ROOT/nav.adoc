@@ -10,7 +10,8 @@
 * xref:agent-fabric-release-notes.adoc[Release Notes]
   ** xref:exp-release-notes.adoc[Enhanced Experience Release Notes]
 * xref:af-get-started.adoc[]
-* xref:registry-overview.adoc[Populate Your Registry]
+
+* xref:registry-overview.adoc[Populate Your Portfolio]
   ** xref:exp-portfolio-overview.adoc[]
   ** xref:exp-scanners-add-from-providers.adoc[]
      *** xref:exp-scanners-prerequisites-reference.adoc[]
@@ -28,6 +29,7 @@
 * xref:agents-enable-action.adoc[Enable Agents to Take Action]
   ** xref:exp-services-create-mcp-server.adoc[]
   ** xref:exp-services-create-a2a-bridge.adoc[]
+  ** xref:agent-network-home::index.adoc[Build Agent Networks]
 
 * xref:services-secure.adoc[]
   ** xref:exp-detect-and-contain-rogue-agents.adoc[]
@@ -62,8 +64,18 @@
  * xref:services-monitor.adoc[Monitor Services in Your Portfolio]
    ** xref:exp-services-view-detailed-metrics.adoc[]
    ** xref:exp-alerts-configure-notifications.adoc[]
+   ** xref:agent-viz-overview.adoc[]
+     *** xref:agent-viz-components.adoc[Components]
+     *** xref:agent-viz-view-and-navigate-agent-network.adoc[]
+     *** xref:agent-viz-node-governance.adoc[]
+
  * xref:external-systems-connect.adoc[]
   ** xref:exp-slack-integrate.adoc[]
   ** xref:exp-claude-desktop-connect.adoc[]
- * xref:troubleshoot.adoc[Troubleshoot]
+
+
+ * xref:troubleshoot.adoc[]
+   ** xref:agent-viz-troubleshoot-agent-network.adoc[]
    ** xref:exp-ai-assistant-troubleshoot.adoc[]
+
+

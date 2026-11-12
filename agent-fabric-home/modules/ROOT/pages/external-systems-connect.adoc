@@ -1,4 +1,4 @@
-= Connect to External Systems
+= Collaborate Across Platforms
 :keywords: external systems, slack integration, claude desktop, mcp, mulesoft enhanced experience, integrations
 :page-aliases: general::exp-connect-with-external-systems.adoc
 
