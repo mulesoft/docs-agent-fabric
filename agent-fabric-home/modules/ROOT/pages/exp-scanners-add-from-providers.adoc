@@ -1,4 +1,4 @@
-= Add Scanners from Providers
+= Enable Automated Service Discovery
 :keywords: scanners, providers, add scanner, scanner configuration, workflow, g
 
 A scanner is the configured link between the system and a supported cloud provider that lets discovery jobs find services—such as APIs, agents, and MCP servers—and register them in the right *Portfolio* catalogs, and to discover and read policies from API configurations. Scanners enable automated discovery so your catalogs stay current without manual registration. Configure a scanner once to turn on discovery for a provider, then extend it as your organization adds catalogs or enabled features.
