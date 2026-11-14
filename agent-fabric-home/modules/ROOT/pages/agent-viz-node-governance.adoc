@@ -1,4 +1,4 @@
-= Governing Nodes in Agent Visualizer
+= Govern Nodes in Agent Visualizer
 :page-aliases: agent-visualizer::node-governance.adoc
 
 See which nodes in your agent network are protected and which policies are applied. Open the asset in API Manager to review more details about its policies. If a node isn’t protected, you can add a managed Omni Gateway and create the appropriate instance to enforce policies.

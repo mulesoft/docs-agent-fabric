@@ -1,4 +1,4 @@
-= Applying Model Proxy Policies
+= Apply Model Proxy Policies
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

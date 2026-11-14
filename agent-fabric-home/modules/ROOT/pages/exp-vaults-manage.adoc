@@ -1,4 +1,4 @@
-= Using Credentials Stored in External Vaults
+= Use Credentials Stored in External Vaults
 :keywords: external vaults, secrets manager, AWS Secrets Manager, Azure Key Vault, HashiCorp Vault, authentication method, model proxy
 
 

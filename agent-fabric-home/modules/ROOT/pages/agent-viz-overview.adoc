@@ -72,4 +72,3 @@ Before getting started, make sure you have:
 * xref:mulesoft-mcp-server::index.adoc[MCP Server]
 * xref:anypoint-code-builder::index.adoc[Anypoint Code Builder]
 * https://www.salesforce.com/agentforce/[Agentforce]
-* xref:agent-viz-glossary.adoc[Glossary]

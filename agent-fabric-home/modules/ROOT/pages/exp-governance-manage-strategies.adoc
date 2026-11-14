@@ -1,4 +1,4 @@
-= Managing Governance Strategies
+= Manage Governance Strategies
 :keywords: governance strategies, api governance, strategy metrics, filter strategies, strategy actions, api management
 
 Keep governance strategies aligned with your portfolio by adjusting scope, rules, or status as your services and compliance requirements evolve. Summary cards show active strategy counts, type breakdowns, and governance coverage at a glance.

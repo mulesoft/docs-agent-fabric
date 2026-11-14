@@ -246,7 +246,7 @@ On a multi-vendor gateway landscape, the same control is a different native poli
 
 Use open policies when you run gateways from more than one vendor and need the same controls on all of them.
 
-Learn more: xref:exp-policies-open.adoc[]
+Learn more: xref:exp-policies-universal.adoc[]
 
 [[cross-gateway-governance]]
 === Cross-Gateway and Third-Party API Governance

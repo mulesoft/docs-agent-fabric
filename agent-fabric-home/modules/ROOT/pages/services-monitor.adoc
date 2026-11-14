@@ -1,4 +1,4 @@
-= Monitoring Services in Your Portfolio
+= Monitor Services in Your Portfolio
 :keywords: service monitoring, monitoring signals, access monitoring, mulesoft services, monitoring use cases, api monitoring
 :page-aliases: general::exp-services-monitoring.adoc
 

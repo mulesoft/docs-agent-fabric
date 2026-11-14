@@ -1,4 +1,4 @@
-= Example: Building an IT Investigation Broker
+= Example: Build an IT Investigation Broker
 
 Use MuleSoft Vibes to build an IT Investigation agent that triages incoming support tickets, escalates critical issues, resolves common problems through cross-platform investigation, and handles licensing requests.  
 

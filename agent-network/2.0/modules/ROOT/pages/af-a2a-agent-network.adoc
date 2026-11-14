@@ -1,4 +1,4 @@
-= Using A2A Protocol in Agent Networks
+= Use A2A Protocol in Agent Networks
 
 The Agent2Agent (A2A) Protocol governs agent-to-agent communication. This protocol powers orchestration, observability, and governance features in agent networks. MuleSoft supports v1.0 of the https://a2a-protocol.org/latest[A2A Protocol^].
 

@@ -1,4 +1,4 @@
-.xref:index.adoc[Using Agent Fabric]
+.xref:index.adoc[]
 * xref:index.adoc[Overview]
  ** xref:learning-map-agent-fabric.adoc[Learn About Agent Fabric]
  ** xref:agent-fabric-use-cases.adoc[]
@@ -73,6 +73,6 @@
   ** xref:exp-claude-desktop-connect.adoc[]
 
 
- * xref:troubleshoot.adoc[]
+ * xref:troubleshoot.adoc[Troubleshoot Authentication & Connection Issues]
    ** xref:agent-viz-troubleshoot-agent-network.adoc[]
    ** xref:exp-ai-assistant-troubleshoot.adoc[]

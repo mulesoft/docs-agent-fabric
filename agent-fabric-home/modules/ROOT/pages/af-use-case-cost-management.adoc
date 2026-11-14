@@ -1,4 +1,4 @@
-= Controlling LLM Costs in Agent Fabric
+= Control LLM Costs in Agent Fabric
 
 Agentic systems make model calls constantly, and every call costs tokens. As you add agents, teams, and providers, token spend grows faster than you can track, and a single agent can run up a large bill before you notice. For effective cost management of agentic systems, you need to see exactly what's driving cost, cut the spend you don't need, and cap the spend you can't afford. Agent Fabric gives you that visibility and those controls at the gateway where governed model calls pass through.
 

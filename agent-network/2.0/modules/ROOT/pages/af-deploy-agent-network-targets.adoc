@@ -136,5 +136,5 @@ If you try to deploy an agent network project and see errors related to invalid 
 == See Also
 
 * xref:af-project-files.adoc[]
-* xref:general::agent-fabric-overview.adoc[Agent Fabric Overview]
+* xref:index.adoc[]
 * https://blogs.mulesoft.com/news/managed-omni-gateway-in-shared-spaces-with-unified-traffic-control/[Managed Omni Gateway in Shared Spaces with Unified Traffic Control]

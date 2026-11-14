@@ -1,4 +1,4 @@
-= Creating and Managing Model Proxies
+= Create and Manage Model Proxies
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -14,10 +14,10 @@ Use Agent Visualizer to identify the parts of your agent network and see how the
 
 Nodes in the agent network provide a visual representation of the agents and MCP servers within your agent network including:  
 
-* xref:agent-viz-glossary.adoc#agentforce-agent[Agentforce agents] 
-* xref:agent-viz-glossary.adoc#agent[Agents]
-* xref:agent-viz-glossary.adoc#broker[Brokers]
-* xref:agent-viz-glossary.adoc#mcp-server[MCP servers]
+* Agentforce agents 
+* Agents
+* Brokers
+* MCP servers
 
 For more information, see xref:agent-viz-view-and-navigate-agent-network.adoc#viewing-node-details[Viewing Node Details].
 
@@ -158,4 +158,3 @@ You can see the details of applied policies in the details card for the selected
 * xref:monitoring::index.adoc[]
 * xref:api-manager::index.adoc[]
 * xref:exchange::index.adoc[]
-* xref:agent-viz-glossary.adoc[]

@@ -1,4 +1,4 @@
-= Making Your APIs Agent-Ready
+= Make Your APIs Agent-Ready
 
 You've invested heavily in API infrastructure, but you didn't design your APIs for agents to consume. For agents to act on the systems behind those APIs, you need to make each operation callable. You must decide which operations are safe to expose and figure out how to keep access consistent across every agent platform, all of which usually leads to a bunch of custom integrations. Agent Fabric removes all this work. In Agent Fabric, you expose an existing API as a Model Context Protocol (MCP) server through configuration alone. You choose which operations become agent-ready tools, and you apply your governance pattern, without touching the underlying API.
 

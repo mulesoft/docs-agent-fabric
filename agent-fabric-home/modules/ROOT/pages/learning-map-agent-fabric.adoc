@@ -19,7 +19,7 @@ The end-to-end journey for Agent Fabric consists of these tasks, each with links
 
 Start with how the registry, agent actions, governance, and cost control fit together. Then pick a job.
 
-- xref:agent-fabric-overview.adoc[Agent Fabric Overview]
+- xref:index.adoc[]
 - xref:exp-glossary.adoc[Agent Fabric Glossary]
 - xref:exp-ai-assistant-use.adoc[Use the MuleSoft Agent]
 - xref:exp-compare.adoc[Comparison: Enhanced Experience & Anypoint Platform]
@@ -74,7 +74,7 @@ Make your existing APIs, applications, and agents available as tools. Start by e
 Put Omni Gateway in the request path so authentication, monitoring, and policy enforcement run on live traffic. Define rules once, then apply them across agents, APIs, and MCP servers.
 
 - xref:exp-governance-work-with-strategies.adoc[Enforce Compliance with Governance Strategies]
-** xref:exp-policies-open.adoc[Apply a Single Policy Across Providers]
+** xref:exp-policies-universal.adoc[Apply a Single Policy Across Providers]
 ** xref:exp-governance-govern-third-party-apis.adoc[Govern Third-Party Provider APIs]
 ** xref:exp-governance-monitor-cross-gateway-conformance.adoc[Monitor Cross-Gateway Conformance]
 - xref:exp-policies-overview.adoc[Manage Policies on Gateway Providers]

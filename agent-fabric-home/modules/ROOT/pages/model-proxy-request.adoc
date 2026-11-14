@@ -1,4 +1,4 @@
-= Sending Requests to Model Proxies
+= Send Requests to Model Proxies
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
