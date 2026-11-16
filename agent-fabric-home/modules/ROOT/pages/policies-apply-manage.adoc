@@ -11,7 +11,7 @@ Before getting started, make sure you have:
 * An Anypoint Platform account.
 * The API Manager: Manage Policies permission.
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 * For external providers, a connected scanner for that provider. Anypoint reuses the same connection and credentials you configured for scanning to authorize and perform policy changes. There's no second set of provider credentials to configure. The per-provider setup you must do on your side (for example, Apigee roles and permissions) is described in xref:policies-provider-reference.adoc[].
 
 [NOTE]

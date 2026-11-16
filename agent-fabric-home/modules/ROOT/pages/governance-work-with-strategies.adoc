@@ -31,7 +31,7 @@ Before getting started, make sure you have:
 *** API Governance: Governance Administrator
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Access Governance Strategy Workflows
 
@@ -93,6 +93,6 @@ After a scan runs, the API listing and API detail pages don't automatically refl
 * xref:governance-create-strategy.adoc[]
 * xref:governance-manage-strategies.adoc[]
 * xref:costs-manage.adoc[]
-* xref:exp-overview.adoc[]
-* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
+* xref:index.adoc[]
+* xref:get-started.adoc#permissions[Agent Fabric Permissions]
 * xref:services-view-details.adoc[]

@@ -11,7 +11,7 @@ Before getting started, make sure you have:
 * An Anypoint Platform account.
 * Access to the API instance whose *Policies* and *Activity log* tabs you want to view.
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Asynchronous Operations and Eventual Consistency
 

@@ -13,11 +13,9 @@ Authentication and permission errors prevent you from accessing features or perf
 If you receive a 403 Forbidden error:
 
 . Check your permissions:
-.. Review your Access Management permissions in xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
-.. Verify that you have the required permission for the action:
+.. Review your Access Management permissions in xref:get-started.adoc#permissions[Agent Fabric Permissions] and verify that you have the required permission for the action
 +
-See xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions] for more information.
-.. Ask your administrator to review your role assignments if needed.
+Ask your administrator to review your role assignments if needed.
 
 . Check business group access:
 .. Verify that you're working in the correct business group.
@@ -407,7 +405,8 @@ If these troubleshooting steps don't resolve your issue:
 
 == See Also
 
-* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
+* xref:get-started.adoc#permissions[Agent Fabric Permissions]
+* xref:index.adoc[]
 * xref:ai-assistant-troubleshoot.adoc[]
 * xref:providers-manage.adoc[]
 * xref:scanners-manage.adoc[]

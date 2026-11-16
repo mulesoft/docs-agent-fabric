@@ -12,7 +12,7 @@ Some organizations connect Claude Desktop (or similar assistants) to the enhance
 * An Anypoint Platform account.
 * Mule Developer Generative AI User permission to send prompts to agents.
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Administrator Configuration
 
@@ -37,6 +37,6 @@ To get started, see xref:mulesoft-mcp-server::getting-started-platform.adoc[].
 
 == See Also
 
-* xref:exp-home-start.adoc[]
+* xref:get-started.adoc[]
 * xref:slack-integrate.adoc[]
-* xref:exp-overview.adoc[]
+* xref:index.adoc[]

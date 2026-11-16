@@ -11,7 +11,7 @@ Before getting started, make sure you have:
 * An Anypoint Platform account.
 * The API Manager: Manage Policies permission to apply, edit, enable, disable, or remove policies.
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 * A provider scanner already connected for each external provider whose policies you want to manage. Policy management reuses the same connection you set up for scanning. See xref:scanners-add-from-providers.adoc[].
 
 == Reading Policies vs. Writing Policies

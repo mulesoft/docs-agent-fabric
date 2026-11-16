@@ -19,7 +19,7 @@ Before getting started, make sure you have:
 --
 * The Organization Administrator role, required to load the open policy catalog, open a policy configuration form, and apply an open policy. Without this role, the catalog is empty or those actions fail.
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 * API instances registered in the portfolio on a supported gateway.
 

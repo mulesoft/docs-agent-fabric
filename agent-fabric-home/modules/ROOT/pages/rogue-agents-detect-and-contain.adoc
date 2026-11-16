@@ -2,7 +2,7 @@
 :keywords: quarantine agent, contain rogue agent, agent behavioral drift, tool-call abuse detection, token spend anomaly, flag history, reactivate quarantined agent, unauthorized agent actions, agent security monitoring, model proxy policies, mulesoft
 :page-aliases: general::exp-detect-and-contain-rogue-agents.adoc
 
-As AI agents take on more autonomous work across your organization, a single compromised, misconfigured, or malfunctioning agent can quickly leak sensitive data, take unauthorized actions, or run up costs before anyone notices. Monitor agent traffic from a single location in the enhanced MuleSoft experience to detect anomalous behavior and contain a rogue agent before it causes damage.
+As AI agents take on more autonomous work across your organization, a single compromised, misconfigured, or malfunctioning agent can quickly leak sensitive data, take unauthorized actions, or run up costs before anyone notices. Monitor agent traffic from a single location to detect anomalous behavior and contain a rogue agent before it causes damage.
 
 NOTE: This feature requires Omni Gateway 1.13.5 or later.
 
@@ -155,6 +155,6 @@ After reactivation the audit log records the action.
 * xref:services-secure.adoc[]
 * xref:alerts-configure-notifications.adoc[]
 * xref:instances-add.adoc[]
-* xref:exp-home-start.adoc[]
+* xref:get-started.adoc[]
 * xref:services-monitor.adoc[]
 * xref:gateway::policies-included-jwt-validation.adoc[]

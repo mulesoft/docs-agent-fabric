@@ -19,7 +19,7 @@ Before getting started, make sure you have:
 ** Exchange: Exchange Creator
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Get Started
 
@@ -71,7 +71,7 @@ When you register an API manually, you provide a specification file that defines
 . Upload the specification file.
 . Click *Create*.
 
-The experience supports multiple API types and specification formats:
+Agent Fabric supports multiple API types and specification formats:
 
 * REST APIs (OAS, RAML)
 * gRPC APIs (Proto files)

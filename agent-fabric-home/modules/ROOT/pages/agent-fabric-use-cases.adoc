@@ -1,4 +1,5 @@
 = Agent Fabric Use Cases
+page-aliases: general::exp-agent-fabric-use-cases.adoc
 
 == Why Agent Fabric
 

@@ -2,14 +2,14 @@
 :keywords: alerts, notifications, configure alerts, alert target, manage alerts, monitoring
 :page-aliases: general::exp-alerts-configure-notifications.adoc
 
-Send API Manager alerts from Anypoint Platform directly to Slack channels, Microsoft Teams channels, and email. Configure alerts in the enhanced experience so teams can see notifications where they work and jump directly into *Portfolio* or *Observability* to respond.
+Send API Manager alerts from Anypoint Platform directly to Slack channels, Microsoft Teams channels, and email. Configure alerts in the Agent Fabric experience so teams can see notifications where they work and jump directly into *Portfolio* or *Observability* to respond.
 
 == Before You Begin
 
 Before getting started, make sure you have:
 
 * An Anypoint Platform account
-* Access to the enhanced experience at omni.mulesoft.com
+* Access to Agent Fabric at omni.mulesoft.com
 * Any of these permissions to view alerts:
 +
 --
@@ -22,9 +22,9 @@ Before getting started, make sure you have:
 ** API Manager: Manage API Alerts
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
-* The MuleSoft Slack app installed in your workspace (see xref:slack-integrate.adoc[] for installation steps), or the MuleSoft for Teams app installed in your Microsoft Teams tenant (see xref:exp-teams-integrate.adoc[] for installation steps)
+* The MuleSoft Slack app installed in your workspace (see xref:slack-integrate.adoc[] for installation steps), or the MuleSoft for Teams app installed in your Microsoft Teams tenant.
 
 == View and Manage Alerts
 
@@ -123,7 +123,7 @@ This routing strategy ensures teams see the most important signals first without
 
 * xref:services-monitor.adoc[]
 * xref:services-view-detailed-metrics.adoc[]
-* xref:exp-home-start.adoc[]
-* xref:exp-overview.adoc[]
-* xref:exp-teams-integrate.adoc[]
+* xref:get-started.adoc[]
+* xref:index.adoc[]
 * xref:slack-integrate.adoc[]
+* xref:teams-integrate.adoc[]

@@ -23,7 +23,7 @@ Before getting started, make sure you have:
 
 
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 For provider-specific roles, credentials, and permission scopes, see xref:scanners-prerequisites-reference.adoc[].
 
 == Benefits of Provider Scanners

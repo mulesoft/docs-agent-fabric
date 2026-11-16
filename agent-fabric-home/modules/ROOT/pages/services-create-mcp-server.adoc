@@ -39,7 +39,7 @@ Before getting started, make sure you have:
 +
 ** API Manager: Manage APIs Configuration
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Create an MCP Server
 

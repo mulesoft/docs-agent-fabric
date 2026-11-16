@@ -77,7 +77,7 @@ Before getting started, make sure you have:
 +
 ** API Manager: Manage APIs Configuration
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 * A managed or self-managed Omni Gateway in the target environment.
 * Credentials for the source agent's platform, such as the Salesforce org URL, OAuth token URL, client ID, and client secret for an Agentforce source agent.
 

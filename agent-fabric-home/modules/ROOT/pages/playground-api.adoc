@@ -17,7 +17,7 @@ Before getting started, make sure you have:
 ** Exchange: Exchange Administrator
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Open the API Playground
 

@@ -53,7 +53,7 @@ Before getting started, make sure you have:
 * Generative AI enabled in your Anypoint Platform and Salesforce organizations by your administrator. For more information, see xref:access-management::enabling-generative-ai.adoc[].
 * The *MuleSoft Agent AI User* permission assigned to your user.
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 To assign the *MuleSoft Agent AI User* permission across business groups:
 
@@ -109,6 +109,6 @@ Apply policies and apply cost management recommendations.
 [[see-also]]
 == See Also
 
-* xref:exp-home-start.adoc[]
-* xref:exp-overview.adoc[]
+* xref:get-started.adoc[]
+* xref:index.adoc[]
 * xref:claude-desktop-connect.adoc[]

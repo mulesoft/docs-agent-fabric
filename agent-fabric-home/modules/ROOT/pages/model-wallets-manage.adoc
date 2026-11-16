@@ -24,7 +24,7 @@ To manage model wallets, you need:
 ** API Manager: Manage Policies, to apply, disable, reorder, and edit policies
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 NOTE: Organizations without an IdP configured can't use model wallets. Those organizations continue to use existing access methods.
 

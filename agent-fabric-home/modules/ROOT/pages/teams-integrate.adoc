@@ -176,7 +176,7 @@ The MuleSoft for Microsoft Teams app requires the following Microsoft Graph perm
 [[see-also]]
 == See Also
 
-* xref:exp-home-start.adoc[]
-* xref:exp-overview.adoc[]
-* xref:exp-slack-integrate.adoc[]
-* xref:exp-claude-desktop-connect.adoc[]
+* xref:get-started.adoc[]
+* xref:index.adoc[]
+* xref:slack-integrate.adoc[]
+* xref:claude-desktop-connect.adoc[]

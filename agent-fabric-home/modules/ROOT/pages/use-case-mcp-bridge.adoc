@@ -305,6 +305,8 @@ MCP servers work with existing identity infrastructure so that agent access to A
 == Related Documentation
 
 * xref:agent-fabric-use-cases.adoc[]
+* xref:index.adoc[]
+* xref:get-started.adoc[]
 * xref:services-create-mcp-server.adoc[]
 * xref:instances-add.adoc[]
 * xref:policies-apply-manage.adoc[]

@@ -16,7 +16,7 @@ Before getting started, make sure you have:
 * An Anypoint Platform account
 * API Manager: API Creator permission
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 * A deployed Omni Gateway version 1.11.4
 +

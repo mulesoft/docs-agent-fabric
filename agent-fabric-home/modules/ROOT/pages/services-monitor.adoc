@@ -16,7 +16,7 @@ Before getting started, make sure you have:
 ** Anypoint Monitoring: Monitoring Administrator
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Monitoring Use Cases
 
@@ -34,7 +34,7 @@ Exact metrics depend on how the service is hosted, which gateway or runtime path
 
 == Access Monitoring
 
-Monitoring appears in these areas of the experience:
+Monitoring appears in these areas of Agent Fabric:
 
 * *Home* — Your entry path sometimes highlights alerts or shortcuts back into *Portfolio* or *Observability*; use whatever your organization configured after sign-in.
 * *Portfolio* and service detail — Open a catalog entry and use the *Monitoring* tab on the service (and, where the product exposes it, on instances) to read metrics scoped to that service. This is where you typically go when checking whether a specific API or agent is degrading.
@@ -50,7 +50,7 @@ If a tab is missing, confirm with your administrator that monitoring data is flo
 
 == See Also
 
-* xref:exp-overview.adoc[]
-* xref:exp-home-start.adoc[]
+* xref:index.adoc[]
+* xref:get-started.adoc[]
 * xref:services-view-details.adoc[]
 * xref:services-add-to-portfolio.adoc[]

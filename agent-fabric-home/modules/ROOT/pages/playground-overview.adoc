@@ -31,7 +31,7 @@ Before getting started, make sure you have:
 ** Exchange: Exchange Administrator
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Open the Playground
 
@@ -49,4 +49,3 @@ The playground opens with the endpoints or tools available for the service you'r
 * xref:services-view-details.adoc[]
 * xref:services-add-to-portfolio.adoc[]
 * xref:instances-add.adoc[]
-

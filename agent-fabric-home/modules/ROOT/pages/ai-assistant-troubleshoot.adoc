@@ -71,7 +71,7 @@ If the assistant suggests actions but you can't perform them:
 
 Check your permissions:
 
-. Verify your Access Management permissions in xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+. Verify your Access Management permissions in xref:get-started.adoc#permissions[Agent Fabric Permissions].
 . Ask your administrator to review your role assignments.
 . The assistant may suggest actions available in the product, but your specific permissions determine what you can do.
 
@@ -221,6 +221,6 @@ Reach out to your internal IT support or MuleSoft support with the diagnostic in
 
 * xref:ai-assistant-use.adoc[]
 * xref:troubleshoot.adoc[]
-* xref:exp-home-start.adoc[]
-* xref:exp-overview.adoc[]
+* xref:get-started.adoc[]
+* xref:index.adoc[]
 include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
