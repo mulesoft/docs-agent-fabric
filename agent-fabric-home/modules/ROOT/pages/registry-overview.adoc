@@ -36,5 +36,5 @@ If you don't see an expected catalog or summary, confirm product access and perm
 
 * xref:exp-overview.adoc[]
 * xref:exp-home-start.adoc[]
-* xref:exp-services-add-to-portfolio.adoc[]
-* xref:exp-services-view-details.adoc[]
+* xref:services-add-to-portfolio.adoc[]
+* xref:services-view-details.adoc[]

@@ -37,12 +37,12 @@ For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experien
 Cost Management tracks only LLM traffic that passes through a model proxy. To track and control LLM spend, complete these tasks.
 
 . Route LLM traffic through a model proxy. See xref:model-proxy.adoc[Creating and Managing Model Proxies].
-. Set input and output token costs for each model. Cost tracking starts when you set costs and doesn't apply to earlier usage, so set costs before you route production traffic. See xref:exp-models-costs-manage.adoc[Setting Model Costs for Spend Tracking].
-. Create a model wallet for each caller so that spend maps to the team or agent that generated it. Model wallets require an identity provider that issues JWTs. See xref:exp-model-wallets-manage.adoc[Capping Spend for Callers of Model Proxies].
+. Set input and output token costs for each model. Cost tracking starts when you set costs and doesn't apply to earlier usage, so set costs before you route production traffic. See xref:models-costs-manage.adoc[Setting Model Costs for Spend Tracking].
+. Create a model wallet for each caller so that spend maps to the team or agent that generated it. Model wallets require an identity provider that issues JWTs. See xref:model-wallets-manage.adoc[Capping Spend for Callers of Model Proxies].
 . Establish a baseline. Monitor usage for one to two weeks before you apply optimizations, and identify which providers, models, and wallets drive the most cost.
 . Apply optimization policies from the *Optimizations* tab, and route requests to lower-cost models with xref:model-proxy-semantic-service.adoc[semantic routing].
 . Add budgets to model wallets to cap spend. See <<add-a-budget>>.
-. (Optional) Contain runaway agents with the Rogue Agent Detection and Agent Kill Switch policies. See xref:exp-detect-and-contain-rogue-agents.adoc[Detect and Contain Rogue Agents].
+. (Optional) Contain runaway agents with the Rogue Agent Detection and Agent Kill Switch policies. See xref:rogue-agents-detect-and-contain.adoc[Detect and Contain Rogue Agents].
 . Review cost trends regularly, and adjust routing rules, policies, and budgets as needed.
 
 == Cost and Token Data Locations
@@ -74,7 +74,7 @@ The *Tokens*/*Cost* toggle next to the tabs controls whether *Cost Management* m
 
 To view spend in dollars, set the toggle to *Cost*.
 
-Before dollar amounts appear, you must configure a cost rate for each model. Until you set model rates, the *Cost* view shows a prompt to configure your models, and metrics that depend on cost show zero. To set rates, select *Configure Costs*, or set a cost per token for each model on the *Models* page. See xref:exp-models-costs-manage.adoc[Setting Model Costs for Spend Tracking].
+Before dollar amounts appear, you must configure a cost rate for each model. Until you set model rates, the *Cost* view shows a prompt to configure your models, and metrics that depend on cost show zero. To set rates, select *Configure Costs*, or set a cost per token for each model on the *Models* page. See xref:models-costs-manage.adoc[Setting Model Costs for Spend Tracking].
 
 === When Cost Tracking Begins
 
@@ -132,7 +132,7 @@ Use the search on the *Budgets* table to find specific budgets.
 
 When usage reaches the budget limit, the system blocks requests. Each model wallet, provider, and model combination supports only one budget.
 
-For information about model wallets and how they combine authentication credentials with budget limits, see xref:exp-model-wallets-manage.adoc[].
+For information about model wallets and how they combine authentication credentials with budget limits, see xref:model-wallets-manage.adoc[].
 
 == Optimizations Tab
 
@@ -206,10 +206,10 @@ For model proxies, you can apply these optimization policies to reduce token cos
 
 == See Also
 
-* xref:exp-model-wallets-manage.adoc[]
-* xref:exp-governance-work-with-strategies.adoc[]
-* xref:exp-governance-create-strategy.adoc[]
-* xref:exp-governance-manage-strategies.adoc[]
-* xref:exp-services-view-details.adoc[]
+* xref:model-wallets-manage.adoc[]
+* xref:governance-work-with-strategies.adoc[]
+* xref:governance-create-strategy.adoc[]
+* xref:governance-manage-strategies.adoc[]
+* xref:services-view-details.adoc[]
 * xref:services-monitor.adoc[]
-* xref:exp-services-view-detailed-metrics.adoc[]
+* xref:services-view-detailed-metrics.adoc[]

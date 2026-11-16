@@ -10,7 +10,7 @@
 
 Teams build AI agents, MCP servers, and APIs across multiple platforms. As a result, it's challenging to easily reuse, apply consistent security controls, or track end-to-end cost. Agent Fabric is the AI control plane for that landscape. With Agent Fabric, gain visibility across every asset, let agents take action in your existing tech stack, enforce open policies at runtime, and see and optimize what your AI investments are costing.
 
-Sign in to Agent Fabric through the entry point your organization provides, such as Anypoint Platform or a direct URL. The catalogs, dashboards, and governance tools you see depend on the permissions your administrator assigns. To set up access and learn your way around, see xref:af-get-started.adoc[].
+Sign in to Agent Fabric through the entry point your organization provides, such as Anypoint Platform or a direct URL. The catalogs, dashboards, and governance tools you see depend on the permissions your administrator assigns. To set up access and learn your way around, see xref:get-started.adoc[].
 
 
 [[key-benefits]]
@@ -55,7 +55,7 @@ Teams rebuild agents and tools that already exist when they can't find those ass
 
 Use the registry when you start a new agentic project and want to use existing assets or when you want to share assets built by your team.
 
-Learn more: xref:exp-portfolio-overview.adoc[]
+Learn more: xref:portfolio-overview.adoc[]
 
 [[scanners]]
 === Scanners
@@ -68,7 +68,7 @@ Agents appear on platforms faster than teams can manually register them. Scanner
 
 Use scanners when agents run on more than one platform and manual registration can't keep the registry current.
 
-Learn more: xref:exp-scanners-add-from-providers.adoc[]
+Learn more: xref:scanners-add-from-providers.adoc[]
 
 [[agent-operations]]
 == Enable Agents to Take Action
@@ -95,7 +95,7 @@ Your APIs already do the work agents need them to do, but agents can't call APIs
 
 Expose APIs as MCP servers when agents must call APIs you already have and you don't want to build a custom MCP server. Create the server from *Portfolio* > *MCP Servers*. It appears in the registry automatically.
 
-Learn more: xref:exp-services-create-mcp-server.adoc[]
+Learn more: xref:services-create-mcp-server.adoc[]
 
 [[mcp-connector]]
 === MCP Connector
@@ -120,7 +120,7 @@ Agent Fabric orchestrates only A2A-compliant agents, but many enterprise agents,
 
 Use A2A Bridge for agents that aren't yet A2A-compliant. Create the bridge from *Portfolio* > *Agents*, and the bridged agent appears in the registry automatically. Use A2A Connector when you need custom Mule application logic.
 
-Learn more: xref:exp-services-create-a2a-bridge.adoc[]
+Learn more: xref:services-create-a2a-bridge.adoc[]
 
 [[a2a-connector]]
 === A2A Connector
@@ -207,7 +207,7 @@ Omni Gateway is Agent Fabric's runtime enforcement point: a single gateway that 
 
 Set up Omni Gateway in Runtime Manager, and then create managed instances from the *Instances* tab of an agent, MCP server, or API in *Portfolio*. Use a managed instance when agents or APIs handle sensitive data, call external systems, or must follow the same runtime rules in every environment. When you don't need Omni Gateway in the request path, create an unmanaged instance instead. LLM traffic uses a model proxy, which you also deploy to Omni Gateway.
 
-Learn more: xref:exp-instances-add.adoc[] and xref:exp-policies-apply-manage.adoc[]
+Learn more: xref:instances-add.adoc[] and xref:policies-apply-manage.adoc[]
 
 [[governance-strategies]]
 === Governance Strategies
@@ -222,7 +222,7 @@ Rewriting the same security, privacy, and cost rules for every agent and service
 Use governance strategies when agents, APIs, and MCP servers must follow the same auditable rules. Create strategies in *Governance*, and review results on each service's *Conformance Report* tab.
 
 
-Learn more: xref:exp-governance-work-with-strategies.adoc[]
+Learn more: xref:governance-work-with-strategies.adoc[]
 
 [[monitor]]
 === Monitor
@@ -236,7 +236,7 @@ A defined policy isn't the same as healthy traffic. Monitoring shows latency, er
 
 Open a service's *Monitoring* tab in *Portfolio* to use monitoring during development to validate performance and in production to meet SLAs and catch issues before they affect users. For the Mule applications behind your services, use Runtime Manager and Anypoint Monitoring.
 
-Learn more: xref:services-monitor.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
+Learn more: xref:services-monitor.adoc[] and xref:alerts-configure-notifications.adoc[]
 
 [[open-policies]]
 === Open Policies
@@ -250,7 +250,7 @@ On a multi-vendor gateway landscape, the same control is a different native poli
 Use open policies when you run gateways from more than one vendor and need the same controls on all of them. Apply them from the *Policies* tab of a service or instance in *Portfolio*.
 
 
-Learn more: xref:exp-policies-universal.adoc[]
+Learn more: xref:policies-universal.adoc[]
 
 [[cross-gateway-governance]]
 === Cross-Gateway and Third-Party API Governance
@@ -263,7 +263,7 @@ Services that run on a third-party API gateway still must meet your standards. F
 
 Use cross-gateway governance when APIs that matter to the business run on a connected third-party gateway and still need to meet your standards.
 
-Learn more: xref:exp-governance-govern-third-party-apis.adoc[] and xref:exp-governance-monitor-cross-gateway-conformance.adoc[]
+Learn more: xref:governance-govern-third-party-apis.adoc[] and xref:governance-monitor-cross-gateway-conformance.adoc[]
 
 [[security]]
 === Security
@@ -272,13 +272,13 @@ A compromised, misconfigured, or malicious agent can leak data, take unauthorize
 
 * Detect and contain rogue agents: Apply Rogue Agent Detection and Agent Kill Switch policies from the *Policies* tab of each model proxy you want to protect. Detection flags risky behavior for your review. The Kill Switch policy blocks that agent's access to the model proxy when you quarantine it. Quarantine always requires your review, and you reverse it if needed. 
 +
-Learn more: xref:exp-detect-and-contain-rogue-agents.adoc[] and xref:exp-policies-apply-manage.adoc[]
+Learn more: xref:rogue-agents-detect-and-contain.adoc[] and xref:policies-apply-manage.adoc[]
 * External vaults: Register an external vault in *Platform* > *Providers* so credentials stay in AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault. MuleSoft never stores, displays, or logs secret values. A model proxy can reference a vault secret instead of storing a key. 
 +
-Learn more: xref:exp-vaults-manage.adoc[] and xref:exp-providers-add.adoc[]
+Learn more: xref:vaults-manage.adoc[] and xref:exp-providers-add.adoc[]
 * Akamai risk correlation: Connect Akamai in *Platform* > *Providers* to correlate security findings to APIs and MCP services you've already discovered, so you can triage risk before it becomes an incident. 
 +
-Learn more: xref:exp-akamai-risk-correlation.adoc[] and xref:exp-providers-add.adoc[]
+Learn more: xref:akamai-risk-correlation.adoc[] and xref:exp-providers-add.adoc[]
 
 
 ////
@@ -339,8 +339,8 @@ Use budget management when you need visibility and limits on LLM spend. Set mode
 Learn more:
 
 * xref:costs-manage.adoc[]
-* xref:exp-model-wallets-manage.adoc[]
-* xref:exp-models-costs-manage.adoc[]
+* xref:model-wallets-manage.adoc[]
+* xref:models-costs-manage.adoc[]
 
 [[cost-optimization]]
 === Cost Optimization
@@ -369,7 +369,7 @@ Finding the right page, service, or setting across a large registry takes time. 
 
 Use the MuleSoft Agent when you want to find or change something without navigating to it yourself.
 
-Learn more: xref:exp-ai-assistant-use.adoc[]
+Learn more: xref:ai-assistant-use.adoc[]
 
 === Anypoint Code Builder
 
@@ -404,10 +404,10 @@ Manage and tune your AI portfolio by registering assets, applying security polic
 
 . Complete onboarding and access
 +
-Confirm your credentials and the permissions your administrator assigned, as described in xref:af-get-started.adoc#permissions[Agent Fabric Permissions]. Finish integration setup for supporting systems, such as connected providers under *Platform* > *Providers*. If you plan to use managed instances, A2A bridges, or model proxies, set up an Omni Gateway in Runtime Manager.
+Confirm your credentials and the permissions your administrator assigned, as described in xref:get-started.adoc#permissions[Agent Fabric Permissions]. Finish integration setup for supporting systems, such as connected providers under *Platform* > *Providers*. If you plan to use managed instances, A2A bridges, or model proxies, set up an Omni Gateway in Runtime Manager.
 . Learn the layout
 +
-Sign in through your entry path and land on *Home*. Scan *Portfolio* catalogs, *Governance*, *Observability*, and *Platform* so you know where to register assets, apply policies, read health signals, and manage providers. For AI assistant usage, see xref:exp-ai-assistant-use.adoc[].
+Sign in through your entry path and land on *Home*. Scan *Portfolio* catalogs, *Governance*, *Observability*, and *Platform* so you know where to register assets, apply policies, read health signals, and manage providers. For AI assistant usage, see xref:ai-assistant-use.adoc[].
 . Register assets in Portfolio
 +
 Under *Portfolio*, open *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, or *Gateways*. Add assets to work with. Register manually or use connected providers under *Platform* > *Providers* if your organization enables discovery flows.
@@ -436,7 +436,7 @@ Feed findings from monitoring and governance back into planning for the next cha
 
 == What's Next
 
-* xref:af-get-started.adoc[].
+* xref:get-started.adoc[].
 
 * For a guided path through the registry, agent actions, governance, and cost control, get started with the xref:learning-map-agent-fabric.adoc[Agent Fabric learning map].
 
@@ -446,9 +446,9 @@ Feed findings from monitoring and governance back into planning for the next cha
 
 == See Also
 
-* xref:af-get-started.adoc[]
-* xref:af-get-started.adoc#permissions[Agent Fabric Permissions]
-* xref:exp-ai-assistant-use.adoc[]
+* xref:get-started.adoc[]
+* xref:get-started.adoc#permissions[Agent Fabric Permissions]
+* xref:ai-assistant-use.adoc[]
 * xref:anypoint-code-builder::index.adoc[]
 * xref:anypoint-code-builder::vibes-get-started.adoc[]
 * xref:access-management::connecting-salesforce-orgs.adoc[]

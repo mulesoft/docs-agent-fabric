@@ -397,7 +397,7 @@ If these troubleshooting steps don't resolve your issue:
 . Check documentation:
 .. Review feature-specific documentation for additional guidance.
 .. Check xref:exp-release-notes.adoc[Release Notes] for known issues.
-.. Review xref:exp-ai-assistant-troubleshoot.adoc[] for AI assistant-specific issues.
+.. Review xref:ai-assistant-troubleshoot.adoc[] for AI assistant-specific issues.
 
 . Gather diagnostic information:
 .. Note exact error message and error code if provided.
@@ -408,8 +408,8 @@ If these troubleshooting steps don't resolve your issue:
 == See Also
 
 * xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
-* xref:exp-ai-assistant-troubleshoot.adoc[]
-* xref:exp-providers-manage.adoc[]
-* xref:exp-scanners-manage.adoc[]
+* xref:ai-assistant-troubleshoot.adoc[]
+* xref:providers-manage.adoc[]
+* xref:scanners-manage.adoc[]
 * xref:general::browser-support.adoc[]
 include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
