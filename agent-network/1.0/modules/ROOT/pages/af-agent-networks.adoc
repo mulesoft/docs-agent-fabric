@@ -66,7 +66,7 @@ In version 1.0, a broker is defined by the agents and MCP servers it can call, a
 
 include::partial$af-shared.adoc[tags="agent-support"]
 
-For definitions of these components, see xref:agent-fabric::exp-glossary.adoc[].
+For definitions of these components, see xref:agent-fabric::glossary.adoc[].
 
 [[agent-networks-code-builder]]
 === Agent Networks in Anypoint Code Builder
@@ -201,4 +201,4 @@ NOTE: Agent networks don't support streaming with Server-Sent Events (SSE).
 == See Also
 
 * xref:af-get-started.adoc[]
-* xref:agent-fabric::exp-glossary.adoc[]
+* xref:agent-fabric::glossary.adoc[]
