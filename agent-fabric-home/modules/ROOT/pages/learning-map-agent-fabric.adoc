@@ -19,10 +19,9 @@ The end-to-end journey for Agent Fabric consists of these tasks, each with links
 
 Start with how the registry, agent actions, governance, and cost control fit together. Then pick a job.
 
-- xref:index.adoc[]
+- xref:index.adoc[Agent Fabric Overview]
 - xref:glossary.adoc[Agent Fabric Glossary]
 - xref:ai-assistant-use.adoc[Use the MuleSoft Agent]
-- xref:index.adoc[Agent Fabric Overview]
 - https://salesforce.vidyard.com/watch/8B2uU8xgSRp5DGqB7NcRsU[Video: Get Started with Enhanced MuleSoft Experience]
 - https://trailhead.salesforce.com/content/learn/modules/enhanced-mulesoft-experience-quick-look[Enhanced MuleSoft Experience Quick Look]
 - https://www.youtube.com/watch?v=GAqwPie16ic[Video: What is Agent Fabric?]
@@ -131,7 +130,6 @@ See how agents, brokers, and MCP servers connect. Watch latency, errors, and vol
 == See Also
 
 * xref:index.adoc[]
-* xref:anypoint-code-builder::index.adoc[]
 * xref:get-started.adoc#permissions[Agent Fabric Permissions]
 * xref:access-management::connecting-salesforce-orgs.adoc[]
 * xref:access-management::enabling-generative-ai.adoc[]
