@@ -56,13 +56,13 @@ Make sure you have:
 
 . In Akamai API Security, create a MuleSoft traffic source integration for Omni Gateway, and then download the policy.
 +
-For instructions, see https://docs.nonamesecurity.com/docs/mulesoft-omni-gateway-source-and-prevention-integration[MuleSoft Omni Gateway - Source and Prevention Integration^] in the Akamai documentation.
+For instructions, see https://docs.nonamesecurity.com/docs/mulesoft-omni-gateway-source-and-prevention-integration[MuleSoft Omni Gateway - Source and Prevention Integration] in the Akamai documentation.
 . In Anypoint Platform, create a connected app that acts on its own behalf (client credentials) with the *Exchange Contributor* scope, and then copy the client ID and client secret.
 +
 This connected app is separate from the one Akamai uses to read API assets from MuleSoft. For instructions, see xref:access-management::creating-connected-apps-dev.adoc[].
 . Configure Anypoint CLI with the connected app credentials, your business group ID, and your environment ID, and then run the installation script included in the policy download.
 +
-The script publishes the policy to Anypoint Exchange. For the commands, see "Step 4: Deploy the Policy" in https://docs.nonamesecurity.com/docs/mulesoft-omni-gateway-source-and-prevention-integration[MuleSoft Omni Gateway - Source and Prevention Integration^] in the Akamai documentation.
+The script publishes the policy to Anypoint Exchange. For the commands, see "Step 4: Deploy the Policy" in https://docs.nonamesecurity.com/docs/mulesoft-omni-gateway-source-and-prevention-integration[MuleSoft Omni Gateway - Source and Prevention Integration] in the Akamai documentation.
 . In Anypoint API Manager, apply the *Akamai API Security (Omni Gateway)* policy in one of these ways:
 ** To apply the policy to all APIs in an environment, add it as an automated policy. In *Advanced Options*, set *Rule of application* to *Omni gateways only*. See xref:gateway::policies-automated-applying.adoc[].
 ** To apply the policy to specific APIs, add it as an inbound policy on each API.

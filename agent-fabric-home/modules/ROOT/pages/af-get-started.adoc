@@ -283,7 +283,7 @@ A broker is an intelligent router that orchestrates work across specialized A2A-
 
 Before you create an agent network, confirm you have:
 
-* Anypoint Platform credentials and Anypoint Code Builder. Allowlist the Anypoint Code Builder URLs. See xref:anypoint-code-builder::urls-to-allow.adoc[Allow URLs for Anypoint Code Builder].
+* Anypoint Platform credentials and Anypoint Code Builder. Allowlist the Anypoint Code Builder URLs. See xref:anypoint-code-builder::urls-to-allow.adoc[].
 * At least one managed Omni Gateway in the target environment. A single gateway can handle both ingress and egress traffic.
 * A2A-compliant agents in the network. Create an A2A bridge first for agents that aren't A2A-compliant. See <<a2a>>.
 * A deployment target such as a CloudHub 2.0 shared or private space, or a Runtime Fabric target. Every Anypoint Platform organization includes a CloudHub 2.0 shared space. A private space requires CloudHub Network Administrator to create and manage it, and you must associate that space with the business groups and environments where you deploy.

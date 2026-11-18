@@ -115,7 +115,7 @@ For more information, see xref:exp-models-manage-costs.adoc[].
 
 *Challenge:* A customer support agent system uses expensive models for all queries, including simple lookups, and repeats similar calls for common questions.
 
-With semantic routing and caching in Agent Fabric you cut cost on routine and repeated work. 
+With semantic routing and caching in Agent Fabric, you cut cost on routine and repeated work. 
 
 Here's how it works:
 
@@ -132,7 +132,7 @@ For more information about semantic routing, see xref:model-proxy-semantic-cachi
 
 *Challenge:* Development teams experimenting with agents have no spending limits, leading to budget surprises.
 
-With the Model Wallets feature in Agent Fabric you get budgets agents can't quietly overrun.
+With the Model Wallets feature in Agent Fabric, you implement budgets that agents can't quietly overrun.
 
 Here's how it works:
 
@@ -165,7 +165,7 @@ For more information, see xref:exp-governance-view-cost-and-token-usage.adoc[].
 
 *Challenge:* An agent is compromised or misconfigured and begins making unusual, high-volume model calls that drive unexpected spend.
 
-With runaway-agent containment policies in Agent Fabric you stop the runaway agent without taking down the whole system.
+With runaway-agent containment policies in Agent Fabric, you stop the runaway agent without taking down the whole system.
 
 Here's how it works:
 
