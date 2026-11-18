@@ -12,6 +12,12 @@ Teams build AI agents, MCP servers, and APIs across multiple platforms. As a res
 
 Sign in to Agent Fabric through the entry point your organization provides, such as Anypoint Platform or a direct URL. The catalogs, dashboards, and governance tools you see depend on the permissions your administrator assigns. To set up access and learn your way around, see xref:af-get-started.adoc[].
 
+Watch this video to see how to get started with Agent Fabric:
+
+++++
+include::_partials/exp-home-start-video.html[]
+++++
+
 
 [[key-benefits]]
 == Key Benefits of Agent Fabric
