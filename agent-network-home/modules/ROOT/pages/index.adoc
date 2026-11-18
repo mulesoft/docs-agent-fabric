@@ -49,7 +49,7 @@ Agent networks use LLMs for reasoning and planning and integrate with Anypoint C
 
 You define a broker and its nodes in Agent Script. Nodes connect in a graph so each path runs in a specific order and can combine deterministic steps with LLM reasoning. After you publish the agent network, brokers appear as specialized agents in Anypoint Exchange, and other brokers can reuse them. Agents and MCP servers can be defined in this project or referenced from another agent network or elsewhere in your company. Agent assets must be A2A-compliant.
 
-For definitions of these components, see xref:agent-fabric::exp-glossary.adoc[].
+For definitions of these components, see xref:agent-fabric::glossary.adoc[].
 
 [[yaml-and-agent-script]]
 == Agent Network YAML and Agent Script
@@ -95,7 +95,7 @@ NOTE: In a private space using a two-gateway configuration, policies, traffic, a
 
 When you publish an agent network project to Exchange, the project becomes an agent network asset (a .zip of the project files), and the agentic assets in the project file register as agents or MCP servers. Brokers publish with the agent asset type and are tagged as brokers. An LLM asset records only the provider and contract. You set the model and connection in the agent network file. MCP server assets are defined as `Tools` in that file.
 
-Agent network projects support <<llm-support,several LLMs>>. For definitions of these asset types, see xref:agent-fabric::exp-glossary.adoc[]. To learn more about the project files, see <<yaml-and-agent-script,Agent Network YAML and Agent Script>> or xref:2.0@agent-network::af-project-files.adoc[].
+Agent network projects support <<llm-support,several LLMs>>. For definitions of these asset types, see xref:agent-fabric::glossary.adoc[]. To learn more about the project files, see <<yaml-and-agent-script,Agent Network YAML and Agent Script>> or xref:2.0@agent-network::af-project-files.adoc[].
 
 [[llm-support]]
 == Large Language Models
@@ -150,4 +150,4 @@ The Agent2Agent (A2A) Protocol governs agent-to-agent communication and powers o
 * xref:2.0@agent-network::af-create-agent-network.adoc[]
 * xref:2.0@agent-network::af-project-files.adoc[]
 * xref:agent-fabric::index.adoc[]
-* xref:agent-fabric::exp-glossary.adoc[]
+* xref:agent-fabric::glossary.adoc[]

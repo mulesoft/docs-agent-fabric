@@ -10,7 +10,7 @@ NOTE: Automate open policy application using the MuleSoft MCP Platform Server. F
 
 == Open Use Cases
 
-There are six open use cases. Each maps to a specific native policy per provider. See xref:exp-policies-provider-reference.adoc#supported-policies-and-native-equivalents[Supported Policies and Native Equivalents]:
+There are six open use cases. Each maps to a specific native policy per provider. See xref:policies-provider-reference.adoc#supported-policies-and-native-equivalents[Supported Policies and Native Equivalents]:
 
 * API Key Enforcement
 * CORS (Cross-Origin Resource Sharing)
@@ -19,7 +19,7 @@ There are six open use cases. Each maps to a specific native policy per provider
 * IP Allowlist
 * JWT Validation
 
-Header Manipulation is split into two separate policies: Header Injection and Header Removal. These are the primary policies you can create and edit across providers. Open policies also support several additional native Kong policies. See xref:exp-policies-provider-reference.adoc#supported-policies-and-native-equivalents[Supported Policies and Native Equivalents]. Other recognized policies are view-only. See xref:exp-policies-apply-manage.adoc#policy-edit-restrictions[Policy Edit Restrictions].
+Header Manipulation is split into two separate policies: Header Injection and Header Removal. These are the primary policies you can create and edit across providers. Open policies also support several additional native Kong policies. See xref:policies-provider-reference.adoc#supported-policies-and-native-equivalents[Supported Policies and Native Equivalents]. Other recognized policies are view-only. See xref:policies-apply-manage.adoc#policy-edit-restrictions[Policy Edit Restrictions].
 
 == Open Is a Creation Experience
 
@@ -29,7 +29,7 @@ After creation, the resulting native policies behave like any other native polic
 
 == Confirming What Happened
 
-Because open is only a creation experience, there is no dedicated open activity view. To see the outcome on each target, open that instance's *Activity log* tab. Open applies appear there with the *Open* action type. See xref:exp-policies-activity-log.adoc[].
+Because open is only a creation experience, there is no dedicated open activity view. To see the outcome on each target, open that instance's *Activity log* tab. Open applies appear there with the *Open* action type. See xref:policies-activity-log.adoc[].
 
 [NOTE]
 ====
@@ -60,12 +60,12 @@ These three are easy to confuse. Use this comparison to choose the right tool:
 |Across APIs and instances.
 |===
 
-For automated policies and governance strategies, see xref:exp-governance-work-with-strategies.adoc[].
+For automated policies and governance strategies, see xref:governance-work-with-strategies.adoc[].
 
 == See Also
 
-* xref:exp-policies-overview.adoc[]
-* xref:exp-policies-apply-manage.adoc[]
-* xref:exp-policies-activity-log.adoc[]
-* xref:exp-policies-provider-reference.adoc[]
-* xref:exp-governance-work-with-strategies.adoc[]
+* xref:policies-overview.adoc[]
+* xref:policies-apply-manage.adoc[]
+* xref:policies-activity-log.adoc[]
+* xref:policies-provider-reference.adoc[]
+* xref:governance-work-with-strategies.adoc[]

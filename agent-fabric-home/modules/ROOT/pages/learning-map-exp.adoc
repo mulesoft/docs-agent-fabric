@@ -24,10 +24,10 @@ The experience helps you manage, optimize, and govern a multi-agent ecosystem fr
 //- ToDo [Video]
 - xref:exp-overview.adoc[]
 - xref:exp-compare.adoc[]
-- xref:exp-glossary.adoc[]
+- xref:glossary.adoc[]
 - xref:exp-home-start.adoc[]
-- xref:exp-portfolio-overview.adoc[]
-- xref:exp-ai-assistant-use.adoc[]
+- xref:portfolio-overview.adoc[]
+- xref:ai-assistant-use.adoc[]
 - https://trailhead.salesforce.com/content/learn/modules/enhanced-mulesoft-experience-quick-look[Get to Know the Enhanced MuleSoft Experience]
 // - placeholder for video
 
@@ -37,17 +37,17 @@ The experience helps you manage, optimize, and govern a multi-agent ecosystem fr
 
 Register agents, MCP servers, and APIs from any provider or registry, add model proxies and gateways, and create MCP servers.
 
-- xref:exp-services-add-to-portfolio.adoc[]
-- xref:exp-services-connect-providers-to-add.adoc[]
-- xref:exp-services-register-manually.adoc[]
-- xref:exp-services-create-mcp-server.adoc[]
-- xref:exp-services-create-a2a-bridge.adoc[]
+- xref:services-add-to-portfolio.adoc[]
+- xref:services-connect-providers-to-add.adoc[]
+- xref:services-register-manually.adoc[]
+- xref:services-create-mcp-server.adoc[]
+- xref:services-create-a2a-bridge.adoc[]
 - xref:model-proxy-semantic-service.adoc[]
-- xref:exp-instances-add.adoc[]
-- xref:exp-services-view-details.adoc[]
-- xref:exp-scanners-add-from-providers.adoc[]
-- xref:exp-scanners-manage.adoc[]
-- xref:exp-providers-manage.adoc[]
+- xref:instances-add.adoc[]
+- xref:services-view-details.adoc[]
+- xref:scanners-add-from-providers.adoc[]
+- xref:scanners-manage.adoc[]
+- xref:providers-manage.adoc[]
 
 
 | image::reuse::lm_develop_1.png[""]
@@ -71,8 +71,8 @@ Create model proxies to route, govern, and test LLM traffic from a single endpoi
 
 Test APIs and MCP servers in playgrounds without leaving the portfolio.
 
-- xref:exp-playground-api.adoc[]
-- xref:exp-playground-mcp.adoc[]
+- xref:playground-api.adoc[]
+- xref:playground-mcp.adoc[]
 
 | image::reuse::lm_optimize_1.png[""]
 [.lm-bold]##Monitor Usage and Manage Costs##
@@ -82,20 +82,20 @@ Monitor usage and performance, and apply optimization policies to manage costs.
 - xref:services-monitor.adoc[]
 - xref:costs-manage.adoc[]
 - xref:model-proxy-token-reports.adoc[]
-- xref:exp-services-view-detailed-metrics.adoc[]
-- xref:exp-alerts-configure-notifications.adoc[]
+- xref:services-view-detailed-metrics.adoc[]
+- xref:alerts-configure-notifications.adoc[]
 
 | image::reuse::lm_build_1.png[""]
 [.lm-bold]##Apply Governance Rules and Policies##
 
 Monitor and enforce policies, block noncompliant activity, and connect your existing Akamai account to protect services.
 
-- xref:exp-governance-work-with-strategies.adoc[]
-- xref:exp-governance-create-strategy.adoc[]
-- xref:exp-governance-manage-strategies.adoc[]
-- xref:exp-governance-govern-third-party-apis.adoc[]
-- xref:exp-governance-monitor-cross-gateway-conformance.adoc[]
-- xref:exp-akamai-risk-correlation.adoc[]
+- xref:governance-work-with-strategies.adoc[]
+- xref:governance-create-strategy.adoc[]
+- xref:governance-manage-strategies.adoc[]
+- xref:governance-govern-third-party-apis.adoc[]
+- xref:governance-monitor-cross-gateway-conformance.adoc[]
+- xref:akamai-risk-correlation.adoc[]
 
 |===
 
@@ -109,8 +109,8 @@ Monitor and enforce policies, block noncompliant activity, and connect your exis
 
 Connect the enhanced experience to Slack and Claude Desktop.
 
-- xref:exp-slack-integrate.adoc[]
-- xref:exp-claude-desktop-connect.adoc[]
+- xref:slack-integrate.adoc[]
+- xref:claude-desktop-connect.adoc[]
 
 |===
 
@@ -120,4 +120,4 @@ Connect the enhanced experience to Slack and Claude Desktop.
 * xref:exp-home-start.adoc[]
 * xref:exp-compare.adoc[]
 * xref:troubleshoot.adoc[]
-* xref:exp-ai-assistant-troubleshoot.adoc[]
+* xref:ai-assistant-troubleshoot.adoc[]

@@ -13,10 +13,10 @@ Authentication and permission errors prevent you from accessing features or perf
 If you receive a 403 Forbidden error:
 
 . Check your permissions:
-.. Review your Access Management permissions in xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+.. Review your Access Management permissions in xref:get-started.adoc#permissions[Agent Fabric Permissions].
 .. Verify that you have the required permission for the action:
 +
-See xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions] for more information.
+See xref:get-started.adoc#permissions[Agent Fabric Permissions] for more information.
 .. Ask your administrator to review your role assignments if needed.
 
 . Check business group access:
@@ -397,7 +397,7 @@ If these troubleshooting steps don't resolve your issue:
 . Check documentation:
 .. Review feature-specific documentation for additional guidance.
 .. Check xref:exp-release-notes.adoc[Release Notes] for known issues.
-.. Review xref:exp-ai-assistant-troubleshoot.adoc[] for AI assistant-specific issues.
+.. Review xref:ai-assistant-troubleshoot.adoc[] for AI assistant-specific issues.
 
 . Gather diagnostic information:
 .. Note exact error message and error code if provided.
@@ -407,9 +407,9 @@ If these troubleshooting steps don't resolve your issue:
 
 == See Also
 
-* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
-* xref:exp-ai-assistant-troubleshoot.adoc[]
-* xref:exp-providers-manage.adoc[]
-* xref:exp-scanners-manage.adoc[]
+* xref:get-started.adoc#permissions[Agent Fabric Permissions]
+* xref:ai-assistant-troubleshoot.adoc[]
+* xref:providers-manage.adoc[]
+* xref:scanners-manage.adoc[]
 * xref:general::browser-support.adoc[]
 include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

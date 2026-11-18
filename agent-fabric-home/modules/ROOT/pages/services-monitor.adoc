@@ -24,7 +24,7 @@ Before getting started, make sure you have:
 ** Anypoint Monitoring: Monitoring Administrator
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Monitoring Use Cases
 
@@ -60,5 +60,5 @@ If a tab is missing, confirm with your administrator that monitoring data is flo
 
 * xref:exp-overview.adoc[]
 * xref:exp-home-start.adoc[]
-* xref:exp-services-view-details.adoc[]
-* xref:exp-services-add-to-portfolio.adoc[]
+* xref:services-view-details.adoc[]
+* xref:services-add-to-portfolio.adoc[]

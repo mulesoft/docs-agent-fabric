@@ -29,7 +29,7 @@ Before getting started, make sure you have:
 ** Exchange: Exchange Creator
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 [[configure-an-advanced-scale-semantic-service]]
 == Configure an Advanced Scale Semantic Routing Service
