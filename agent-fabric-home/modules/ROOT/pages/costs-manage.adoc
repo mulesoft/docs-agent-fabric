@@ -1,4 +1,5 @@
 = Manage Costs and Token Usage
+:page-aliases: general::exp-governance-view-cost-and-token-usage.adoc
 :keywords: cost management, token usage, budgets, new budget, spend limit, token limit, model wallet budget, tokens cost toggle, optimizations, agent token savings, MCP server token savings, semantic caching, optimization policies
 
 Use cost and token metrics to understand usage, control spend, and identify optimization opportunities.
@@ -32,7 +33,7 @@ Before getting started, make sure you have:
 +
 API Manager permissions apply to individual environments. Grant permissions in each environment where you need them.
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
 
 == Cost and Token Data Locations
 
@@ -63,7 +64,7 @@ The *Tokens*/*Cost* toggle next to the tabs controls whether *Cost Management* m
 
 To view spend in dollars, set the toggle to *Cost*.
 
-Before dollar amounts appear, you must configure a cost rate for each model. Until you set model rates, the *Cost* view shows a prompt to configure your models, and metrics that depend on cost show zero. To set rates, select *Configure Costs*, or set a cost per token for each model on the *Models* page. See xref:exp-models-manage-costs.adoc[Setting Model Costs for Spend Tracking].
+Before dollar amounts appear, you must configure a cost rate for each model. Until you set model rates, the *Cost* view shows a prompt to configure your models, and metrics that depend on cost show zero. To set rates, select *Configure Costs*, or set a cost per token for each model on the *Models* page. See xref:models-costs-manage.adoc[Setting Model Costs for Spend Tracking].
 
 === When Cost Tracking Begins
 
@@ -123,7 +124,7 @@ A budget caps usage for a model wallet against a provider and a model over a rec
 
 When usage reaches the budget limit, the system blocks requests. A model wallet can have more than one budget. Each model wallet, provider, and model combination supports only one budget.
 
-For information about model wallets and how they combine authentication credentials with budget limits, see xref:exp-model-wallets-manage.adoc[].
+For information about model wallets and how they combine authentication credentials with budget limits, see xref:model-wallets-manage.adoc[].
 
 == Optimizations Tab
 
@@ -197,10 +198,10 @@ For model proxies, you can apply these optimization policies to reduce token cos
 
 == See Also
 
-* xref:exp-model-wallets-manage.adoc[]
-* xref:exp-governance-work-with-strategies.adoc[]
-* xref:exp-governance-create-strategy.adoc[]
-* xref:exp-governance-manage-strategies.adoc[]
-* xref:exp-services-view-details.adoc[]
+* xref:model-wallets-manage.adoc[]
+* xref:governance-work-with-strategies.adoc[]
+* xref:governance-create-strategy.adoc[]
+* xref:governance-manage-strategies.adoc[]
+* xref:services-view-details.adoc[]
 * xref:services-monitor.adoc[]
-* xref:exp-services-view-detailed-metrics.adoc[]
+* xref:services-view-detailed-metrics.adoc[]
