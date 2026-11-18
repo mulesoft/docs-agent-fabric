@@ -327,7 +327,7 @@ Before you create instances of services or apply policies, confirm you have:
 
 * An Anypoint Platform account with the required product access for Agent Fabric. See <<before-you-begin>>.
 * An Omni Gateway for each managed instance.
-* A connected provider scanner whose credentials carry the provider's write scope, required to apply policies to third-party gateway APIs (Azure API Management, Google Apigee, or Kong Gateway). See xref:scanners-prerequisites-reference.adoc#_policy_write_prerequisites[Policy Write Prerequisites].
+* A connected provider scanner whose credentials carry the provider's write scope, required to apply policies to third-party gateway APIs (Azure API Management, Google Apigee, or Kong Gateway). See xref:scanners-prerequisites-reference.adoc#policy-write-prerequisites[Policy Write Prerequisites].
 
 You also need these permissions:
 

@@ -24,7 +24,7 @@ Re-enable scheduled scanning after a pause.
 +
 Change names, descriptions, credentials, provider scope, or scan-related settings your product exposes, then save, so future runs use the new definition.
 +
-For API gateway providers that support policy write, granting the scanner connection's identity the provider's write scope enables policy write (apply, enable, disable, and remove) on the scanner's discovered APIs. Policy write reuses the same connection you use for scanning. For provider-specific write scopes, see xref:scanners-prerequisites-reference.adoc#_policy_write_prerequisites[Policy Write Prerequisites].
+For API gateway providers that support policy write, granting the scanner connection's identity the provider's write scope enables policy write (apply, enable, disable, and remove) on the scanner's discovered APIs. Policy write reuses the same connection you use for scanning. For provider-specific write scopes, see xref:scanners-prerequisites-reference.adoc#policy-write-prerequisites[Policy Write Prerequisites].
 * *Delete Scanner*
 +
 Remove the scanner from *Providers* when the provider link is no longer authorized or useful. Consider the impact on discovered services in *Portfolio* and on dependent teams before you delete the scanner.

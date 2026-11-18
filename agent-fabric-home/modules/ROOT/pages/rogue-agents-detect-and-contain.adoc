@@ -41,6 +41,7 @@ See xref:gateway::gateway-managed-set-up.adoc[] or xref:gateway::gateway-set-up.
 
 * Apply the xref:gateway::policies-included-jwt-validation.adoc[JWT Validation] policy to each model proxy you want to protect. JWT Validation publishes the verified claims that Rogue Agent Detection and Agent Kill Switch use to identify the calling agent.
 
+[[enable-agent-monitoring-for-a-model-proxy]]
 == Enable Agent Monitoring for a Model Proxy
 
 Enable monitoring on each model proxy whose agent traffic you want to track.
@@ -72,6 +73,7 @@ NOTE: If you add no rules, the policy forwards every request and detects nothing
 
 Repeat these steps for each model proxy to protect.
 
+[[apply-agent-kill-switch-policy]]
 == Apply the Agent Kill Switch Policy
 
 The Agent Kill Switch policy enforces containment. When you quarantine a flagged agent, this policy blocks that agent's identity from accessing Model Proxy. Apply it to every model proxy where you want to contain an agent.
@@ -120,6 +122,7 @@ Select the operator to use in the alert condition, for example, the policy viola
 . Select *Create Alert*.
 ////
 
+[[review-and-quarantine-a-flagged-agent]]
 == Review and Quarantine a Flagged Agent
 
 When an agent is flagged, review its activity and quarantine it if needed. Quarantine stops the agent from acting.
@@ -144,6 +147,7 @@ Closes the view with no changes. The agent stays in the review queue.
 
 The audit log records the action with the agent instance ID, the user who performed it, and details such as the timestamp and environment.
 
+[[reactivate-a-quarantined-agent]]
 == Reactivate a Quarantined Agent
 
 After you confirm a quarantined agent is safe to return to service, reactivate it.

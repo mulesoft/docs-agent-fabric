@@ -330,6 +330,7 @@ a|
 
 |===
 
+[[policy-write-prerequisites]]
 == Policy Write Prerequisites
 
 Policy write lets you apply, edit, and remove policies on connected third-party gateway APIs directly from Anypoint, with no Anypoint gateway in the request path. Where the provider supports it, you can also enable and disable policies. Policy write is available for API gateway providers only: Amazon API Gateway, Azure API Management, Google Apigee, and Kong Gateway. Agent, API Security, and MCP scanners don't support policy write.
@@ -385,4 +386,3 @@ Anypoint doesn't manage vendor policy lifecycle, versioning, or CI/CD.
 * xref:providers-manage.adoc[]
 * xref:scanners-manage.adoc[]
 * xref:akamai-risk-correlation.adoc[]
-
