@@ -13,7 +13,7 @@ API playground::
 +
 Test an API by exploring its endpoints, configuring authentication and requests, sending calls, and inspecting responses. Serves a similar purpose to the API Console in Anypoint Platform, embedded in the enhanced experience UI. See xref:exp-playground-api.adoc[].
 
-MCP server playground::
+MCP server playground (Beta)::
 +
 Test an MCP server by exploring and invoking individual tools and inspecting their responses. See xref:exp-playground-mcp.adoc[].
 
@@ -48,4 +48,3 @@ The playground opens with the endpoints or tools available for the service you'r
 * xref:exp-services-view-details.adoc[]
 * xref:exp-services-add-to-portfolio.adoc[]
 * xref:exp-instances-add.adoc[]
-

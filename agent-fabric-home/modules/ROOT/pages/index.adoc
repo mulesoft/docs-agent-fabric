@@ -1,6 +1,6 @@
 = Agent Fabric Overview
 :keywords: agent fabric, ai control plane, ai agents, agent registry, portfolio, scanners, mcp server, mcp bridge, mcp connector, model context protocol, a2a bridge, a2a connector, agent broker, agent network, agent visualizer, omni gateway, ai governance, governance strategies, open policies, rogue agent detection, external vault, model proxy, model wallet, semantic caching, ai cost control, token budget, cost optimization, mulesoft agent
-:page-aliases: general::exp-compare.adoc 
+:page-aliases: general::exp-compare.adoc, general::agent-fabric-overview.adoc.
 
 //What is this, and why would I care? (intro and Key Benefits)
 //What can it do? (the pillars)
@@ -11,6 +11,12 @@
 Teams build AI agents, MCP servers, and APIs across multiple platforms. As a result, it's challenging to easily reuse, apply consistent security controls, or track end-to-end cost. Agent Fabric is the AI control plane for that landscape. With Agent Fabric, gain visibility across every asset, let agents take action in your existing tech stack, enforce open policies at runtime, and see and optimize what your AI investments are costing.
 
 Sign in to Agent Fabric through the entry point your organization provides, such as Anypoint Platform or a direct URL. The catalogs, dashboards, and governance tools you see depend on the permissions your administrator assigns. To set up access and learn your way around, see xref:af-get-started.adoc[].
+
+Watch this video to see how to get started with Agent Fabric:
+
+++++
+include::_partials/exp-home-start-video.html[]
+++++
 
 
 [[key-benefits]]
@@ -207,7 +213,12 @@ Omni Gateway is Agent Fabric's runtime enforcement point: a single gateway that 
 
 Set up Omni Gateway in Runtime Manager, and then create managed instances from the *Instances* tab of an agent, MCP server, or API in *Portfolio*. Use a managed instance when agents or APIs handle sensitive data, call external systems, or must follow the same runtime rules in every environment. When you don't need Omni Gateway in the request path, create an unmanaged instance instead. LLM traffic uses a model proxy, which you also deploy to Omni Gateway.
 
-Learn more: xref:exp-instances-add.adoc[] and xref:exp-policies-apply-manage.adoc[]
+Learn more: 
+
+* xref:exp-instances-add.adoc[] 
+* xref:exp-policies-apply-manage.adoc[]
+* xref:gateway::index.adoc[]
+* xref:gateway::gateway-getting-started-overview.adoc[]
 
 [[governance-strategies]]
 === Governance Strategies
@@ -236,7 +247,10 @@ A defined policy isn't the same as healthy traffic. Monitoring shows latency, er
 
 Open a service's *Monitoring* tab in *Portfolio* to use monitoring during development to validate performance and in production to meet SLAs and catch issues before they affect users. For the Mule applications behind your services, use Runtime Manager and Anypoint Monitoring.
 
-Learn more: xref:services-monitor.adoc[] and xref:exp-alerts-configure-notifications.adoc[]
+Learn more: 
+
+* xref:services-monitor.adoc[] 
+* xref:exp-alerts-configure-notifications.adoc[]
 
 [[open-policies]]
 === Open Policies
@@ -250,7 +264,7 @@ On a multi-vendor gateway landscape, the same control is a different native poli
 Use open policies when you run gateways from more than one vendor and need the same controls on all of them. Apply them from the *Policies* tab of a service or instance in *Portfolio*.
 
 
-Learn more: xref:exp-policies-universal.adoc[]
+Learn more: xref:policies-open.adoc[]
 
 [[cross-gateway-governance]]
 === Cross-Gateway and Third-Party API Governance
@@ -263,7 +277,10 @@ Services that run on a third-party API gateway still must meet your standards. F
 
 Use cross-gateway governance when APIs that matter to the business run on a connected third-party gateway and still need to meet your standards.
 
-Learn more: xref:exp-governance-govern-third-party-apis.adoc[] and xref:exp-governance-monitor-cross-gateway-conformance.adoc[]
+Learn more: 
+
+* xref:exp-governance-govern-third-party-apis.adoc[]
+* xref:exp-governance-monitor-cross-gateway-conformance.adoc[]
 
 [[security]]
 === Security
@@ -314,13 +331,15 @@ Agents that call each LLM provider directly get a different endpoint, a differen
 * Reuse similar responses with semantic caching to cut latency and spend.
 * Apply policies, including the security policies that detect and contain rogue agents.
 
-Use a model proxy when agents call LLMs and you need the same governance, routingUse a model proxy when agents call LLMs and you need the same governance, routing, and cost visibility across providers. Create one from *Portfolio* > *Model Proxies* on an Omni Gateway running in Connected Mode.
+Use a model proxy when agents call LLMs and you need the same governance, routing, and cost visibility across providers. Create one from *Portfolio* > *Model Proxies* on an Omni Gateway running in Connected Mode.
 
 Learn more: 
 
 * xref:model-proxy.adoc[]
 * xref:model-proxy-semantic-service.adoc[]
 * xref:model-proxy-semantic-caching-service.adoc[]
+* xref:gateway::index.adoc[]
+* xref:gateway::gateway-getting-started-overview.adoc[]
 
 [[budget-management]]
 === Budget Management
@@ -413,7 +432,7 @@ Sign in through your entry path and land on *Home*. Scan *Portfolio* catalogs, *
 Under *Portfolio*, open *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, or *Gateways*. Add assets to work with. Register manually or use connected providers under *Platform* > *Providers* if your organization enables discovery flows.
 . Create and manage instances
 +
-On *Agents*, *MCP Servers*, *Model Proxies*, and *APIs*, open *Instances* to create managed or unmanaged deployments that match your needs. Managed instances run on Omni Gateway and give you stronger governance and monitoring. *Gateways* don't include an *Instances* tab.
+On *Agents*, *MCP Servers*, *Model Proxies*, and *APIs*, open *Instances* to create managed or unmanaged deployments that match your needs. Managed instances run on Omni Gateway and give you stronger governance and monitoring. *Gateways* and *Model Proxies* don't include an *Instances* tab.
 . Configure policies
 +
 On the *Policies* tab for a service or instance, apply governance policies that match access control, data privacy, performance, and compliance goals. Use *Governance* for gateway-wide policy work, organization strategies, and cost tools.
