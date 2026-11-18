@@ -99,7 +99,7 @@ Most day-to-day work on a registered service happens on its detail page. In *Por
 
 * *Instances*
 +
-Create managed instances on Omni Gateway for stronger governance and monitoring, or unmanaged instances when you don't need Omni Gateway in the request path. Available for agents, MCP servers, model proxies, and APIs. Gateways don't include an *Instances* tab.
+Create managed instances on Omni Gateway for stronger governance and monitoring, or unmanaged instances when you don't need Omni Gateway in the request path. Available for agents, MCP servers, model proxies, and APIs. Gateways and Model Proxiesdon't include an *Instances* tab.
 * *Policies*
 +
 Apply policies to the service or to one of its instances.
@@ -283,11 +283,12 @@ A broker is an intelligent router that orchestrates work across specialized A2A-
 
 Before you create an agent network, confirm you have:
 
-* Anypoint Platform credentials and Anypoint Code Builder. Allowlist the Anypoint Code Builder URLs. See xref:anypoint-code-builder::urls-to-allow.adoc[].
+* Anypoint Platform credentials and Anypoint Code Builder. Allowlist the Anypoint Code Builder URLs. See xref:anypoint-code-builder::urls-to-allow.adoc[Allow URLs for Anypoint Code Builder].
 * At least one managed Omni Gateway in the target environment. A single gateway can handle both ingress and egress traffic.
-* A2A-compliant agents. Create an A2A bridge first for agents that aren't A2A-compliant. See <<a2a>>.
-* A deployment target: a CloudHub 2.0 shared or private space, or a Runtime Fabric target.
-* Generative AI turned on if you use MuleSoft Vibes. See xref:access-management::enabling-generative-ai.adoc[].
+* A2A-compliant agents in the network. Create an A2A bridge first for agents that aren't A2A-compliant. See <<a2a>>.
+* A deployment target such as a CloudHub 2.0 shared or private space, or a Runtime Fabric target. Every Anypoint Platform organization includes a CloudHub 2.0 shared space. A private space requires CloudHub Network Administrator to create and manage it, and you must associate that space with the business groups and environments where you deploy.
+* Generative AI turned on for your organization if you use MuleSoft Vibes. See xref:access-management::enabling-generative-ai.adoc[]. For Vibes, also install Node.js 20 LTS or later and the latest version of `jq`, and connect your Anypoint Platform organization to a Salesforce organization that has generative AI enabled.
+* For the Anypoint CLI (optional): Node 20 (v20.19.4) or later, Java 17 or later with `JAVA_HOME` set, and the Anypoint CLI Agent Fabric Plugin.
 
 You also need these permissions:
 
@@ -305,7 +306,12 @@ You also need these permissions:
 | View applications on Runtime Fabric or CloudHub 2.0 | Runtime Manager: Read Applications for the environment, and Read Runtime Fabrics for the business group
 |===
 
-Learn more: xref:agent-network::af-get-started.adoc[Get Started with Agent Networks], xref:agent-network::af-define-your-agent-network-specification.adoc[], xref:anypoint-code-builder::vibes-get-started.adoc[], and xref:agent-visualizer::index.adoc[Agent Visualizer].
+Learn more: 
+
+* xref:agent-network::af-get-started.adoc[Get Started with Agent Networks]
+* xref:agent-network::af-define-your-agent-network-specification.adoc[]
+* xref:anypoint-code-builder::vibes-get-started.adoc[]
+* xref:agent-visualizer::index.adoc[Agent Visualizer]
 
 [[govern]]
 == Enforce the Same Policies on Live Traffic

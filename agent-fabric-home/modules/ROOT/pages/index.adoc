@@ -1,6 +1,6 @@
 = Agent Fabric Overview
 :keywords: agent fabric, ai control plane, ai agents, agent registry, portfolio, scanners, mcp server, mcp bridge, mcp connector, model context protocol, a2a bridge, a2a connector, agent broker, agent network, agent visualizer, omni gateway, ai governance, governance strategies, open policies, rogue agent detection, external vault, model proxy, model wallet, semantic caching, ai cost control, token budget, cost optimization, mulesoft agent
-:page-aliases: general::exp-compare.adoc 
+:page-aliases: general::exp-compare.adoc,general::agent-fabric-overview.adoc.
 
 //What is this, and why would I care? (intro and Key Benefits)
 //What can it do? (the pillars)
@@ -432,7 +432,7 @@ Sign in through your entry path and land on *Home*. Scan *Portfolio* catalogs, *
 Under *Portfolio*, open *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, or *Gateways*. Add assets to work with. Register manually or use connected providers under *Platform* > *Providers* if your organization enables discovery flows.
 . Create and manage instances
 +
-On *Agents*, *MCP Servers*, *Model Proxies*, and *APIs*, open *Instances* to create managed or unmanaged deployments that match your needs. Managed instances run on Omni Gateway and give you stronger governance and monitoring. *Gateways* don't include an *Instances* tab.
+On *Agents*, *MCP Servers*, *Model Proxies*, and *APIs*, open *Instances* to create managed or unmanaged deployments that match your needs. Managed instances run on Omni Gateway and give you stronger governance and monitoring. *Gateways* and *Model Proxies* don't include an *Instances* tab.
 . Configure policies
 +
 On the *Policies* tab for a service or instance, apply governance policies that match access control, data privacy, performance, and compliance goals. Use *Governance* for gateway-wide policy work, organization strategies, and cost tools.

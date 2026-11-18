@@ -100,7 +100,7 @@ Observability::
 A section that aggregates organization-wide dashboards, reports, and notifications when your administrator enables and connects the observability backend for your business group. Use Observability to compare service-level monitoring signals with broader traffic patterns.
 
 Open policy::
-A provider-agnostic policy you configure once and apply across gateway providers such as Google Apigee, Azure API Management, Kong Gateway, and Omni Gateway. MuleSoft translates it into each provider's native policy. This is a creation experience: after you apply it, only native policies remain, and you can edit, remove, enable, or disable them where the provider allows. In the UI, these policies carry an *Open* badge. Earlier procedures call this a universal policy or a canonical policy. See xref:exp-policies-universal.adoc[].
+A provider-agnostic policy you configure once and apply across gateway providers such as Google Apigee, Azure API Management, Kong Gateway, and Omni Gateway. MuleSoft translates it into each provider's native policy. This is a creation experience: after you apply it, only native policies remain, and you can edit, remove, enable, or disable them where the provider allows. In the UI, these policies carry an *Open* badge. Earlier procedures call this an open policy or a canonical policy. See xref:exp-policies-open.adoc[].
 
 Platform MCP server::
 The MCP server that exposes enhanced experience capabilities to MCP clients such as Claude Desktop and Slackbot. Use it to work with the portfolio and governance from a supported client. This server is also called the MuleSoft Platform MCP Server.
