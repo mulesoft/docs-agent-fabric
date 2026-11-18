@@ -24,11 +24,9 @@ Confirm these prerequisites are in place.
 
 * You need these API Manager permissions:
 +
---
 ** API Creator: Reapply model access to a quarantined agent
 ** View APIs Configuration: Review flagged agents
 ** Manage APIs Configuration: Quarantine, clear flags, and restore model access
---
 +
 API Manager permissions apply to individual environments. Grant permissions in each environment where you need them.
 
