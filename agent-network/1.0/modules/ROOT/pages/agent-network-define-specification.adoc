@@ -1,6 +1,5 @@
 [[define-spec]]
 = Define Your Agent Network Specification
-:page-aliases: anypoint-code-builder::af-define-your-agent-network-specification.adoc
 
 After you create your agent network project, configure `agent-network.yaml` and `exchange.json` to reflect the structure of your network.
 
@@ -163,4 +162,3 @@ brokers:
 ----
 
 Because the connection in this example uses an explicit `namespace`, this same configuration works whether the asset belongs to the project's business group or to a different one (such as a public Exchange asset). To consume a public asset, copy the asset's `groupId` from Anypoint Exchange into both the `dependencies` entry in `exchange.json` and the connection's `namespace` value in `agent-network.yaml`.
-
