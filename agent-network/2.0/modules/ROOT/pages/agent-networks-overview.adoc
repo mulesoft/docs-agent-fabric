@@ -1,4 +1,5 @@
 = Build Agent Networks for Agent Fabric
+:page-aliases: anypoint-code-builder::af-agent-networks.adoc
 
 An agent network is a coordinated group of agents, brokers, LLMs, and MCP servers that acts as a central hub for defining, validating, and executing agentic processes across your enterprise.
 
@@ -69,9 +70,9 @@ An agent network project includes these files:
 * `agent-network.yaml`: Contains a registry section that defines Exchange assets used in your project and a context section that defines connections and policies for the project.
 * `.agent` files: Contain broker and node definitions and configurations that enable multi-agent orchestration in your project.
 
-For more information, see xref:af-project-files.adoc[].
+For more information, see xref:agent-network-project-files.adoc[].
 
-NOTE: For a complete, working example you can use as a starting point for your own agent network project, see xref:af-example-it-investigation-broker.adoc[Example: Building an IT Investigation Broker]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own project.
+NOTE: For a complete, working example you can use as a starting point for your own agent network project, see xref:agent-network-example-it-investigation-broker.adoc[Example: Building an IT Investigation Broker]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own project.
 
 [[agent-network-architecture]]
 == Agent Network Architecture
@@ -94,7 +95,7 @@ NOTE: In a private space using a two-gateway configuration, policies, traffic, a
 
 When you publish an agent network project to Exchange, the project becomes an agent network asset (a .zip of the project files), and the agentic assets in the project file register as agents or MCP servers. Brokers publish with the agent asset type and are tagged as brokers. An LLM asset records only the provider and contract. You set the model and connection in the agent network file. MCP server assets are defined as `Tools` in that file.
 
-Agent network projects support <<llm-support,several LLMs>>. For definitions of these asset types, see xref:agent-fabric::glossary.adoc[]. To learn more about the project files, see <<yaml-and-agent-script,Agent Network YAML and Agent Script>> or xref:af-project-files.adoc[].
+Agent network projects support <<llm-support,several LLMs>>. For definitions of these asset types, see xref:agent-fabric::glossary.adoc[]. To learn more about the project files, see <<yaml-and-agent-script,Agent Network YAML and Agent Script>> or xref:agent-network-project-files.adoc[].
 
 [[llm-support]]
 == Large Language Models
@@ -136,17 +137,17 @@ a|
 
 Agent networks support text-based messages and responses. Image and binary message types aren't supported.
 
-For configuration options, see the xref:af-agent-script-reference.adoc#llm-section[LLM Section] of the Agent Script file reference.
+For configuration options, see the xref:agent-network-script-reference.adoc#llm-section[LLM Section] of the Agent Script file reference.
 
 [[a2a-protocol]]
 == A2A Protocol in Agent Networks
 
-The Agent2Agent (A2A) Protocol governs agent-to-agent communication and powers orchestration, observability, and governance features in agent networks. For more information, see xref:af-a2a-agent-network.adoc[].
+The Agent2Agent (A2A) Protocol governs agent-to-agent communication and powers orchestration, observability, and governance features in agent networks. For more information, see xref:agent-network-a2a.adoc[].
 
 == See Also
 
-* xref:af-get-started.adoc[]
-* xref:af-create-agent-network.adoc[]
-* xref:af-project-files.adoc[]
+* xref:agent-network-get-started.adoc[]
+* xref:agent-network-create.adoc[]
+* xref:agent-network-project-files.adoc[]
 * xref:agent-fabric::index.adoc[Agent Fabric Overview]
 * xref:agent-fabric::glossary.adoc[]

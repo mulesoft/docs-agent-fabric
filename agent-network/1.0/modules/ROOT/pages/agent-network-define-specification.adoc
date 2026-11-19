@@ -1,12 +1,13 @@
 [[define-spec]]
 = Define Your Agent Network Specification
+:page-aliases: anypoint-code-builder::af-define-your-agent-network-specification.adoc
 
 After you create your agent network project, configure `agent-network.yaml` and `exchange.json` to reflect the structure of your network.
 
 [[before-you-begin]]
 == Before You Begin
 
-Make sure you review the xref:af-get-started.adoc#before-you-begin[prerequisites].
+Make sure you review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites].
 
 [TIP]
 To help you identify agents that are also brokers on the Anypoint Code Builder canvas, consider appending "Broker" to the end of the name, for example `employee-onboarding-broker`.
@@ -31,7 +32,7 @@ To get started, try one of these suggested messages.
 
 If you don't want to use MuleSoft Vibes, use Anypoint Code Builder or your IDE to edit the `agent-network.yaml` and `exchange.json` files and define your agent network and authentication.
 
-To understand sections of the project files and expected values, see xref:af-project-files.adoc[Agent Network Project File Reference]. The `agent-network.yaml` file can contain definitions for one or more brokers.
+To understand sections of the project files and expected values, see xref:agent-network-project-files.adoc[Agent Network Project File Reference]. The `agent-network.yaml` file can contain definitions for one or more brokers.
 
 If your agent network references Anypoint Exchange assets, you need to use the asset IDs in `exchange.json` to add references in the `agent-network.yaml` file. For more information, see <<add-exchange-assets>>.
 

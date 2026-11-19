@@ -23,7 +23,7 @@ Agent network::
 A coordinated group of agents, brokers, LLMs, and MCP servers that defines, validates, and executes agentic processes across your enterprise. The project publishes to Anypoint Exchange as an agent network asset, which is a .zip of the project files. See xref:agent-network-home::index.adoc[].
 
 Agent Script::
-The language you use in agent network 2.0 to define a broker and its nodes. Each broker is stored in an `.agent` file. See xref:2.0@agent-network::af-agent-script-reference.adoc[].
+The language you use in agent network 2.0 to define a broker and its nodes. Each broker is stored in an `.agent` file. See xref:2.0@agent-network::agent-network-script-reference.adoc[].
 
 Akamai security findings::
 Security issues detected by Akamai API Security through live traffic inspection and surfaced in the *Conformance* tab of a governance strategy alongside governance rule results. Critical and High findings map to violations, Medium to warnings, and Low and Info to informational findings. Select a finding to view remediation opportunities and apply a policy directly from the detail panel.

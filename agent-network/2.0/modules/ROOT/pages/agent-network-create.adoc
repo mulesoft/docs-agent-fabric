@@ -1,4 +1,3 @@
-[[create-networks]]
 = Create Agent Networks
 :page-aliases: anypoint-code-builder::af-create-agent-network.adoc
 
@@ -7,7 +6,7 @@ Create an agent network to connect brokers, agents, MCP servers, and LLMs into a
 [[before-you-begin]]
 == Before You Begin
 
-Make sure you review the xref:af-get-started.adoc#before-you-begin[prerequisites].
+Make sure you review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites].
 
 [[create-dev-agent]]
 == Create a Network Using MuleSoft Vibes
@@ -40,10 +39,10 @@ If you prefer not to use MuleSoft Vibes, create a new agent network project dire
   * In Create, select *Create an Agent Network*.
   * From the Command Palette, run this command: *MuleSoft: Create an Agent Network Project*.
 . Enter a name for the project and select the location to create the project.
-. Select the business group associated with the target space you created in xref:af-get-started.adoc[Get Started with Agent Networks]. The business group you select must be the same business group you selected when you created the target space.
+. Select the business group associated with the target space you created in xref:agent-network-get-started.adoc[Get Started with Agent Networks]. The business group you select must be the same business group you selected when you created the target space.
 . Select *Create Project*.
 
-When the project opens, the `agent-network.yaml` file opens in the code view editor. Open the graph canvas from the action bar. For more information, see xref:af-define-your-agent-network-specification.adoc[Define Your Agent Network].
+When the project opens, the `agent-network.yaml` file opens in the code view editor. Open the graph canvas from the action bar. For more information, see xref:agent-network-define-specification.adoc[Define Your Agent Network].
 
 == Convert an Agent Network 1.0 Project to a 2.0 Project
 If you have an existing agent network 1.0 project, use natural language prompts in MuleSoft Vibes to convert it to a 2.0 project. Agent network 2.0 projects use guided determinism to separate workflow steps requiring probabilistic LLM reasoning from those requiring deterministic control-flow logic. 
@@ -56,7 +55,7 @@ To get started, try this suggested prompts:
 [[project-files]]
 == Agent Network Project Files
 
-Anypoint Code Builder creates these files and directories as part of your agent network project. Together, these files define the brokers, nodes, assets, connections, and policies that make up your agent network. For full schema details, see xref:af-project-files.adoc[Agent Network Project File Reference]. 
+Anypoint Code Builder creates these files and directories as part of your agent network project. Together, these files define the brokers, nodes, assets, connections, and policies that make up your agent network. For full schema details, see xref:agent-network-project-files.adoc[Agent Network Project File Reference]. 
 
 ----
 /my-agent-network-project
@@ -84,15 +83,15 @@ Contains one `.agent` file per broker in your network. Each `.agent` file is an 
 
 [NOTE]
 ====
-For a complete, working example you can use as a starting point for your own agent network project, see xref:af-example-it-investigation-broker.adoc[Example: Building an IT Investigation Broker]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own brokers, agents, MCP servers, and LLMs.
+For a complete, working example you can use as a starting point for your own agent network project, see xref:agent-network-example-it-investigation-broker.adoc[Example: Building an IT Investigation Broker]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own brokers, agents, MCP servers, and LLMs.
 ====
 
 [[create-cli]]
 == Create a Network Using the Anypoint CLI
 
-If you run operations within a CI/CD environment, use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:af-build-agent-networks-in-a-ci-cd-environment.adoc[].
+If you run operations within a CI/CD environment, use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:agent-networks-build-ci-cd-environment.adoc[].
 
 [[whats-next]]
 == What's Next?
 
-* xref:af-define-your-agent-network-specification.adoc[]
+* xref:agent-network-define-specification.adoc[]

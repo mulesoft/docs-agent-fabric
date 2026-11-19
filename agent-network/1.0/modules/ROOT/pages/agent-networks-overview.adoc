@@ -1,4 +1,5 @@
 = Build Agent Networks for Agent Fabric
+:page-aliases: anypoint-code-builder::af-agent-networks.adoc
 
 An agent network is a coordinated group of agents, brokers, LLMs, and MCP servers that acts as a central hub for defining, validating, and executing agentic processes across your enterprise.
 
@@ -200,5 +201,5 @@ NOTE: Agent networks don't support streaming with Server-Sent Events (SSE).
 
 == See Also
 
-* xref:af-get-started.adoc[]
+* xref:agent-network-get-started.adoc[]
 * xref:agent-fabric::glossary.adoc[]

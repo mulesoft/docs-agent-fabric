@@ -1,4 +1,3 @@
-[[publish-assets]]
 = Publish Agent Network Assets
 :page-aliases: anypoint-code-builder::af-publish-agent-network-assets.adoc
 
@@ -7,12 +6,12 @@ Build and publish your agent network project as Anypoint Exchange assets. When y
 For example, suppose you have an agent named `badging-agent` in `agent-network.yaml`. After you publish, the Exchange `assetId` is `badging-agent`.
 
 [IMPORTANT]
-Asset names must be unique across all projects in your organization. If another project already uses an asset name, the publish command fails. Use unique, descriptive names for each asset in `agent-network.yaml`. For more information, see xref:af-troubleshoot-agent-networks.adoc#asset-belongs-to-another-project-error-2006[Troubleshoot Agent Networks].
+Asset names must be unique across all projects in your organization. If another project already uses an asset name, the publish command fails. Use unique, descriptive names for each asset in `agent-network.yaml`. For more information, see xref:agent-networks-troubleshoot.adoc#asset-belongs-to-another-project-error-2006[Troubleshoot Agent Networks].
 
 [[before-you-begin]]
 == Before You Begin
 
-Make sure you review the xref:af-get-started.adoc#before-you-begin[prerequisites].
+Make sure you review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites].
 
 To publish your project assets to a different business group, update the relevant `groupId` in `exchange.json`.
 
@@ -93,9 +92,9 @@ When you unpublish an asset, Exchange performs a soft delete of the asset by def
 [[publish-cli]]
 == Publish or Unpublish a Network Using the Anypoint CLI
 
-To set up, create, build, publish, unpublish, deploy, and undeploy agent networks in a CI/CD environment, use the Anypoint CLI plugin. For more information, see xref:af-build-agent-networks-in-a-ci-cd-environment.adoc[].
+To set up, create, build, publish, unpublish, deploy, and undeploy agent networks in a CI/CD environment, use the Anypoint CLI plugin. For more information, see xref:agent-networks-build-ci-cd-environment.adoc[].
 
 [[see-also]]
 == See Also
 
-* xref:af-deploy-agent-network-targets.adoc[]
+* xref:agent-network-deploy-targets.adoc[]
