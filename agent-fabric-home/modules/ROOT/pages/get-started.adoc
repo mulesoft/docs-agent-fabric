@@ -96,7 +96,7 @@ The MuleSoft Agent is available on every page. Ask it to help you navigate, sear
 
 === Work with a Service
 
-Most day-to-day work on a registered service happens on its detail page. In *Portfolio*, open aselect a service. The tabs you see depend on the catalog. See xref:services-view-details.adoc[].
+Most day-to-day work on a registered service happens on its detail page. In *Portfolio*, open a service. The tabs you see depend on the catalog. See xref:services-view-details.adoc[].
 
 * *Instances*
 +
