@@ -40,7 +40,7 @@ If you don't see an expected catalog or summary, confirm product access and perm
 
 == See Also
 
-* xref:exp-overview.adoc[]
-* xref:exp-home-start.adoc[]
+* xref:index.adoc[]
+* xref:get-started.adoc[]
 * xref:services-add-to-portfolio.adoc[]
 * xref:services-view-details.adoc[]
