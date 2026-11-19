@@ -89,7 +89,7 @@ For a complete, working example you can use as a starting point for your own age
 [[create-cli]]
 == Create a Network Using the Anypoint CLI
 
-If you run operations within a CI/CD environment, use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:agent-networks-build-ci-cd-environment.adoc[].
+If you run operations within a CI/CD environment, use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:agent-network-build-ci-cd-environment.adoc[].
 
 [[whats-next]]
 == What's Next?

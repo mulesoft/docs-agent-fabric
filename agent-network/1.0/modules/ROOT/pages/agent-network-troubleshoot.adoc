@@ -3,7 +3,7 @@
 
 Resolve common agent network errors and connectivity issues by enabling verbose logging, message logging policies, and distributed tracing. Using logs and distributed traces, you can observe agents and MCP servers and see how requests flow through brokers, which tools and policies apply, and where failures or latency originate.
 
-For Anypoint CLI Agent Fabric plugin errors, see xref:af-troubleshoot-errors.adoc[Troubleshoot Agent Fabric CLI Errors].
+For Anypoint CLI Agent Fabric plugin errors, see xref:agent-network-troubleshoot-errors.adoc[Troubleshoot Agent Fabric CLI Errors].
 
 [NOTE]
 Use Agent Visualizer to xref:agent-visualizer::troubleshoot-agent-network.adoc[view metrics, logs, and traces] for agents and MCP servers in your network.
@@ -35,7 +35,7 @@ To enable logging:
 
 Edit `agent-network.yaml` to set message logging for MCP servers and agents.
 
-Message logging uses the xref:gateway::policies-included-message-logging.adoc[Omni Gateway Message Logging policy]. In the `connection` section of the agent or MCP server instance you want to log, add this logging policy inside `policies`:
+Message logging uses the xref:gateway::policies-included-message-logging.adoc[]. In the `connection` section of the agent or MCP server instance you want to log, add this logging policy inside `policies`:
 
 [source,yaml]
 ----
@@ -86,7 +86,7 @@ To resolve this conflict, uninstall the Agentforce DX extension pack from VS Cod
 
 === Issue: No Agent Network Deployment Targets
 
-If you attempt to deploy an agent network, but you don’t see any deployment targets in Anypoint Code Builder or Anypoint CLI, then you need to set up your target deployment space and set up gateways. For instructions, see xref:af-get-started.adoc[Get Started with Agent Networks].
+If you attempt to deploy an agent network, but you don’t see any deployment targets in Anypoint Code Builder or Anypoint CLI, then you need to set up your target deployment space and set up gateways. For instructions, see xref:agent-network-get-started.adoc[Get Started with Agent Networks].
 
 === Issue: Changes Don't Take Effect After Redeployment
 
@@ -157,7 +157,7 @@ Common limit-related errors include:
 * Maximum tool call count exceeded
 * State size limit exceeded
 
-To adjust these limits, add runtime system limit variables to the `metadata.variables` section of your `exchange.json` file. For detailed information about configuring these limits, see xref:af-agent-network-yaml-reference.adoc#runtime-system-limits[Runtime System Limits Configuration].
+To adjust these limits, add runtime system limit variables to the `metadata.variables` section of your `exchange.json` file. For detailed information about configuring these limits, see xref:agent-network-yaml-reference.adoc#runtime-system-limits[Runtime System Limits Configuration].
 
 === Error: "HTTP error 404: Agent card not found at /.well-known/agent-card.json"
 
@@ -208,4 +208,3 @@ After you change the broker configuration, rebuild, republish, and redeploy the 
 == See Also
 
 include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
-

@@ -233,7 +233,7 @@ The `spec` element has these properties.
 
 The value of this section is a reference to one of the LLMs defined in Anypoint Exchange or in the `llmProviders` section of `agent-network.yaml`. Because it's a reference, you can choose to share the same LLM across all the brokers in your agent network. Or, you can have different brokers use different LLMs to better suit their tasks. If using an LLM Proxy, configure the LLM Proxy as either an OpenAI or Gemini LLM depending on the proxy's format.
 
-For more information about supported LLMs, see xref:agent-networks-overview.adoc#llm-support[Large Language Models].
+For more information about supported LLMs, see xref:agent-network-overview.adoc#llm-support[Large Language Models].
 
 The `llm` element has these properties.
 
@@ -506,7 +506,7 @@ Use these properties to handle error scenarios. Define these properties within t
 
 `agents`
 
-Reference agents defined in a different agent network, or another agent used in your company. Any agent is valid, as long as it supports A2A as its communication protocol. For more information, see xref:agent-networks-overview.adoc#a2a-protocol[]
+Reference agents defined in a different agent network, or another agent used in your company. Any agent is valid, as long as it supports A2A as its communication protocol. For more information, see xref:agent-network-overview.adoc#a2a-protocol[]
 
 Example
 
@@ -608,7 +608,7 @@ The `mcpServers` element has these properties.
 
 `llmProviders`
 
-Configure the LLMs the brokers use for reasoning. For more information about supported LLMs, see xref:agent-networks-overview.adoc#llm-support[Large Language Models].
+Configure the LLMs the brokers use for reasoning. For more information about supported LLMs, see xref:agent-network-overview.adoc#llm-support[Large Language Models].
 
 The `llmProviders` element has these properties.
 

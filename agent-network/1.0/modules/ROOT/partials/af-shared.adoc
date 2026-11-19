@@ -76,7 +76,7 @@ If you're using the Anypoint CLI to create agent network projects, ensure you me
 
 * Node 20 (v20.19.4) or later. See https://nodejs.org/en[Nodejs.org].
 * Java 17 or later. Set the `JAVA_HOME` environment variable.
-* xref:agent-networks-build-ci-cd-environment.adoc[Anypoint CLI Fabric Plugin]
+* xref:agent-network-build-ci-cd-environment.adoc[Anypoint CLI Fabric Plugin]
 
 [[overview]]
 == Task Overview
@@ -90,7 +90,7 @@ See xref:agent-network-get-started.adoc#setup-space[Set Up the Space or Deployme
 . Set up Omni Gateways for the space or deployment target.
 +
   * If using Anypoint Code Builder, see xref:agent-network-get-started.adoc#setup-gateways[Set Up Agent Network Gateways for the Space or Deployment Target].
-  * If using the Anypoint CLI, see the xref:agent-networks-build-ci-cd-environment.adoc#agent-network-setup-gateways[setup gateways command reference].
+  * If using the Anypoint CLI, see the xref:agent-network-build-ci-cd-environment.adoc#agent-network-setup-gateways[setup gateways command reference].
 
 [[step-2-create]]
 === Step 2: Create a Project
@@ -116,7 +116,7 @@ Build and publish your agent network project as Anypoint Exchange assets. When y
 
 * xref:agent-network-publish.adoc#publish-dev-agent[Publish Your Network Using MuleSoft Vibes]
 * xref:agent-network-publish.adoc#publish-acb[Publish Your Network Using Anypoint Code Builder]
-* xref:agent-networks-build-ci-cd-environment.adoc#agent-network-project-publish[Publish Your Network Using the Anypoint CLI]
+* xref:agent-network-build-ci-cd-environment.adoc#agent-network-project-publish[Publish Your Network Using the Anypoint CLI]
 
 [[step-5-deploy]]
 === Step 5: Deploy Your Agent Network Instances
@@ -125,6 +125,6 @@ Deploy your agent network instance to a deployment target. You can deploy to a C
 
 * xref:agent-network-deploy-targets.adoc#deploy-dev-agent[Deploy Your Network Using MuleSoft Vibes]
 * xref:agent-network-deploy-targets.adoc#deploy-acb[Deploy Your Network Using Anypoint Code Builder]
-* xref:agent-networks-build-ci-cd-environment.adoc#agent-network-project-deploy[Deploy Your Network Using the Anypoint CLI]
+* xref:agent-network-build-ci-cd-environment.adoc#agent-network-project-deploy[Deploy Your Network Using the Anypoint CLI]
 // end::get-started[]
 //

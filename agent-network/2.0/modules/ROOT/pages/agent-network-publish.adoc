@@ -6,7 +6,7 @@ Build and publish your agent network project as Anypoint Exchange assets. When y
 For example, suppose you have an agent named `badging-agent` in `agent-network.yaml`. After you publish, the Exchange `assetId` is `badging-agent`.
 
 [IMPORTANT]
-Asset names must be unique across all projects in your organization. If another project already uses an asset name, the publish command fails. Use unique, descriptive names for each asset in `agent-network.yaml`. For more information, see xref:agent-networks-troubleshoot.adoc#asset-belongs-to-another-project-error-2006[Troubleshoot Agent Networks].
+Asset names must be unique across all projects in your organization. If another project already uses an asset name, the publish command fails. Use unique, descriptive names for each asset in `agent-network.yaml`. For more information, see xref:agent-network-troubleshoot.adoc#asset-belongs-to-another-project-error-2006[Troubleshoot Agent Networks].
 
 [[before-you-begin]]
 == Before You Begin
@@ -92,7 +92,7 @@ When you unpublish an asset, Exchange performs a soft delete of the asset by def
 [[publish-cli]]
 == Publish or Unpublish a Network Using the Anypoint CLI
 
-To set up, create, build, publish, unpublish, deploy, and undeploy agent networks in a CI/CD environment, use the Anypoint CLI plugin. For more information, see xref:agent-networks-build-ci-cd-environment.adoc[].
+To set up, create, build, publish, unpublish, deploy, and undeploy agent networks in a CI/CD environment, use the Anypoint CLI plugin. For more information, see xref:agent-network-build-ci-cd-environment.adoc[].
 
 [[see-also]]
 == See Also

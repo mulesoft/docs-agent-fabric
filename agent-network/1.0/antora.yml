@@ -2,7 +2,7 @@ name: agent-network
 title: Build Agent Networks
 version: '1.0'
 display_version: '1.0'
-start_page: agent-networks-overview.adoc
+start_page: agent-network-overview.adoc
 nav:
 - modules/ROOT/nav.adoc
 asciidoc:

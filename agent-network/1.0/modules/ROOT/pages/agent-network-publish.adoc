@@ -46,7 +46,7 @@ Next, discover your agent network assets in *Agents & Tools* in Exchange to get 
 [[publish-cli]]
 == Publish a Network Using the Anypoint CLI
 
-If you run operations within a CI/CD environment, you can use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:agent-networks-build-ci-cd-environment.adoc[].
+If you run operations within a CI/CD environment, you can use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:agent-network-build-ci-cd-environment.adoc[].
 
 [[see-also]]
 == See Also

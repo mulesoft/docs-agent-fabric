@@ -147,7 +147,7 @@ After you add dependencies, their asset names are available as values in auto-co
 [[use-llm-proxy]]
 == Use an LLM Proxy in Your Agent Network
 
-You can use an xref:gateway::flex-gateway-llm-proxy.adoc[Omni Gateway LLM Proxy] as the LLM connection for your agent broker. The LLM Proxy must use the OpenAI or Gemini format. For supported models, see xref:agent-networks-overview.adoc#llm-support[Large Language Models].
+You can use an xref:gateway::flex-gateway-llm-proxy.adoc[Omni Gateway LLM Proxy] as the LLM connection for your agent broker. The LLM Proxy must use the OpenAI or Gemini format. For supported models, see xref:agent-network-overview.adoc#llm-support[Large Language Models].
 
 === Create and Activate the LLM Model Proxy
 

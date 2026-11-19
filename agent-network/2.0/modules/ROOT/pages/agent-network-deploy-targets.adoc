@@ -57,7 +57,7 @@ The broker's `egressgw.url` resolving to the cluster endpoint is expected behavi
 [[before-you-begin]]
 == Before You Begin
 
-Make sure you review the xref:af-get-started.adoc#before-you-begin[prerequisites for setting up agent network gateways and deployment targets].
+Make sure you review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites for setting up agent network gateways and deployment targets].
 
 [IMPORTANT]
 ====
@@ -95,7 +95,7 @@ Deploy your agent network instance to a CloudHub 2.0 space or Runtime Fabric tar
 . In Anypoint Code Builder, choose one of the following:
   . In Explorer, right-click a project file and select *Deploy Agent Network*.
   . From the Command Palette, run this command: *MuleSoft: Deploy Agent Network*.
-. In Deploy Agent Network, specify the environment, target space, gateways, and other deployment information. If you don't see any deployment targets to select, then you need to set up your target deployment space and set up gateways. For instructions, see xref:af-get-started.adoc[Get Started with Agent Networks].
+. In Deploy Agent Network, specify the environment, target space, gateways, and other deployment information. If you don't see any deployment targets to select, then you need to set up your target deployment space and set up gateways. For instructions, see xref:agent-network-get-started.adoc[Get Started with Agent Networks].
 . Select *Deploy*.
 . Your instances are now deployed and ready to test. The system deploys one instance for each connection defined in your agent network. If your agent network contains brokers, the system deploys one instance per broker.
 
@@ -136,7 +136,7 @@ Undeploy your agent network instances directly from Anypoint Code Builder. When 
 [%collapsible]
 ====
 
-If you run operations within a CI/CD environment, use Anypoint CLI plugin to set up, create, build, publish, unpublish, deploy, and undeploy agent networks. For more information, see xref:af-build-agent-networks-in-a-ci-cd-environment.adoc[].
+If you run operations within a CI/CD environment, use Anypoint CLI plugin to set up, create, build, publish, unpublish, deploy, and undeploy agent networks. For more information, see xref:agent-network-build-ci-cd-environment.adoc[].
 ====
 
 include::partial$af-configure-broker-resources.adoc[]
@@ -150,6 +150,6 @@ If you try to deploy an agent network project and see errors related to invalid 
 
 == See Also
 
-* xref:af-project-files.adoc[]
-* xref:general::agent-fabric-overview.adoc[Agent Fabric Overview]
+* xref:agent-network-project-files.adoc[]
+* xref:agent-fabric::index.adoc[Agent Fabric Overview]
 * https://blogs.mulesoft.com/news/managed-omni-gateway-in-shared-spaces-with-unified-traffic-control/[Managed Omni Gateway in Shared Spaces with Unified Traffic Control]

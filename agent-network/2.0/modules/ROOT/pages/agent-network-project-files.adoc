@@ -22,4 +22,4 @@ For complete schema details, see:
 * xref:agent-network-yaml-reference.adoc[]
 * xref:agent-network-script-reference.adoc[]
 
-NOTE: For a complete, working example you can use as a starting point for your own agent network project, see xref:agent-network-example-it-investigation-broker.adoc[Example: Building an IT Investigation Broker]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own project.
+NOTE: For a complete, working example you can use as a starting point for your own agent network project, see xref:agent-network-example-it-investigation-broker.adoc[]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own project.
