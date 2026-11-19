@@ -1,5 +1,4 @@
 = Build Agent Networks in a CI/CD Environment
-:page-aliases: anypoint-code-builder::af-build-agent-networks-in-a-ci-cd-environment.adoc
 
 Use the Anypoint CLI Agent Fabric plugin in CI/CD pipelines to configure agent network gateways, create and build projects, and publish and deploy networks from the command line, matching the lifecycle you can drive from Anypoint Code Builder. Automating these steps keeps environments aligned, lets you embed approvals, secrets, and quality gates in the pipeline, and avoids one-off scripts when you promote from development to staging and production.
 
