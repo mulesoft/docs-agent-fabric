@@ -5,6 +5,8 @@ Use the Anypoint CLI Agent Fabric plugin in CI/CD pipelines to configure agent n
 
 For installation, package updates, and release details, see https://www.npmjs.com/package/mulesoft-anypoint-cli-agent-fabric-plugin[Anypoint CLI Agent Fabric Plugin on npm].
 
+If a plugin command fails, see xref:agent-network-troubleshoot-errors.adoc[].
+
 == Before You Begin
 
 If you're using the Anypoint CLI to create agent network projects, ensure you install these requirements.
@@ -41,9 +43,9 @@ For more information, see xref:anypoint-cli::auth.adoc[].
 
 === Create a Target Space for Your Environment
 
-To deploy an agent network, you need a space on CloudHub 2.0 or a deployment target on Anypoint Runtime Fabric. See xref:af-get-started.adoc#setup-space[Set Up the Space or Deployment Target for Your Environment].
+To deploy an agent network, you need a space on CloudHub 2.0 or a deployment target on Anypoint Runtime Fabric. See xref:agent-network-get-started.adoc#setup-space[Set Up the Space or Deployment Target for Your Environment].
 
-After you create a target space, set up the ingress and egress gateways for deployment if you haven't already done so. See xref:af-get-started.adoc#setup-gateways[Set Up Agent Network Gateways for the Space or Deployment Target].
+After you create a target space, set up the ingress and egress gateways for deployment if you haven't already done so. See xref:agent-network-get-started.adoc#setup-gateways[Set Up Agent Network Gateways for the Space or Deployment Target].
 
 == CLI for Agent Fabric Plugin Reference
 
@@ -52,3 +54,5 @@ Use these commands to set up gateways and author, publish, and deploy agent netw
 include::anypoint-cli::partial$agent-fabric.adoc[tag=summary]
 
 include::anypoint-cli::partial$agent-fabric.adoc[tag=commands]
+
+include::partial$af-configure-broker-resources.adoc[]

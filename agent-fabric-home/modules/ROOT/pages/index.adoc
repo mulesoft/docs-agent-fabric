@@ -153,7 +153,7 @@ You define the broker and its nodes in Agent Script (`.agent` files) in an Anypo
 
 Use a broker when work spans multiple specialized agents.
 
-Learn more: xref:agent-network::af-define-your-agent-network-specification.adoc[]
+Learn more: xref:agent-network::agent-network-define-specification.adoc[]
 
 [[other-ai-connectors]]
 === Other AI Connectors
@@ -402,7 +402,7 @@ You need a place to design and test an agent network before it hits production. 
 
 Use Anypoint Code Builder when you need to design, test, or generate an agent network before you deploy it.
 
-Learn more: xref:anypoint-code-builder::index.adoc[] and xref:agent-network::af-define-your-agent-network-specification.adoc[]
+Learn more: xref:anypoint-code-builder::index.adoc[] and xref:agent-network::agent-network-define-specification.adoc[]
 
 === MuleSoft Vibes
 
@@ -414,7 +414,7 @@ Hand-authoring a broker and agent network can be slow, and lead to mistakes at d
 
 Use MuleSoft Vibes when you want to draft or change project files from a description instead of authoring every file by hand.
 
-Learn more: xref:anypoint-code-builder::vibes-get-started.adoc[] and xref:agent-network::af-define-your-agent-network-specification.adoc[]
+Learn more: xref:anypoint-code-builder::vibes-get-started.adoc[] and xref:agent-network::agent-network-define-specification.adoc[]
 ////
 
 == High-Level Workflow

@@ -1,4 +1,5 @@
 = Orchestrating Multi-Agent Processes with Agent Networks
+:page-aliases: anypoint-code-builder::af-use-case-orchestration.adoc
 :page-pagination: next
 
 Agent brokers and agent networks coordinate task delegation across specialized agents with guided determinism. This coordination produces reliable, predictable outcomes from complex business processes. You define broker routing logic in Agent Script and configure the network composition in `agent-network.yaml`. This file brings agents, LLMs, and MCP servers together in a single coordinated system. Use this approach when a single agent can't handle the process and your business process requires multiple specialized agents working in sequence or in parallel.
@@ -129,7 +130,7 @@ With a broker handling intelligent triage:
 . Configure `agent-network.yaml` to declare the registry (agents and MCP servers), context (connections), and brokers.
 . For each broker, create an Agent Script file (`.agent`) that defines the routing graph and node behavior.
 
-For more information, see xref:af-define-your-agent-network-specification.adoc[Define Your Agent Network Specification].
+For more information, see xref:agent-network-define-specification.adoc[Define Your Agent Network Specification].
 
 === Step 4: Deploy and Test
 
@@ -167,7 +168,7 @@ These patterns represent common approaches to structuring broker routing logic i
 | Steps must run in order and each step depends on the previous result.
 
 | Parallel Dispatch
-| Dispatch a request to multiple specialist agents simultaneously and aggregate the results. See xref:af-agent-script-reference.adoc#parallel-tool-execution[Parallel Tool Execution].
+| Dispatch a request to multiple specialist agents simultaneously and aggregate the results. See xref:agent-network-script-reference.adoc#parallel-tool-execution[Parallel Tool Execution].
 | Sub-tasks are independent and can run concurrently for faster completion. Use sequential execution when a call depends on another call's result.
 
 | Conditional Routing
@@ -192,8 +193,8 @@ When deploying agent networks and brokers in production:
 
 Get started with your first agent network, from setting up your environment through deploying it to a target.
 
-. xref:af-get-started.adoc[Get started with agent networks].
-. xref:af-create-agent-network.adoc[Create an agent network project].
-. xref:af-define-your-agent-network-specification.adoc[Define your agent network].
-. xref:af-publish-agent-network-assets.adoc[Publish your agent network].
-. xref:af-deploy-agent-network-targets.adoc[Deploy an agent network instance].
+. xref:agent-network-get-started.adoc[Get started with agent networks].
+. xref:agent-network-create.adoc[Create an agent network project].
+. xref:agent-network-define-specification.adoc[Define your agent network].
+. xref:agent-network-publish.adoc[Publish your agent network].
+. xref:agent-network-deploy-targets.adoc[Deploy an agent network instance].

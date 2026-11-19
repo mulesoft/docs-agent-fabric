@@ -96,7 +96,7 @@ The MuleSoft Agent is available on every page. Ask it to help you navigate, sear
 
 === Work with a Service
 
-Most day-to-day work on a registered service happens on its detail page. In *Portfolio*, open aselect a service. The tabs you see depend on the catalog. See xref:services-view-details.adoc[].
+Most day-to-day work on a registered service happens on its detail page. In *Portfolio*, open a service. The tabs you see depend on the catalog. See xref:services-view-details.adoc[].
 
 * *Instances*
 +
@@ -121,7 +121,7 @@ You can't govern, secure, or control the cost of agents you don't know about, so
 * Catalog agents, MCP servers, and APIs so teams can find and reuse them: xref:services-add-to-portfolio.adoc[], xref:services-register-manually.adoc[], and xref:scanners-add-from-providers.adoc[]
 * Expose existing APIs as MCP servers so agents can call them as tools: xref:services-create-mcp-server.adoc[]
 * Present non-A2A agents as A2A-compliant so Agent Fabric can orchestrate them: xref:services-create-a2a-bridge.adoc[]
-* Coordinate work across specialized agents when one agent isn't enough: xref:agent-network::af-get-started.adoc[Get Started with Agent Networks]
+* Coordinate work across specialized agents when one agent isn't enough: xref:agent-network::agent-network-get-started.adoc[Get Started with Agent Networks]
 * Enforce the same policies on live traffic through Omni Gateway: xref:instances-add.adoc[], xref:policies-apply-manage.adoc[], and xref:governance-work-with-strategies.adoc[]
 * See LLM spend, cap it, and reduce token use: xref:model-proxy-create-model-proxy.adoc[], xref:models-costs-manage.adoc[], xref:model-wallets-manage.adoc[], and xref:costs-manage.adoc[]
 * Detect and contain rogue agents: xref:rogue-agents-detect-and-contain.adoc[]
@@ -309,8 +309,8 @@ You also need these permissions:
 
 Learn more: 
 
-* xref:agent-network::af-get-started.adoc[Get Started with Agent Networks]
-* xref:agent-network::af-define-your-agent-network-specification.adoc[]
+* xref:agent-network::agent-network-get-started.adoc[Get Started with Agent Networks]
+* xref:agent-network::agent-network-define-specification.adoc[]
 * xref:anypoint-code-builder::vibes-get-started.adoc[]
 * xref:agent-visualizer::index.adoc[Agent Visualizer]
 

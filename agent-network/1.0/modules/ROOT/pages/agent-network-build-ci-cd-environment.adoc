@@ -1,4 +1,5 @@
 = Build Agent Networks in a CI/CD Environment
+:page-aliases: anypoint-code-builder::af-build-agent-networks-in-a-ci-cd-environment.adoc
 
 Use the Anypoint CLI Agent Fabric plugin in CI/CD pipelines to configure agent network gateways, create and build projects, and publish and deploy networks from the command line, matching the lifecycle you can drive from Anypoint Code Builder. Automating these steps keeps environments aligned, lets you embed approvals, secrets, and quality gates in the pipeline, and avoids one-off scripts when you promote from development to staging and production.
 
@@ -6,7 +7,7 @@ For installation, package updates, and release details, see https://www.npmjs.co
 
 == Before You Begin
 
-Make sure you meet the xref:af-get-started.adoc#before-you-begin[prerequisites] for this task.
+Make sure you meet the xref:agent-network-get-started.adoc#before-you-begin[prerequisites] for this task.
 
 Install the Anypoint CLI Agent Fabric plugin by running this command in a terminal window:
 
@@ -41,9 +42,9 @@ For more information, see xref:anypoint-cli::auth.adoc[].
 
 === Create a Target Space for Your Environment
 
-To deploy an agent network, you need a space on CloudHub 2.0 or a deployment target on Anypoint Runtime Fabric. See xref:af-get-started.adoc#setup-space[Set Up the Space or Deployment Target for Your Environment].
+To deploy an agent network, you need a space on CloudHub 2.0 or a deployment target on Anypoint Runtime Fabric. See xref:agent-network-get-started.adoc#setup-space[Set Up the Space or Deployment Target for Your Environment].
 
-After you have a target space, set up the gateway or gateways for deployment if you haven't already done so. See xref:af-get-started.adoc#setup-gateways[Set Up Agent Network Gateways for the Space or Deployment Target].
+After you have a target space, set up the gateway or gateways for deployment if you haven't already done so. See xref:agent-network-get-started.adoc#setup-gateways[Set Up Agent Network Gateways for the Space or Deployment Target].
 
 == CLI for Agent Fabric Plugin Reference
 

@@ -1,5 +1,6 @@
 [[publish-assets]]
 = Publish Agent Network Assets
+:page-aliases: anypoint-code-builder::af-publish-agent-network-assets.adoc
 
 Build and publish your agent network project as Anypoint Exchange assets. When you publish, an asset is created for each broker, agent, and MCP server that's in your agent network. The asset ID is the value of the `name` key in `agent-network.yaml`.
 
@@ -8,7 +9,7 @@ For example, suppose you have an agent name of `badging-agent` in `agent-network
 [[before-you-begin]]
 == Before You Begin
 
-Make sure you review the xref:af-get-started.adoc#before-you-begin[prerequisites].
+Make sure you review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites].
 
 If you want to publish your project assets to a different business group, update the relevant `groupId` in `exchange.json`.
 
@@ -45,9 +46,9 @@ Next, discover your agent network assets in *Agents & Tools* in Exchange to get 
 [[publish-cli]]
 == Publish a Network Using the Anypoint CLI
 
-If you run operations within a CI/CD environment, you can use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:af-build-agent-networks-in-a-ci-cd-environment.adoc[].
+If you run operations within a CI/CD environment, you can use Anypoint CLI's plugin to set up, create, build, publish, and deploy agent networks. For more information, see xref:agent-network-build-ci-cd-environment.adoc[].
 
 [[see-also]]
 == See Also
 
-* xref:af-deploy-agent-network-targets.adoc[]
+* xref:agent-network-deploy-targets.adoc[]

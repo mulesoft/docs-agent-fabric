@@ -1,6 +1,4 @@
-[[local-deploy-and-test]]
 = Deploy and Test Agent Networks Locally
-attributes:
 :page-aliases: anypoint-code-builder::af-local-deploy-and-test.adoc
 :page-pagination:
 
@@ -44,7 +42,7 @@ On subsequent runs, your saved variable values are reused automatically and you 
 === Deployment Results
 
 * *Success*: The Local Deployment and Testing panel opens side-by-side, and a success notification appears.
-* *Failure*: An error notification appears with a *Try again* button. Check the error details and retry. For more information, see xref:af-troubleshoot-agent-networks.adoc[].
+* *Failure*: An error notification appears with a *Try again* button. Check the error details and retry. For more information, see xref:agent-network-troubleshoot.adoc[].
 
 [[test-brokers]]
 == Test Your Brokers
@@ -111,5 +109,5 @@ Runtime logs stream to the standard VS Code Output panel and Debug Console, atta
 [[See-Also]]
 == See Also
 
-* xref:af-publish-agent-network-assets.adoc[]
-* xref:af-deploy-agent-network-targets.adoc[]
+* xref:agent-network-publish.adoc[]
+* xref:agent-network-deploy-targets.adoc[]

@@ -1,4 +1,3 @@
-[[define-spec]]
 = Define Your Agent Network
 :page-aliases: anypoint-code-builder::af-define-your-agent-network-specification.adoc
 
@@ -7,11 +6,11 @@ After you create your agent network project, configure your network by editing `
 [[before-you-begin]]
 == Before You Begin
 
-Review the xref:af-get-started.adoc#before-you-begin[prerequisites] and make sure that you've created an agent network project. See xref:af-create-agent-network.adoc[Create Agent Networks].
+Review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites] and make sure that you've created an agent network project. See xref:agent-network-create.adoc[Create Agent Networks].
 
 [NOTE]
 ====
-For a complete, working example you can use as a starting point for your own agent network project, see xref:af-example-it-investigation-broker.adoc[Example: Building an IT Investigation Broker]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own project.
+For a complete, working example you can use as a starting point for your own agent network project, see xref:agent-network-example-it-investigation-broker.adoc[Example: Building an IT Investigation Broker]. The example walks through a fully configured `agent-network.yaml`, `exchange.json`, and `/brokers` directory that you can adapt to your own project.
 ====
 
 [[define-dev-agent]]
@@ -59,7 +58,7 @@ With the canvas open beside the code editor, edit your project files. The visual
 . Edit `agent-network.yaml` to declare assets in the *registry* section and to define connections and policies in the *context* section.
 . In the Explorer, navigate to the `/brokers` directory and open the `.agent` file for the broker you want to edit (for example, `broker1.agent`). Edit the `.agent` file to define the broker, its nodes (trigger, subagent, orchestrator, generator, executor, echo, router), and the transitions between them.
 +
-To understand the schema and expected values for each file, see xref:af-project-files.adoc[Agent Network Project File Reference].
+To understand the schema and expected values for each file, see xref:agent-network-project-files.adoc[Agent Network Project File Reference].
 . Update `exchange.json` to manage Anypoint Exchange dependencies by using the *Add Exchange Assets* action rather than editing it by hand. See <<add-exchange-assets>>.
 
 === Navigate Between Canvas and Code View
@@ -148,7 +147,7 @@ After you add dependencies, their asset names are available as values in auto-co
 [[use-llm-proxy]]
 == Use an LLM Proxy in Your Agent Network
 
-You can use an xref:gateway::flex-gateway-llm-proxy.adoc[Omni Gateway LLM Proxy] as the LLM connection for your agent broker. The LLM Proxy must use the OpenAI or Gemini format. For supported models, see xref:af-agent-networks.adoc#llm-support[Large Language Models].
+You can use an xref:gateway::flex-gateway-llm-proxy.adoc[Omni Gateway LLM Proxy] as the LLM connection for your agent broker. The LLM Proxy must use the OpenAI or Gemini format. For supported models, see xref:agent-network-overview.adoc#llm-support[Large Language Models].
 
 === Create and Activate the LLM Model Proxy
 
@@ -189,6 +188,6 @@ If you reuse an existing LLM Proxy Exchange asset in your agent network, ensure 
 [[see-also]]
 == See Also
 
-* xref:af-create-agent-network.adoc[Create Agent Networks]
-* xref:af-project-files.adoc[Agent Network Project File Reference]
-* xref:af-agent-script-reference.adoc[Agent Script Reference]
+* xref:agent-network-create.adoc[Create Agent Networks]
+* xref:agent-network-project-files.adoc[Agent Network Project File Reference]
+* xref:agent-network-script-reference.adoc[Agent Script Reference]

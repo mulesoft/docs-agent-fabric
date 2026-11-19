@@ -3,6 +3,8 @@
 
 Resolve common agent network errors and connectivity issues by enabling verbose logging, message logging policies, and distributed tracing. Using logs and distributed traces, you can observe agents and MCP servers and see how requests flow through brokers, which tools and policies apply, and where failures or latency originate.
 
+For Anypoint CLI Agent Fabric plugin errors, see xref:agent-network-troubleshoot-errors.adoc[Troubleshoot Agent Fabric CLI Errors].
+
 [NOTE]
 Use Agent Visualizer to xref:agent-visualizer::troubleshoot-agent-network.adoc[view metrics, logs, and traces] for agents and MCP servers in your network.
 
@@ -33,7 +35,7 @@ To enable logging:
 
 Edit `agent-network.yaml` to set message logging for MCP servers and agents.
 
-Message logging uses the xref:gateway::policies-included-message-logging.adoc[Omni Gateway Message Logging policy]. In the `connection` section of the agent or MCP server instance you want to log, add this logging policy inside `policies`:
+Message logging uses the xref:gateway::policies-included-message-logging.adoc[]. In the `connection` section of the agent or MCP server instance you want to log, add this logging policy inside `policies`:
 
 [source,yaml]
 ----
@@ -84,7 +86,7 @@ To resolve this conflict, uninstall the Agentforce DX extension pack from VS Cod
 
 === Issue: No Agent Network Deployment Targets
 
-If you attempt to deploy an agent network, but you don’t see any deployment targets in Anypoint Code Builder or Anypoint CLI, then you need to set up your target deployment space and set up gateways. For instructions, see xref:af-get-started.adoc[Get Started with Agent Networks].
+If you attempt to deploy an agent network, but you don’t see any deployment targets in Anypoint Code Builder or Anypoint CLI, then you need to set up your target deployment space and set up gateways. For instructions, see xref:agent-network-get-started.adoc[Get Started with Agent Networks].
 
 === Issue: Changes Don't Take Effect After Redeployment
 
@@ -155,7 +157,7 @@ Common limit-related errors include:
 * Maximum tool call count exceeded
 * State size limit exceeded
 
-To adjust these limits, add runtime system limit variables to the `metadata.variables` section of your `exchange.json` file. For detailed information about configuring these limits, see xref:af-agent-network-yaml-reference.adoc#runtime-system-limits[Runtime System Limits Configuration].
+To adjust these limits, add runtime system limit variables to the `metadata.variables` section of your `exchange.json` file. For detailed information about configuring these limits, see xref:agent-network-yaml-reference.adoc#runtime-system-limits[Runtime System Limits Configuration].
 
 === Error: "HTTP error 404: Agent card not found at /.well-known/agent-card.json"
 
@@ -186,6 +188,21 @@ To resolve this error:
 . Rebuild, republish, and redeploy the agent network.
 
 NOTE: A protocol version mismatch surfaces as an authentication (401) error, not as a version error. Verify the protocol version whenever a downstream agent call fails with `401` even if you've correctly configured the the egress auth policy.
+
+[[request-timeout]]
+=== Issue: Requests to a Slow Agent Time Out
+
+If a broker's `a2a:send_message` call to a downstream agent consistently fails after 60 seconds, the agent's response time is longer than the timeout on the Omni Gateway. This commonly happens with agents that run long queries, such as Looker agents.
+
+When you create an Omni Gateway with `agent-network setup gateways`, the default for upstream response timeouts is 60 seconds. Agent Script `a2a:send_message` actions don't have a timeout property of their own, so you need to raise the timeout on the gateway. If the node that calls the agent also sets a timeout, raise that too.
+
+* *Omni Gateway*: Set the timeout above the agent's worst-case response time (for example, a Looker agent's worst-case query time) using one of these options:
++
+** To change the timeout for the entire gateway, in Runtime Manager, go to *Omni Gateways* > <Your_Gateway> > *Runtime Configurations* > *Timeouts*, and set *Upstream Response Timeout*.
+** To change the timeout for only one agent, apply the Response Timeout policy (`response-timeout-flex`) to that agent's API instance, and set the timeout in seconds. This value overrides the gateway-level value for that instance.
+* *Agent broker*: In the subagent or orchestrator node that calls the A2A agent, increase `reasoning.task_timeout_secs`. This setting limits the total execution time of the node, so it must be longer than the agent's worst-case response time.
+
+After you change the broker configuration, rebuild, republish, and redeploy the agent network.
 
 
 == See Also

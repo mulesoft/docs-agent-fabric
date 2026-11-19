@@ -107,7 +107,7 @@ This metric is shown for MCP servers. This is the total number of messages sent 
 |===
 
 [NOTE]
-Broker metadata is defined in the agent network YAML. For more information about the agent network YAML, see xref:anypoint-code-builder::af-define-your-agent-network-specification.adoc[].
+Broker metadata is defined in the agent network YAML. For more information about the agent network YAML, see xref:agent-network::agent-network-define-specification.adoc[].
 
 === Instance Information for an Agent
 
@@ -154,7 +154,7 @@ You can see the details of applied policies in the details card for the selected
 
 * xref:index.adoc[]
 * xref:agent-viz-view-and-navigate-agent-network.adoc[]
-* xref:anypoint-code-builder::af-get-started.adoc[]
+* xref:agent-network::agent-network-get-started.adoc[]
 * xref:monitoring::index.adoc[]
 * xref:api-manager::index.adoc[]
 * xref:exchange::index.adoc[]
