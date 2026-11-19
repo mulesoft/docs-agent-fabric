@@ -1,0 +1,74 @@
+= Visualize Agent Networks
+:page-aliases: agent-visualizer::index.adoc
+:description: Agent Visualizer maps your enterprise agent network in real time, showing connections between agents, MCP servers, LLMs, and external platforms including Amazon Bedrock, Microsoft Copilot, and Google Vertex AI.
+
+Agent Visualizer provides a detailed visual graph of your agent network so you can see, understand, and interact with your enterprise's evolving network of agents, Model Context Protocol (MCP) servers, and large language models (LLMs). Agent Visualizer gives you insight into hidden agent interactions, governance gaps, and performance bottlenecks.
+
+Agent Visualizer supports agents created in external platforms including Amazon Bedrock, Microsoft Copilot, and Google Vertex AI.
+
+With Agent Visualizer, you can:
+
+* View all connected agents, MCP servers, and LLMs on a single map, including relationships and direction of calls.
+* View real-time call volume between agents and MCP servers to identify key pathways and under- or overused connections.
+* Identify which agents lack Omni Gateway policy coverage to spot governance gaps.
+* Select any node to view its purpose, origin, and all active running instances.
+* Filter traffic by production and nonproduction environments.
+
+image::agent-visualizer.png[Agent Visualizer graph showing a network of agents, brokers, and MCP servers and the details card for a highlighted node]
+
+[[use-cases]]
+== Agent Visualizer Use Cases
+
+Use Agent Visualizer to gain clarity and control over your agent ecosystem.
+
+* Discover your agent landscape.
++
+Architects and platform teams can view a complete network graph of enterprise agents to map dependencies, plan integrations, and eliminate shadow IT.
+* Monitor real-time usage.
++
+Developers can validate adoption and consumption patterns by overlaying real-time transaction traffic, helping them optimize performance and capacity.
+* Assess security and compliance coverage.
++
+Security teams can visualize active policies across the network to verify enforcement, spot vulnerabilities, and make sure regulatory compliance.
+* Troubleshoot failures faster.
++
+Operators can trace dependencies, isolate failing nodes, and deep-link into service logs for rapid incident response and root cause analysis.
+
+
+[[before-you-begin]]
+== Before You Begin
+
+Before getting started, make sure you have:
+
+* An Anypoint Platform account
+* Required <<av-permissions,Agent Visualizer permissions>>
+
+[[av-permissions]]
+== Agent Visualizer Permissions
+
+[%header,cols="30a,50a,20a"]
+|===
+|To... | Required Permission | Notes
+|include::access-management::partial$include-permissions-av.adoc[tag=permsViewMonitorAgents]
+|Anypoint Monitoring: Monitoring Viewer |
+
+|include::access-management::partial$include-permissions-av.adoc[tag=permsViewAgenticAssets]
+|Exchange: Exchange Viewer |
+
+|include::access-management::partial$include-permissions-av.adoc[tag=permsViewApiNodes]
+| API Manager: View APIs Configuration |
+
+|include::access-management::partial$include-permissions-av.adoc[tag=permsViewPoliciesForAssets]
+|API Manager: View Policies |
+
+|===
+
+== See Also
+
+* xref:monitoring::index.adoc[Anypoint Monitoring]
+* xref:exchange::index.adoc[Anypoint Exchange]
+* xref:api-manager::index.adoc[Anypoint API Manager]
+* xref:general::learning-map-agent-fabric.adoc[Agent Fabric]
+* xref:mulesoft-mcp-server::index.adoc[MCP Server]
+* xref:anypoint-code-builder::index.adoc[Anypoint Code Builder]
+* https://www.salesforce.com/agentforce/[Agentforce]
