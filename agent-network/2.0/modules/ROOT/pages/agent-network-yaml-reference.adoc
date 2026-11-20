@@ -2143,7 +2143,7 @@ Use an inline policy binding to define a policy directly on the broker interface
 
 Use Python expressions to resolve or calculate values that are only available at runtime.
 
-Enclose expressions using the {{}} evaluation wrapper. You can also use multiline statements using the https://yaml.org/spec/1.2.2/#54-line-break-characters[appropriate YAML syntax].
+Enclose expressions using the {{}} evaluation wrapper. You can also use multiline statements using the appropriate https://yaml.org/spec/1.2.2/#54-line-break-characters[YAML syntax].
 
 *Example* 
 

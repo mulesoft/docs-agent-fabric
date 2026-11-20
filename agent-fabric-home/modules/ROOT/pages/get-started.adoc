@@ -80,7 +80,7 @@ After you sign in, you land on *Home*. The main navigation has four areas:
 | Area | Use it to
 
 | *Portfolio*
-| Find and register services. Portfolio is the registry. Each asset type has its own catalog: *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, and *Gateways*. See xref:portfolio-overview.adoc[].
+| Find and register services. Portfolio is the registry. Each asset type has its own catalog: *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, and *Gateways*. See xref:registry-overview.adoc[].
 
 | *Governance*
 | Work with organization governance strategies, gateway-wide policies, and *Cost Management*.
@@ -312,7 +312,7 @@ Learn more:
 * xref:agent-network::agent-network-get-started.adoc[Get Started with Agent Networks]
 * xref:agent-network::agent-network-define-specification.adoc[]
 * xref:anypoint-code-builder::vibes-get-started.adoc[]
-* xref:agent-visualizer::index.adoc[Agent Visualizer]
+* xref:agent-viz-overview.adoc[Agent Visualizer]
 
 [[govern]]
 == Enforce the Same Policies on Live Traffic
@@ -530,7 +530,7 @@ You also need these permissions:
 | Manage alerts | One of: API Manager: Manage API Alerts or Runtime Manager: Manage Alerts
 |===
 
-Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:services-monitor.adoc[], and xref:alerts-configure-notifications.adoc[].
+Learn more: xref:agent-viz-overview.adoc[Agent Visualizer], xref:services-monitor.adoc[], and xref:alerts-configure-notifications.adoc[].
 ////
 
 == See Also
@@ -538,6 +538,5 @@ Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:services-m
 * xref:index.adoc[Agent Fabric Overview]
 * xref:use-cases.adoc[]
 * xref:learning-map-agent-fabric.adoc[]
-* xref:exp-compare.adoc[]
 * xref:access-management::connecting-salesforce-orgs.adoc[]
 * xref:access-management::enabling-generative-ai.adoc[]

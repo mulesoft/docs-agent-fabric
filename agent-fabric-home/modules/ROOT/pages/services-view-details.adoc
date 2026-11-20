@@ -58,9 +58,9 @@ tab can differ by service type and release. For end-to-end portfolio tasks that 
 |===
 [NOTE]
 ====
-* *Instances* tab is available on *Agents*, *MCP Servers*, and *APIs*; *Model Proxies* and *Gateways* do not include an *Instances* tab. See xref:exp-overview.adoc[].
+* *Instances* tab is available on *Agents*, *MCP Servers*, and *APIs*; *Model Proxies* and *Gateways* do not include an *Instances* tab.
 
-* *Conformance* on the detail page aligns with *Agents*, *APIs*, and *MCP Servers*; for gateways, compliance work is framed through *Governance* and related flows at the scope the system supports. See xref:exp-overview.adoc[].
+* *Conformance* on the detail page aligns with *Agents*, *APIs*, and *MCP Servers*; for gateways, compliance work is framed through *Governance* and related flows at the scope the system supports.
 ====
 
 == Open a Service Detail Page
@@ -98,7 +98,7 @@ For the full apply and management workflow, see xref:policies-apply-manage.adoc[
 * xref:services-connect-providers-to-add.adoc[]
 * xref:services-register-manually.adoc[]
 * xref:services-create-mcp-server.adoc[]
-* xref:services-add-semantic.adoc[]
+* xref:model-proxy-semantic-service.adoc[]
 * xref:instances-add.adoc[]
 * xref:services-monitor.adoc[]
 * xref:services-view-detailed-metrics.adoc[]

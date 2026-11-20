@@ -1,6 +1,6 @@
 = Agent Fabric Overview
 :keywords: agent fabric, ai control plane, ai agents, agent registry, portfolio, scanners, mcp server, mcp bridge, mcp connector, model context protocol, a2a bridge, a2a connector, agent broker, agent network, agent visualizer, omni gateway, ai governance, governance strategies, open policies, rogue agent detection, external vault, model proxy, model wallet, semantic caching, ai cost control, token budget, cost optimization, mulesoft agent
-:page-aliases: general::exp-compare.adoc, general::agent-fabric-overview.adoc
+:page-aliases: general::exp-compare.adoc, general::agent-fabric-overview.adoc, general::exp-overview.adoc
 
 //What is this, and why would I care? (intro and Key Benefits)
 //What can it do? (the pillars)
@@ -61,7 +61,7 @@ Teams rebuild agents and tools that already exist when they can't find those ass
 
 Use the registry when you start a new agentic project and want to use existing assets or when you want to share assets built by your team.
 
-Learn more: xref:portfolio-overview.adoc[]
+Learn more: xref:registry-overview.adoc[]
 
 [[scanners]]
 === Scanners
@@ -188,7 +188,7 @@ Multi-agent systems are hard to operate when you can't see how work moves throug
 Use Agent Visualizer during development to verify the network, at deployment to confirm routing, and in production to troubleshoot. To see runtime traffic for an agent or MCP server, publish it to Exchange and give it an instance on Omni Gateway.
 
 
-Learn more: xref:agent-visualizer::index.adoc[]
+Learn more: xref:agent-viz-overview.adoc[]
 
 [[secure-govern]]
 == Secure and Govern Agent Traffic

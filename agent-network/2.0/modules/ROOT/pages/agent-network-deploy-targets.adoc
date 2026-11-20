@@ -57,7 +57,7 @@ The broker's `egressgw.url` resolving to the cluster endpoint is expected behavi
 [[before-you-begin]]
 == Before You Begin
 
-Make sure you review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites for setting up agent network gateways and deployment targets].
+Make sure you review the xref:agent-network-get-started.adoc#before-you-begin[prerequisites] for setting up agent network gateways and deployment targets.
 
 [IMPORTANT]
 ====
