@@ -1052,6 +1052,9 @@ context:
       url: ${bedrock.url}
       authentication:
         kind: amazonSigv4
+        awsAccessKeyId: ${bedrock.awsAccessKeyId}
+        awsSecretAccessKey: ${bedrock.awsSecretAccessKey}
+        awsRegion: ${bedrock.awsRegion}
   policies:
     retry-policy:
       ref:
@@ -2299,6 +2302,21 @@ All agent network projects have an `exchange.json` file. This file contains asse
           "description": "Bedrock Anthropic base URL",
           "default": "https://bedrock-runtime.us-east-1.amazonaws.com/",
           "secret": false
+        },
+        "awsAccessKeyId": {
+          "description": "AWS access key ID",
+          "default": "",
+          "secret": true
+        },
+        "awsSecretAccessKey": {
+          "description": "AWS secret access key",
+          "default": "",
+          "secret": true
+        },
+        "awsRegion": {
+          "description": "AWS Region of the Bedrock endpoint",
+          "default": "us-east-1",
+          "secret": false
         }
       }
     }
@@ -2313,7 +2331,7 @@ These key-value pairs are important for your agent network configuration:
 * dependencies: Existing assets that this network needs to reference.
 * variables: Nested in the metadata section, defines all the variables whose values shouldn't be hardcoded in the `agent-network.yaml` file. Enter these values when publishing the agent network. Each variable has a description value, a default value, and a secret value that indicates whether it's treated as sensitive or not.
 +
-The `anthropic.url` and `bedrock.url` variables supply the URLs used by the corresponding LLM connections in `agent-network.yaml`. Add the Anthropic API key as a secret variable. Amazon Bedrock uses AWS Signature Version 4 authentication and doesn't require an API key variable.
+The `anthropic.url` and `bedrock.url` variables supply the URLs used by the corresponding LLM connections in `agent-network.yaml`. Add the Anthropic API key as a secret variable. Amazon Bedrock uses AWS Signature Version 4 authentication, so add the `bedrock.awsAccessKeyId` and `bedrock.awsSecretAccessKey` variables as secrets, and set `bedrock.awsRegion` to the Region of your Bedrock endpoint.
 
 For more information about versioning assets in agent network projects, see xref:agent-network-publish.adoc#version-assets[Version Assets].
 
