@@ -243,13 +243,13 @@ llm:
    anthropic-llm:
      target: "llm://llm_anthropic_conn"
      kind: "Anthropic"
-     model: "claude-sonnet-5"
+     model: "claude-opus-4-7"
      max_tokens: 4096
      effort: "high"
    bedrock-anthropic-llm:
      target: "llm://llm_bedrockanthropic_conn"
      kind: "BedrockAnthropic"
-     model: "global.anthropic.claude-sonnet-5"
+     model: "global.anthropic.claude-opus-4-7"
      max_tokens: 4096
 ----
 
@@ -370,7 +370,8 @@ The Gemini configuration has these properties.
 
 The Anthropic and Bedrock Anthropic configurations share these properties. Set `kind` to `Anthropic` for the Anthropic API or `BedrockAnthropic` for Amazon Bedrock. The `kind` value is case-sensitive, and no other properties are allowed.
 
-NOTE: Bedrock Anthropic uses Bedrock inference profile IDs for model names (for example, `global.anthropic.claude-sonnet-5`), which differ from the model names used with Anthropic (for example, `claude-sonnet-5`).
+
+NOTE: Bedrock Anthropic uses Bedrock inference profile IDs for model names (for example, `global.anthropic.claude-opus-4-7`), which differ from the model names used with Anthropic (for example, `claude-opus-4-7`).
 
 NOTE: Authentication isn't configured in the `.agent` file. Configure it on the LLM connection in `agent-network.yaml`.
 
@@ -407,7 +408,7 @@ NOTE: Authentication isn't configured in the `.agent` file. Configure it on the 
 |No
 
 |`thinking`
-|Controls extended thinking directly. If you don't set `thinking` or `effort`, the request doesn't specify thinking and the model applies its own default, which doesn't use extended thinking. You can't set `thinking` to `disabled` for `claude-fable-5` or `claude-fable-5-1`.
+|Controls extended thinking directly. If you don't set `thinking` or `effort`, the request doesn't specify thinking and the model applies its own default, which doesn't use extended thinking.
 |Enum['adaptive', 'disabled']
 |No
 
