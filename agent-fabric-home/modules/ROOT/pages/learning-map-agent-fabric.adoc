@@ -1,6 +1,6 @@
 = Learn About Agent Fabric
 :keywords: agent fabric, mulesoft, getting started, ai agents, learning map
-:page-aliases: agent-fabric::agent-fabric-get-started.adoc, general::learning-map-agent-fabric.adoc
+:page-aliases: agent-fabric::agent-fabric-get-started.adoc, general::learning-map-agent-fabric.adoc, general::learning-map-exp.adoc
 :page-article-style: learning-map
 
 AI agents, MCP servers, and APIs are built across multiple platforms. That makes reuse, consistent security, and end-to-end LLM spend tracking difficult. Agent Fabric is the control plane for that landscape.
