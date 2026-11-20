@@ -86,6 +86,7 @@ When the policy is applied, the section shows a table with one row per environme
 
 If some environments show no policy binding, select *Check again* to retry the policy application for those environments only. The operation is safe to repeat.
 
+[[scanner-oauth-authorization]]
 == Scanner OAuth Authorization
 
 Microsoft Copilot Studio and Google Vertex AI scanners authenticate through OAuth-based authentication. Create, authorize, and test the provider connection before you continue scanner setup.

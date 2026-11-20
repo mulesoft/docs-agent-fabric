@@ -1,3 +1,9 @@
 = Enable Agents to Take Action
 
 Transform your existing API instances into agent-ready tools without modifying code. Select which operations to expose, apply read-only filtering where needed, and control agent access to your APIs. For example, an organization with hundreds of existing Mule APIs can make them callable by agents in minutes through configuration alone, without touching the underlying implementations.
+
+For more information, see:
+
+* xref:services-create-mcp-server.adoc[]
+* xref:services-create-a2a-bridge.adoc[]
+* xref:agent-network-home::index.adoc[]
