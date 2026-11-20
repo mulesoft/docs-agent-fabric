@@ -1,13 +1,14 @@
 = Agent Fabric Use Cases
 :page-aliases: general::agent-fabric-use-cases.adoc
 
+
+These use cases map specific business problems to the Agent Fabric capabilities that solve it, so you can start where the pain is and build incrementally. Use the quick-reference table to match your immediate goal to the right capability.
+
 == Why Agent Fabric
 
 Enterprises don't struggle to build one agent. They struggle to run many — across Agentforce, Bedrock, custom Mule implementations, and vendor platforms — without losing control of cost, security, and consistency. The usual response is to solve each problem per platform: custom API adapters here, a spend dashboard there, guardrails reimplemented for every team. That work duplicates effort, drifts out of sync, and leaves gaps no one owns.
 
 Agent Fabric replaces that per-platform sprawl with one governed layer that every agent, API, model, and provider routes through. Expose APIs as agent tools without touching code, enforce the same policies and budgets everywhere, attribute every token to the team that spent it, and contain a rogue agent before it causes damage — all from a single point of control. The result is faster time-to-agent, predictable spend, and governance that holds as you scale from proof of concept to production.
-
-Each use case below maps a specific business problem to the Agent Fabric capabilities that solve it, so you can start where the pain is and build incrementally. Use the quick-reference table to match your immediate goal to the right capability.
 
 == Find Your Use Case
 

@@ -61,7 +61,7 @@ Teams rebuild agents and tools that already exist when they can't find those ass
 
 Use the registry when you start a new agentic project and want to use existing assets or when you want to share assets built by your team.
 
-Learn more: xref:portfolio-overview.adoc[]
+Learn more: xref:registry-overview.adoc[]
 
 [[scanners]]
 === Scanners
@@ -188,7 +188,7 @@ Multi-agent systems are hard to operate when you can't see how work moves throug
 Use Agent Visualizer during development to verify the network, at deployment to confirm routing, and in production to troubleshoot. To see runtime traffic for an agent or MCP server, publish it to Exchange and give it an instance on Omni Gateway.
 
 
-Learn more: xref:agent-visualizer::index.adoc[]
+Learn more: xref:agent-viz-overview.adoc[]
 
 [[secure-govern]]
 == Secure and Govern Agent Traffic
