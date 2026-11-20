@@ -312,7 +312,7 @@ Learn more:
 * xref:agent-network::agent-network-get-started.adoc[Get Started with Agent Networks]
 * xref:agent-network::agent-network-define-specification.adoc[]
 * xref:anypoint-code-builder::vibes-get-started.adoc[]
-* xref:agent-visualizer::index.adoc[Agent Visualizer]
+* xref:agent-viz-overview.adoc[Agent Visualizer]
 
 [[govern]]
 == Enforce the Same Policies on Live Traffic
@@ -530,7 +530,7 @@ You also need these permissions:
 | Manage alerts | One of: API Manager: Manage API Alerts or Runtime Manager: Manage Alerts
 |===
 
-Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:services-monitor.adoc[], and xref:alerts-configure-notifications.adoc[].
+Learn more: xref:agent-viz-overview.adoc[Agent Visualizer], xref:services-monitor.adoc[], and xref:alerts-configure-notifications.adoc[].
 ////
 
 == See Also

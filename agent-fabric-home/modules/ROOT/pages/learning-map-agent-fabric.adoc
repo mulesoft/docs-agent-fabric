@@ -111,7 +111,7 @@ Give agents one governed endpoint for multiple LLM providers. Then cap token spe
 
 See how agents, brokers, and MCP servers connect. Watch latency, errors, and volume in production.
 
-- xref:agent-visualizer::index.adoc[Visualize Your Agent Network]
+- xref:agent-viz-overview.adoc[Visualize Your Agent Network]
 - xref:services-monitor.adoc[Monitor Services in Your Portfolio]
 - xref:services-view-detailed-metrics.adoc[View Detailed Metrics]
 - xref:alerts-configure-notifications.adoc[Configure Notifications]
@@ -137,4 +137,4 @@ See how agents, brokers, and MCP servers connect. Watch latency, errors, and vol
 * xref:anypoint-code-builder::index.adoc[Anypoint Code Builder]
 * xref:exchange::index.adoc[Anypoint Exchange]
 * xref:monitoring::index.adoc[Anypoint Monitoring]
-* xref:agent-visualizer::index.adoc[Agent Visualizer]
+* xref:agent-viz-overview.adoc[Agent Visualizer]
