@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images
-:page-aliases: gateway::llm-proxy-request.adoc, gateway::flex-gateway-llm-proxy-request.adoc
+:page-aliases: gateway::llm-proxy-request.adoc, gateway::flex-gateway-llm-proxy-request.adoc, general::model-proxy-request.adoc
 
 Model Proxy supports these endpoint formats: OpenAI, Gemini, and Anthropic. The format is selected when creating a Model Proxy and can't be changed later.
 

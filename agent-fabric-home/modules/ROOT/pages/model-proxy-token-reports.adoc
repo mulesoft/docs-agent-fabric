@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images
-:page-aliases: gateway::llm-proxy-token-reports.adoc, gateway::flex-gateway-llm-proxy-token-reports.adoc
+:page-aliases: gateway::llm-proxy-token-reports.adoc, gateway::flex-gateway-llm-proxy-token-reports.adoc, general::model-proxy-token-reports.adoc
 
 
 Token Usage reports and API Manager insights help you monitor how your model proxies consume resources and perform over time. Token Usage reports show the number of API tokens consumed per model, broken down by business group or application. The API Manager LLM Summary page provides hourly metrics including request volume, policy violations, errors, and average response time. For deeper analysis, you can build custom dashboards in Anypoint Monitoring.

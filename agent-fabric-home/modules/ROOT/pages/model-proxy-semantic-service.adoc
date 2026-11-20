@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images
-:page-aliases: gateway::llm-proxy-semantic-service.adoc, gateway::flex-gateway-llm-proxy-semantic-service.adoc, exp-services-add-semantic.adoc
+:page-aliases: gateway::llm-proxy-semantic-service.adoc, gateway::flex-gateway-llm-proxy-semantic-service.adoc, general::exp-services-add-semantic.adoc, general::model-proxy-semantic-service.adoc
 
 Semantic routing services compare incoming requests to defined prompt topics to route traffic to the best-matching model path or block requests that match denylist topics. Model Proxy supports Basic Scale semantic routing services for simple routing and Advanced Scale semantic routing services for complex routing backed by an external vector database. Configure a semantic routing service before creating a model proxy that uses semantic routing.
 

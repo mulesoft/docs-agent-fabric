@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images
-:page-aliases: gateway::llm-proxy-create-llm-proxy.adoc, gateway::flex-gateway-llm-proxy-create-llm-proxy.adoc
+:page-aliases: gateway::llm-proxy-create-llm-proxy.adoc, gateway::flex-gateway-llm-proxy-create-llm-proxy.adoc, general::model-proxy-create-model-proxy.adoc
 
 You can configure a model proxy to route LLM traffic across different models and providers using model-based or semantic routing strategies. When you create a model proxy, you define the endpoint format, routing strategy, and at least one route that maps requests to a supported LLM provider and model. After deployment to Omni Gateway, you can edit the proxy configuration at any time.
 

@@ -3,6 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images
+:page-aliases: general::model-proxy-semantic-caching-service.adoc
 
 Semantic caching services store and retrieve LLM responses based on semantic similarity. When an incoming request is semantically similar to a previous request, Model Proxy returns the cached response instead of calling the LLM provider again, which reduces latency and cost. Configure a semantic caching service before creating a model proxy that uses semantic caching.
 
