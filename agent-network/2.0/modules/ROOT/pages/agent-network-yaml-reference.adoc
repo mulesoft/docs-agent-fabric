@@ -241,25 +241,25 @@ registry:
              description: List available Slack channels.
              inputSchema:
                type: object
-    llms:
-      Open-AI-LLM:
-        info:
-          label: OpenAI LLM
-          description: OpenAI provider for orchestration and generation nodes.
-        metadata:
-          platform: OpenAI
-          models:
-            - gpt-4o
-            - gpt-4o-mini
-            - gpt5-mini
-      Azure-OpenAI-LLM:
-        info:
-          label: Azure OpenAI LLM
-          description: Azure OpenAI for orchestration nodes.
-        metadata:
-          platform: AzureOpenai
-          models:
-            - gpt-4o
+   llms:
+     Open-AI-LLM:
+       info:
+         label: OpenAI LLM
+         description: OpenAI provider for orchestration and generation nodes.
+       metadata:
+         platform: OpenAI
+         models:
+           - gpt-4o
+           - gpt-4o-mini
+           - gpt5-mini
+     Azure-OpenAI-LLM:
+       info:
+         label: Azure OpenAI LLM
+         description: Azure OpenAI for orchestration nodes.
+       metadata:
+         platform: AzureOpenai
+         models:
+           - gpt-4o
 ----
 
 The `registry` section has these properties.
@@ -1113,8 +1113,10 @@ a|The base URL of the target system. For `llm` use these defaults:
 * Gemini: `\https://generativelanguage.googleapis.com`
 * Bedrock OpenAI: `\https://bedrock-mantle.<YOUR_REGION>.api.aws/v1`
 * Azure OpenAI: `\https://<YOUR_RESOURCE_NAME>.openai.azure.com/openai/v1`
-* Anthropic: `\https://api.anthropic.com/v1/messages`
-* Bedrock Anthropic: `\https://bedrock-runtime.<YOUR_REGION>.amazonaws.com/anthropic/v1/messages`
+* Anthropic: `\https://api.anthropic.com`
+* Bedrock Anthropic: `\https://bedrock-runtime.us-east-1.amazonaws.com`
+
+The runtime adds the `/v1/messages` path to the Anthropic URL and the `/anthropic/v1/messages` path to the Bedrock Anthropic URL. Don't include these paths in the `url` value.
 |String
 |No
 

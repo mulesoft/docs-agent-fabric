@@ -404,11 +404,11 @@ NOTE: Authentication isn't configured in the `.agent` file. Configure it on the 
 
 |`effort`
 |Enables adaptive extended thinking and sets its depth. Has no effect when `thinking` is `disabled`.
-|Enum['high', 'medium', 'low']
+|Enum['low', 'medium', 'high', 'xhigh', 'max']. `xhigh` doesn't work on every model.
 |No
 
 |`thinking`
-|Controls extended thinking directly. If you don't set `thinking` or `effort`, the request doesn't specify thinking and the model applies its own default, which doesn't use extended thinking.
+|Controls extended thinking directly. If you don't set `thinking` or `effort`, the request doesn't specify thinking and the model applies its own default, which doesn't use extended thinking. Fable models reject `thinking: disabled`, and setting it is a compile-time error.
 |Enum['adaptive', 'disabled']
 |No
 

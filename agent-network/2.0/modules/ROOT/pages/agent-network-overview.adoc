@@ -141,14 +141,14 @@ a|
 * Native structured output
 * Tool calling
 a|
-* Claude 4.7
+* Claude 4.7 or newer
 
 |Bedrock Anthropic |`/anthropic/v1/messages` (Messages API) a|
 * Extended thinking
 * Structured output
 * Tool calling
 a|
-* Claude 4.7
+* Claude 4.7 or newer
 |===
 
 Agent networks support text-based messages and responses. Image and binary message types aren't supported.
