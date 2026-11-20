@@ -80,7 +80,7 @@ After you sign in, you land on *Home*. The main navigation has four areas:
 | Area | Use it to
 
 | *Portfolio*
-| Find and register services. Portfolio is the registry. Each asset type has its own catalog: *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, and *Gateways*. See xref:portfolio-overview.adoc[].
+| Find and register services. Portfolio is the registry. Each asset type has its own catalog: *Agents*, *MCP Servers*, *Model Proxies*, *APIs*, and *Gateways*. See xref:registry-overview.adoc[].
 
 | *Governance*
 | Work with organization governance strategies, gateway-wide policies, and *Cost Management*.

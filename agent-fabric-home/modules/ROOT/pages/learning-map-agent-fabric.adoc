@@ -35,7 +35,7 @@ Start with how the registry, agent actions, governance, and cost control fit tog
 
 Catalog agents, MCP servers, and APIs from any provider or registry, add model proxies and gateways, and create MCP servers. Discover services with scanners.
 
-- xref:portfolio-overview.adoc[]
+- xref:registry-overview.adoc[]
 - xref:services-add-to-portfolio.adoc[Add Services to Your Portfolio]
 ** xref:services-connect-providers-to-add.adoc[Connect to Service Providers]
 ** xref:scanners-add-from-providers.adoc[Enable Automated Service Discovery]
