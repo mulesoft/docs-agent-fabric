@@ -3,6 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images
+:page-aliases: general::model-proxy-publish-custom-llm-metadata.adoc
 
 If your LLM provider or gateway is not one of the built-in xref:model-proxy.adoc#supported-llm-providers[Model Proxy providers], publish it to Anypoint Exchange as an llm-metadata.json classifier. Model Proxy can then route traffic to that provider. You create the classifier, confirm the asset version is free, and publish it with the Exchange API.
 

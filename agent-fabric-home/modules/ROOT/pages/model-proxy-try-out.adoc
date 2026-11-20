@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :imagesdir: ../assets/images
-:page-aliases: gateway::llm-proxy-try-out.adoc, gateway::flex-gateway-llm-proxy-try-out.adoc
+:page-aliases: gateway::llm-proxy-try-out.adoc, gateway::flex-gateway-llm-proxy-try-out.adoc, general::model-proxy-try-out.adoc
 
 The try out feature lets you validate your model proxy configuration by testing mock LLM prompts without making external API requests. You can verify response messages, response headers, the routing path, and which model services each request. The feature is available only for model proxies configured with OpenAI input format.
 
