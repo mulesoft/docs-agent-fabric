@@ -538,6 +538,5 @@ Learn more: xref:agent-visualizer::index.adoc[Agent Visualizer], xref:services-m
 * xref:index.adoc[Agent Fabric Overview]
 * xref:use-cases.adoc[]
 * xref:learning-map-agent-fabric.adoc[]
-* xref:exp-compare.adoc[]
 * xref:access-management::connecting-salesforce-orgs.adoc[]
 * xref:access-management::enabling-generative-ai.adoc[]
