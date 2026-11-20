@@ -1039,7 +1039,7 @@ context:
       kind: llm
       ref:
         name: anthropic
-        namespace: 7e5913f6-95c2-4af4-8070-96bed4804c51
+        namespace: <namespace>
       url: ${anthropic.url}
       authentication:
         kind: apiKey
@@ -1048,7 +1048,7 @@ context:
       kind: llm
       ref:
         name: bedrockanthropic
-        namespace: 7e5913f6-95c2-4af4-8070-96bed4804c51
+        namespace: <namespace>
       url: ${bedrock.url}
       authentication:
         kind: amazonSigv4
@@ -2257,14 +2257,14 @@ All agent network projects have an `exchange.json` file. This file contains asse
       "packaging": "zip"
     },
     {
-      "groupId": "85de5a54-1f33-4ea4-a1bf-8a65bc409179",
+      "groupId": "<groupId>",
       "assetId": "anthropic",
-      "version": "1.0.0"
+      "version": "<version>"
     },
     {
-      "groupId": "85de5a54-1f33-4ea4-a1bf-8a65bc409179",
+      "groupId": "<groupId>",
       "assetId": "bedrockanthropic",
-      "version": "1.0.0"
+      "version": "<version>"
     }
   ],
   "metadata": {
@@ -2328,7 +2328,7 @@ These key-value pairs are important for your agent network configuration:
 
 * groupId: ID of the Anypoint business group that owns your agent network and all the assets derived from it.
 * assetId: Unique identifier for the agent network project.
-* dependencies: Existing assets that this network needs to reference.
+* dependencies: Existing assets that this network needs to reference. The `groupId` and `version` values for platform-provided LLM assets, such as `anthropic` and `bedrockanthropic`, vary by environment. Use the values for your environment.
 * variables: Nested in the metadata section, defines all the variables whose values shouldn't be hardcoded in the `agent-network.yaml` file. Enter these values when publishing the agent network. Each variable has a description value, a default value, and a secret value that indicates whether it's treated as sensitive or not.
 +
 The `anthropic.url` and `bedrock.url` variables supply the URLs used by the corresponding LLM connections in `agent-network.yaml`. Add the Anthropic API key as a secret variable. Amazon Bedrock uses AWS Signature Version 4 authentication, so add the `bedrock.awsAccessKeyId` and `bedrock.awsSecretAccessKey` variables as secrets, and set `bedrock.awsRegion` to the Region of your Bedrock endpoint.
