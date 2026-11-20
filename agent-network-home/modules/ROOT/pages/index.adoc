@@ -79,7 +79,7 @@ NOTE: For a complete, working example you can use as a starting point for your o
 
 This diagram shows an agent network deployed to a shared space in CloudHub 2.0 using a single Omni Gateway for ingress and egress. The network includes agents and MCP servers and is observed in Anypoint Monitoring.
 
-image::agent-network::agent-fabric-architecture-v2-shared-space.png[an agent network deployed to a shared space in CloudHub 2 using a single mni Gateway for ingress and egress. The network includes agents and MCP servers and is observed in Anypoint Monitoring]
+image::agent-network::agent-fabric-architecture-v2-shared-space.png[an agent network deployed to a shared space in CloudHub 2 using a single Omni Gateway for ingress and egress. The network includes agents and MCP servers and is observed in Anypoint Monitoring]
 
 [calloutlist]
 . Publish the agentic assets to Anypoint Exchange for discovery and reuse after you define the agent network (brokers, agents, MCP servers) in the agent network YAML in Anypoint Code Builder.

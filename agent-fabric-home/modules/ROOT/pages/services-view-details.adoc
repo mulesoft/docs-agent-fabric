@@ -98,7 +98,7 @@ For the full apply and management workflow, see xref:policies-apply-manage.adoc[
 * xref:services-connect-providers-to-add.adoc[]
 * xref:services-register-manually.adoc[]
 * xref:services-create-mcp-server.adoc[]
-* xref:services-add-semantic.adoc[]
+* xref:model-proxy-semantic-service.adoc[]
 * xref:instances-add.adoc[]
 * xref:services-monitor.adoc[]
 * xref:services-view-detailed-metrics.adoc[]
