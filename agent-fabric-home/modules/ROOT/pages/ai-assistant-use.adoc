@@ -378,7 +378,7 @@ The AI assistant operates within your organization's security and privacy contro
 == See Also
 
 * xref:ai-assistant-troubleshoot.adoc[]
-* xref:exp-home-start.adoc[]
+* xref:get-started.adoc[]
 * xref:registry-overview.adoc[]
 * xref:services-monitor.adoc[]
 * xref:governance-work-with-strategies.adoc[]
