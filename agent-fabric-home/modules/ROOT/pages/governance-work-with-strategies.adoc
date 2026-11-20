@@ -46,7 +46,7 @@ Work with your governance lead when strategy changes affect production or compli
 * Create strategies for compliance validation or runtime enforcement. See xref:governance-create-strategy.adoc[].
 * Manage strategies by updating scope, rules, status, and priority. See xref:governance-manage-strategies.adoc[].
 * Monitor token usage in *Governance* > *Cost Management*. See xref:costs-manage.adoc[].
-* Review conformance reporting for xref:exp-overview.adoc[supported catalog types].
+* Review conformance reporting for supported catalog types.
 * Apply policies to services from *Portfolio*. See xref:services-view-details.adoc[].
 
 == Akamai Security Findings in Conformance Reports
