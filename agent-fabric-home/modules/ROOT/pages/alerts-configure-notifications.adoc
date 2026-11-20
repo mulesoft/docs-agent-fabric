@@ -125,7 +125,7 @@ This routing strategy ensures teams see the most important signals first without
 
 * xref:services-monitor.adoc[]
 * xref:services-view-detailed-metrics.adoc[]
-* xref:exp-home-start.adoc[]
-* xref:exp-overview.adoc[]
+* xref:get-started.adoc[]
+* xref:index.adoc[]
 * xref:teams-integrate.adoc[]
 * xref:slack-integrate.adoc[]

@@ -91,6 +91,7 @@ The tools list reflects the selected activity period and shows only tools that w
 +
 . To see traffic metrics on the connection, select the edge between the agent and the MCP server and open the edge details card.
 
+//This needs to be udpated for Mule2
 === Example: Visualize Interactions Between External Agents and MCP Servers
 
 To visualize runtime edges for external agents and MCP servers that aren't part of a defined agent network, publish them to Anypoint Exchange as agents or tools and route their traffic through Omni Gateway. 
@@ -99,7 +100,7 @@ This example shows how to visualize the interactions between agents and MCP serv
 
 . Publish your agents and MCP servers to Anypoint Exchange.
 +
-For more information about creating assets in Exchange, see xref:exchange::to-create-an-asset.adoc#create-mcp[].
+For more information about creating assets in Exchange, see xref:exchange::to-create-an-asset.adoc[].
 . Set up an Omni Gateway in Connected Mode.
 +
 To enable visualization, both the calling agents and the MCP servers are governed by Omni Gateway. By routing traffic through a gateway endpoint instead of calling the server directly, the gateway intercepts the request, injects identity headers, and reports the interaction to the Agent Visualizer.
