@@ -19,7 +19,7 @@ Nodes in the agent network provide a visual representation of the agents and MCP
 * Brokers
 * MCP servers
 
-For more information, see xref:agent-viz-view-and-navigate-agent-network.adoc#viewing-node-details[Viewing Node Details].
+For more information, see xref:agent-viz-view-and-navigate-agent-network.adoc#viewing-node-details[View Node Details].
 
 include::partial$agent-viz.adoc[tag=node-limit-note]
 
