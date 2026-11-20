@@ -58,7 +58,7 @@ If a tab is missing, confirm with your administrator that monitoring data is flo
 
 == See Also
 
-* xref:exp-overview.adoc[]
-* xref:exp-home-start.adoc[]
+* xref:index.adoc[]
+* xref:get-started.adoc[]
 * xref:services-view-details.adoc[]
 * xref:services-add-to-portfolio.adoc[]

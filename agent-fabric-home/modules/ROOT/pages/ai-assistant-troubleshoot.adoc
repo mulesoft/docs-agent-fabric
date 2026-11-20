@@ -221,6 +221,6 @@ Reach out to your internal IT support or MuleSoft support with the diagnostic in
 
 * xref:ai-assistant-use.adoc[]
 * xref:troubleshoot.adoc[]
-* xref:exp-home-start.adoc[]
-* xref:exp-overview.adoc[]
+* xref:get-started.adoc[]
+* xref:index.adoc[]
 include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

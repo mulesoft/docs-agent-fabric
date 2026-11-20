@@ -172,7 +172,7 @@ After reactivation, the audit log records the action.
 * xref:services-secure.adoc[]
 * xref:alerts-configure-notifications.adoc[]
 * xref:instances-add.adoc[]
-* xref:exp-home-start.adoc[]
+* xref:index.adoc[]
 * xref:services-monitor.adoc[]
 * xref:costs-manage.adoc[]
 * xref:use-case-cost-management.adoc[]

@@ -135,7 +135,7 @@ If the security role doesn't have `Read` permission on the `systemuser` table, t
 
 *Setup:* App added as an Application User in Power Platform; scope set to Dataverse environment URL, `https://<org-id>.crm.dynamics.com`
 
-For setup steps, see xref:scanners-add-from-providers.adoc#microsoft-copilot-studio-scanner-oauth-authorization[].
+For setup steps, see xref:scanners-add-from-providers.adoc#canner-oauth-authorization[Scanner OAuth Authorization].
 
 | Microsoft Foundry
 | Agent

@@ -10,7 +10,6 @@
 * xref:get-started.adoc[]
 
 * xref:registry-overview.adoc[Populate Your Portfolio]
-  ** xref:portfolio-overview.adoc[]
   ** xref:scanners-add-from-providers.adoc[]
      *** xref:scanners-prerequisites-reference.adoc[]
      *** xref:scanners-view-details.adoc[]

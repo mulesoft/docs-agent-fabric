@@ -109,6 +109,6 @@ Apply policies and apply cost management recommendations.
 [[see-also]]
 == See Also
 
-* xref:exp-home-start.adoc[]
-* xref:exp-overview.adoc[]
+* xref:get-started.adoc[]
+* xref:index.adoc[]
 * xref:claude-desktop-connect.adoc[]

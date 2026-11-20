@@ -28,8 +28,8 @@ The page is organized into tabs. The table lists tabs, what they show, and wheth
 * *Yes* means the tab appears in typical configurations.
 * *No* means the tab is omitted or you use another area of the experience for the same job (see the note after the table).
 
-Labels and fields inside a tab can differ by service type and release. For end-to-end portfolio tasks that reference these tabs, see xref:exp-overview.adoc[].
-tab can differ by service type and release. For end-to-end portfolio tasks that reference these tabs, see xref:exp-overview.adoc[].
+Labels and fields inside a tab can differ by service type and release. For end-to-end portfolio tasks that reference these tabs, see xref:get-started.adoc#find-your-way-around[Find Your Way Around].
+tab can differ by service type and release. For end-to-end portfolio tasks that reference these tabs, see xref:index.adoc[].
 
 [cols="2,3,^.^,^.^,^.^,^.^,^.^",options="header"]
 |===
@@ -93,7 +93,7 @@ For the full apply and management workflow, see xref:policies-apply-manage.adoc[
 
 == See Also
 
-* xref:exp-overview.adoc[]
+* xref:index.adoc[]
 * xref:services-add-to-portfolio.adoc[]
 * xref:services-connect-providers-to-add.adoc[]
 * xref:services-register-manually.adoc[]
