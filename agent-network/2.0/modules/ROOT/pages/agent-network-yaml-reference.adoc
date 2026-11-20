@@ -1004,44 +1004,64 @@ This section is for reusable entities scoped to the graphs defined in the `agent
 [source,yaml]
 ----
 context:
-   connections:
-     hr_system_agent:
-       kind: a2a
-       ref:
-         name: hr-system-agent
-       url: https://hr-agent.example.com/a2a
-       policies:
-         outbound:
-           - ref:
-               name: retry-policy
-     salesforce_agent:
-       kind: a2a
-       ref:
-         name: salesforce-agent
-       url: https://sfdc-agent.example.com/a2a
-     slack_mcp:
-       kind: mcp
-       ref:
-         name: slack-mcp
-       url: https://mcp.example.com/slack
-      openai_llm:
-        kind: llm
-        ref:
-          name: Open-AI-LLM
-        url: https://api.openai.com/v1
-        authentication:
-          kind: apiKey
-          apiKey: "${env.OPENAI_API_KEY}"
-        tlsContext:
-          name: my-tls-context
-          group: my-group
-   policies:
-     retry-policy:
-       ref:
-         name: retry-policy
-       configuration:
-         maxAttempts: 3
-         backoffMs: 1000
+  connections:
+    hr_system_agent:
+      kind: a2a
+      ref:
+        name: hr-system-agent
+      url: https://hr-agent.example.com/a2a
+      policies:
+        outbound:
+          - ref:
+              name: retry-policy
+    salesforce_agent:
+      kind: a2a
+      ref:
+        name: salesforce-agent
+      url: https://sfdc-agent.example.com/a2a
+    slack_mcp:
+      kind: mcp
+      ref:
+        name: slack-mcp
+      url: https://mcp.example.com/slack
+    openai_llm:
+      kind: llm
+      ref:
+        name: Open-AI-LLM
+      url: https://api.openai.com/v1
+      authentication:
+        kind: apiKey
+        apiKey: "${env.OPENAI_API_KEY}"
+      tlsContext:
+        name: my-tls-context
+        group: my-group
+    llm_anthropic_conn:
+      kind: llm
+      ref:
+        name: anthropic
+        namespace: <namespace>
+      url: ${anthropic.url}
+      authentication:
+        kind: apiKey
+        apiKey: ${anthropic.apiKey}
+    llm_bedrockanthropic_conn:
+      kind: llm
+      ref:
+        name: bedrockanthropic
+        namespace: <namespace>
+      url: ${bedrock.url}
+      authentication:
+        kind: amazonSigv4
+        awsAccessKeyId: ${bedrock.awsAccessKeyId}
+        awsSecretAccessKey: ${bedrock.awsSecretAccessKey}
+        awsRegion: ${bedrock.awsRegion}
+  policies:
+    retry-policy:
+      ref:
+        name: retry-policy
+      configuration:
+        maxAttempts: 3
+        backoffMs: 1000
 ----
 
 The `context` section has these properties. 
@@ -1093,6 +1113,10 @@ a|The base URL of the target system. For `llm` use these defaults:
 * Gemini: `\https://generativelanguage.googleapis.com`
 * Bedrock OpenAI: `\https://bedrock-mantle.<YOUR_REGION>.api.aws/v1`
 * Azure OpenAI: `\https://<YOUR_RESOURCE_NAME>.openai.azure.com/openai/v1`
+* Anthropic: `\https://api.anthropic.com`
+* Bedrock Anthropic: `\https://bedrock-runtime.us-east-1.amazonaws.com`
+
+The runtime adds the `/v1/messages` path to the Anthropic URL and the `/anthropic/v1/messages` path to the Bedrock Anthropic URL. Don't include these paths in the `url` value.
 |String
 |No
 
@@ -1133,6 +1157,8 @@ a|The base URL of the target system. For `llm` use these defaults:
 |===
 
 For `llm` connections, `authentication` is required. LLM connections support `none`, `basic`, `apiKey`, `apikey-client-credentials`, `oauth2-client-credentials`, and `amazonSigv4`. The authentication kind must be one that the referenced LLM asset declares in its metadata. LLM connections don't support `oauth2-obo`, `in-task-authorization-code`, or `custom` authentication.
+
+For externally managed LLM assets, reference the asset from `context.connections` rather than declaring it in `registry.llms`. Set `ref.namespace` to the namespace that contains the LLM asset. The namespace varies by environment.
 
 For example, to connect to an LLM that uses OAuth 2.0 client credentials authentication:
 
@@ -2231,6 +2257,16 @@ All agent network projects have an `exchange.json` file. This file contains asse
       "version": "1.0.21",
       "classifier": "agent-metadata",
       "packaging": "zip"
+    },
+    {
+      "groupId": "<groupId>",
+      "assetId": "anthropic",
+      "version": "<version>"
+    },
+    {
+      "groupId": "<groupId>",
+      "assetId": "bedrockanthropic",
+      "version": "<version>"
     }
   ],
   "metadata": {
@@ -2250,6 +2286,40 @@ All agent network projects have an `exchange.json` file. This file contains asse
           "default": "",
           "secret": false
         }
+      },
+      "anthropic": {
+        "url": {
+          "description": "Anthropic base URL",
+          "default": "https://api.anthropic.com/",
+          "secret": false
+        },
+        "apiKey": {
+          "description": "Anthropic API key",
+          "default": "",
+          "secret": true
+        }
+      },
+      "bedrock": {
+        "url": {
+          "description": "Bedrock Anthropic base URL",
+          "default": "https://bedrock-runtime.us-east-1.amazonaws.com/",
+          "secret": false
+        },
+        "awsAccessKeyId": {
+          "description": "AWS access key ID",
+          "default": "",
+          "secret": true
+        },
+        "awsSecretAccessKey": {
+          "description": "AWS secret access key",
+          "default": "",
+          "secret": true
+        },
+        "awsRegion": {
+          "description": "AWS Region of the Bedrock endpoint",
+          "default": "us-east-1",
+          "secret": false
+        }
       }
     }
   }
@@ -2260,8 +2330,10 @@ These key-value pairs are important for your agent network configuration:
 
 * groupId: ID of the Anypoint business group that owns your agent network and all the assets derived from it.
 * assetId: Unique identifier for the agent network project.
-* dependencies: Existing assets that this network needs to reference.
+* dependencies: Existing assets that this network needs to reference. The `groupId` and `version` values for platform-provided LLM assets, such as `anthropic` and `bedrockanthropic`, vary by environment. Use the values for your environment.
 * variables: Nested in the metadata section, defines all the variables whose values shouldn't be hardcoded in the `agent-network.yaml` file. Enter these values when publishing the agent network. Each variable has a description value, a default value, and a secret value that indicates whether it's treated as sensitive or not.
++
+The `anthropic.url` and `bedrock.url` variables supply the URLs used by the corresponding LLM connections in `agent-network.yaml`. Add the Anthropic API key as a secret variable. Amazon Bedrock uses AWS Signature Version 4 authentication, so add the `bedrock.awsAccessKeyId` and `bedrock.awsSecretAccessKey` variables as secrets, and set `bedrock.awsRegion` to the Region of your Bedrock endpoint.
 
 For more information about versioning assets in agent network projects, see xref:agent-network-publish.adoc#version-assets[Version Assets].
 

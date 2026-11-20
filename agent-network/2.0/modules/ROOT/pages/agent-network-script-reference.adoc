@@ -240,6 +240,17 @@ llm:
      model: "gemini-3-flash-preview"
      thinking_level: "HIGH"
      top_p: 0.3
+   anthropic-llm:
+     target: "llm://llm_anthropic_conn"
+     kind: "Anthropic"
+     model: "claude-opus-4-7"
+     max_tokens: 4096
+     effort: "high"
+   bedrock-anthropic-llm:
+     target: "llm://llm_bedrockanthropic_conn"
+     kind: "BedrockAnthropic"
+     model: "global.anthropic.claude-opus-4-7"
+     max_tokens: 4096
 ----
 
 ==== LLM Configuration: OpenAI
@@ -351,6 +362,59 @@ The Gemini configuration has these properties.
 |`max_output_tokens`
 |Maximum number of tokens that can be generated in the response
 |Integer
+|No
+
+|===
+
+==== LLM Configuration: Anthropic and Bedrock Anthropic
+
+The Anthropic and Bedrock Anthropic configurations share these properties. Set `kind` to `Anthropic` for the Anthropic API or `BedrockAnthropic` for Amazon Bedrock. The `kind` value is case-sensitive, and no other properties are allowed.
+
+
+NOTE: Bedrock Anthropic uses Bedrock inference profile IDs for model names (for example, `global.anthropic.claude-opus-4-7`), which differ from the model names used with Anthropic (for example, `claude-opus-4-7`).
+
+NOTE: Authentication isn't configured in the `.agent` file. Configure it on the LLM connection in `agent-network.yaml`.
+
+[%header,cols="1,1,1,1"]
+|===
+|Parameter
+|Description
+|Type
+|Required
+
+|`target`
+|Governed LLM connection as a URI. Must use the `llm://` scheme
+|URI (`llm://...`)
+|Yes
+
+|`kind`
+|Discriminator for the LLM provider. Selects the host and its handler
+|String, `Anthropic` or `BedrockAnthropic`
+|Yes
+
+|`model`
+|The model to use: an Anthropic model ID or a Bedrock inference profile ID
+|String
+|Yes
+
+|`max_tokens`
+|Maximum number of tokens to generate
+|Integer
+|Yes
+
+|`effort`
+|Enables adaptive extended thinking and sets its depth. Has no effect when `thinking` is `disabled`.
+|Enum['low', 'medium', 'high', 'xhigh', 'max']. `xhigh` doesn't work on every model.
+|No
+
+|`thinking`
+|Controls extended thinking directly. If you don't set `thinking` or `effort`, the request doesn't specify thinking and the model applies its own default, which doesn't use extended thinking. Fable models reject `thinking: disabled`, and setting it is a compile-time error.
+|Enum['adaptive', 'disabled']
+|No
+
+|`stop_sequences`
+|Custom text sequences that make the model stop generating
+|Array of strings
 |No
 
 |===
