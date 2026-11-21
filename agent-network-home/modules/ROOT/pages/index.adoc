@@ -6,8 +6,8 @@ An agent network provides the building blocks of your agentic deployment while M
 
 This page provides foundational concepts about agent networks. For version-specific implementation guidance, see:
 
-* xref:2.0@agent-network::agent-networks-overview.adoc[Agent Networks 2.0]
-* xref:1.0@agent-network::agent-networks-overview.adoc[Agent Networks 1.0]
+* xref:2.0@agent-network::agent-network-overview.adoc[Agent Networks 2.0]
+* xref:1.0@agent-network::agent-network-overview.adoc[Agent Networks 1.0]
 
 
 [[key-benefits]]

@@ -2,10 +2,10 @@
 
 Resolve common agent network errors and connectivity issues by enabling verbose logging, message logging policies, and distributed tracing. Using logs and distributed traces, you can observe agents and MCP servers and see how requests flow through brokers, which tools and policies apply, and where failures or latency originate.
 
-For Anypoint CLI Agent Fabric plugin errors, see xref:agent-network-troubleshoot-errors.adoc[Troubleshoot Agent Fabric CLI Errors].
+For Anypoint CLI Agent Fabric plugin errors, see xref:2.0@agent-network::agent-network-troubleshoot-errors.adoc[Troubleshoot Agent Fabric CLI Errors].
 
 [NOTE]
-Use Agent Visualizer to xref:agent-visualizer::troubleshoot-agent-network.adoc[view metrics, logs, and traces] for agents and MCP servers in your network.
+Use Agent Visualizer to xref:agent-fabric::agent-viz-troubleshoot-agent-network.adoc[view metrics, logs, and traces] for agents and MCP servers in your network.
 
 == Enable Logging to Debug Agent Brokers
 
@@ -156,7 +156,7 @@ Common limit-related errors include:
 * Maximum tool call count exceeded
 * State size limit exceeded
 
-To adjust these limits, add runtime system limit variables to the `metadata.variables` section of your `exchange.json` file. For detailed information about configuring these limits, see xref:agent-network-yaml-reference.adoc#runtime-system-limits[Runtime System Limits Configuration].
+To adjust these limits, add runtime system limit variables to the `metadata.variables` section of your `exchange.json` file. For detailed information about configuring these limits, see xref:2.0@agent-network::agent-network-yaml-reference.adoc#runtime-system-limits[Runtime System Limits Configuration].
 
 === Error: "HTTP error 404: Agent card not found at /.well-known/agent-card.json"
 
