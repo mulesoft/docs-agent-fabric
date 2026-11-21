@@ -59,8 +59,8 @@ Make your existing APIs, applications, and agents available as tools. Start by e
 - xref:services-create-a2a-bridge.adoc[Make an Agent A2A Compliant with A2A Bridge]
 - xref:a2a-connector::index.adoc[Add A2A Support to a Mule App with A2A Connector]
 - xref:agent-network-home::index.adoc[Coordinate Services with Agent Networks]
-** xref:agent-network::agent-network-overview.adoc[Build Agent Networks]
-** xref:agent-network::agent-network-publish.adoc[Publish Agent Network Projects to Exchange]
+** xref:2.0@agent-network::agent-network-overview.adoc[Build Agent Networks]
+** xref:2.0@agent-network::agent-network-publish.adoc[Publish Agent Network Projects to Exchange]
 - https://videos.mulesoft.com/watch/Dn9QXJKDzTxSJPNgra9LoM[Video: Expose APIs and MCPs Using MCP Bridge]
 
 |===

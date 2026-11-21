@@ -295,7 +295,7 @@ Learn more: xref:rogue-agents-detect-and-contain.adoc[] and xref:policies-apply-
 Learn more: xref:vaults-manage.adoc[] and xref:providers-manage.adoc[]
 * Akamai risk correlation: Connect Akamai in *Platform* > *Providers* to correlate security findings to APIs and MCP services you've already discovered, so you can triage risk before it becomes an incident. 
 +
-Learn more: xref:akamai-risk-correlation.adoc[] and xref:exp-providers-add.adoc[]
+Learn more: xref:akamai-risk-correlation.adoc[] and xref:providers-manage.adoc[]
 
 
 ////
