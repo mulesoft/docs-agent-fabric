@@ -1119,6 +1119,7 @@ a|The base URL of the target system. For `llm` use these defaults:
 |`tlsContext`
 |TLS context for the proxy-to-upstream connection, used for mutual TLS (mTLS). References an Anypoint Secret Manager secret that is resolved as a TLS context at deployment. For information about creating TLS contexts and secret groups, see xref:anypoint-security::index-secrets-manager.adoc[Anypoint Security Secrets Manager Overview].
 |`SecretRef`. See <<reference-types,Reference Types>>.
+|
 
 |`card`
 |Configuration for fetching the target agent's agent card. Valid only when `kind` is `a2a`. See <<a2a-connection-card,A2A Connection Card>>.

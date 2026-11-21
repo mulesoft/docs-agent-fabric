@@ -292,10 +292,10 @@ A compromised, misconfigured, or malicious agent can leak data, take unauthorize
 Learn more: xref:rogue-agents-detect-and-contain.adoc[] and xref:policies-apply-manage.adoc[]
 * External vaults: Register an external vault in *Platform* > *Providers* so credentials stay in AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault. MuleSoft never stores, displays, or logs secret values. A model proxy can reference a vault secret instead of storing a key. 
 +
-Learn more: xref:vaults-manage.adoc[] and xref:exp-providers-add.adoc[]
+Learn more: xref:vaults-manage.adoc[] and xref:providers-manage.adoc[]
 * Akamai risk correlation: Connect Akamai in *Platform* > *Providers* to correlate security findings to APIs and MCP services you've already discovered, so you can triage risk before it becomes an incident. 
 +
-Learn more: xref:akamai-risk-correlation.adoc[] and xref:exp-providers-add.adoc[]
+Learn more: xref:akamai-risk-correlation.adoc[] and xref:providers-manage.adoc[]
 
 
 ////
