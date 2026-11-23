@@ -1,23 +1,30 @@
-= Integrate the Enhanced Experience with Microsoft Teams
+= Integrate the Enhanced MuleSoft Experience with Microsoft Teams
 :keywords: microsoft teams integration, mulesoft agent, teams bot, mcp server, anypoint platform, enhanced experience
 
-Install the MuleSoft for Teams app in your Microsoft Teams tenant to interact with MuleSoft directly from Teams using natural language. The Teams app enables you to:
+Get API Manager alert notifications directly in Teams with the MuleSoft for Teams app, and use the MuleSoft plugin in Microsoft Copilot to ask natural language questions and take action through Copilot Chat and Copilot Cowork. The plugin provides full capabilities of the xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc[MuleSoft Platform MCP Server].
 
-* <<connect-teams-tenant>>: Submit the app for review, approve it in Microsoft Teams Admin Center, and bind your Microsoft Teams tenant to your Anypoint organization so the app can send alerts and notifications directly to channels and DMs.
-* <<configure-notification-channels>>: Choose the Teams channels that receive alerts.
-* <<begin-using-agent>>: Manage your MuleSoft environment with the MuleSoft Agent integrated with Teams. Use MuleSoft Agent to list APIs, view MCP servers, check governance, and perform other management tasks.
-* Configure alerts to deliver notifications to Teams channels. For instructions, see xref:exp-alerts-configure-notifications.adoc[].
+* App setup:
+** <<connect-teams-tenant>>: Submit the app for review, approve it in Microsoft Teams Admin Center, and bind your Microsoft Teams tenant to your Anypoint organization so the app can send alerts and notifications directly to channels and DMs.
+** <<configure-notification-channels>>: Choose the Teams channels that receives alerts.
+//REMOVED SINCE IT ONLY APPLIES TO A S
+//* <<begin-using-agent>>: Manage your MuleSoft environment with the MuleSoft Agent integrated with Teams. Use MuleSoft Agent to list APIs, view MCP servers, check governance, and perform other management tasks.
+** Configure alerts to deliver notifications to Teams channels. For instructions, see xref:exp-alerts-configure-notifications.adoc[].
+* Plugin setup: Install the MuleSoft plugin through the Microsoft Copilot plugin registry.
+//+
+//TODO:  If the plugin isn't available, doesn't an admin need to make it available? 
++
+NOTE: The MuleSoft plugin relies on generative AI, which can produce inaccurate or harmful responses. Review for accuracy and safety before using.
 
-NOTE: This tool uses generative AI, which can produce inaccurate or harmful responses. Review for accuracy and safety before using.
 
 [[before-you-begin]]
 == Before You Begin
 
 Before setting up the Teams integration, verify that the following requirements are met:
 
+TODO: ARE THESE REQUIREMENTS JUST FOR AGENT ACCESS VIA THE PLUGIN -- NOT ALERTS CORRECT? 
+
 * *Generative AI enabled*: Generative AI must be enabled in your Anypoint Platform and Salesforce organizations. For more information, see xref:access-management::enabling-generative-ai.adoc[].
 * *Salesforce-Anypoint Connection*: Your Anypoint Platform organization must be fully connected to your Salesforce organization.
-* *Early Access Program*: The MuleSoft Agent feature must be enabled for your organization by the MuleSoft team as part of the Early Access Program. Contact your Customer Success Manager (CSM) or Account Executive (AE) to join the program.
 
 [[connect-teams-tenant]]
 == Connect Your Microsoft Teams Tenant to the MuleSoft Organization
@@ -97,14 +104,26 @@ You return to *Notification Channels*, which now shows a search field.
 +
 The channels appear under *Channels Enabled for Notifications*, grouped by team. To remove a channel, click the *X* next to it.
 
-To route specific alerts to these channels, see xref:exp-alerts-configure-notifications.adoc[].
+To route specific alerts to these channels, see xref:alerts-configure-notifications.adoc[].
+
+== Get Alerts in Microsoft Teams
+
+Add the MuleSoft for Teams app to a Teams channel using with one of these actions:
+
+* Initiating a `@Mulesoft` mention 
+* Using the Teams App Store 
+
 
 [[begin-using-agent]]
-== Begin Using the MuleSoft Agent
+== Use the MuleSoft Agent
+
+_If your organization is part of the early access program for the MuleSoft Agent in Teams_, you can also use the MuleSoft Agent. 
++
+NOTE: The MuleSoft Agent is not available to additional organizations at this time.
 
 [IMPORTANT]
 ====
-MuleSoft Agent is available on request. To get access, contact your account executive.
+MuleSoft Agent isn't available to additional customers at this time. 
 ====
 
 Before getting started, make sure you have:
@@ -136,7 +155,7 @@ After you authenticate, you can use the agent to list APIs, agents, MCP servers,
 NOTE: In channels, @mention the MuleSoft Agent to send it a message. In direct messages, you can send messages to the agent at any time without @mentioning it.
 
 [[available-prompts]]
-== Available Prompt Suggestions
+=== Available Prompt Suggestions
 
 When you open the MuleSoft Agent, the following prompt suggestions are available:
 
@@ -150,7 +169,7 @@ When you open the MuleSoft Agent, the following prompt suggestions are available
 To send feedback to the MuleSoft Agent team, type `/feedback` in a channel or react to an agent response with a thumbs up or thumbs down.
 
 [[common-use-cases]]
-== Common Use Cases for the MuleSoft Agent
+=== Common Use Cases for the MuleSoft Agent
 
 You can use the MuleSoft Agent to perform these platform tasks in Teams:
 
