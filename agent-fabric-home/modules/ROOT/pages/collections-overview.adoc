@@ -1,0 +1,38 @@
+= Share MCP Servers with Collections
+:keywords: collections, mcp server, registry url, mcp url, share mcp servers, ai client, agent fabric, discovery
+
+A Collection lets you share Model Context Protocol (MCP) servers with end users through a stable URL. Administrators can configure the URL in the AI clients that end users work from, such as GitHub Copilot.
+
+When you add an MCP server to a Collection, every AI client that uses the URL picks it up. You don't have to re-share the URL or reconfigure the client when the Collection changes.
+
+Each business group has one Collection across all of its environments. The Collection runs on an existing gateway and uses its existing metering.
+
+[[discovery-and-access]]
+== Discovery and Access
+
+A Collection handles discovery, not access. Each MCP server keeps its existing authentication. The instance you share and its policies determine who can use the MCP server.
+
+For example, suppose an MCP server requires an Anypoint Platform account. End users can discover it in their AI client without an account, but they must have one to use it.
+
+[[collection-urls]]
+== Collection URLs
+
+A Collection has two URLs:
+
+Registry URL::
+Follows the MCP Registry list servers format. Use it with GitHub Copilot, which reads registries natively. End users browse the Collection and install the MCP servers they need.
+
+MCP URL::
+Serves the Collection as an MCP server. Use it with AI clients that connect to MCP servers instead of registries, such as Claude, ChatGPT, Microsoft Teams, Slack, and Cursor.
++
+The MCP URL provides discovery only. End users can ask which MCP servers are available and get metadata, such as the name, description, and URL of each MCP server. The MCP URL doesn't connect end users to those MCP servers or call their tools. To use an MCP server, the end user or AI client administrator adds it to the AI client as its own MCP server. They use the URL from the Collection.
++
+MuleSoft plans to support using MCP servers directly through the Collection.
+
+Neither URL requires authentication. Anyone with a URL can see the MCP servers in the Collection and their details, but can't use them. MuleSoft plans to support authenticated access.
+
+== See Also
+
+* xref:collections-get-started.adoc[]
+* xref:collections-share-mcp-servers.adoc[]
+* xref:collections-set-up-ai-client.adoc[]

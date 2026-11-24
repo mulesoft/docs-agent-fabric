@@ -1,0 +1,49 @@
+= Share and Unshare MCP Servers in a Collection
+:keywords: collections, share mcp server, unshare, instance, managed instance, unmanaged instance, agent fabric
+
+You can share an MCP server from the Collection page, from the MCP server, or from one of its instances.
+
+A Collection holds one instance per MCP server. If you share a different instance of an MCP server that is already in the Collection, the new instance replaces the existing one.
+
+Before you share an MCP server, confirm that its instance has the policies your end users need.
+
+If an MCP server has no instance, you can create a managed or unmanaged instance when you share it. MCP servers from the MuleSoft public catalog support managed instances only.
+
+[[before-you-begin]]
+== Before You Begin
+
+Ensure you have the required entitlement, roles, and permissions. See xref:collections-get-started.adoc[].
+
+[[share-from-collection]]
+== Share MCP Servers from the Collection Page
+
+. Go to the Collection page.
+. Select one or more MCP servers.
+. Click *Share*.
+
+[[share-mcp-server]]
+== Share an MCP Server
+
+. Go to the MCP server's row or page.
+. Click *Share*.
+
+[[share-instance]]
+== Share an Instance
+
+. Go to the MCP server's instance.
+. Click *Share*.
+
+[[unshare]]
+== Unshare an MCP Server
+
+. Go to the Collection page.
+. Open the MCP server's menu.
+. Click *Unshare MCP Server*.
+
+AI clients stop showing the MCP server the next time they read the URL.
+
+== See Also
+
+* xref:collections-set-up-ai-client.adoc[]
+* xref:instances-add.adoc[]
+* xref:services-create-mcp-server.adoc[]
