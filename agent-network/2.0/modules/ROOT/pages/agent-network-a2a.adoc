@@ -120,10 +120,13 @@ curl -s -X POST "https://<host>/<broker-path>/" \
     "params": { "message": {
       "role": "ROLE_USER",
       "parts": [{ "text": "My favorite fruit is DRAGONFRUIT and my order number is ORD-4521. Please remember both." }],
-      "messageId": "g1"
+      "messageId": "g1",
+      "metadata": { "source": "order-example" }
     }}
   }'
 ----
+
+The `params.message` object accepts an optional `metadata` object. The broker doesn't forward `metadata` to downstream agents automatically. To read it in an agent network, use `@request.payload.message.metadata` in Agent Script, and pass it to downstream agents explicitly.
 
 The response includes a `contextId` in `result.task.contextId`. Save this value for subsequent requests:
 
