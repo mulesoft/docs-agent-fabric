@@ -19,14 +19,16 @@ For example, suppose an MCP server requires an Anypoint Platform account. End us
 
 A Collection has two URLs:
 
-Registry URL::
-Follows the MCP Registry list servers format. Use it with GitHub Copilot, which reads registries natively. End users browse the Collection and install the MCP servers they need.
+*Registry URL*
 
-MCP URL::
-Serves the Collection as an MCP server. Use it with AI clients that connect to MCP servers instead of registries, such as Claude, ChatGPT, Microsoft Teams, Slack, and Cursor.
-+
+The Registry URL follows the MCP Registry list servers format. Use it with GitHub Copilot, which reads registries natively. End users browse the Collection and install the MCP servers they need.
+
+*MCP URL*
+
+The MCP URL serves the Collection as an MCP server. Use it with AI clients that connect to MCP servers instead of registries, such as Claude, ChatGPT, Microsoft Teams, Slack, and Cursor.
+
 The MCP URL provides discovery only. End users can ask which MCP servers are available and get metadata, such as the name, description, and URL of each MCP server. The MCP URL doesn't connect end users to those MCP servers or call their tools. To use an MCP server, the end user or AI client administrator adds it to the AI client as its own MCP server. They use the URL from the Collection.
-+
+
 MuleSoft plans to support using MCP servers directly through the Collection.
 
 Neither URL requires authentication. Anyone with a URL can see the MCP servers in the Collection and their details, but can't use them. MuleSoft plans to support authenticated access.
