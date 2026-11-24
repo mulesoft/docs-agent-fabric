@@ -1,4 +1,3 @@
-[[publish-assets]]
 = Publish Agent Network Assets
 :page-aliases: 1.0@agent-network::af-publish-agent-network-assets.adoc
 

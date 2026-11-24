@@ -1,4 +1,3 @@
-[[deploy-instances]]
 = Deploy Agent Network Instances
 :page-aliases: agent-network::af-deploy-agent-network-targets.adoc
 :page-pagination: next

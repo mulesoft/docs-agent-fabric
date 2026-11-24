@@ -1,4 +1,3 @@
-[[define-spec]]
 = Define Your Agent Network Specification
 :page-aliases: 1.0@agent-network::af-define-your-agent-network-specification.adoc
 

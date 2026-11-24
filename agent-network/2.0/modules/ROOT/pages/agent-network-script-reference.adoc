@@ -1,4 +1,3 @@
-[[agent-script-reference]]
 = Agent Script Reference
 :page-aliases: agent-network::af-agent-script-reference.adoc
 
