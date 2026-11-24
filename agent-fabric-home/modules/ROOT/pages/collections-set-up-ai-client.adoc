@@ -1,9 +1,9 @@
 = Set Up a Collection in an AI Client
 :keywords: collections, ai client, github copilot, claude, chatgpt, microsoft teams, slack, cursor, registry url, mcp url
 
-After you share MCP servers, give the Collection URL to the administrator of each AI client your end users work from. The AI client administrator doesn't require an Anypoint Platform account.
+After you share MCP servers, give the Collection URL to the administrator of each AI client your end users work from. The AI client administrator doesn't need an Anypoint Platform account.
 
-The setup steps in this topic are a high-level summary of the common configuration for each AI client, provided to help you get started. Each AI client owns its setup, and its settings can change. For the current steps, see the AI client's documentation linked at the end of each section.
+The setup steps in this topic summarize the common configuration for each AI client, so you can get started. Each AI client owns its setup, and its settings can change. For the current steps, see the AI client's documentation linked at the end of each section.
 
 [[choose-url]]
 == Choose the URL for Your AI Client
@@ -39,7 +39,7 @@ This setting also blocks Copilot connectors.
 
 Developers can now install the MCP servers. In VS Code, they open *Extensions*, search for `@mcp`, and click *Install*. If an MCP server has its own sign-in, developers complete it the first time they use it.
 
-For more information, see Configure MCP server access in the GitHub documentation.
+For more information, see https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access[Configure MCP server access^] in the GitHub documentation.
 
 [[claude]]
 == Set Up Claude
