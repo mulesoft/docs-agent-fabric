@@ -147,13 +147,13 @@ After you add dependencies, their asset names are available as values in auto-co
 [[use-llm-proxy]]
 == Use an LLM Proxy in Your Agent Network
 
-You can use an xref:gateway::flex-gateway-llm-proxy.adoc[Omni Gateway LLM Proxy] as the LLM connection for your agent broker. The LLM Proxy must use the OpenAI or Gemini format. For supported models, see xref:agent-network-overview.adoc#llm-support[Large Language Models].
+You can use an Omni Gateway LLM Proxy as the LLM connection for your agent broker. The LLM Proxy must use the OpenAI, Anthropic, or Gemini format. For a complete configuration example, see xref:agent-network-model-router.adoc[]. For supported models, see xref:agent-network-overview.adoc#llm-support[Large Language Models].
 
 === Create and Activate the LLM Model Proxy
 
 Create an LLM Model Proxy in Omni Gateway and verify that it is active in Anypoint Exchange before adding it to your agent network.
 
-. xref:general::model-proxy-create-model-proxy.adoc[Create an LLM Model Proxy in Omni Gateway]. The proxy format must be OpenAI or Gemini.
+. xref:general::model-proxy-create-model-proxy.adoc[Create an LLM Model Proxy in Omni Gateway]. The proxy format must be OpenAI, Anthropic, or Gemini.
 . xref:exchange::to-request-access.adoc[Request access to the LLM Model Proxy asset] in Anypoint Exchange and verify that the proxy status is *Active*.
 . Note the client ID and client secret, as you need these to authenticate with the proxy when you deploy your agent network. 
 

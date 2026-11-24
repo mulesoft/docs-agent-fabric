@@ -11,6 +11,7 @@
 * xref:agent-network-troubleshoot.adoc[]
 ** xref:agent-network-troubleshoot-errors.adoc[]
 * xref:agent-network-build-ci-cd-environment.adoc[]
+* xref:agent-network-model-router.adoc[Configuring a Model Router for Agent Network]
 * xref:agent-network-project-files.adoc[]
 ** xref:agent-network-yaml-reference.adoc[]
 ** xref:agent-network-script-reference.adoc[]
