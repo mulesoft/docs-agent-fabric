@@ -1,5 +1,5 @@
 = Build Agent Networks for Agent Fabric
-:page-aliases: anypoint-code-builder::af-agent-networks.adoc
+:page-aliases: agent-network::af-agent-networks.adoc
 
 An agent network is a coordinated group of agents, brokers, LLMs, and MCP servers that acts as a central hub for defining, validating, and executing agentic processes across your enterprise.
 

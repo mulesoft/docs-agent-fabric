@@ -1,4 +1,5 @@
 = Agent Network Project File Reference
+:page-aliases: 1.0@agent-network::af-project-files.adoc
 
 Configure and publish your agent network using two key files: `agent-network.yaml` and `exchange.json`.
 The `agent-network.yaml` file defines agent behaviors, tools, and inter-agent communication, while `exchange.json` contains metadata for Anypoint Exchange publication. Understanding these files enables you to orchestrate multi-agent systems with external services and manage asset dependencies across your organization.

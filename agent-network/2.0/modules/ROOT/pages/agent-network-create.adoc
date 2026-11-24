@@ -1,5 +1,5 @@
 = Create Agent Networks
-:page-aliases: anypoint-code-builder::af-create-agent-network.adoc
+:page-aliases: agent-network::af-create-agent-network.adoc
 
 Create an agent network to connect brokers, agents, MCP servers, and LLMs into a coordinated workflow. Choose from MuleSoft Vibes, the visual canvas and code editor in Anypoint Code Builder, or the Anypoint CLI for CI/CD environments.
 

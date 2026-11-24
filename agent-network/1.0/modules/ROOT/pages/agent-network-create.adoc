@@ -1,4 +1,5 @@
 = Create Agent Networks
+:page-aliases: 1.0@agent-network::af-create-agent-network.adoc
 
 Whether you want to use MuleSoft Vibes or the UI, Anypoint Code Builder includes all the agent network functionality you need to get started.
 

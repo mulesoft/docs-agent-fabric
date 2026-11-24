@@ -1,5 +1,6 @@
 [[publish-assets]]
 = Publish Agent Network Assets
+:page-aliases: 1.0@agent-network::af-publish-agent-network-assets.adoc
 
 Build and publish your agent network project as Anypoint Exchange assets. When you publish, an asset is created for each broker, agent, and MCP server that's in your agent network. The asset ID is the value of the `name` key in `agent-network.yaml`.
 
