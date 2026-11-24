@@ -109,6 +109,9 @@ The following values must be exact in every request:
 
 To start a new conversation, send a request without a `contextId`. The broker generates and returns a `contextId` in the response.
 
+// DRAFT (W-25028343): the optional message.metadata field in this example is pending engineering confirmation.
+// Open questions: does the broker accept and keep params.message.metadata? Is it readable in scripts (for example @request.payload.message.metadata)? Is it forwarded to downstream agents?
+
 [source,bash]
 ----
 curl -s -X POST "https://<host>/<broker-path>/" \
@@ -120,7 +123,8 @@ curl -s -X POST "https://<host>/<broker-path>/" \
     "params": { "message": {
       "role": "ROLE_USER",
       "parts": [{ "text": "My favorite fruit is DRAGONFRUIT and my order number is ORD-4521. Please remember both." }],
-      "messageId": "g1"
+      "messageId": "g1",
+      "metadata": { "source": "docs-example" }
     }}
   }'
 ----

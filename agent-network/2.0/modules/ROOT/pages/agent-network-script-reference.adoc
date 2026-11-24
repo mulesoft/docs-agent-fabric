@@ -449,7 +449,7 @@ MCP actions have these properties.
 
 Triggers reference one of the interfaces defined for a broker in the agent network. Each broker must have one--and only one--trigger per each interface declared in its agent network.
 
-The A2A trigger reacts to send/message methods and automatically manages the task history, context ID and task IDs. The trigger also responds to various A2A protocol methods.
+The A2A trigger reacts to `SendMessage` requests (A2A 1.0) and automatically manages the task history, context ID and task IDs. The trigger also responds to various A2A protocol methods.
 
 NOTE: Agent network only supports triggers using JSON-RPC or HTTP JSON transport.
 
@@ -489,7 +489,7 @@ The A2A trigger has these properties.
 |Yes
 
 |`on_message`
-|Procedure that executes when the A2A interface receives a new `message/send` request. Must define a transition to the workflow's initial node.
+|Procedure that executes when the A2A interface receives a new `SendMessage` request. Must define a transition to the workflow's initial node.
 |Procedure
 |Yes
 
