@@ -1,6 +1,6 @@
 [[agent-script-reference]]
 = Agent Script Reference
-:page-aliases: anypoint-code-builder::af-agent-script-reference.adoc
+:page-aliases: agent-network::af-agent-script-reference.adoc
 
 
 After you configure the assets and other elements of your agent network project, you build the rest of the workflow using Agent Script. Agent Script enables you to build predictable, context-aware agent workflows that don't rely solely on interpretation by an LLM. 

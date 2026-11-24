@@ -1,5 +1,5 @@
 = Define Your Agent Network
-:page-aliases: anypoint-code-builder::af-define-your-agent-network-specification.adoc
+:page-aliases: agent-network::af-define-your-agent-network-specification.adoc
 
 After you create your agent network project, configure your network by editing `agent-network.yaml`, the `.agent` files in the `/brokers` directory, and `exchange.json`. As you edit, use the read-only visual canvas alongside the code editor to verify the structure of your network and to navigate quickly between graph nodes and the code that defines them.
 

@@ -1,5 +1,5 @@
 = Troubleshoot Agent Fabric CLI Errors
-:page-aliases: anypoint-code-builder::af-troubleshoot-errors.adoc
+:page-aliases: agent-network::af-troubleshoot-errors.adoc
 
 This guide helps you diagnose and resolve errors from the Anypoint CLI Agent Fabric plugin.
 

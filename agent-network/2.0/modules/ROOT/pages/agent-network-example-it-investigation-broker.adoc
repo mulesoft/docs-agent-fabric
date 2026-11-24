@@ -1,5 +1,5 @@
 = Example: Build an IT Investigation Broker
-:page-aliases: anypoint-code-builder::af-example-it-investigation-broker.adoc
+:page-aliases: agent-network::af-example-it-investigation-broker.adoc
 
 Use MuleSoft Vibes to build an IT Investigation agent that triages incoming support tickets, escalates critical issues, resolves common problems through cross-platform investigation, and handles licensing requests.  
 

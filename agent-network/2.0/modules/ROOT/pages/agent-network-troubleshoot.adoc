@@ -1,5 +1,5 @@
 = Troubleshoot Agent Networks
-:page-aliases: anypoint-code-builder::af-troubleshoot-agent-networks.adoc, anypoint-code-builder::af-troubleshoot-anypoint-code-builder.adoc
+:page-aliases: agent-network::af-troubleshoot-agent-networks.adoc, agent-network::af-troubleshoot-anypoint-code-builder.adoc
 
 Resolve common agent network errors and connectivity issues by enabling verbose logging, message logging policies, and distributed tracing. Using logs and distributed traces, you can observe agents and MCP servers and see how requests flow through brokers, which tools and policies apply, and where failures or latency originate.
 

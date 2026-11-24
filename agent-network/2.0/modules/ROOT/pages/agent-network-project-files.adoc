@@ -1,5 +1,5 @@
 = Agent Network 2.0 Project File Reference
-:page-aliases: anypoint-code-builder::af-project-files.adoc
+:page-aliases: agent-network::af-project-files.adoc
 
 An agent network project defines a structured configuration for multi-agent systems, enabling orchestration of AI agents with external services, tools, and inter-agent communication. This project file format provides a declarative way to define agent capabilities, dependencies, and service integrations.
 

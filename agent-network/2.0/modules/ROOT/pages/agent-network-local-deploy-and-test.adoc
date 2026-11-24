@@ -1,5 +1,5 @@
 = Deploy and Test Agent Networks Locally
-:page-aliases: anypoint-code-builder::af-local-deploy-and-test.adoc
+:page-aliases: agent-network::af-local-deploy-and-test.adoc
 :page-pagination:
 
 Deploy your agent network locally and test each broker through an Agent-to-Agent (A2A) chat interface directly from Anypoint Code Builder. Local deployments let you iterate quickly on your agent network without publishing or deploying it.
