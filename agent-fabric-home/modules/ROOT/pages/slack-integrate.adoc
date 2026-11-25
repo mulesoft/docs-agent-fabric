@@ -44,7 +44,7 @@ Slackbot can now access information from the MCP Platform Server.
 
 [IMPORTANT]
 ====
-MuleSoft Agent is available on request. To get access, contact your account executive.
+MuleSoft Agent is part of an early access program that's _closed to new participants_ at this time.
 ====
 
 Before getting started, make sure you have:

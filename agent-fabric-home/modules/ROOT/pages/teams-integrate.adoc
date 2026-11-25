@@ -1,86 +1,123 @@
-= Integrate the Enhanced MuleSoft Experience with Microsoft Teams
+= Integrate with Microsoft Copilot and Teams
 :keywords: microsoft teams integration, mulesoft agent, teams bot, mcp server, anypoint platform, enhanced experience
 
-Get API Manager alert notifications directly in Teams channels through the MuleSoft for Teams app, and use the MuleSoft plugin in Microsoft Copilot to ask natural language questions and take action through Copilot Chat and Copilot Cowork. The plugin provides full capabilities of the xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc[MuleSoft Platform MCP Server].
+Get alert notifications directly in Teams channels through the MuleSoft for Teams app, and use the MuleSoft plugin to manage APIs, agents, LLMs, MCP servers, governance strategies, policies, gateways, observability, and cost optimization across Anypoint Platform in Microsoft Copilot. The plugin provides full capabilities of the xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc[MuleSoft Platform MCP Server].
 
-* <<connect-teams-tenant, App setup>>: A Microsoft admin submits the app for review from the enhanced MuleSoft experience, approves the app in Microsoft Teams Admin Center, and binds your Microsoft Teams tenant to your Anypoint organization so the app can send alert notifications directly to channels and direct messages (DMs). A Microsoft Teams user chooses Teams channels that receive alert notifications in Teams.
-* <<mulesoft-plugin, Plugin setup>>: A Microsoft admin installs the MuleSoft plugin through the Microsoft plugin registry to make the plugin available to Microsoft Copilot Chat and Copilot Cowork. Copilot is available from Microsoft Teams and other Microsoft product.
+* <<mulesoft-plugin, Plugin setup>>: Provide Copilot access to the MuleSoft Platform MCP Server.
 +
-TODO: IS THIS NOTE NEEDED for the plugin or agent? 
+A Microsoft admin installs the MuleSoft plugin through the Microsoft plugin registry to make the plugin available to Microsoft Copilot Chat and Copilot Cowork. Copilot is available from Microsoft Teams and other Microsoft products.
+
+* <<connect-teams-tenant, App setup>>: Provide alerts from the enhanced MuleSoft experience to Teams channels.
 +
-NOTE: The MuleSoft plugin relies on generative AI, which can produce inaccurate or harmful responses. Review for accuracy and safety before using.
+A Microsoft admin who also has an Organization Administrator permission to Anypoint Platform connects the Microsoft Teams tenant to your Anypoint organization, chooses Teams channels that receive alerts, submits the app for review from the enhanced MuleSoft experience, and approves the app in Microsoft Teams Admin Center.
 
-[[before-you-begin]]
-== Before You Begin
+[[mulesoft-plugin]]
+== Connect MuleSoft Copilot to the MuleSoft Platform MCP Server
 
-TODO: TBD WHETHER NEED TO SPLIT THIS OUT INTO APP & PLUGIN SETUP SECTIONS
+Use the MuleSoft plugin to get access to the full capabilities of  MuleSoft Platform MCP Server from Microsoft Copilot Chat and Copilot Cowork.
 
-Before setting up the Teams integration, verify that theses requirements are met:
+Prerequisite: 
 
-TODO: Is GENERATIVE AI ENABLED required for app or plugin. If so, which?
+* MS 365 Copilot (Premium) license is required. If the plugin is blocked or unavailable, a Microsoft admin can assign the license or enable the plugin.
+* An Anypoint Platform account with tool-specific permissions described in  xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc#command-summary[Command Summary].
 
-* *Generative AI enabled*: Generative AI must be enabled in your Anypoint Platform and Salesforce organizations. For more information, see xref:access-management::enabling-generative-ai.adoc[].
-* *Salesforce-Anypoint Connection*: Your Anypoint Platform organization must be fully connected to your Salesforce organization.
+[NOTE] 
+====
 
-TODO: LICENSE REQ FOR PLUGIN only or also the agent app?
+* The MuleSoft plugin relies on generative AI, which can produce inaccurate or harmful responses. Review for accuracy and safety before using.
+* Procedures in this section reflect a Microsoft UI experience that is subject to change. For the latest information, refer to the https://learn.microsoft.com/en-us/[official Microsoft documentation].
+====
 
-* *MS 365 Copilot (Premium)* license is required (MuleSoft plugin requirement). If the plugin is blocked or unavailable, a Microsoft admin can assign the license or enable the plugin.
+[[plugin-discover]]
+=== Make the Plugin Discoverable 
+
+Using the Microsoft 365 admin center, a Microsoft admin deploys the MuleSoft plugin from the Microsoft plugin registry to make it available across supported experiences, such as Copilot Chat and Copilot Cowork.
+
+. Open the Microsoft 365 admin center. 
+. Navigate to *Agents* > *Tools* > *Registry* to install the app and make it available to users or groups.
++
+Alternatively, if users have requested access, review and approve access under *Agents* > *Tools* > *Requests*.
+. Navigate to *Agents* > *Settings* and select *Allow external publishers*. 
++
+If external publishers aren't allowed, the plugin will be locked and unavailable to users.
+
+[[plugin-connect-cowork]]
+=== Connect to the MuleSoft Plugin from Copilot Cowork
+
+After the Microsoft admin deploys the MuleSoft plugin, users can connect to MuleSoft from Copilot Cowork.
+
+. Open *Copilot*, and navigate to *Plugins*.
+. Click the *Cowork* tab in *Plugins*, and click the MuleSoft plugin (located under *Added*).
+. Click *Connect*, and log in with Anypoint Platform credentials. 
++
+The app displays a *Connected* status when it's ready to use.
+
+[[plugin-connect-chat]]
+=== Connect and Use the MuleSoft Plugin from Copilot Chat
+
+After the Microsoft admin deploys the MuleSoft plugin, users can connect to MuleSoft from Copilot Chat.
+
+. From Copilot, navigate to *Plugins* > *Chat*. 
+. Find and open the MuleSoft plugin  (located under *Added*).
+. In the plugin, type `Connect to MuleSoft` to initiate the connection process. 
++
+The plugin indicates whether the connection to MuleSoft Anypoint Platform is successful.
+
+=== Prompt the MuleSoft Plugin from Copilot
+
+After successfully connecting the MuleSoft plugin in Copilot, users can prompt Copilot to invoke MuleSoft Platform MCP server tools described in xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc[].
+
+. From Copilot, navigate to *New*. 
+. Enter a prompt for the MuleSoft Platform MCP server by:
+
+ * Asking a natural-language question without invoking an MuleSoft tool directly. 
++
+Examples: `Use MuleSoft` to get a list of common MuleSoft prompts or `Use MuleSoft to list APIs and instances` for more specific information.
+ * Typing `/` in the prompt box to pick a specific MuleSoft tool before entering your prompt.
 
 [[connect-teams-tenant]]
-== Set Up Alert Notifications for Teams
+== Get Alert Notifications in Microsoft Teams
 
-To get alert notifications in a Microsoft Teams channel through the MuleSoft for Teams app, a Microsoft admin must make the app available to Teams.
+The MuleSoft for Teams app sends alert notifications from the enhanced MuleSoft experience to Microsoft Teams channels.
+
+A Microsoft admin makes the app available to Teams by completing these steps:
 
 * <<grant-admin-consent>>
-* <<submit-for-review>>
-* <<approve-app>>. 
+* <<approve-app>>
 * <<configure-notification-channels>>
-+
-TODO: VERIFY THIS STEP (includes "and link their MuleSoft accounts". Is that correct anymore?)
-
 
 NOTE: Each MuleSoft organization can connect to only one Microsoft Teams tenant, and each tenant can connect to only one MuleSoft organization.
 
-You can also <<disconnect-teams, disconnect the MuleSoft for Teams app.>>.
+Admins can also <<disconnect-teams, disconnect the MuleSoft for Teams app.>>.
 
 [[grant-admin-consent]]
 === (1) Grant Admin Consent to the MuleSoft for Teams App
 
 A Microsoft admin must complete this procedure the first time the app is connected to your tenant. Admin consent registers the MuleSoft for Teams app in your tenant on behalf of your whole organization, so other users aren't prompted to review the permissions.
 
+Prerequisite: Organization Administrator access to Anypoint Platform and a Microsoft admin account is required to complete this procedure. You'll log in to the enhanced experience with Organization Administrator credentials to access the app in the enhanced MuleSoft experience, and you'll sign in with a Microsoft admin account to grant consent for connecting the app to Teams.
+
 . Log in to https://omni.mulesoft.com/[enhanced MuleSoft experience]. 
 . Go to *Notifications* > *Settings* > *Teams*.
 . In *Teams Setup*, click *Connect* in the *MuleSoft for Teams* card.
-//TODO: THEY CAN SELECT AN ACCOUNT ALREADY? Is it "Select" or "Provide" for this step?
-. Select your Microsoft admin account.
-. On the *Permissions requested* page, review the permissions that the app requests:
+. Use your Microsoft admin account to log in.
+. On the *Permissions requested* page, accept _all_ the permission scopes:
 +
 * Submit application packages to your organization's catalog and cancel pending submissions.
 * Sign in and read your profile.
 * Maintain access to data you have given it access to.
 +
 For details about each permission, see <<microsoft-graph-permissions>>.
++
+IMPORTANT: Removing permissions after installation can cause the app to malfunction. If you plan to change permissions after installing the app, consult your account team.
 . Select *Consent on behalf of your organization*.
 . Click *Accept*.
 +
 You return to *Notifications* > *Settings*. The *Teams Setup* section shows *Not Installed*, and the *MuleSoft for Teams* card shows *Submitted for review*. The integration remains inactive until a Teams admin <<approve-app, approves the app in Microsoft Teams Admin Center>>.
 
-[[submit-for-review]]
-=== (2) Submit the MuleSoft for Teams App for Review
-
-TODO: IS THIS CORRECT? ANY OTHER STEPS? IS THERE A SUBMIT FOR REVIEW BUTTON OR SOMETHING? 
-
-After an admin grants consent to the MuleSoft for Teams app, any user in your Microsoft tenant who has access to the enhanced MuleSoft experience can submit the app for admin review in Microsoft Teams Admin Center. 
-
-. Log in to https://omni.mulesoft.com/[enhanced MuleSoft experience]. 
-. Go to *Notifications* > *Settings* > *Teams*.
-. In *Teams Setup*, click *Connect* in the *MuleSoft for Teams* card.
-+
-No permissions prompt appears because the Microsoft admin selected permissions when granting consent to the app.
-
 //TODO: IS THIS NEEDED ANYMORE? IF SO, WHICH PARTS? ANYTHING ELSE? 
 [[approve-app]]
-=== (3) Approve and Publish the App in Microsoft Teams Admin Center
+=== (2) Approve and Publish the App in Microsoft Teams Admin Center
 
 After the app is submitted for review, a Microsoft admin must publish it so users in your organization can add it.
 
@@ -97,26 +134,28 @@ Microsoft Teams Admin Center confirms that the app is published. It can take a f
 
 After the app is published and connected, *Notifications* > *Settings* > *Teams* shows *Installed*, and the *MuleSoft for Teams* card shows *Connected to _<organization-name>_*.
 
-Users can now add the app to Teams channels.
+You can now <<configure-notification-channels, add the app to channels in Teams>>. 
 
 [[configure-notification-channels]]
-=== (4) Connect the App to Channels in Teams
+=== (3) Connect the App to Channels in Teams
 
-After the MuleSoft for Teams app is installed, users can choose the Teams channels that receive notifications. To browse your teams and channels, sign in with your Microsoft Teams account. This sign-in is separate from the admin consent step and doesn't request additional permissions.
-
-TODO: VERIFY WHICH USERS can do THIS? INCLUDES non-admin users with an EME and Microsoft accounts. Do we need to say something about access permissions in EME?
+After the MuleSoft for Teams app is installed, a Microsoft admin connects the app to Team channels. 
 
 You can add only standard channels.
 
-. Log in to https://omni.mulesoft.com/[enhanced MuleSoft experience]. 
-. Go to *Notifications* > *Settings* > *Teams*.
-. In *Notification Channels*, click *Connect Microsoft Teams*.
-. Select your Microsoft account.
+. In Teams, add the app to Teams channels.
++
+This preliminary step makes the channels available for enablement in the MuleSoft for Teams app.
+. Enable the added channels through the MuleSoft for Teams app: 
+.. Log in to https://omni.mulesoft.com/[enhanced MuleSoft experience] to associate the channels with the Teams app. 
+.. Go to *Notifications* > *Settings* > *Teams*.
+.. In *Notification Channels*, click *Connect Microsoft Teams*.
+.. Select your Microsoft account.
 +
 You return to *Notification Channels*, which now shows a search field.
-. In *Search teams or channels*, enter the name of a team or channel.
-. Select the channels that you want to receive notifications.
-. Click *Add* to add the selected channels.
+.. In *Search teams or channels*, enter the name of a team or channel.
+.. Select the channels that receive notifications.
+.. Click *Add* to add the selected channels.
 +
 The channels appear under *Channels Enabled for Notifications*, grouped by team. To remove a channel, click the *X* next to it.
 
@@ -125,35 +164,16 @@ To route specific alerts to these channels, see xref:alerts-configure-notificati
 [[disconnect-teams]]
 === Disconnect the MuleSoft for Teams App
 
+Admins can disconnect the MuleSoft for Teams app. 
+
+NOTE: After disconnecting, it can take a couple of hours before an admin can reinstall the app. 
+
 . Log in to https://omni.mulesoft.com/[enhanced MuleSoft experience].
 . Go to *Notifications* > *Settings* > *Teams*.
 . Click *Disconnect* in the *MuleSoft for Teams* card.
 . Confirm the disconnection. This immediately revokes MuleSoft's access to your Teams tenant and stops all notifications.
 +
 The MuleSoft app remains in Microsoft Teams Admin Center. To fully remove it, a Teams admin must uninstall it from the Admin Center, or right-click the app in Teams and select *Uninstall*.
-
-[[mulesoft-plugin]]
-== Get the MuleSoft Plugin in Microsoft Teams
-
-TODO: IN PROGRESS (EARLY WORK)
-
-The MuleSoft plugin provides access to full capabilities of the xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc[MuleSoft Platform MCP Server].
-
-TODO: TBD WHAT OF THIS TO ADD: 
-
-* permission: Microsoft 365 Global/Copilot Administrator role
-* console: Microsoft 365 admin center under Agents > Tools (or Agents > All agents)
-
-
-. A Microsoft admin makes the MuleSoft plugin discoverable across supported experiences like Copilot Chat and Copilot Cowork through the Microsoft plugin registry.
-. Teams users can then:
-
-.. Find and add the plugin by opening Microsoft Teams and navigating to *Copilot*  (or *Home* > *Chat*, *Home* > *Cowork*, or similar).
-.. Enable the plugin and authenticate, typically by toggling on the MuleSoft plugin from *Sources & Skills* in the Copilot session.
-.. Use the plugin in Copilot Chat and Copilot Cowork by:
-* Ask a natural-language question or request a task that the MuleSoft MCP Server supports. Copilot automatically selects the appropriate  skill or connector based on your intent.
-• Typing `/`` in the prompt box to pick a specific MuleSoft skill  before typing your prompt.
-
 
 [[microsoft-graph-permissions]]
 == Microsoft Graph Permissions
@@ -164,21 +184,13 @@ The MuleSoft for Teams app requires the following Microsoft Graph permissions. A
 |===
 |Permission |Type |Purpose
 
-|`AppCatalog.Submit`
-|Delegated
-|Submits the MuleSoft app package to your organization's app catalog for review, and cancels pending submissions. A Teams admin must approve and publish the submitted app in Microsoft Teams Admin Center before users can add it.
-
-|`offline_access`
-|Delegated
-|Allows the app to maintain its connection without requiring users to reauthenticate every time they open Teams. The app stores a refresh token to request new short-lived access tokens. This permission doesn't grant any data access beyond what was already authorized.
-
 |`AppCatalog.Read.All`
 |Application
 |Verifies that the MuleSoft app is properly published in your Teams app catalog. Without this, the app cannot confirm its own availability, and users see silent failures instead of actionable setup errors.
 
-|`AppCatalog.ReadWrite.All`
-|Application
-|Allows the MuleSoft app to receive updates, such as new Adaptive Card formats or capability additions, without requiring an admin to manually republish each time.
+|`AppCatalog.Submit`
+|Delegated
+|Submits the MuleSoft app package to your organization's app catalog for review, and cancels pending submissions. A Teams admin must approve and publish the submitted app in Microsoft Teams Admin Center before users can add it.
 
 |`Channel.ReadBasic.All`
 |Application
@@ -187,14 +199,6 @@ The MuleSoft for Teams app requires the following Microsoft Graph permissions. A
 |`Team.ReadBasic.All`
 |Application
 |During setup, lets you map MuleSoft environments and business groups to specific teams without manually looking up team IDs. Read-only access to team names and descriptions — no access to members or content.
-
-|`TeamsAppInstallation.ReadWriteAndConsentForTeam.All`
-|Application
-|Lets a Teams admin roll the app out to all relevant teams in a single action with automatic RSC consent, rather than requiring each individual team owner to install it separately.
-
-|`TeamsAppInstallation.ReadWriteForTeam.All`
-|Application
-|Manages the app lifecycle across teams, including handling version upgrades and removing the app from teams where it is no longer needed.
 
 |`User.Read`
 |Delegated
@@ -206,65 +210,7 @@ The MuleSoft for Teams app requires the following Microsoft Graph permissions. A
 == Security, Data Retention, and Residency
 
 * *Hyperforce and data boundaries*: The MuleSoft Agent respects your designated Hyperforce region. Install the regional app for Teams that corresponds to your region. Customer data never leaves your designated Hyperforce boundary.
-* *LLM architecture and web access*: The MuleSoft Agent uses the Salesforce LLM-Gateway, powered by OpenAI GPT-5-mini. The agent does not perform public web searches.
 * *Data retention and compliance*: Data retention policies, data removal, LLM data tenancy, and infrastructure details are covered in the applicable Salesforce Security, Privacy, and Architecture (SPARC) documentation. Customer data is securely deleted upon expiration of the applicable retention periods in accordance with SPARC guidelines. For more information, see the https://www.salesforce.com/company/legal/trust-and-compliance-documentation/[Salesforce Trust and Compliance Documentation].
-
-[[begin-using-agent]]
-== Use the MuleSoft Agent
-
-_If your Anypoint Platform organization is part of the early access program_, you can use natural language to interact with MuleSoft data from Teams:
-
-* *Find services by capability*: Use natural-language search to discover APIs, agents, LLMs, and MCP servers.
-* *Run governance, monitoring, and cost drill-ins*: Generate governance, monitoring, and cost reports on request.
-* *Take governance actions*: Apply policies and apply cost management recommendations.
-
-[IMPORTANT]
-====
-MuleSoft Agent isn't available to additional customers at this time. 
-====
-
-Before getting started, make sure you have:
-
-* An Anypoint Platform account with access to the enhanced experience.
-TODO: DOES GENERATIVE AI NEED TO BE ENABLED? 
-* Generative AI enabled in your Anypoint Platform and Salesforce organizations by your admin. For more information, see xref:access-management::enabling-generative-ai.adoc[].
-* The *MuleSoft Agent AI User* permission assigned to your user.
-+
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
-
-To assign the *MuleSoft Agent AI User* permission across business groups:
-
-. Log in to Anypoint Platform and open *Access Management*.
-. Select the business group where you want to assign the permission.
-. Find the user and assign the *MuleSoft Agent AI User* permission.
-. Repeat for each business group that requires access.
-
-To start using the agent in Teams:
-
-. Open Microsoft Teams and go to *Apps*.
-. Under *Built for your organization*, find *MuleSoft* and click *Add*.
-. Click *Open* or select a channel where you want to use the app.
-. The agent sends a welcome message. Type `signin`.
-. In the *Connect your MuleSoft account to continue* card, click *Connect to MuleSoft* and sign in with your Anypoint Platform credentials. This is a one-time setup.
-. When the *Connected to MuleSoft* page appears, close the browser tab. Return to Teams to continue the conversation.
-
-After you authenticate, you can use the agent to list APIs, agents, MCP servers, view governance reports, and more.
-
-NOTE: In channels, @mention the MuleSoft Agent to send it a message. In direct messages, you can send messages to the agent at any time without @mentioning it.
-
-[[available-prompts]]
-=== Available Prompt Suggestions
-
-When you open the MuleSoft Agent, the following prompt suggestions are available:
-
-* *What business group am I in?*: Shows your current business group.
-* *List APIs in my current business group*: Lists APIs in your current business group.
-* *What risks exist across my portfolio?*: Shows risks across your portfolio.
-* *Which MCP servers had the highest token spend this week?*: Shows which MCP servers had the highest token spend this week.
-* *Which agents have instances?*: Lists agents that have instances.
-* *What APIs have the highest error rates over the past 7 days?*: Shows APIs with the highest error rates over the past 7 days.
-
-To send feedback to the MuleSoft Agent team, type `/feedback` in a channel or react to an agent response with a thumbs up or thumbs down.
 
 [[see-also]]
 == See Also
