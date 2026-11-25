@@ -445,7 +445,7 @@ On *Monitoring*, review live metrics such as latency, error rates, and request v
 
 . Manage cost
 +
-Under *Governance*, open *Cost Management* to study token usage and related sUnder *Governance*, open *Cost Management* to study token usage and related spend signals. Apply the cost reduction strategies your organization adopted, such as MCP Tool Mapping, Clean Payloads, or Semantic Caching.
+Under *Governance*, open *Cost Management* to study token usage and related spend signals. Apply the cost reduction strategies your organization adopted, such as MCP Tool Mapping, Clean Payloads, or Semantic Caching.
 . Operate and tune the portfolio
 +
 Coordinate agents, APIs, gateways, MCP servers, and Model proxies so traffic, policies, and integrations stay aligned. Open *Versions* when you need configuration history before you change instances or policies. Adjust policies, instances, or registrations when monitoring and governance insights show drift or new risk.
