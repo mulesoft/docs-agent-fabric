@@ -70,7 +70,7 @@
  * xref:external-systems-connect.adoc[Work with Platform Agents & Tools]
   ** xref:slack-integrate.adoc[]
   ** xref:claude-desktop-connect.adoc[]
-
+  ** xref:teams-integrate.adoc[]
 
  * xref:troubleshoot.adoc[Troubleshoot Authentication & Connection Issues]
    ** xref:agent-viz-troubleshoot-agent-network.adoc[]

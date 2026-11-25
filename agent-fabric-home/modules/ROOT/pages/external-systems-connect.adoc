@@ -14,6 +14,12 @@ Install the MuleSoft for Slack app to receive notifications, run shortcuts, and 
 +
 Connect Claude Desktop to the enhanced experience so developers can move between conversational AI workflows and governed catalogs.
 
+* xref:teams-integrate.adoc[Integrate with Microsoft Copilot and Teams]
+
+** Install the MuleSoft for Teams app to get alert notifications from the enhanced experience directly in Teams channels.
+
+** Install the MuleSoft plugin in Microsoft Copilot to ask natural language questions and take action through Copilot Chat and Copilot Cowork. The plugin provides full capabilities of xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc[MuleSoft Platform MCP Server] tools.
+
 == See Also
 
 * xref:slack-integrate.adoc[]
