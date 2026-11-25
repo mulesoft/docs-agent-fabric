@@ -17,7 +17,7 @@ Before getting started, make sure you have:
 --
 --
 +
-For more information, see xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions].
+For more information, see xref:get-started.adoc#permissions[Enhanced Experience Permissions].
 
 == What is Bridget
 
@@ -106,12 +106,9 @@ Example workflow:
 
 == Access Bridget Through the Enhanced MuleSoft Experience
 
-From the enhanced MuleSoft experience, navigate to the *Bridget* tab and click *Open Bridget*.
-
-For more information, see the {docs link placeholder} [Bridget documentation].
+From the enhanced MuleSoft experience, navigate to the *Bridget* tab and click *Go to Bridget*.
 
 
 == See Also
 
-//* [link to Salesforce's bridget docs]
-* xref:exp-home-start.adoc#permissions[Enhanced Experience Permissions]
+* xref:get-started.adoc#permissions[Enhanced Experience Permissions]
