@@ -43,7 +43,6 @@ Audit and Compliance:: Track all data entry and modifications for compliance rep
 
 == Limitations
 
-Structured Data Only:: Bridget is optimized for structured, tabular data. Complex hierarchical data structures may require additional transformation.
 Schema Validation:: Data schemas must be predefined in Bridget before entry. Dynamic schema changes require redeployment.
 Performance:: High-volume real-time streaming scenarios may require optimization or batching strategies.
 Dependencies:: Bridget requires active integration with Anypoint Platform services. Offline data entry isn't supported in the base configuration.
