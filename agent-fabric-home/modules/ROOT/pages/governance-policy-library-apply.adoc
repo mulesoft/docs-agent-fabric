@@ -71,6 +71,22 @@ Applying a policy is an asynchronous, tracked operation, not a fire-and-forget a
 
 For how open policies map to each provider's native policy, and which policies you can then edit, enable, disable, or remove afterward, see xref:policies-open.adoc[] and xref:policies-apply-manage.adoc[].
 
+[[apply-from-ai-tool]]
+== Apply Open Policies from an AI Tool
+
+You can also apply open policies from an AI tool, such as your IDE's AI assistant, by using the MuleSoft MCP Platform Server.
+
+. Find the policy to apply by calling xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc#list-universal-policies[list_universal_policies]. To narrow the results, pass part of the policy name or label in `policy_name_hint`. The response returns each policy's canonical name and its configuration schema.
+. Apply the policy by calling xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc#apply-universal-policy[apply_universal_policy] with these parameters:
++
+--
+* `policy_name`: The canonical name returned by `list_universal_policies`.
+* `instance_ids`: The IDs of the API instances to apply the policy to. Instances can be on different gateways.
+* `configuration`: Optional. Values that match the policy's configuration schema.
+--
+
+As with the console, the request is accepted and runs asynchronously. To confirm the outcome on each instance, review the instance's *Activity log* tab. See xref:policies-activity-log.adoc[].
+
 == See Also
 
 * xref:policies-overview.adoc[]
@@ -81,3 +97,4 @@ For how open policies map to each provider's native policy, and which policies y
 * xref:governance-create-strategy.adoc[]
 * xref:governance-work-with-strategies.adoc[]
 * xref:services-view-details.adoc[]
+* xref:mulesoft-mcp-server::reference-mcp-tools-platform.adoc[]
