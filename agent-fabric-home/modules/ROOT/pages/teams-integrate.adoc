@@ -23,7 +23,7 @@ To use the MuleSoft Agent, you also need:
 
 * *Generative AI enabled*: Generative AI must be enabled in your Anypoint Platform and Salesforce organizations. For more information, see xref:access-management::enabling-generative-ai.adoc[].
 * *Salesforce-Anypoint Connection*: Your Anypoint Platform organization must be fully connected to your Salesforce organization.
-* *MuleSoft Agent AI User permission*: See <<begin-using-agent>>.
+* *Early Access Program*: The MuleSoft Agent feature must be enabled for your organization by the MuleSoft team as part of the Early Access Program. Contact your Customer Success Manager (CSM) or Account Executive (AE) to join the program.
 
 [[connect-teams-tenant]]
 == Connect Your Microsoft Teams Tenant to the MuleSoft Organization
