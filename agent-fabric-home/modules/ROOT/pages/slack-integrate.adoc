@@ -7,6 +7,8 @@ Install the MuleSoft for Slack app in your Slack workspace to receive notificati
 * <<connect-slackbot-mcp>>: Connect Slackbot to the Mulesoft Platform MCP Server to answer questions about the MuleSoft platform.
 * <<begin-using-agent>>: Manage your MuleSoft environment with the MuleSoft Agent integrated with Slack. Use the MuleSoft Agent to create scanners, apply policies, deploy instances, and perform other management tasks.
 * Configure alerts to deliver notifications to Slack channels and DMs. For instructions, see xref:alerts-configure-notifications.adoc[].
++
+The same connection delivers governance conformance alerts. Add Slack as a recipient in a profile's notifications. For more information, see xref:api-governance::configure-notifications.adoc#send-slack-teams-alerts[Sending Conformance Notifications].
 
 Available commands, message templates, and workspaces depend on how your organization configured the Slack app. Internal runbooks list the slash commands or shortcuts approved for your workspace.
 
@@ -93,7 +95,7 @@ You can use the MuleSoft Agent to perform these platform tasks in Slack:
 
 * Receive alerts:
 +
-Receive alerts to channels or direct messages (DMs). You can configure notifications to be sent to Slack. For more information, see xref:alerts-configure-notifications.adoc[].
+Receive alerts to channels or direct messages (DMs). You can configure notifications to be sent to Slack. For more information, see xref:alerts-configure-notifications.adoc[]. To receive governance conformance alerts, see xref:api-governance::configure-notifications.adoc#send-slack-teams-alerts[Sending Conformance Notifications].
 * Find services by capability:
 +
 Use natural-language search to discover APIs, agents, LLMs, and MCP servers.
