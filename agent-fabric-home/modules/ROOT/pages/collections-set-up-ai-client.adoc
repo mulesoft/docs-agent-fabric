@@ -1,0 +1,132 @@
+= Set Up a Collection in an AI Client
+:keywords: collections, ai client, github copilot, claude, chatgpt, microsoft teams, slack, cursor, registry url, mcp url
+
+After you share MCP servers, give the Collection URL to the administrator of each AI client your end users work from. The AI client administrator doesn't need an Anypoint Platform account.
+
+The setup steps in this topic summarize the common configuration for each AI client, so you can get started. Each AI client owns its setup, and its settings can change. For the current steps, see the AI client's documentation linked at the end of each section.
+
+[[choose-url]]
+== Choose the URL for Your AI Client
+
+Use the URL that matches the AI client:
+
+[cols="1,1",options="header"]
+|===
+|AI Client |URL
+
+|GitHub Copilot
+|Registry URL
+
+|Other clients, such as Claude, ChatGPT, Microsoft Teams, Slack, and Cursor
+|MCP URL
+|===
+
+[[github-copilot]]
+== Set Up GitHub Copilot
+
+You must be a GitHub organization or enterprise owner with Copilot Business or Enterprise.
+
+. Turn on MCP servers:
+** Organization: Go to *Settings* > *Copilot* > *Policies* and set *MCP servers in Copilot* to *Enabled*.
+** Enterprise: Go to *AI controls* > *MCP* and set it to *Enabled everywhere*.
+. On the same page, paste the Registry URL into *MCP Registry URL* exactly as shown.
++
+Copilot adds `/v0.1/servers` automatically.
+. Click *Save*.
+. Optional: To allow only the MCP servers in the Collection, set *Restrict MCP access to registry servers* to *Registry only*.
++
+This setting also blocks Copilot connectors.
+
+Developers can now install the MCP servers. In VS Code, they open *Extensions*, search for `@mcp`, and click *Install*. If an MCP server has its own sign-in, developers complete it the first time they use it.
+
+For more information, see https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-server-access[Configure MCP server access^] in the GitHub documentation.
+
+[[claude]]
+== Set Up Claude
+
+You must be a Claude organization Owner or Primary Owner with Claude Team or Enterprise.
+
+. Go to *Organization settings* > *Connectors*.
+. Click *Add*, hover over *Custom*, and click *Web*.
+. Enter a name and paste the MCP URL exactly as shown.
+. Click *Continue*.
+. In *Authentication*, click *No sign in*.
+. Click *Add*.
+
+Members can now connect it. They go to *Customize* > *Connectors*, find the connector tagged *Custom*, and click *Connect*. To use it in a chat, they turn it on from *+* > *Connectors*.
+
+For more information, see https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp[Get started with custom connectors using remote MCP^] in the Claude documentation.
+
+[[chatgpt]]
+== Set Up ChatGPT
+
+You must be a ChatGPT workspace admin or owner with ChatGPT Business, Enterprise, or Edu.
+
+. Enterprise and Edu only: Go to *Workspace settings* > *Permissions & roles* and allow *Create plugins with MCPs*.
+. Go to *Plugins* and click *Add* > *Add custom MCP server*.
+. Paste the MCP URL into *Server URL*.
+. In *Authentication*, click *No authentication*.
+. Click *Create*.
+. Test the MCP server by typing `@` in a new chat.
+. Publish the MCP server to the workspace.
+
+For more information, see https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt[Connecting custom MCP servers in ChatGPT^] in the OpenAI documentation.
+
+[[microsoft-teams]]
+== Set Up Microsoft Teams
+
+You must be a Microsoft Copilot Studio maker. Copilot Studio must have generative orchestration turned on, and end users must have Microsoft 365 Copilot licenses.
+
+. In Copilot Studio, go to *Create* > *New agent*.
+. Go to *Tools* > *Add a tool* > *New tool* > *Model Context Protocol*.
+. Enter a name, a description, and the MCP URL.
+. In *Authentication*, click *None*.
+. Click *Create*.
+. Create a connection and add it to the agent.
+. Publish the agent.
+. Go to *Channels* > *Microsoft 365 and Microsoft Teams* and click *Add channel*.
+. Share the agent with users or groups.
+
+To make the agent available to everyone in your organization, a Teams administrator must approve it.
+
+For more information, see https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent[Connect your agent to an existing Model Context Protocol (MCP) server^] in the Microsoft documentation.
+
+[[slack]]
+== Set Up Slack
+
+You must be a Slack developer on a Slack plan with Slackbot. If your workspace requires app approval, a Slack administrator must approve the app.
+
+. Go to `api.slack.com/apps` and click *Create New App* > *From scratch*.
+. In *MCP Servers*, paste the MCP URL into *URL*.
+. In *Auth Type*, click *No auth*.
+. Click *Save*.
++
+Slack adds the `mcp:connect` scope automatically.
+. Install the app to your workspace or organization.
+
+Members can now use it. In a Slackbot conversation, they click *Apps* and turn on the app.
+
+For more information, see https://docs.slack.dev/ai/slackbot-mcp-client/[Connecting an MCP server to the Slackbot MCP Client^] for developers and https://slack.com/help/articles/52414744085139-Connect-Slackbot-to-other-apps-with-MCP[Connect Slackbot to other apps with MCP^] for administrators.
+
+[[cursor]]
+== Set Up Cursor
+
+You must be a Cursor team admin with Cursor Teams or Enterprise.
+
+. Enterprise only: If your team restricts MCP servers, go to *Team Settings* > *MCP Configuration* and add the MCP URL.
+. Go to *Dashboard* > *Plugins & MCPs*.
+. Add the MCP URL as a team MCP server, with no headers.
+. In *Team MCP Servers*, click *Add to Team Marketplace*.
++
+This step makes the MCP server available to install. It doesn't install it for anyone.
+
+Developers can now install it. They open *Customize* and install it from the team marketplace.
+
+For more information, see https://cursor.com/docs/mcp[Model Context Protocol (MCP)^] and https://cursor.com/docs/plugins[Plugins^] in the Cursor documentation.
+
+== See Also
+
+* xref:collections-overview.adoc[]
+* xref:collections-share-mcp-servers.adoc[]
+* xref:claude-desktop-connect.adoc[]
+* xref:slack-integrate.adoc[]

@@ -1,0 +1,58 @@
+= Get Started with Collections
+:keywords: collections, entitlement, roles, permissions, api experience hub, exchange, mcp server, agent fabric
+
+Ensure you have the required entitlement, roles, and permissions, then start sharing MCP servers.
+
+[[before-you-begin]]
+== Before You Begin
+
+Verify that you have the following:
+
+* API Experience Hub entitlement for your organization.
++
+To get the entitlement, contact your Account Executive so they can provide your organization ID to the Collections team.
+* One of these roles in the business group whose Collection you manage:
++
+--
+** Organization Administrator
+** API Experience Hub Administrator
+--
+
+[[required-permissions]]
+== Required Permissions
+
+To manage a Collection end to end, you must also have these permissions. Organization Administrators typically have them. API Experience Hub Administrators can request them from an Organization Administrator.
+
+[cols="1,2",options="header"]
+|===
+|Permission |Required To
+
+|Exchange: Exchange Viewer
+|Find MCP servers to add to the Collection.
+
+|* API Manager: View APIs Configuration
+* Runtime Manager: Read Servers
+
+These permissions apply in the instance's environment.
+|See an instance, and add or swap it in the Collection.
+
+|Exchange: Exchange Contributor
+|Create an unmanaged instance when you share an MCP server.
+
+|* Exchange: Exchange Contributor
+* API Manager: Manage APIs Configuration
+* API Manager: Manage Policies
+* API Manager: Deploy API Proxies
+* Runtime Manager: Read Servers
+
+The API Manager and Runtime Manager permissions apply in the target environment.
+|Create a managed instance when you share an MCP server.
+|===
+
+For more information, see xref:get-started.adoc#permissions[Agent Fabric Permissions].
+
+== See Also
+
+* xref:collections-overview.adoc[]
+* xref:collections-share-mcp-servers.adoc[]
+* xref:access-management::managing-permissions.adoc[]

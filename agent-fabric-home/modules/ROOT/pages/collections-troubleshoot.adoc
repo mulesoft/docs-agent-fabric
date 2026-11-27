@@ -1,0 +1,33 @@
+= Troubleshoot Collections
+:keywords: collections, troubleshooting, errors, permissions, entitlement, mcp server, agent fabric
+
+Use this table to resolve common errors when you manage a Collection.
+
+[[common-errors]]
+== Common Errors
+
+[cols="1,1,1",options="header"]
+|===
+|Message |Cause |Solution
+
+|Collections require API Experience Hub
+|Your organization doesn't have the API Experience Hub entitlement.
+|Contact your Account Executive.
+
+|You need permission to manage Collections
+|You don't have a required role or permission in this business group.
+|Ask your Organization Administrator for access. See xref:collections-get-started.adoc[].
+
+|No MCP Servers found
+|You might not have the Exchange Viewer permission.
+|Ask your Organization Administrator to grant it.
+
+|Instance no longer available, or an empty endpoint
+|You might not have the Read Servers permission in the instance's environment.
+|Ask your Organization Administrator to grant it.
+|===
+
+== See Also
+
+* xref:collections-get-started.adoc[]
+* xref:troubleshoot.adoc[]
