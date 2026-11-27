@@ -64,16 +64,19 @@ Filter by instance status:
 
 Use *Preview Governed Scope* to see which services currently match your criteria before you move forward.
 
+[#configure-controls-or-policies]
 == Configure Controls or Policies
 
 In the enhanced experience, your existing Anypoint profiles appear as controls. Controls offer expanded capabilities, such as governing new services and providing rules to control service and AI state behavior.
 
 Depending on the strategy type, select the controls or policies the strategy enforces:
 
-* For *Controls*, select controls from the catalog available in your tenant.
+* For *Controls*, select controls from the catalog available in your tenant. You can add Anypoint custom and out-of-the-box rulesets next to embedded rulesets in the same strategy.
 * For *Automated Policy*, define runtime details such as gateway runtime, endpoint type, and environment.
 
 Available options depend on your earlier selections and your organization's enabled products.
+
+NOTE: The wizard doesn't list every Anypoint ruleset yet.
 
 == General Information
 

@@ -44,6 +44,7 @@ Work with your governance lead when strategy changes affect production or compli
 == Governance Strategy Workflows
 
 * Create strategies for compliance validation or runtime enforcement. See xref:governance-create-strategy.adoc[].
+* Add Anypoint custom and out-of-the-box rulesets next to embedded rulesets, then apply the strategy. The wizard doesn't list every Anypoint ruleset yet. See xref:governance-create-strategy.adoc#configure-controls-or-policies[Configure Controls or Policies].
 * Manage strategies by updating scope, rules, status, and priority. See xref:governance-manage-strategies.adoc[].
 * Monitor token usage in *Governance* > *Cost Management*. See xref:costs-manage.adoc[].
 * Review conformance reporting for supported catalog types.
