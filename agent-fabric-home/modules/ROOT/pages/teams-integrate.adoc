@@ -7,13 +7,19 @@ Install the MuleSoft for Teams app in your Microsoft Teams tenant to interact wi
 * <<connect-teams-tenant>>: Bind your Microsoft Teams tenant to your Anypoint organization so the app can send alerts and notifications directly to channels and DMs.
 * <<begin-using-agent>>: Manage your MuleSoft environment with the MuleSoft Agent integrated with Teams. Use MuleSoft Agent, to list APIs, view MCP servers, check governance, and perform other management tasks.
 * Configure alerts to deliver notifications to Teams channels. For instructions, see xref:alerts-configure-notifications.adoc[].
++
+The same connection delivers governance conformance alerts. Add Teams as a recipient in a profile's notifications. For more information, see xref:api-governance::configure-notifications.adoc#send-slack-teams-alerts[Sending Conformance Notifications].
 
 NOTE: This tool uses generative AI, which can produce inaccurate or harmful responses. Review for accuracy and safety before using.
 
 [[before-you-begin]]
 == Before You Begin
 
-Before setting up the Teams integration, verify that the following requirements are met:
+MuleSoft for Teams is a limited availability feature. To request access, contact your account executive.
+
+To connect your Teams tenant and receive alerts, including API Manager alerts and governance conformance alerts, you need the administrator roles described in <<connect-teams-tenant>>.
+
+To use the MuleSoft Agent, you also need:
 
 * *Generative AI enabled*: Generative AI must be enabled in your Anypoint Platform and Salesforce organizations. For more information, see xref:access-management::enabling-generative-ai.adoc[].
 * *Salesforce-Anypoint Connection*: Your Anypoint Platform organization must be fully connected to your Salesforce organization.
@@ -59,7 +65,7 @@ The MuleSoft app remains in the Microsoft Teams Admin Center. To fully remove it
 
 [IMPORTANT]
 ====
-MuleSoft Agent is available on request. To get access, contact your account executive.
+MuleSoft Agent is a limited availability feature. To request access, contact your account executive.
 ====
 
 Before getting started, make sure you have:
